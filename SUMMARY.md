@@ -4,9 +4,34 @@
 
 ## Software development
 
-* [Software Design](software-development/software-design.md)
+* [Guides](software-development/guides/README.md)
+  * [Artifactory](software-development/guides/artifactory.md)
+  * [Dockerfile](software-development/guides/dockerfile.md)
+  * [Setup CentOS 8 and Docker](software-development/guides/setup-centos-8-and-docker.md)
+  * [Unix](software-development/guides/unix/README.md)
+    * [Networking](software-development/guides/unix/networking.md)
+    * [Firewall](software-development/guides/unix/firewall.md)
+    * [File system](software-development/guides/unix/file-system.md)
+    * [alternatives](software-development/guides/unix/alternatives.md)
+* [Dev Tools](software-development/dev-tools/README.md)
+  * [Templates](software-development/dev-tools/templates.md)
+  * [CheatSheets](software-development/dev-tools/cheatsheets/README.md)
+    * [Unix Commands](software-development/dev-tools/cheatsheets/unix-commands.md)
+    * [Intellij Command](software-development/dev-tools/cheatsheets/intellij-command.md)
+    * [Docker Commands](software-development/dev-tools/cheatsheets/docker-commands.md)
+    * [Vim Command](software-development/dev-tools/cheatsheets/vim-command.md)
+* [Software Design](software-development/software-design/README.md)
+  * [Containers](software-development/software-design/containers.md)
+  * [Distributed Systems](software-development/software-design/distributed-systems/README.md)
+    * [Bounded Context](software-development/software-design/distributed-systems/bounded-context.md)
+    * [Aggregates](software-development/software-design/distributed-systems/aggregates.md)
+  * [Microservices](software-development/software-design/microservices.md)
+  * [Cloud](software-development/software-design/cloud/README.md)
+    * [Open Service Broker API](software-development/software-design/cloud/open-service-broker-api.md)
+    * [The Twelve Factors](software-development/software-design/cloud/the-twelve-factors.md)
 
 ## Working for an enterprise
 
-* [Untitled](working-for-an-enterprise/untitled.md)
+* [SME role](working-for-an-enterprise/sme-role.md)
+* [Common issues](working-for-an-enterprise/untitled.md)
 
