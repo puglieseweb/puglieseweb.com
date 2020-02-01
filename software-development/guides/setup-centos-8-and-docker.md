@@ -34,7 +34,7 @@ sudo dnf install java-11-openjdk-devel
   Port 443
   ```
 
-* `chown 600 ~/.ssh/config`
+* `chmod 600 ~/.ssh/config`
 
 ## Installing Docker CE
 
