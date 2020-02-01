@@ -1,3 +1,5 @@
 site_name: PuglieseWeb.com
 theme:
-    name: gitbook
+    name: gitboo
+    
+docs_dir: '.'
