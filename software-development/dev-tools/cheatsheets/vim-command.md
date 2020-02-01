@@ -9,7 +9,7 @@
   * `gg`, or
   * `:1`, or
   * `1G`, or
-  * \`1gg
+  * `1gg`
 * `Ctrl o` + 
   * `0` ==&gt; go to start of the line
   * `$` ==&gt; go to end of file
