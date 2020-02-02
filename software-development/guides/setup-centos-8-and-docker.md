@@ -81,7 +81,39 @@ docker version
 
 #### 408 Request Time-out while signing in or pulling an image
 
-This issue was caused by the fact that the MTU on both the ethernet and wifi connection was set to AUTO. The issue was fixed changing the MTU to 900:
+This issue was caused by the fact that the MTU on both the ethernet and wifi connection was set to AUTO. The issue can be fixed changing the MTU to 900 using one of the following options:
+
+{% tabs %}
+{% tab title="Option 1" %}
+For each network interface managed by the NetworkManager daemon, a configuration file is created inside the `/etc/sysconfig/network-scripts` directory. The name of the file is composed by the `ifcfg-` prefix plus the name of the interface.
+
+We can manually change the NIC configuration files:
+
+```text
+sudo vim /etc/sysconfig/network-scripts/ifcfg-[NIC_NAME]
+sudo nmcli connection down [NIC_NAME] 
+sudo nmcli connection up [NIC_NAME]
+```
+
+By running the `ip addr` command again we can verify the IP has changed:
+
+```text
+ip addr | grep [NIC_NAME]
+```
+{% endtab %}
+
+{% tab title="Option 2" %}
+using `nmtui`:
+
+```text
+sudo nmtui
+sudo nmcli connection down [NIC_NAME] 
+sudo nmcli connection up [NIC_NAME]
+```
+{% endtab %}
+
+{% tab title="Option 3" %}
+Using`ip link set`
 
 ```bash
 ip link list
@@ -89,10 +121,10 @@ sudo ip link set wlp2s0 mtu 900
 sudo ip link set enp0s31f6 mtu 900
 sudo systemctl restart NetworkManager
 ```
+{% endtab %}
+{% endtabs %}
 
-#### Docker networking - Connection refused
-
-Container B has not access to Container A and log file error is: 
+#### Container B has not access to Container A and log file error is: 
 
 `NO ROUTE TO HOST network request from container to...`
 
