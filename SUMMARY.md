@@ -38,5 +38,3 @@
   * [SME role](working-for-an-enterprise/job-roles/sme-role.md)
 * [Common issues](working-for-an-enterprise/untitled.md)
 
-## External resources
-

@@ -6,7 +6,7 @@ description: Emanuele Pugliese's Blog
 
 ## Mission
 
-xThe goal of this blog is collect notes about software development and best practices, focusing on Agile methodologies and Distributed System.
+The goal of this blog is collect notes about software development and best practices, focusing on Agile methodologies and Distributed System.
 
 ## About me
 
