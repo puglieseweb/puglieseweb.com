@@ -1,3 +1,5 @@
+
+<script type="text/javascript"> window.onload = clear(); function clear() { document.body.innerHTML = document.body.replace('Powered by <b>GitBook</b>', 'Powered by PuglieseWeb.com'); } </script> 
 # Table of contents
 
 * [Home](README.md)
