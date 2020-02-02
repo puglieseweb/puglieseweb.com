@@ -2,11 +2,11 @@
 
 One of the challenges faced in Distributed System is the difficulty of implement transaction across multiple components and APIs.  
   
-[**Aggregates**]() ****provide good guidance to design a Domain model that focus on transactional boundaries within the system.  
+[**Aggregates**](aggregates.md) ****provide good guidance to design a Domain model that focus on transactional boundaries within the system.  
   
 **Service APIs** should be designed to map to an action on an aggregate, which maps to end users mental model. So a ‘service api’, can be thought of as a set of operations, each being a command to an aggregate. ****Each Service API is transactional**.**  
   
-[**Bounded Contexts**]() are used to identify a broader grouping of ****Service APIs. A bounded context or a subdomain may have multiple aggregates.  
+[**Bounded Contexts**](bounded-context.md) are used to identify a broader grouping of ****Service APIs. A bounded context or a subdomain may have multiple aggregates.  
 
 
 ### **Eventual consistency** 
