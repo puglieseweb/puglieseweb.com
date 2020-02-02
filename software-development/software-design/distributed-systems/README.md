@@ -1,3 +1,6 @@
+<script type="text/javascript"> window.onload = clear(); function clear() { document.body.innerHTML = document.body.replace('Powered by <b>GitBook</b>', 'Powered by PuglieseWeb.com'); } </script> 
+
+
 # Distributed Systems
 
 One of the challenges faced in Distributed System is the difficulty of implement transaction across multiple components and APIs.  
