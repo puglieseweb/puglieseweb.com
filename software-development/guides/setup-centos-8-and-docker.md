@@ -179,3 +179,13 @@ gradle -v
 3. `sh /opt/idea/idea-IU-183.6156.11/bin/idea.sh`
 4. follow the installation steps
 
+## Installing NodeJS
+
+```text
+yum module list nodejs
+sudo yum module install nodejs/development
+dnf install nodejs
+sudo yum module install nodejs/development
+node --version
+```
+
