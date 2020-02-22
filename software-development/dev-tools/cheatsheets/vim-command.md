@@ -13,7 +13,8 @@
 * `Ctrl o` + 
   * `0` ==&gt; go to start of the line
   * `$` ==&gt; go to end of file
-  * `1` + `G` ==&gt; go to start of the file
+  * `1` + `G` ==&gt; jump to the first line
+  * `2` + `G` ==&gt; jump to the second line
   * `o` ==&gt; insert in a new line
   * `a` ==&gt; insert after cursor
   * `A` ==&gt; insert at the of the line
