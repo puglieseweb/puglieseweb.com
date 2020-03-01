@@ -14,7 +14,9 @@ Examples of **Bounded Contexts** are:
 
 ## How to design a bounded context
 
-With one large context everything becomes equally critical, it is not possible to have redundancy in one part of the system, changes to a functionality can potentially affect others. By breaking out the system into bounded contexts it should be possible to:  
+With one large context everything becomes equally critical, it is not possible to have redundancy in one part of the system, changes to a functionality can potentially affect others. 
+
+Bounded contexts help to structure complex logic in services that can be easily understood so that it is possible to:
 
 * Contain Complexity 
 * Easily define and implement transnational boundaries 
