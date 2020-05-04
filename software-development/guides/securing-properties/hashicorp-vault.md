@@ -45,6 +45,14 @@ Secretes engine and authentication methods are "mounted" as a specified path
 
 Paths available are dependent on the features enabled in Vault, such as Authentication Methods and Secrets Engine. 
 
+Permissions, or policies, are granted based upon the path 
+
+Some secret engines and authentication methods have some predefined paths beneath the mount point. For example, the database secret has: 
+
+* database/config/config name= connection information
+* database/roles/role name= defines statement to execute to create the database credential
+* database/creds/rolename = credential generation
+
 ## Starting Vault
 
 ```text
