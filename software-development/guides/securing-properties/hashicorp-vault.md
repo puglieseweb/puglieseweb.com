@@ -117,3 +117,5 @@ White a secret in Vault:
 vault kv put secret/configclient client.pseudo.property="Property value loaded from Vault"
 ```
 
+Now you can  browser[`http://localhost:8200`](http://localhost:8200./) and  enter the application with your root token.
+
