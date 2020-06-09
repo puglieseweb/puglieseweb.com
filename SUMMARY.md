@@ -19,6 +19,7 @@
     * [Artifactory](software-development/technologies/containers/artifactory.md)
     * [Dockerfile](software-development/technologies/containers/dockerfile.md)
 * [Guides](software-development/guides/README.md)
+  * [Security](software-development/guides/security.md)
   * [Kubernates](software-development/guides/kubernates.md)
   * [Securing Properties](software-development/guides/securing-properties/README.md)
     * [HashiCorp Vault](software-development/guides/securing-properties/hashicorp-vault.md)
