@@ -95,7 +95,9 @@ Seal Stanza - AWS Example
 * secret\_key: the IAM secret key with permission to use the KMS key 
 * access\_key is the IAM access key with permission to use the KMS key. If Vault is deployed in AWS, use IAM service role instead access\_key and the secret\_key.  
 
+### Vault Policies 
 
+Vault allows to set up ACL Policies. A policy is set up against a path and has a set of capabilities \(e.g. "create", "read", "delete"\)
 
 * **Starting Vault**
 
