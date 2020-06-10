@@ -42,12 +42,18 @@ But how do you exchange or agree keys?
 
 Asymmetric algorithms help solve the problem of exchanging or agreeing Keys and also allow for something called digital signatures.
 
-Asymmetric encryption uses two keys: 
+Asymmetric encryption uses two keys:
 
-* a public key \(used to encrypt data\)
-* a private key \(used to dencrypt data\)
+* a public key, and
+* a private key
 
 A very common asymmetric algorithm is RSA.
+
+You always need the counterpart key to encrypt and decrypt and it is not possible to encrypt and decrypt using the same key.
+
+#### Encrypting using the Public key
+
+A sender can encrypt using a public key to achieve privacy or **confidentiality** so no one else can read the message but the receiver.
 
 
 
