@@ -53,7 +53,7 @@ You always need the counterpart key to encrypt and decrypt and it is not possibl
 
 #### Encrypting using the Public key
 
-A sender can encrypt using a public key to achieve privacy or **confidentiality** so no one else can read the message but the receiver.
+A sender can encrypt using a public key to achieve privacy or **confidentiality** so no one else can read the message but the receiver. The receiver though cannot confirm who has sent because anyone can use public key to encrypt \(the sender cannot be authenticated\).
 
 
 
