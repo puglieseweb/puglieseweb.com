@@ -82,6 +82,8 @@ HTTPS using TLS and is an example of this system.
 
 #### Hash functions
 
+Hashing can be used to verify **integrity**.
+
 A plain text **input** is processed by a **cryptographic hash function** to produce a **digests** \(AKA message digests or hashes\). a digest cannot be used to recover an input.
 
 Example of Hash function to be used are SHA 256 or above.
