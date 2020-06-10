@@ -9,3 +9,7 @@ So we have to accept and mitigate the risk of security vulnerabilities by:
 * create isolation and compartmentalization.
 * build layers of defenses.
 
+It is important to mitigate risks by selection the right security controls.
+
+Encrypting everything is the good way of mitigating the security risk that comes with a modern complex system. 
+
