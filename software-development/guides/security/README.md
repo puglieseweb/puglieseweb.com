@@ -82,5 +82,5 @@ HTTPS using TLS and is an example of this system.
 
 
 
-A plain text **input** is processed by a **cryptographic hash function** to produce a **digests.**
+A plain text **input** is processed by a **cryptographic hash function** to produce a **digests** \(AKA message digests or hashes\).
 
