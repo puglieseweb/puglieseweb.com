@@ -59,9 +59,16 @@ A sender can encrypt using a public key to achieve privacy or **confidentiality*
 
 if you encrypt with your own private key then this means **authenticating** is what you're interested in.
 
+#### Crypto System
 
+A Crypto System combine  various encryption technologies to provide a number of security services:
 
+* **confidentiality** which is privacy 
+* **authentication** which is knowing that Bob is the real Bob or you are the real you 
+* **Nonrepudiation** which means you cannot later deny that you send or encrypted a message
+* **integrity** that the message hasn't been altered in any way.
 
+And example of Crypto System is TLS.
 
 
 
