@@ -43,6 +43,10 @@ Asymmetric encryption uses two keys:
 * a public key \(used to encrypt data\)
 * a private key \(used to dencrypt data\)
 
+A very common asymmetric algorithm is RSA.
+
+
+
 
 
 
