@@ -98,3 +98,7 @@ Which is why we have something called hybrid systems or hybrid crypto systems. P
 
 HTTPS using TLS and is an example of Hybrid Crypto System offering confidentiality, authentication, Nonrepudiation and integrity.
 
+
+
+The combination of algorithms used is know as **Cipher suite.**
+
