@@ -11,7 +11,7 @@ So we have to accept and mitigate the risk of security vulnerabilities by:
 
 It is important to mitigate risks by selection the right **security controls.**
 
-Encrypting everything is the best way of mitigating the security risk that comes with a modern complex system. 
+End to End Encryption \(E2EE\) is the best way of mitigating the security risk that comes with a modern complex system. 
 
 ## Encryption
 
