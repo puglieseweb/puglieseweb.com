@@ -42,6 +42,8 @@ But how do you exchange or agree keys?
 
 Asymmetric algorithms help solve the problem of exchanging or agreeing Keys and also allow for something called digital signatures.
 
+Asymmetric encryption is very very slow compared do Symmetric encryption.
+
 Asymmetric encryption uses two keys:
 
 * a public key, and
@@ -68,7 +70,7 @@ A Crypto System combine  various encryption technologies to provide a number of 
 * **Nonrepudiation** which means you cannot later deny that you send or encrypted a message
 * **integrity** that the message hasn't been altered in any way.
 
-And example of Crypto System is TLS.
+And example of Crypto System is TLS. Another example is PGP, and encryption technology for emails.
 
 
 
