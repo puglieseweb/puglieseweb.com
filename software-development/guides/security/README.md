@@ -76,3 +76,11 @@ Asymmetric encryption is very very slow compared do Symmetric encryption.
 
 Which is why we have something called hybrid systems or hybrid crypto systems. Public and private keys are used to exchange an agreed keys and the  use symmetric algorithms like AES to actually encrypt the data.
 
+HTTPS using TLS and is an example of this system.
+
+
+
+
+
+A plain text **input** is processed by a **cryptographic hash function** to produce a **digests.**
+
