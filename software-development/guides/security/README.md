@@ -36,7 +36,11 @@ So in the end you actually have 3 things:
 
 You might ask why you need the key: If you would change your password \(and you had encrypted all your files with your password\), you would need to first decrypt all your files with your orignal password and then re-encrypt them with your new password. With this implementation all you need to do is decrypt and re-encrypt the key \(as this key serves as your password\).
 
+But how do you exchange or agree keys? 
+
 ### Asymmetric encryption
+
+Asymmetric algorithms help solve the problem of exchanging or agreeing Keys and also allow for something called digital signatures.
 
 Asymmetric encryption uses two keys: 
 
