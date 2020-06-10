@@ -59,6 +59,26 @@ A sender can encrypt using a public key to achieve privacy or **confidentiality*
 
 if you encrypt with your own private key then this means **authenticating** is what you're interested in.
 
+#### Hash functions
+
+Hashing can be used to verify **integrity**.
+
+A plain text **input** is processed by a **cryptographic hash function** to produce a **digests** \(AKA message digests or hashes\). a digest cannot be used to recover an input.
+
+Example of Hash function to be used are SHA 256 or above.
+
+#### Digital Signature
+
+A digital Signature is a signed message.
+
+A singed message is produced bu by hashing the message and then encrypting it with the sender private key.
+
+A digital signature provide integrity \(hashing\), notrepudiation and authentication \(private key encryption\)
+
+
+
+Encryption + Digital Signature provides confidentiality, integrity, nonrepudiation and authentication. 
+
 #### Crypto System
 
 A Crypto System combine  various encryption technologies to provide a number of security services:
@@ -76,21 +96,5 @@ Asymmetric encryption is very very slow compared do Symmetric encryption.
 
 Which is why we have something called hybrid systems or hybrid crypto systems. Public and private keys are used to exchange an agreed keys and the  use symmetric algorithms like AES to actually encrypt the data.
 
-HTTPS using TLS and is an example of this system.
-
-
-
-#### Hash functions
-
-Hashing can be used to verify **integrity**.
-
-A plain text **input** is processed by a **cryptographic hash function** to produce a **digests** \(AKA message digests or hashes\). a digest cannot be used to recover an input.
-
-Example of Hash function to be used are SHA 256 or above.
-
-#### Digital Signature
-
-A digital Signature is a signed message. 
-
-A singed message is produced bu by hashing the message and then encrypting it with the sender private key.
+HTTPS using TLS and is an example of Hybrid Crypto System offering confidentiality, authentication, Nonrepudiation and integrity.
 
