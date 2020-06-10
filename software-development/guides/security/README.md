@@ -20,7 +20,13 @@ Encryption transform plain text in Cipher Text \(unreadable format\). In encrypt
 * the Algorithm \(public\)
 * the Key \(secret\)
 
-AES is a Symmetric algorithm: it uses only one Key. The password is converted to a  key derivation function. Also [a good read](http://pic.dhe.ibm.com/infocenter/initiate/v9r5/index.jsp?topic=/com.ibm.einstall.doc/topics/t_einstall_GenerateAESkey.html) \(courtesy of IBM\).
+### Symmetric encryption
+
+Symmetric encryption uses only one key.
+
+At the time of writing, AES 256 is that advised is Symmetric algorithm to use. If combined with a "strong password" it is uncrackable. AES 128 is also considered secure.
+
+The password is converted to a **key derivation function**. Also [a good read](http://pic.dhe.ibm.com/infocenter/initiate/v9r5/index.jsp?topic=/com.ibm.einstall.doc/topics/t_einstall_GenerateAESkey.html) \(courtesy of IBM\).
 
 So in the end you actually have 3 things:
 
@@ -29,4 +35,15 @@ So in the end you actually have 3 things:
 * A hash of your password to verify it
 
 You might ask why you need the key: If you would change your password \(and you had encrypted all your files with your password\), you would need to first decrypt all your files with your orignal password and then re-encrypt them with your new password. With this implementation all you need to do is decrypt and re-encrypt the key \(as this key serves as your password\).
+
+### Asymmetric encryption
+
+Asymmetric encryption uses two keys: 
+
+* a public key \(used to encrypt data\)
+* a private key \(used to dencrypt data\)
+
+
+
+
 
