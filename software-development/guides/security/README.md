@@ -88,3 +88,7 @@ A plain text **input** is processed by a **cryptographic hash function** to prod
 
 Example of Hash function to be used are SHA 256 or above.
 
+#### Digital Signature 
+
+A Digital Signature is an hash value that is encrypted with the sender private key.
+
