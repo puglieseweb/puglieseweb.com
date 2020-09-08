@@ -4,6 +4,7 @@
 
 * `+` jump to next line 
 * `G` jump to last line of the file
+* `o` insert new line
 * `ggVG` selects all content. gg moves to first line. V starts visual mode. G jumps to last line thereby selecting from first to last line
 * To go to first line of a file press `Esc`and chose one of the following:
   * `gg`, or
