@@ -14,6 +14,7 @@
     * [Open Service Broker API](software-development/software-design/cloud/open-service-broker-api.md)
 * [Design technique](software-development/design-technique.md)
 * [Technologies](software-development/technologies/README.md)
+  * [Kafka](software-development/technologies/kafka.md)
   * [Docker](software-development/technologies/containers/README.md)
     * [Docker Commands](software-development/technologies/containers/docker-commands.md)
     * [Artifactory](software-development/technologies/containers/artifactory.md)
