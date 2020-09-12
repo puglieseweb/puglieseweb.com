@@ -6,12 +6,8 @@
 * [docker cheat sheet for spring devlopers](https://springframework.guru/docker-cheat-sheet-for-spring-devlopers/)
 * [confluent docker guide](https://docs.confluent.io/current/quickstart/ce-docker-quickstart.html?utm_medium=sem&utm_source=google&utm_campaign=ch.sem_br.brand_tp.prs_tgt.confluent-brand_mt.xct_rgn.emea_lng.eng_dv.all&utm_term=confluent%20kafka%20docker&creative=&device=c&placement=&gclid=Cj0KCQiA6IHwBRCJARIsALNjViU8o7OaXVmXYB6GFkGA6CVCEHFYsFikf-eGwUiW7yyg79zq3OUyxDkaArsuEALw_wcB#download-start-cp-docker)
 
-## Basic commands
+## Basic Commands
 
-* basic docker commands: [https://phoenixnap.com/kb/how-to-list-start-stop-docker-containers](https://phoenixnap.com/kb/how-to-list-start-stop-docker-containers)
-  * start all docker compose: `docker-compose up -d --build`
-  * stop all docker compose: `docker-compose stop`
-  * remove all docker compose: `docker-compose rm -f`
 * start a container: `docker start kafka`
 * follow log of a container: `docker logs -f kafka`
 * SSH into a Container: [https://phase2.github.io/devtools/common-tasks/ssh-into-a-container/](https://phase2.github.io/devtools/common-tasks/ssh-into-a-container/)
@@ -22,6 +18,20 @@
 * `docker run -it --entrypoint "/bin/bash" 16ae4fa4bfe5 -i` ==&gt; override entrypoint and keep container running
 * `docker run --rm -p 8080:8080 base-image` ==&gt; run and image and automatically remove remove the container when it exits
 
+## Docker Compose Commands
+
+Basic docker commands: [https://phoenixnap.com/kb/how-to-list-start-stop-docker-containers](https://phoenixnap.com/kb/how-to-list-start-stop-docker-containers)
+
+* start all docker compose: `docker-compose up -d --build`
+  * stop all docker compose: `docker-compose stop`
+  * remove all docker compose: `docker-compose rm -f`
+
+> After starting docker composer you should be able to access Confluent Console at [http://localhost:9021/clusters](http://localhost:9021/clusters)
+
+* enter docker compose containers: 
+  * `docker-compose exec broker bash`
+  * `docker-compose exec ksql-cli ksql` [`http://ksqldb-server:8088`](http://ksqldb-server:8088^)
+* 
 ## Ho to build a docker file
 
 From the directory of the Dockerfile run:
