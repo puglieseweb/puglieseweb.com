@@ -1,3 +1,9 @@
+---
+description: >-
+  Schema management evolutionary architectureKafka entity relationship diagram
+  (ERD) flows view of sources to sinks
+---
+
 # Kafka
 
 ## Resources 
