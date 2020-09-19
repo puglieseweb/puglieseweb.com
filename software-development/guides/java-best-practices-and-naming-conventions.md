@@ -19,7 +19,13 @@ The main architectural patterns revolves around Event Driven Architecture with:
   * load stale state
   * Allow communication with external Systems
 
-## Java Package Naming Conventions
+Useful resources:
+
+* [https://netflix.github.io/](https://netflix.github.io/)
+
+## Source Code
+
+### Java Package Naming Conventions
 
 This s an example of commonly use naming convention for Java packages:
 
