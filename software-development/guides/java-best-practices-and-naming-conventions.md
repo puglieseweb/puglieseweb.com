@@ -1,4 +1,23 @@
-# Java Best Practices and naming conventions
+# Event-base Microservices Implementation Guideline
+
+These recommended are introduced to help to keep  microservices' source code standard, human readable, easy to test and maintain.
+
+the recommendation are meant to fit the technology stack being used: 
+
+* Spring Cloud
+* Confluent Kafka
+* HashiCorp Vault
+* Docker-compose
+
+The main architectural patterns revolves around Event Driven Architecture with: 
+
+* Kafka to decouple microservices and implement asynchronous communications
+* Schema Registry to allow contract between microservices to evolve and yet be retro-compatible and support different client versions
+* Stream Processing to create, transform, and persist Aggregates
+* Hexagonal Architecture to structure microservices around communication channels, backed system, and business functionally
+* REST AP to: 
+  * load stale state
+  * Allow communication with external Systems
 
 ## Java Package Naming Conventions
 
