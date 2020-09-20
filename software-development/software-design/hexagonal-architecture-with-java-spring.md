@@ -24,3 +24,7 @@ Technology are substitute by **adaptors.**
 
 Hexagonal Architecture reflects the use “primary actors” and “secondary actors”. A ‘’primary actor’’ is an actor that drives the application \(e.g user interaction or an automated regression testing suite\). A ‘’secondary actor’’ is one that the application drives, either to get answers from or to merely notify \(e.g. database response\).
 
+
+
+![](../../.gitbook/assets/image%20%287%29.png)
+
