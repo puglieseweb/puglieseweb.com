@@ -14,7 +14,7 @@ The main architectural patterns revolves around Event Driven Architecture with:
 * Kafka to decouple microservices and implement asynchronous communications
 * Schema Registry to allow contract between microservices to evolve and yet be retro-compatible and support different client versions
 * Stream Processing to create, transform, and persist Aggregates
-* Hexagonal Architecture to structure microservices around communication channels, backed system, and business functionally
+* where we use Hexagonal Architecture only to logically structure microservices around communication channels, backed system, and business functionally. We will not break down the code in sub-modules and different port, adaptors and application artefacts. The ultimate is to be able to run the application in a fully automated mode and yet keep the code simple to read and maintain.
 * REST AP to: 
   * load stale state
   * Allow communication with external Systems
