@@ -28,7 +28,15 @@ Hexagonal Architecture reflects the use “primary actors” and “secondary ac
 
 ![](../../.gitbook/assets/image%20%287%29.png)
 
-
+```text
+com.puglieseweb.app.sampleapp
+    config
+    adapters
+        broker
+        db
+        repositories
+        
+```
 
 * **The domain** is the core of the hexagon, containing primary business logic, free of any infrastructure and framework boilerplate.
 * **Ports** are plain Java interfaces that allow adapters to  plugging into the core domain \(e.g. repositories interfaces\)
