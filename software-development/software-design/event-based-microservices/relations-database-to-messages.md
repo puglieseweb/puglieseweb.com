@@ -1,12 +1,12 @@
 # Relations database to messages
 
-When we normalise a database we normal optimise it for a specif use case scenario required by a service. 
+Normalisation of  a database is also done to optimise it for specif use case scenario implemented by a specific service. 
 
-When sending message to a broker often make sense to flatten \(de-normalise\) any database relationship \(e.g. one-to-many\) into messages:  
+When messages are sent to a broker, it often makes sense to flatten \(de-normalise\) any database relationship \(e.g. one-to-many\):  
 
 ![](../../../.gitbook/assets/image%20%287%29.png)
 
-Flattening a message make easy for different consumer types to use the message suit  their needs
+Flattening a message make it easy for different consumer types to use the message according to their needs:
 
 ![](../../../.gitbook/assets/image%20%288%29.png)
 
