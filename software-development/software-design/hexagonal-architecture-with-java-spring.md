@@ -28,3 +28,61 @@ Hexagonal Architecture reflects the use “primary actors” and “secondary ac
 
 ![](../../.gitbook/assets/image%20%287%29.png)
 
+
+
+* **The domain** is the core of the hexagon, containing primary business logic, free of any infrastructure and framework boilerplate.
+* **Ports** are plain Java interfaces that allow adapters to  plugging into the core domain \(e.g. repositories interfaces\)
+* **Adapters** are either external APIs of your application or clients to other systems. They translate the interfaces of external systems to interfaces exposed by the domain through ports.
+
+Now we will try to map the Hexagonal Architecture concepts to a more developer friendly Spring naming covetous 
+
+
+
+```text
+adapters
+   inboud
+   outboud
+domain
+   service (containing all the ports)
+   model
+   config
+   
+```
+
+
+
+service \(rappresenting all the port\)
+
+### Example implementation
+
+
+
+```text
+class ArticleResponse {
+    private final String id;
+    private final String title;
+    private final String content;
+    private final String authorName;
+
+    static ArticleResponse of(Article article) {
+        return new ArticleResponse(article.id().value(),
+                article.title().value(),
+                article.content().value(),
+                article.author().name());
+    }
+    //boilerplate code omitted
+}
+```
+
+Each adapter works on its data model, which can translate itself “from” or “to” the domain. The domain model on the other hand is adapter-model-agnostic. That’s why you should always favour
+
+```text
+ArticleResponse.of(domainArticle) 
+```
+
+over
+
+```text
+domainArticle.toResponse()
+```
+
