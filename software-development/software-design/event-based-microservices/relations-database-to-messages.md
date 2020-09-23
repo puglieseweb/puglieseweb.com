@@ -10,3 +10,14 @@ Flattening a message make it easy for different consumer types to use the messag
 
 ![](../../../.gitbook/assets/image%20%288%29.png)
 
+Often we want to send a messages every time there is a DB change \(AKA Change Data Capture \(CDC\), for example to:
+
+* notify other systems.
+* data analytics 
+
+This means that Database operation and messaging publishing needs to be part of the same transaction. 
+
+Since Spring for Apache Kafka 2.5 is is now possible to set a transaction at contain lever \(see [Apache Kafka](../../technologies/kafka.md)\)
+
+
+
