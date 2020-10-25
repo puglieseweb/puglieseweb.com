@@ -12,6 +12,7 @@
     * [Aggregates](software-development/software-design/distributed-systems/aggregates.md)
     * [Bounded Context](software-development/software-design/distributed-systems/bounded-context.md)
   * [Microservices](software-development/software-design/microservices.md)
+  * [API Gateway](software-development/software-design/api-gateway.md)
   * [Cloud](software-development/software-design/cloud/README.md)
     * [The Twelve Factors](software-development/software-design/cloud/the-twelve-factors.md)
     * [Open Service Broker API](software-development/software-design/cloud/open-service-broker-api.md)
