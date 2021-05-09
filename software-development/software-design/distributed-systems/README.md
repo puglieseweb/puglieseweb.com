@@ -1,5 +1,7 @@
 # Distributed Systems using DDD
 
+A Distributed System is a system of several processes running on different machines, communicating with each other through the network, and are sharing a state or are working together to achieve a common goal.
+
 Distributed Systems are often required to develop complex systems that need to keep evolving. A common problem distributing the business logic across applications is the tendency to create a lack of a shared understanding of the domain which costs days of developer time, integration problems, and risky production deployments. 
 
 Domain Driven Development \(DDD\) helps an **organisation** to gain a shared understanding of the domain the software describes, isolating them so that a number of team can keep supporting  the domain without relaying on specific person availability.   
@@ -7,8 +9,6 @@ Domain Driven Development \(DDD\) helps an **organisation** to gain a shared und
 The DDD design is intended to help human beings t understand the product, and communicate about it.
 
 ## Distributed Systems
-
-A Distributed System is a system of several processes running on different machines, communicating with each other through the network, and are sharing a state or are working together to achieve a common goal.
 
 One of the challenges faced in Distributed System is the difficulty of implement transaction across multiple components and APIs.
 
