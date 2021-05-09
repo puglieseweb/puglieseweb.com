@@ -8,6 +8,8 @@ The DDD design is intended to help human beings t understand the product, and co
 
 ## Distributed Systems
 
+A Distributed System is a system of several processes running on different machines, communicating with each other through the network, and are sharing a state or are working together to achieve a common goal.
+
 One of the challenges faced in Distributed System is the difficulty of implement transaction across multiple components and APIs.
 
 [**Aggregates**](aggregates.md) provide good guidance to design a Domain model that focus on transactional boundaries within the system.
