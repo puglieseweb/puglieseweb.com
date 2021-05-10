@@ -38,6 +38,7 @@
     * [alternatives](software-development/guides/unix/alternatives.md)
   * [Setup CentOS 8 and Docker](software-development/guides/setup-centos-8-and-docker.md)
 * [Dev Tools](software-development/dev-tools/README.md)
+  * [Docker Commands](software-development/dev-tools/docker-commands.md)
   * [Intellij](software-development/dev-tools/intellij-command.md)
   * [CheatSheets](software-development/dev-tools/cheatsheets/README.md)
     * [Unix Commands](software-development/dev-tools/cheatsheets/unix-commands.md)
