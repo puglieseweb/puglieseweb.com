@@ -1,4 +1,4 @@
-# Distributed System Terminology
+# Zookeeper
 
 Node: A process running a dedicated machine
 
@@ -12,4 +12,28 @@ Node: A process running a dedicated machine
   1. Every node connects to zookeeper volunteers to become a leader: each node creates a znode under `/election` **``**znode parent. Zookeper name names the zoned according to the order of their addition. 
   2. The first znone being added \(The smallest node\) is the leader. Each added node queries the `/election` parent znode to get to know all the nodes crated prior its creating.
   3. If the current node created is the smallest number it knows that it is now the leader. If the node knows that is not the smallest number then it knows that needs to wait for instruction/Tasks coming from the leader
-* 
+
+## Watcher 
+
+A watcher allows us to get a notification when a change happens.
+
+We can register a watcher when we call the methods:
+
+```text
+getData(znodePath, watcher) 
+```
+
+Get notified if a znode's data gets modified
+
+```text
+getChildren(..., watcher)
+```
+
+Get notified when the list of a znodes's children changes.
+
+```text
+exists(...)
+```
+
+exists\(znodePath, watcher\) : get notified if a znode gets deleted or created
+
