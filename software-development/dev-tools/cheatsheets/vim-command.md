@@ -33,7 +33,7 @@
 * `:%s/toReplace/withWord` in the file
 * `:3,4s/toReplace/withWord` between lines
 * `Cntr` + `r` ==&gt; redo 
-* `/` ==&gt; find a word
+* `/word` ==&gt; find a word
 
 ## Visual mode
 
