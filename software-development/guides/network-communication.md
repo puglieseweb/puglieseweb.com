@@ -6,6 +6,32 @@ description: Network Communication For Distributed Systems
 
 In contest of Distributed Systems, the TCP/IP Network Model defines a four layer abstraction model.
 
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">192.158. 1.38</th>
+      <th style="text-align:left">:8081</th>
+      <th style="text-align:left">/path</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">
+        <p>Internet Layer</p>
+        <p>(IP protocol)</p>
+      </td>
+      <td style="text-align:left">
+        <p>Transport Layer</p>
+        <p>(TCP protocol)</p>
+      </td>
+      <td style="text-align:left">
+        <p>Application Layer</p>
+        <p>(HTTP protocol)</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ## Layer 1 - Data Link
 
 The Data Link layer uses the **Ethernet protocol** to wrap data packets into frames and move them form one device MAC address to another device MAC address \(Ethernet deals with physical hardware\)
