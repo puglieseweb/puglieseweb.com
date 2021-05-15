@@ -1,5 +1,20 @@
 # Zookeeper
 
+Algorithms in Distributed Systems needs to work equally efficiently with any number of nodes.
+
+A Distributed System must be:
+
+* Fault Tolerant: any number of nodes can fail, and the cluster stay functional if at least a node is alive
+* Horizontallly Scalable: we can add node Dynamically.
+* Algorithm in place needs to avoid performance bottlenecks such as **Herd Effect**.
+
+Fault Tolerance and Horizontal Scalability are very important properties for a Distributed System:
+
+* Fault Tolerance: your business can run 24x7 with no interruption 
+* Horizontal Scalability: we can dynamically grow our business on demand
+
+
+
 Node: A process running a dedicated machine
 
 * Cluster: A collection of computer/nodes connected to each other. The node in the same cluster are working on the same task, and typically are running the same code
@@ -13,7 +28,7 @@ Node: A process running a dedicated machine
   2. The first znone being added \(The smallest node\) is the leader. Each added node queries the `/election` parent znode to get to know all the nodes crated prior its creating.
   3. If the current node created is the smallest number it knows that it is now the leader. If the node knows that is not the smallest number then it knows that needs to wait for instruction/Tasks coming from the leader
 
-## Watcher 
+## Watcher and Triggers
 
 A watcher allows us to get a notification when a change happens.
 
