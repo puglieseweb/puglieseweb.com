@@ -25,6 +25,7 @@
     * [Artifactory](software-development/technologies/containers/artifactory.md)
     * [Dockerfile](software-development/technologies/containers/dockerfile.md)
 * [Guides](software-development/guides/README.md)
+  * [TCP/IP Network Model](software-development/guides/network-communication.md)
   * [Event-base Microservices Implementation Guideline](software-development/guides/java-best-practices-and-naming-conventions.md)
   * [How to write a service](software-development/guides/how-to-write-a-service.md)
   * [Security](software-development/guides/security/README.md)
