@@ -25,6 +25,7 @@
     * [Artifactory](software-development/technologies/containers/artifactory.md)
     * [Dockerfile](software-development/technologies/containers/dockerfile.md)
 * [Guides](software-development/guides/README.md)
+  * [Load Balancer VS Reverse Proxy](software-development/guides/load-balancer-vs-reverse-proxy.md)
   * [Health check](software-development/guides/health-check.md)
   * [Load Balancer](software-development/guides/load-balancer.md)
   * [HTTP Protocol](software-development/guides/http-protocol.md)
