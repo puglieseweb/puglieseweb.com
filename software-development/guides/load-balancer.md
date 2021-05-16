@@ -13,5 +13,22 @@ There are different Load balancing strategies
 | Weighted Response Time | the load balancer send health check request to each server and measures the time each server takes to respond. If the server are buys handling real request it will take more time to respond to the heath check and the server is given a lower weight  |
 | Agent Based Policy | Installs Agents that check: CPU Utilization, Inbound or outbound Network Traffic \(bytes\), disk operation \(reads/writes\), memory utilization, etc.  |
 
+![](../../.gitbook/assets/image%20%2811%29.png)
 
+The Load Balanncer can operated at: 
+
+* Layer 4 \(Transport Layer\)
+  * the Load Balancer performs simple TCP packets forwarding between the client and the backend servers.
+  * It does not inspect the content of the TCP stream beyond the first packets - Low overhead
+
+![](../../.gitbook/assets/image%20%2813%29.png)
+
+* Layer 7 \(Application Layer\):
+  * can make smarter routing decision based on the HTTP header
+  * Load balancer inspects TCP packets and HTTP header
+  * Can route requests to different clusters of servers based on:
+    * Request URL
+    * Type of requested data
+    * HTTP method
+    * Browser cookies
 
