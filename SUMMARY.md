@@ -9,6 +9,7 @@
     * [Relations database to event messages](software-development/software-design/event-based-microservices/relations-database-to-messages.md)
   * [Hexagonal Architecture with Java Spring](software-development/software-design/hexagonal-architecture-with-java-spring.md)
   * [Distributed Systems using DDD](software-development/software-design/distributed-systems/README.md)
+    * [Scaling a distributed system](software-development/software-design/distributed-systems/scaling-a-distributed-system.md)
     * [Zookeeper](software-development/software-design/distributed-systems/untitled.md)
     * [Aggregates](software-development/software-design/distributed-systems/aggregates.md)
     * [Bounded Context](software-development/software-design/distributed-systems/bounded-context.md)
