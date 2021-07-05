@@ -120,3 +120,9 @@ where
 
 ![](../../../.gitbook/assets/image%20%2816%29.png)
 
+Distributed databases uses both sharding and replication to guarantee:
+
+* High Availability
+* Consistency 
+*  fault tolerance 
+
