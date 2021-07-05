@@ -52,9 +52,11 @@ Centralized Database Issues
   * Minimum latency depends on the geographical location of the database instance and the user
   * Limited to the memory that a single machine can have 
 
-### Database Sharding techniques
+### Database Sharding
 
-**Consistent Hashing** is a technique to map both the keys of our data and the database nodes that store that data to the same hash space.
+Data Sharding is splitting the data and placing each chunk on a different machine.
+
+One common techniques used for data sharding is **Consistent Hashing. Consistent Hashing map**s both the keys of our data and the database nodes that store that data to the same hash space.
 
 The benefits of Consisting Hasting are:
 
@@ -63,6 +65,12 @@ The benefits of Consisting Hasting are:
 2\) WE can allocate more keys to some database nodes and fewer keys to other nodes \(using the virtual nodes technique\)
 
 3\) We can spread the keys of our data more evenly across the database nodes \(by using multiple hash functions\)
+
+
+
+Database Replication 
+
+Replication is creating identical copies of all the data, and placing each copy on a different machine. This allows to create **redundancy and High Availability and Fault Tolerance, scalability and performances \(for data intensive reads we can increase the throughput \)**
 
 
 
