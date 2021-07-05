@@ -72,9 +72,51 @@ Database Replication
 
 Replication is creating identical copies of all the data, and placing each copy on a different machine. This allows to create **redundancy and High Availability and Fault Tolerance, scalability and performances \(for data intensive reads we can increase the throughput \)**
 
+\*\*\*\*
+
+## Eventually Consistency
+
+In Master-Master configuration eventually consistency it is the model, if no further updates are made, eventually all readers will have access to the newest data. However temporarily some readers may see stale data \(for example while writing to a node and immediately reading from another one\). This is a good choice for systems that do not need to have the most up to data data across the board \(for example when posting to social media profiles\)
+
+Advantages are:
+
+* Provide lower latency and higher availability
 
 
 
+In a Distributed database we have Eventual Consistency when 
+
+R + W &lt; N  
+
+where: 
+
+* R is the minimal number of nodes to read from 
+* W is the minimal number of nodes to write to 
+* The total number of nodes
+
+## Strict Consistency
+
+In and Symmetric Master - Master Architecture, during writing we need to wait for all the nodes to be updated before acknowledging the write.
 
 
+
+## Quorum Consensus - Record Version
+
+In a Distributed database to guarantee Strict Consistency we need 
+
+R + W &gt; N  
+
+where 
+
+* R is the minimal number of nodes to read from 
+* W is the minimal number of nodes to write to 
+* The total number of nodes
+
+**By changing the value of R and W we can optimise our application for reads or writes.** 
+
+![](../../../.gitbook/assets/image%20%2814%29.png)
+
+
+
+![](../../../.gitbook/assets/image%20%2816%29.png)
 
