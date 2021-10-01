@@ -1,3 +1,9 @@
+/**
+* Enforcing the data layer access through random UUID values with verifying that the current user owns or is allowed to access the requested data protect against tampered IDs in URL parameters.
+The application uses hash to replace the direct identifier. This hash is salted with a value defined at the application level.
+Thus, the mapping table (real ID vs front end ID) is not required in the user session or in the application-level cache. The collection of enumeration values is more difficult to achieve because, even if an attacker may guess the hash algorithm from the ID size, it cannot reproduce the value due to the salt, which is not tied to the hidden value.
+*/
+
 @Log4j
 public final class Utils {
 
