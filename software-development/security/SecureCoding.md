@@ -9,3 +9,8 @@ It is advisible to:
 * use a different logger for debug pupose
 * log internal ids rather the user or emails informatins 
 * Replace the Spring Whitelabel error page and replace with an custom error.html
+
+
+# Debugging
+Adding a service parameter to a server request is not a good protection against hacking. If an attacker fakes a request, he will be able to include the output of debugging information in logs and collect a lot of important information about the system.
+
