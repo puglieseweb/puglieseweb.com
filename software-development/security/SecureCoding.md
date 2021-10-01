@@ -289,3 +289,62 @@ A CipherInputStream instance deserializes the encrypted object. An InvalidClassE
 	}
 }
 ```
+
+
+# methods 2 by using Apache Commons:
+Deserialization is allowed only for valid objects strictly set by the developer using the helper class validatingObjectInputStream.accept (UserInfoDto.class) . # This provides reliable rotection against deserialization of unexpected or malicious objects.
+```
+
+import com.scw.pentestfield.exception.SerializeException;
+import com.scw.pentestfield.model.dto.UserInfoDto;
+import com.scw.pentestfield.security.encryption.AES.CryptoSymmetricAES;
+import com.scw.pentestfield.service.UserInfoSerializeService;
+import lombok.RequiredArgsConstructor;
+import org.apache.commons.io.serialization.ValidatingObjectInputStream;
+import org.springframework.stereotype.Service;
+
+import javax.crypto.Cipher;
+import javax.crypto.CipherInputStream;
+import javax.crypto.CipherOutputStream;
+import java.io.*;
+
+@Service
+@RequiredArgsConstructor
+public class UserInfoSerializeServiceImpl implements UserInfoSerializeService {
+
+    private final CryptoSymmetricAES cryptoSymmetricAES;
+
+    @Override
+    public void serializeUserInfo(UserInfoDto userInfoDto, File file) {
+        try (
+                FileOutputStream out = new FileOutputStream(file);
+                CipherOutputStream cipherOutputStream = new CipherOutputStream(out,
+                        cryptoSymmetricAES.getCipher(Cipher.ENCRYPT_MODE))
+        ) {
+            ObjectOutputStream objectOutputStream =
+                    new ObjectOutputStream(cipherOutputStream);
+            objectOutputStream.writeObject(userInfoDto);
+            objectOutputStream.close();
+        } catch (IOException e) {
+            throw new SerializeException("Serialize object failed");
+        }
+    }
+
+    @Override
+    public UserInfoDto deserializeUserInfo(File file) {
+        try (FileInputStream in = new FileInputStream(file)) {
+            CipherInputStream cipherInputStream = new CipherInputStream(in,
+                    cryptoSymmetricAES.getCipher(Cipher.DECRYPT_MODE));
+            ValidatingObjectInputStream validatingObjectInputStream =
+                    new ValidatingObjectInputStream(cipherInputStream);
+            validatingObjectInputStream.accept(UserInfoDto.class);
+            UserInfoDto userInfoDto = (UserInfoDto)
+                    validatingObjectInputStream.readObject();
+            validatingObjectInputStream.close();
+            return userInfoDto;
+        } catch (IOException | ClassNotFoundException e) {
+            throw new SerializeException("Deserialize object failed");
+        }
+    }
+}
+```
