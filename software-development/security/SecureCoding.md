@@ -430,3 +430,46 @@ Points:
 
 User input data should be sanitized before storing it into the database and encoded before including it into an HTML page. ESAPI is a library recommended by OWASP for sanitizing and encoding input data, which efficiently prevents the execution of stored scripts on the client.
 
+
+Displaying raw user input on the page will allow an attacker to steal data, such as browser cookies.
+```
+<div class="container">
+    FILTER SEARCH : <span th:utext="${filter}"/>
+</div>
+```
+
+
+this is OK:
+```
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      lang="en">
+<head>
+    <script type="text/javascript"
+            th:src="@{/webjars/jquery/3.4.1/jquery.min.js/}"></script>
+    <link rel="stylesheet" th:href="@{../css/main.css}"/>
+</head>
+<body>
+<div class="container" id="js-name-form">
+    <h3>SEARCH ANALYSIS BY NAME</h3>
+    <p>
+        <label>Enter analysis name</label>
+        <input type="text" id="js-name-filter" value=""/>
+    </p>
+    <p>
+        <input type="button" id="js-name-filter-button" onclick="generateLink();" value="Get link">
+    </p>
+</div>
+<script>
+    function generateLink() {
+        var searchValue = document.getElementById('js-name-filter').value.trim();
+        var newA = document.createElement('a');
+        var elementHtml = '<p>Click to link</p>';
+        newA.innerHTML = elementHtml;
+        newA.setAttribute('href', '/search-by-analysis-name-result?analysisName=' + escape(searchValue));
+        document.body.append(newA);
+    }
+</script>
+</body>
+</html>
+```
