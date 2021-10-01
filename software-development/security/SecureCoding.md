@@ -170,6 +170,7 @@ server.error.whitelabel.enabled=true
 ![image](https://user-images.githubusercontent.com/669458/135618160-f6a04153-eccb-43e3-9855-89863258891b.png)
 
 ## Avoiding Stored CSS 
+Stored data must always be sanitized before displaying. Using Owasp encoder to sanitize data will help protect the application from XSS attacks, which will prevent an attacker from injecting scripts or other code into data for display on HTML pages
 Use the owasp Encoder project  https://owasp.org/www-project-java-encoder/
 ```
 import org.owasp.encoder.Encode;
