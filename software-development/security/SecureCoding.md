@@ -426,3 +426,7 @@ Poor or excessive monitoring of user actions can lead to an attack on the system
 Points:
 1. Do not disable debug log level: `spring.debug.level=false`
 
+#Stored XSS
+
+User input data should be sanitized before storing it into the database and encoded before including it into an HTML page. ESAPI is a library recommended by OWASP for sanitizing and encoding input data, which efficiently prevents the execution of stored scripts on the client.
+
