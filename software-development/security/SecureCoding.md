@@ -180,6 +180,7 @@ import org.owasp.encoder.Encode;
     }
 
 ```
+```
 # Reflected XSS
 User input transferred to the page is not sanitized, making it possible for an attacker to carry out an XSS attack by sending a link with the malicious script contained in it to the victim. The resulting malicious script will go to the page and execute it. A successful XSS attack will allow an adversary to take any action on behalf of the victim.
 
@@ -247,4 +248,44 @@ $(document).ready(function() {
         $("#num").val(value.replace(/ /g,''));
     });
 });
+```
+
+
+# Seled object 
+A CipherInputStream instance deserializes the encrypted object. An InvalidClassException will be thrown if the serialized object is invalid, corrupt or damaged, which will prevent any deserialization attack. The serialized object must be properly encrypted in order to be accepted.
+
+
+```
+
+	public  void secureSerializableObject(Serializable object, OutputStream ostream) throws IOException, NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException {
+	    try {
+	        Cipher cipher = Cipher.getInstance( "Blowfish" );
+	        cipher.init( Cipher.ENCRYPT_MODE, key64 );
+	        SealedObject sealedObject = new SealedObject(object, cipher);
+
+	        // Wrap the output stream
+	        CipherOutputStream cos = new CipherOutputStream(ostream, cipher);
+	        ObjectOutputStream outputStream = new ObjectOutputStream(cos);
+	        outputStream.writeObject(sealedObject);
+	        outputStream.close();
+	    } catch (IllegalBlockSizeException e) {
+	        e.printStackTrace();
+	    }
+	}
+
+	public static Object secureDeserializableObject(InputStream istream) throws IOException, NoSuchAlgorithmException, NoSuchPaddingException, InvalidKeyException {
+		Cipher cipher = Cipher.getInstance( "Blowfish" );
+		cipher.init(Cipher.DECRYPT_MODE, key64);
+
+		CipherInputStream cipherInputStream = new CipherInputStream(istream, cipher);
+		ObjectInputStream inputStream = new ObjectInputStream(cipherInputStream);
+		SealedObject sealedObject;
+		try {
+			sealedObject = (SealedObject) inputStream.readObject();
+			return sealedObject.getObject(cipher);
+		} catch (ClassNotFoundException | IllegalBlockSizeException | BadPaddingException e) {
+			throw new InvalidClassException("Class that you deserialize is corrupted or incorrect ");
+		}
+	}
+}
 ```
