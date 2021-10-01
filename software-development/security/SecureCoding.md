@@ -166,6 +166,17 @@ with propety file:
 # debug properties
 debug=false
 server.error.whitelabel.enabled=true
-```
+
 ![image](https://user-images.githubusercontent.com/669458/135618160-f6a04153-eccb-43e3-9855-89863258891b.png)
+
+## Avoiding Stored CSS 
+Use the owasp Encoder project  https://owasp.org/www-project-java-encoder/
+```
+import org.owasp.encoder.Encode;
+....
+    private String sanitize(String value) {
+      return value == null ? null : Encode.forHtml(value);
+    }
+
+```
 
