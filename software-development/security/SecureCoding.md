@@ -410,3 +410,7 @@ public class EmployeeObjectInputStream extends ObjectInputStream {
     }
 
 ```
+
+# Using Known Vulnerable Components
+https://github.com/dependency-check/dependency-check-gradle
+https://owasp.org/www-project-dependency-check/
