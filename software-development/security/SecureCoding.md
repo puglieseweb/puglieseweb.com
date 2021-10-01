@@ -415,3 +415,4 @@ public class EmployeeObjectInputStream extends ObjectInputStream {
 https://github.com/dependency-check/dependency-check-gradle
 https://owasp.org/www-project-dependency-check/
 https://jeremylong.github.io/DependencyCheck/index.html
+https://www.first.org/cvss/specification-document
