@@ -348,3 +348,65 @@ public class UserInfoSerializeServiceImpl implements UserInfoSerializeService {
     }
 }
 ```
+
+# Solution 3
+
+```
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InvalidClassException;
+import java.io.ObjectInputStream;
+import java.io.ObjectStreamClass;
+
+import com.securecodewarrior.employee.model.request.EmployeeRequestVO;
+
+public class EmployeeObjectInputStream extends ObjectInputStream {
+
+    public EmployeeObjectInputStream(InputStream inputStream) throws IOException {
+        super(inputStream);
+    }
+
+    @Override
+    protected Class<?> resolveClass(ObjectStreamClass desc) throws IOException,
+            ClassNotFoundException {
+        if (!desc.getName().equals(EmployeeRequestVO.class.getName())) {
+            throw new InvalidClassException(
+                    "Unauthorized deserialization attempt",
+                    desc.getName());
+        }
+        return super.resolveClass(desc);
+    }
+
+}
+
+
+    public EmployeeRequestVO deserializedEmployeeObject(EmployeeRequestVO employeeRequestVO) {
+        serializedEmployeeObject(employeeRequestVO);
+        EmployeeRequestVO employee = null;
+
+        ObjectInputStream ois;
+        try {
+            ois = new EmployeeObjectInputStream(new FileInputStream("emp.bin"));
+            employee = (EmployeeRequestVO) ois.readObject();
+            ois.close();
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        return employee;
+    }
+
+
+    private void serializedEmployeeObject(EmployeeRequestVO employeeRequestVO) {
+        try {
+
+            ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(
+                    "emp.bin"));
+            oos.writeObject(employeeRequestVO);
+            oos.flush();
+            oos.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+```
