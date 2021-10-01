@@ -180,4 +180,71 @@ import org.owasp.encoder.Encode;
     }
 
 ```
+# Reflected XSS
+User input transferred to the page is not sanitized, making it possible for an attacker to carry out an XSS attack by sending a link with the malicious script contained in it to the victim. The resulting malicious script will go to the page and execute it. A successful XSS attack will allow an adversary to take any action on behalf of the victim.
 
+When creating new elements of the document structure, it is not recommended to insert unverified data from user forms. DOM-based XSS is characterized by the absence of server requests, which complicates the data validation for the developer.
+
+Using a special ESAPI4J library for encoding data allows you to repel an attack with the introduction of javascript code. This rule allows you not to worry about filling the contents of new elements.
+```
+Base.esapi.properties.logging['ApplicationLogger'] = {
+	Level: org.owasp.esapi.Logger.ALL,
+	Appenders: [ new Log4js.ConsoleAppender() ],
+	LogUrl: true,
+	LogApplicationName: true,
+	EncodingRequired: true
+};
+
+Base.esapi.properties.application.Name = "My Application v1.0";
+org.owasp.esapi.ESAPI.initialize();
+
+function search() {
+	var searchNum = document.getElementById('js-filter-num').value;
+	var searchBank = document.getElementById('js-filter-bank').value;
+	var searchId = 'n' + searchNum + 'b' + searchBank;
+	var resultSearch = document.getElementById(searchId);
+	removeElement('js-filter-num');
+	removeElement('js-filter-bank')
+	removeElement('js-filter-button');
+	removeElement('js-cardList-header');
+	removeElement('js-cardList');
+	removeElement('js-cardform-header');
+	removeElement('js-cardform');
+	removeElement('js-user-page');
+	addElement('Seach num', searchNum);
+	addElement('Seach bankId', searchBank);
+	if (resultSearch == null) {
+		addElement('Card', 'not found'); 
+	} else {
+		var varCardholder = resultSearch.cells.item(1).firstElementChild.value;
+		var varExpired = resultSearch.cells.item(2).firstElementChild.value;
+		var varCvc = resultSearch.cells.item(3).firstElementChild.value;
+		var varAccountId = resultSearch.cells.item(4).firstElementChild.value;
+		addElement('CardHolder', varCardholder);
+		addElement('Expired', varExpired);
+		addElement('AccountId', varAccountId);
+		addElement('Cvc', varCvc);
+	}
+}
+
+function removeElement(name) {
+	var element = document.getElementById(name);
+	element.parentNode.removeChild(element);
+}
+
+function addElement(name, value) {
+	var newDiv = document.createElement('div');
+	var elementHtml = '<p>' + $ESAPI.encoder().encodeForHTML(name) + ' : ' + $ESAPI.encoder().encodeForHTML(value) + '</p>';
+	newDiv.innerHTML = elementHtml;
+	document.body.append(newDiv);
+}
+
+$(document).ready(function() {
+    $("#js-filter-num").val("");
+    $("#js-filter-bank").val("");
+    $("#num").focusout(function() {
+        var value = $(this).val();
+        $("#num").val(value.replace(/ /g,''));
+    });
+});
+```
