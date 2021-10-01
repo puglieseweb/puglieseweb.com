@@ -412,6 +412,8 @@ public class EmployeeObjectInputStream extends ObjectInputStream {
 ```
 
 # Using Known Vulnerable Components
+o always be aware of the safety of connected libraries to the project, you must use the OWASP plugin.
+By default, when building a project, this plugin checks downloaded libraries for vulnerabilities and, depending on the danger level set, in the plugin settings 7 signals the weakness of the project if it contains libraries with a level there are more than seven dangers (in this application, according to the settings).
 https://github.com/dependency-check/dependency-check-gradle
 https://owasp.org/www-project-dependency-check/
 https://jeremylong.github.io/DependencyCheck/index.html
