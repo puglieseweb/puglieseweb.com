@@ -16,3 +16,21 @@ Adding a service parameter to a server request is not a good protection against 
 
 **It is recommended to create separate debugging levels for test and production bench. This is an important defense measure against attack on debug enabled strategy. When deploying the application in a production environment, the settings for enabling debugging output need to be monitored*
 
+
+```
+package scw.boardgameshop.settings;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+import lombok.Data;
+
+@Component
+@Data
+public class DebugSettings {
+
+    @Value("${debug.enabled}")
+    private Boolean isEnabled;
+
+}
+```
