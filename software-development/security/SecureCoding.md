@@ -350,7 +350,7 @@ public class UserInfoSerializeServiceImpl implements UserInfoSerializeService {
 ```
 
 # Solution 3
-
+The EmployeeObjectInputStream class is extended from the ObjectInputStream as it checks if the className is identical to the required className. If not, it throws an unauthorized exception, making this the recommended solution for preventing deserialization attacks.
 ```
 import java.io.IOException;
 import java.io.InputStream;
