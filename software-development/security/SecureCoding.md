@@ -17,6 +17,8 @@ Adding a service parameter to a server request is not a good protection against 
 **It is recommended to create separate debugging levels for test and production bench. This is an important defense measure against attack on debug enabled strategy. When deploying the application in a production environment, the settings for enabling debugging output need to be monitored*
 
 
+It is recommended to display minimum information in the logs. Implementing the option to disable debugging in the config file is a safe solution. The system administrator can switch values when switching from a test bench to a working one, which will protect information about the system and user data.
+
 ```
 package scw.boardgameshop.settings;
 
@@ -34,3 +36,5 @@ public class DebugSettings {
 
 }
 ```
+
+It is not recommended to put sc.getSessionCookieConfig().setHttpOnly(false); as this results in the cookie being accessible by client-side scripts.
