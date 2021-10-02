@@ -475,3 +475,9 @@ this is OK:
 </body>
 </html>
 ```
+
+# RECaptcha
+It is recommended to use trusted and safe libraries and third-party scripts. Google ReCaptcha is used to prevent automated attacks. Using secure sources will prevent attackers from injecting any scripts to obtain user data or control the application.
+https://developers.google.com/recaptcha/docs/display
+
+
