@@ -1,0 +1,268 @@
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Random;
+import java.util.StringTokenizer;
+import java.util.UUID;
+import java.util.zip.ZipEntry;
+import java.util.zip.ZipInputStream;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
+
+import org.owasp.esapi.ESAPI;
+import org.owasp.esapi.errors.IntrusionException;
+import org.owasp.esapi.errors.ValidationException;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+
+public class AppUtil {
+	private static AppUtil apputil=new AppUtil();
+	private static final String TOKEN_KEY = "_synchronizerToken";
+	private static final String TOKEN_Login_KEY = "_synchronizerLoginToken";
+	/**
+	 * create the salt with combination of random id and some salt string constants
+	 * @return
+	 */
+	public static String getSalt(){
+		//String encryptsalt = BCrypt.hashpw(password, AppConstants.SALT_RAW_STRING);
+		String uuid = UUID.randomUUID().toString();
+		String salt = AppConstants.SALT_PRE_STRING+uuid+AppConstants.SALT_POST_STRING;
+		salt = new BCryptPasswordEncoder().encode(salt);
+		return salt;
+	}
+	
+	/**
+	 * Encrypt the password using salt
+	 * @param salt
+	 * @param password
+	 * @return
+	 */
+	public static String getEncryptedPassword(String salt, String password){
+		BCryptPasswordEncoder bcrypt = new BCryptPasswordEncoder();
+		password=password+salt;
+		return bcrypt.encode(password);
+	}
+	
+	/**
+	 * Checks the login password is same or not
+	 * @param salt
+	 * @param raw_password
+	 * @param db_password
+	 * @return
+	 */
+	public static boolean isValidPassword(String salt, String raw_password, String db_password){
+		BCryptPasswordEncoder bcrypt = new BCryptPasswordEncoder();
+		raw_password=raw_password+salt;
+		return bcrypt.matches(raw_password, db_password);
+	}
+	
+	/**
+	 * encode the String to its corresponding HTML
+	 * @param string
+	 * @return
+	 */
+	public static String encodeForHTML(String string){
+		return ESAPI.encoder().encodeForHTML(string);
+	}
+	
+	/**
+	 * Check for valid Alphanumeric String (e.g John12)
+	 * @param string
+	 * @return
+	 */
+	public static boolean isValidInput(String context, String param, String regExp, int maxLength, boolean allowNull) throws ValidationException{
+		boolean isValid = true;
+		try {
+			isValid = ESAPI.validator().isValidInput(context, param, regExp, maxLength, allowNull);
+		} catch (IntrusionException e) {
+			isValid=false;
+		}
+		return isValid;
+	}
+	
+	/**
+	 * return the server path where file will upload
+	 * @param args
+	 */
+	public static String getUploadFilePath(String rootPath, long userId){
+         return getUploadFilePath(rootPath, "", userId);
+	}
+	
+	/**
+	 * return the server path where file will upload
+	 * @param args
+	 */
+	public static String getUploadFilePath(String rootPath, String username, long userId){
+		 //String rootPath = System.getProperty("catalina.home");
+         File dir = new File(rootPath + File.separator + userId);
+         if (!dir.exists()) dir.mkdirs();
+         return dir.getAbsolutePath();
+	}
+	
+	/**
+	 * return the file name with appending default prefix
+	 * @param request
+	 * @param session
+	 * @return
+	 */
+	public static String getUploadFileNameWithPrefix(String originalFileName){
+		String fileName = AppConstants.UPLOAD_FILE_PREFIX+originalFileName;
+        return fileName;
+	}
+	
+	/**
+	 * return the original file name with removing default prefix
+	 * @param request
+	 * @param session
+	 * @return
+	 */
+	public static String getUploadFileNameWithoutPrefix(String fileName){
+		String originalFileName = fileName.substring(AppConstants.UPLOAD_FILE_PREFIX.length());
+        return originalFileName;
+	}
+	
+	
+		 
+	 /**
+	  * get the file name and its full path in a array
+	  * @param args
+	  */
+	 public static String [] getFileNameAndCompletePath(String uploadDirPath, String fileName){
+	    	String [] values={"", ""};
+	    	String fileNameInServer=AppUtil.getUploadFileNameWithPrefix(fileName);
+	    	File folder = new File(uploadDirPath);
+	    	File[] listOfFiles = folder.listFiles();
+	    	//String uploadFileName = getUploadFileNameWithPrefix(fileName);
+	    	//System.out.println(fileName);
+	    	for (File file : listOfFiles) {
+	    	    if (file.isFile() && file.getName().equals(fileNameInServer)) {
+	    	        //System.out.println("list of file file Name " +file.getName());
+	    	        //values[0]=file.getName();
+	    	    	values[0]=fileName;
+	    	        values[1]=uploadDirPath+File.separator+fileNameInServer;
+	    	        return values;
+	    	    }
+	    	}
+	    	return values;
+	 }
+	 
+	 /**
+	  * check if file size is valid or not
+	  * file size is defined in property file
+	  * @return
+	  */
+	 public static boolean isValidFileSize(long fileSize, long maxSize){
+		 if(maxSize==0)return true;
+		 if(fileSize>maxSize)return false;
+		 return true;
+	 }
+	 
+	 /**
+	  * check if file extension is valid or not
+	  * invalid file extensions are defined in property file
+	  * @return
+	  */
+	 public static boolean isValidFileExtenstion(String fileName, String fileExtensions){
+		if(fileExtensions.isEmpty())return true;
+		StringTokenizer st=new StringTokenizer(fileExtensions, ",");
+		String fileExt = fileName.substring(fileName.lastIndexOf(".")+1);
+		while(st.hasMoreElements()){
+			String invalidExt=(String)st.nextToken().trim();
+			if(fileExt.equalsIgnoreCase(invalidExt))
+				return false;
+		}
+		return true;
+	 }
+	 
+	 /**
+	  * check if file exist in the case of edit
+	  * if yes then append the v1 at the end of the file
+	  * @return
+	  */
+	 public static boolean checkIfFileExistInServerAndRename(String uploadDir, String fileName, int revisionNumber){
+		 File file = new File(uploadDir+File.separator+fileName);
+		 revisionNumber=revisionNumber+1;
+		 if (file.exists()) {
+			 String newFileName ="";
+			 String ext ="";
+			 
+			 if(fileName.lastIndexOf(".")==-1){
+				 newFileName = fileName;
+			 }else{
+				 ext =  fileName.substring(fileName.lastIndexOf(".")+1);
+				 newFileName = fileName.substring(0, fileName.lastIndexOf("."));
+			 }
+			 newFileName = newFileName+"v"+revisionNumber+"."+ext;
+			 String filePathWithVersionNumber = uploadDir+File.separator+newFileName;
+		     // rename file
+			 file.renameTo(new File(filePathWithVersionNumber));
+		 } 
+		 return true;
+	 }
+	 
+	 /**
+	  * check the file exist in the server or not before downloading the file
+	  * @param filePath
+	  * @return
+	  */
+	 public static boolean checkIfFileExistInServer(String filePath){
+		 File file = new File(filePath);
+		 if (file.exists()) return true;
+		 return false;
+	 }
+
+	 /**
+	  * checks the uploaded file is compressed zip file or not
+	  * @param fileName
+	  * @return
+	  */
+	 public static boolean isCompressedFile(String fileName){
+		//String  ext =  fileName.substring(fileName.lastIndexOf(".")+1);
+		//if(ext.equals("zip"))return true;
+		return fileName.endsWith(".zip");
+	 }
+	 
+	 /**
+	  * extract the zip file and check that it contains valid files
+	  * @param zipFilePath
+	  * @param extentions
+	  * @return
+	  * @throws IOException
+	  */
+	 public static boolean isContainsInvalidFilesInZip(String zipFilePath, String extentions) throws IOException{
+		if(extentions.isEmpty())return false;
+		BufferedInputStream bis = new BufferedInputStream(new FileInputStream(zipFilePath)); 
+		final ZipInputStream zipInputStream = new ZipInputStream(bis); 
+		boolean isValid=false;
+		try { 
+			ZipEntry zipentry; 
+			while ((zipentry = zipInputStream.getNextEntry()) != null) {
+				//System.out.println("File: "+ zipentry.getName());
+	            if (zipentry.isDirectory()) {
+	                zipentry = zipInputStream.getNextEntry();
+	                continue;
+	            }
+				isValid = isValidFileExtenstion(zipentry.getName(), extentions);
+				if(!isValid)return true;
+			} 
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally { 
+			zipInputStream.close(); 
+		}
+		return false;
+	}
+
+	// main
+	public static void main(String args[]){
+		BCryptPasswordEncoder bcrypt = new BCryptPasswordEncoder();
+		String password1 = getEncryptedPassword("abcd","admin");
+		String password2 = getEncryptedPassword("abcd","admin");
+		System.out.println("password is same :"+bcrypt.matches("admin2", password1));
+		System.out.println("password :"+getEncryptedPassword("abcd","admin"));
+		System.out.println("password :"+bcrypt.hashCode());
+	}
+}
