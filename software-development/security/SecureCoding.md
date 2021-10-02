@@ -254,7 +254,7 @@ $(document).ready(function() {
 # Seled object 
 A CipherInputStream instance deserializes the encrypted object. An InvalidClassException will be thrown if the serialized object is invalid, corrupt or damaged, which will prevent any deserialization attack. The serialized object must be properly encrypted in order to be accepted.
 
-An attacker could exploit the weaknesses of the standard ObjectInputStream class. Individually, this class does not check the type of object class before deserialization. This is why we need ot use SealedObject.
+An attacker could exploit the weaknesses of the standard ObjectInputStream class. Individually, this class does not check the type of object class before deserialization. This is why we need ot use SealedObject or Apache ValidatingObjectInputStream 
 
 
 ```
