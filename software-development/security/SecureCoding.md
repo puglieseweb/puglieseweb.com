@@ -482,3 +482,6 @@ https://developers.google.com/recaptcha/docs/display
 
 # Mail
 The application uses the JavaMail library (javax.mail-api ver. 1.5.3) without subject sanitising. This library is known to be vulnerable to Emal Header injection. An attacker, who is allowed to choose the subject of an email, can use a line feed, in order to force the setSubject() method of JavaMail to inject a new SMTP header.
+
+The application should obtain components and libraries from official sources over secure links and prefer signed packages to reduce the chance of including modified, malicious components. Moreover, the libraries should be the latest version and have no known vulnerabilities.
+Using the library "spring-boot-starter-mail" (Starter for using Java Mail and Spring Framework's email sending support) with the latest stable version improves the application mail sending security.
