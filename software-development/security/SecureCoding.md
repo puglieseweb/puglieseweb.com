@@ -480,4 +480,5 @@ this is OK:
 It is recommended to use trusted and safe libraries and third-party scripts. Google ReCaptcha is used to prevent automated attacks. Using secure sources will prevent attackers from injecting any scripts to obtain user data or control the application.
 https://developers.google.com/recaptcha/docs/display
 
-
+# Mail
+The application uses the JavaMail library (javax.mail-api ver. 1.5.3) without subject sanitising. This library is known to be vulnerable to Emal Header injection. An attacker, who is allowed to choose the subject of an email, can use a line feed, in order to force the setSubject() method of JavaMail to inject a new SMTP header.
