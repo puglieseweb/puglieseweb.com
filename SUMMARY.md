@@ -33,6 +33,8 @@
   * [TCP/IP Network Model](software-development/guides/network-communication.md)
   * [Event-base Microservices Implementation Guideline](software-development/guides/java-best-practices-and-naming-conventions.md)
   * [How to write a service](software-development/guides/how-to-write-a-service.md)
+  * [Observability](software-development/guides/observability.md)
+  * [Kafka Stream](software-development/guides/kafka-stream.md)
   * [Security](software-development/guides/security/README.md)
     * [Securing Properties](software-development/guides/security/securing-properties/README.md)
       * [HashiCorp Vault](software-development/guides/security/securing-properties/hashicorp-vault.md)
@@ -56,4 +58,3 @@
 * [Job roles](working-for-an-enterprise/job-roles/README.md)
   * [SME role](working-for-an-enterprise/job-roles/sme-role.md)
 * [Common issues](working-for-an-enterprise/untitled.md)
-
