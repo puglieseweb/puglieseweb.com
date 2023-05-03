@@ -8,3 +8,14 @@
 * The deployment is responsible to sprecify the properties with witch the actuall application pod will be instantiated.
 * The Service (similar to a load balancer) references one or more Pods
 * The Route is the mapping of the fully qualified domain name to a Service
+
+
+
+
+
+### Create a route
+
+```
+oc expose srv/[SERVICE-NAME]
+oc get route
+```
