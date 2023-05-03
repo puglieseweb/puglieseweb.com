@@ -9,9 +9,12 @@
 * The Service (similar to a load balancer) references one or more Pods
 * The Route is the mapping of the fully qualified domain name to a Service
 
-
-
-
+```
+oc projects
+oc project [myProject]
+oc get all 
+oc describe [bc|svc|etc]/[ResourceName]
+```
 
 ### Create a route
 
