@@ -14,6 +14,10 @@ oc projects
 oc project [myProject]
 oc get all 
 oc describe [bc|svc|etc]/[ResourceName]
+
+# troubleshot
+oc edit
+oc get events
 ```
 
 ### Create a route
