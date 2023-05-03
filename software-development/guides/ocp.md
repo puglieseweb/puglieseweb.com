@@ -1,6 +1,6 @@
 # OCP
 
-* Build Config references both Git hub repository and the Image Stream (containing Builder Image Steam and to build a a specific time of an Application
+* Build Config references both Git hub repository (a property of the Build Config is the Build Hock) and the Image Stream (containing Builder Image Steam and to build a a specific time of an Application
 * Build Config start a Build Pod.
 * Build Pod checkout the Git Repo and produce an Application Image
 * The Application Image is pushed to the Image Stream that now references the new image
