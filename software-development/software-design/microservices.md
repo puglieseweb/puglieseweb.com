@@ -22,4 +22,5 @@ Disadvantages of the Bounded Domain Model
 
 ### Extra links
 
+* [https://www.redhat.com/en/topics/microservices](https://www.redhat.com/en/topics/microservices)
 * [https://blog.codeship.com/microservices-messaging-rest-isnt-always-best-choice/](https://blog.codeship.com/microservices-messaging-rest-isnt-always-best-choice/)
