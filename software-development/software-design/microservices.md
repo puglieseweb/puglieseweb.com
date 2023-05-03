@@ -20,6 +20,16 @@ Disadvantages of the Bounded Domain Model
 
 &#x20;Microservices are stateless and maintain state outside the application in databases or data grids. Thanks to this, a microservice can scale easily and you can deploy it independently of other services.
 
+**Design for Failure**
+
+Distributed applications can fail due to code errors, or hardware or network failures. Developers must design applications that anticipate and can recover from such failures.
+
+Developers can incorporate various design patterns to make microservices applications fault-tolerant.
+
+* Provide High Availability microservices for failure management.
+* Use the Circuit Breaker design pattern to prevent service or network failure from cascading to other services.
+* Use the Fallback design pattern to gracefully handle service failure.
+
 ### Extra links
 
 * [https://www.redhat.com/en/topics/microservices](https://www.redhat.com/en/topics/microservices)
