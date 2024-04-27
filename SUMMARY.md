@@ -5,6 +5,7 @@
 ## Software development
 
 * [Software Design](software-development/software-design/README.md)
+  * [AWS course](software-development/software-design/aws-course.md)
   * [Event-based Microservices](software-development/software-design/event-based-microservices/README.md)
     * [Relations database to event messages](software-development/software-design/event-based-microservices/relations-database-to-messages.md)
   * [Hexagonal Architecture with Java Spring](software-development/software-design/hexagonal-architecture-with-java-spring.md)
