@@ -1,5 +1,9 @@
 # AWS course
 
+### User Groups
+
+Create IAM Groups and assign your users to groups. Group permissions are assigned using IAM policy documents. Your users will automatically inherit the permissions of the group.
+
 ### througputHow computer communicate
 
 * Linux SSH uses port 22
