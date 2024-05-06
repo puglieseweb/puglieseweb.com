@@ -63,7 +63,38 @@ You can move an existing instance into a placement group. Before moving the inst
 
 ### Spot
 
-* &#x20;Purchase unused capacity at a discount of up to 90%. Prices fluctuate with supply and demand.
+Purchase unused capacity at a discount of up to 90%. Prices fluctuate with supply and demand. Can be used for Stateless, fault-tolerant, or flexible applications. This cannot be used for a web service, that needs to be running all the time, but for applications such as big data, containerized workloads, CI/CD, high-performance computing (HPC), Image and media rendering, and other test and development workloads.&#x20;
+
+To use Spot instances, you must provide your maximum Stop price. The instance will be provisioned so long as the Spot price is below you maximum Spot price. The hourly Spot price varies depending on the capacity and region. If the Spot price goes above your maximum, you have 2 minutes to choose whether to stop or terminate your instances.
+
+#### Stop Blocks
+
+You may also use a Spot block to stop your Spot Instances from being terminated even if the Spot price goes over your max Stop price. You can set Spot blocks for between 1 to 6 hours currently.
+
+#### Spot Fleets&#x20;
+
+A Spot Fleet is a collection of Stop Instances and (optionally) On-Demand instances to meet the target capacity you specified in the Spot Fleet. The request for Stop Instances is fulfilled if there is available capacity and the maximum price you specified in the request exceeds the current Stop price.  The Spot Fleet also attempts to maintain its target capacity fleet if your Spot Instances are interrupted.
+
+Spot Fleets will try and match the target capacity with your price restraints.&#x20;
+
+1. Set up different launch pools. Define things like EC2 instance type, operating system, and Availability Zone.&#x20;
+2. You can have multiple pools, and the fleet will choose the best way to implement depending on the strategy you define
+3. Stot fleets will stop launching instances once you reach your price threshold or capacity desire.
+
+#### Use Cases
+
+#### Terminating Stop Instances
+
+#### Launch Pools
+
+#### Strategies&#x20;
+
+* capacityOptimized. The Stop fleet come from the pool with optimal capacity for the number of instances launching.&#x20;
+* diversified. The Spot Instances are distributed across all pools
+* lowestPrice. The Spot Instances come from the pool with the lowest price.  This is the default strategy.
+* InstancePoolsToUseCount. The Spot Instances are distribuited across the number of Stop Instances pools you specify. This parameter is valid only when used in combination with lowerstPrice.
+
+
 
 ### Dedicated Host
 
@@ -78,9 +109,51 @@ Use cases are:&#x20;
 
 
 
+## Deploying vCenter in AWS with VMware Cloud on AWS
+
+Use Cases fro VMware:
+
+* Hybrid Cloud: Connect your on-premises cloud to the AWS public cloud, and manage a hybrid workload.&#x20;
+* Cloud Migration. Migrate your existing cloud environment to AWS using VMware's built-in tools
+* Disaster Recovery. VMware is famous for its disaster recovery technology. Using hybrid cloud, you can have an inexpensive disaster recovery environment on AWS.
+* Leverage AWS.  Use over 200 AWS services to update your application or to create new ones.&#x20;
+
+How is it deployed?&#x20;
+
+* It runs on dedicated hardware hosted in AWS using a single AWS account.
+* Each host has two sockets with 18 cores per socket, 512 GiB RAM, and 15.2 TB Raw SSD storage
+* Each host is capable of runing multiple VMware instances (up to teh hundreds).&#x20;
+* Clusters can start with two hosts up to a maximum of 16 hosts per cluster.
 
 
 
+## Outposts
+
+Outposts brings the AWS data center directly to you, on-premises. Outposts allows you to have the large variety of AWS services in your data center. You can have Outposts in sizes such as 1U and 2 U servers all the way up to 42U racks and multiple-rack deployments.&#x20;
+
+Benefits of Outposts:
+
+* Hybrid Cloud: create a hybrid cloud where you can leverage AWS services inside your own data center.
+* Consistency: Bring the AWS Management Console, APIs, and SDKs into your data center, allowing uniform consistency in your hybrid environments&#x20;
+* Fully Managed Infrastructure: AWS can manage the infrastructure for you. You do not need a dedicated team to look after your Outposts infrastructure.
+
+Outpost Family members:
+
+#### Outposts Rack
+
+Hardware: available starting with a sigle 42 rack and scale up to 9 racks
+
+Services: provides AWS compute, storage, database, and other services locally
+
+Results: Gives the same AWS infrastructure, services, and APIs in your ownd data center&#x20;
+
+#### Outpost Servers
+
+Hardware: individual servers in 1U or 2U form factor
+
+Use Cases: Useful for small space requirements, such as retail stores, branch offices, healthcare provider locations, or factory floors.
+
+Results: provide local compute and network services
 
 
 
