@@ -6,8 +6,11 @@
 
 * [Software Design](software-development/software-design/README.md)
   * [AWS course](software-development/software-design/aws-course/README.md)
-    * [AWS Backup](software-development/software-design/aws-course/aws-backup.md)
-    * [File Sharing](software-development/software-design/aws-course/file-sharing.md)
+    * [AWS Storage](software-development/software-design/aws-course/aws-storage/README.md)
+      * [Snapshots](software-development/software-design/aws-course/aws-storage/snapshots.md)
+      * [EBS Volumes](software-development/software-design/aws-course/aws-storage/ebs-volumes.md)
+      * [AWS Backup](software-development/software-design/aws-course/aws-storage/aws-backup.md)
+      * [File Sharing](software-development/software-design/aws-course/aws-storage/file-sharing.md)
     * [Amazon Machine Images](software-development/software-design/aws-course/amazon-machine-images.md)
   * [Event-based Microservices](software-development/software-design/event-based-microservices/README.md)
     * [Relations database to event messages](software-development/software-design/event-based-microservices/relations-database-to-messages.md)
