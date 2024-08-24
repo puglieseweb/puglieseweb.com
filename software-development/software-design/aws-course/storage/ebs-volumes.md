@@ -1,8 +1,14 @@
 ---
-description: Highly available and scalable storage volumes you can attach to EC2 instances.
+description: >-
+  Elastic Block Store (EBS) is highly available and scalable storage volumes you
+  can attach to EC2 instances.
 ---
 
 # EBS Volumes
+
+EBS volumes provide durable block storage that can be attached to EC2 or RDS Instances.
+
+EBS Volumes can be used for both RDS, EC2, Redshift, and Amazon VMware Cloud.
 
 You can resize EBS volumes on the fly as well as changing the volume types.&#x20;
 
