@@ -34,4 +34,12 @@ In case the primary DB instance fails  the same connection string is maintained 
 
 ## Read Replica&#x20;
 
-Read Replica is used to improve performances&#x20;
+Read Replica is used to improve read performances end cannot be used for DR.
+
+The Read Replica can be in the same AZ, different AZ, or Different Region.
+
+Each read replica has its own DNS endpoint.&#x20;
+
+Read replica can be promoted to be their own databases (e.g. for OLAP). This breaks the replication.
+
+Up to 5 Read Replica to each DB instance.
