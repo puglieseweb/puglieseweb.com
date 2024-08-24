@@ -16,6 +16,10 @@ you can update a policy attached to a role, and it will take immediate effect.&#
 
 attaching and detaching roles to running EC2 instances without having to stop or terminate these instances.
 
+
+
+
+
 ### througputHow computer communicate
 
 * Linux SSH uses port 22
@@ -170,6 +174,24 @@ Hardware: individual servers in 1U or 2U form factor
 Use Cases: Useful for small space requirements, such as retail stores, branch offices, healthcare provider locations, or factory floors.
 
 Results: provide local compute and network services
+
+
+
+## Networking&#x20;
+
+There are different networking devices:
+
+
+
+### ENI
+
+
+
+### EFA
+
+
+
+### Enhanced Networking
 
 
 
