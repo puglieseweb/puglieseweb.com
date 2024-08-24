@@ -9,11 +9,15 @@ Keys caracteristics:
 * 2 copies of your data are contained in each Availability Zone, with a minimum of 3 Availability Zones (6 copies of your data).
 * Transparently handle the loss of up to 2 copies of data whiout affecting database write availability and up to 3 copies without affecting read availability.
 * Storage is self-healing. Data blocks and disks are continuously scanned for errors and repaired automatically.
-* Aurora is Serverless:&#x20;
-  * An on-demand, auto-scaling configuration for MySQL and Postgress compatible edition
-  * Aurora Serverless DB cluster automatically stands up, shout down, and scales capacity up or down based on your application's needs.
 
-## Read Replicas
+### Aurora is Serverless
+
+&#x20;Aurora serveless provides a relatively simple, cost-effective option for infrequent, intermittent, or unpredictable workloads.
+
+* An on-demand, auto-scaling configuration for MySQL and Postgres compatible edition
+* Aurora Serverless DB cluster automatically stands up, shout down, and scales capacity up or down based on your application's needs.
+
+### Read Replicas
 
 Aurora can have the following read replicas:
 
