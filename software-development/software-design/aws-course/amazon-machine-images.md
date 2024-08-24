@@ -1,5 +1,5 @@
 ---
-description: EBS volumes VS Instance Store
+description: EBS (Elastic Block Storage) volumes VS Instance Store
 ---
 
 # Amazon Machine Images
@@ -14,6 +14,6 @@ An Amazon Machine Image (AMI) provides the information required to launch an ins
 
 AMIs are either backed by:
 
-* Amazon EBS: The root device for an instance launched from an AMI is an Amazon EBS volume created from an Amazon EBS shapshot.
-* Instance Store: The root device for an insance launched from an AMI is an instance store volume created from a template stored in Amazon S3.
+* Amazon EBS: The root device for an instance launched from an AMI is an Amazon EBS volume created from an Amazon EBS shapshot. EBS-based instances can be stopped without losing the data. On termination of an instance it is possible to keep the EBS volumes.
+* Instance Store: The root device for an instance launched from an AMI is an instance store volume created from a template stored in Amazon S3. This are ephemeral storage that cannot be stopped. If the underlying host fails, you lose your data. You can reboot the instance without losing the data. Deleting the instance you lose the instance store volume.&#x20;
 

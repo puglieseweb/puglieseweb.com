@@ -6,6 +6,7 @@
 
 * [Software Design](software-development/software-design/README.md)
   * [AWS course](software-development/software-design/aws-course/README.md)
+    * [AWS Backup](software-development/software-design/aws-course/aws-backup.md)
     * [File Sharing](software-development/software-design/aws-course/file-sharing.md)
     * [Amazon Machine Images](software-development/software-design/aws-course/amazon-machine-images.md)
   * [Event-based Microservices](software-development/software-design/event-based-microservices/README.md)
