@@ -1,6 +1,6 @@
 # Microservices
 
-It is very common to develop microservices using JSON RItMicroservices are stateless and maintain state outside the application in databases or data grids. Thanks to this, a microservice can scale easily and you can deploy it independently of other services.EST interface for each andandandandandandandandandandandandandandandand every service in your application. Although it may not be the wrong choice we want to make sure we "use the right tool for the job" so that the applications can be simplified, more efficient, more secure and easier to monitor and maintain.
+It is very common to develop microservices using JSON RItMicroservices are stateless and maintain state outside the application in databases or data grids. Thanks to this, a microservmicroservicemicroservmicroserviceiceice can scale easily and you can deploy it independently of other services.EST interface for each andandandandandandandandandandandandandandandand every service in your application. Although it may not be the wrong choice we want to make sure we "use the right tool for the job" so that the applications can be simplified, more efficient, more secure and easier to monitor and maintain.
 
 Designing a successful microservice architecture requires forgetting some of the principles architects have followed for a long time and applying new ones. Microservice architecture patterns relate to the size, lifecycle, and behavior of microservices and their relations.
 
@@ -33,6 +33,8 @@ Developers can incorporate various design patterns to make microservices applica
 * Use the Fallback design pattern to gracefully handle service failure.
 
 Microservices can communicate asynchronously by using message-based communication protocols such as AMQP or MQTT; or by implementing message-based patterns such as point-to-point, publish-and-subscribe, request-and-reply, or request-and-notification. Depending on the protocol or pattern used for the communication, intermediary services such as brokers might be responsible for delivering the messages to the correct destination.\
+
+
 
 
 
