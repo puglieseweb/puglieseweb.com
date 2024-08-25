@@ -1,4 +1,4 @@
-# AWS course
+# AWS
 
 ### User Groups
 
