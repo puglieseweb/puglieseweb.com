@@ -10,6 +10,8 @@
     * [Cache](software-development/software-design/aws/cache.md)
     * [EC2](software-development/software-design/aws-course/ec2.md)
     * [Databases](software-development/software-design/aws-course/databases/README.md)
+      * [Graph DBs](software-development/software-design/aws/databases/graph-dbs/README.md)
+        * [Amazon Neptune](software-development/software-design/aws/databases/graph-dbs/amazon-neptune.md)
       * [NoSQL](software-development/software-design/aws/databases/nosql/README.md)
         * [Apache Cassandra (Amazon Keyspaces)](software-development/software-design/aws/databases/nosql/apache-cassandra-amazon-keyspaces.md)
         * [Redshift](software-development/software-design/aws/databases/nosql/redshift.md)
