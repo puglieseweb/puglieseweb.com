@@ -8,7 +8,7 @@ Its flexible data model and reliable performance make it a great fit for mobile,
 
 
 
-Key characteristics:&#x20;
+### Key characteristics:&#x20;
 
 * Stored on SSD storage
 * Spread across 3 geographically distinct data centers
@@ -104,6 +104,11 @@ Managed multi-master, multi-region replication
 * Multi-region redundancy for disaster recovery or high availability
 * No application rewrites
 * Replication latency under **1 second**&#x20;
+
+### How to enable DynamoDB replica across reagion:
+
+1. Enable Global tables
+2. Create a replica on another rigion (not that DynamoDB Stream must be enabled)
 
 
 
