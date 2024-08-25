@@ -6,6 +6,7 @@
 
 * [Software Design](software-development/software-design/README.md)
   * [AWS](software-development/software-design/aws-course/README.md)
+    * [VPC](software-development/software-design/aws/vpc.md)
     * [Queue and Notification](software-development/software-design/aws/queue-and-notification.md)
     * [Cache](software-development/software-design/aws/cache.md)
     * [EC2](software-development/software-design/aws-course/ec2.md)
