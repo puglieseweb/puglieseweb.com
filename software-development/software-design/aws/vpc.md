@@ -24,9 +24,7 @@ In a three-tier architecture we have:
 
 Additional, you can create a hardware Virtual Private Network (VPN) connecting a corporate data center to the VPC and leverage the AWS Cloud as an extension of your corporate data center.
 
-{% @lucid/lucid-component url="https://lucid.app/lucidchart/53875b19-93a1-4800-81d1-8c84d6351a09/edit?invitationId=inv_20ab51d1-0eaa-47f7-8d87-4aaee89152c1&view_items=eaS667L_hlW2,F4R67Ko-OcyC,5.R68x3f6qsO,Q_R6ts4p5mRv,.3R6lytrx_Fe,N-R6Unh4LewY,--R6ZNHZA1py,U_R6EIjnJ6qK,S~R6GVLPD-md,scS6xdFycz5I,..R6kEfFN0NW,Y-R6xF_rFd4x,j_R6VRonruE3,._R6ZjffQzp3,0_R6pZ5Ndbk7,m_R6E~kMfTb1,h~R6rYPWP93Y,e~R6RAHkDXL0,wcS6bo4e.~LY,QaS6AG0IaWeN,AaS6b398~m.5" %}
-
-{% @lucid/lucid-component url="https://lucid.app/lucidchart/53875b19-93a1-4800-81d1-8c84d6351a09/edit?invitationId=inv_20ab51d1-0eaa-47f7-8d87-4aaee89152c1" %}
+{% @lucid/lucid-component url="https://lucid.app/lucidchart/53875b19-93a1-4800-81d1-8c84d6351a09/edit?invitationId=inv_20ab51d1-0eaa-47f7-8d87-4aaee89152c1&page=4UR63qqFV6Co" %}
 
 You can calculate the IP address's ranges using [https://cidr.xyz/](https://cidr.xyz/)
 
