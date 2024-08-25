@@ -6,6 +6,8 @@ description: Relational Database Service
 
 RDS is suitable for OLTP.&#x20;
 
+**Automatic Backups must be enabled to deploy a read replica.**
+
 
 
 ## Multi AZ

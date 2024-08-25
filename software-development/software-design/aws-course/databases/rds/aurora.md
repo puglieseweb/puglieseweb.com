@@ -1,18 +1,23 @@
 # Aurora
 
+There are versions: Aurora and Aurora Serverless
+
+### Aurora
+
 Amazon Aurora provides up to 5 times better performance than MySQL and 3 times better performance then PostgresSql databases at a much lower price point, while delivering similar performance and availability.
 
 Keys caracteristics:
 
 * Provides Storage Auto Scaling starting from 10 GB, scales in 10-GB increments to 128 TB
 * Compute resources can scale up to 96 vCPUs and 768 GB of memory.
-* 2 copies of your data are contained in each Availability Zone, with a minimum of 3 Availability Zones (6 copies of your data).
+* 2 copies of your data are contained in each Availability Zone, with a minimum of 3 Availability Zones (**Aurora has at least 6 copies of your data)**.
 * Transparently handle the loss of up to 2 copies of data whiout affecting database write availability and up to 3 copies without affecting read availability.
 * Storage is self-healing. Data blocks and disks are continuously scanned for errors and repaired automatically.
+* **Automated failover is only available with Aurora DB**
 
 ### Aurora is Serverless
 
-&#x20;Aurora serveless provides a relatively simple, cost-effective option for infrequent, intermittent, or unpredictable workloads.
+&#x20;Aurora Serveless provides a relatively simple, c**ost-effective option for infrequent, intermittent, or unpredictable workloads.**
 
 * An on-demand, auto-scaling configuration for MySQL and Postgres compatible edition
 * Aurora Serverless DB cluster automatically stands up, shout down, and scales capacity up or down based on your application's needs.
