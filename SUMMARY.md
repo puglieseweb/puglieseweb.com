@@ -7,6 +7,7 @@
 * [Software Design](software-development/software-design/README.md)
   * [AWS](software-development/software-design/aws-course/README.md)
     * [VPC](software-development/software-design/aws/vpc/README.md)
+      * [VPC peering](software-development/software-design/aws/vpc/vpc-peering.md)
       * [VPC Endpoint](software-development/software-design/aws/vpc/vpc-endpoint.md)
       * [Route Table (and Routers)](software-development/software-design/aws/vpc/route-table-and-routers.md)
       * [Network Access Control List (NACL)](software-development/software-design/aws/vpc/network-access-control-list-nacl.md)

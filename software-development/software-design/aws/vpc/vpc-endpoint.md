@@ -16,3 +16,15 @@ There are 2 types of endpoints:
 
 1. Interface endpoints. These are **elastic network interface with a private IP address** that server as entry point for traffic haded to a supported service. They support a large number of AWS services.
 2. Gateway endpoints. Similar to NAT gateway, these are **virtual device we provision**. It supports connection to S3 and DynameDB.
+
+## Connection a EC2 intance, in a private subnet, to S3 Service
+
+1. Go to the EC2 instance
+2. In action/security/Modify IAM role, attach the S3\_Admin\_Access role to the instance
+3. Go to VPC/Endpoints
+4. create a new endpoints:
+   1. In Services section select S3&#x20;
+   2. select Gateway&#x20;
+   3. select the VPC&#x20;
+   4. select the route table where we want to deploy the endpoint into.
+5. from the EC2 instance terminal try to run: aws s3 ls
