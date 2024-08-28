@@ -7,6 +7,8 @@
 * [Software Design](software-development/software-design/README.md)
   * [AWS](software-development/software-design/aws-course/README.md)
     * [VPC](software-development/software-design/aws/vpc/README.md)
+      * [Transit Gateway](software-development/software-design/aws/vpc/transit-gateway.md)
+      * [5G Networks](software-development/software-design/aws/vpc/5g-networks.md)
       * [Direct Connect](software-development/software-design/aws/vpc/direct-connect.md)
       * [VPN CloudHub](software-development/software-design/aws/vpc/vpn-cloudhub.md)
       * [PrivateLink](software-development/software-design/aws/vpc/privatelink.md)
