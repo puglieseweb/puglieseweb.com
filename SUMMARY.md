@@ -6,6 +6,7 @@
 
 * [Software Design](software-development/software-design/README.md)
   * [AWS](software-development/software-design/aws-course/README.md)
+    * [Route 53](software-development/software-design/aws/route-53.md)
     * [VPC](software-development/software-design/aws/vpc/README.md)
       * [Transit Gateway](software-development/software-design/aws/vpc/transit-gateway.md)
       * [5G Networks](software-development/software-design/aws/vpc/5g-networks.md)
