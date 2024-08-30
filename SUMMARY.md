@@ -6,6 +6,7 @@
 
 * [Software Design](software-development/software-design/README.md)
   * [AWS](software-development/software-design/aws-course/README.md)
+    * [Troubleshooting](software-development/software-design/aws/troubleshooting.md)
     * [Elastic Load Balancing (ELB)](software-development/software-design/aws/elastic-load-balancing-elb.md)
     * [Route 53](software-development/software-design/aws/route-53/README.md)
       * [Routing Policies](software-development/software-design/aws/route-53/routing-policies/README.md)
