@@ -6,6 +6,10 @@
 
 * [Software Design](software-development/software-design/README.md)
   * [AWS](software-development/software-design/aws-course/README.md)
+    * [Serverless](software-development/software-design/aws/serverless/README.md)
+      * [Fargate](software-development/software-design/aws/serverless/fargate.md)
+      * [Lambda](software-development/software-design/aws/serverless/lambda.md)
+    * [Exercise](software-development/software-design/aws/exercise.md)
     * [Troubleshooting](software-development/software-design/aws/troubleshooting.md)
     * [Elastic Load Balancing (ELB)](software-development/software-design/aws/elastic-load-balancing-elb.md)
     * [Route 53](software-development/software-design/aws/route-53/README.md)
