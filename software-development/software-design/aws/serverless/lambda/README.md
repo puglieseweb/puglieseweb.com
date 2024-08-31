@@ -4,9 +4,9 @@ Write your code, build your function, and that's it!
 
 
 
-Lamda function are isolated pieces of code that run a very specific tasks.
+Lambda function are isolated pieces of code that run a very specific tasks.
 
-
+Lambda can run inside or outside a VPC (default). Note that if you need to access a private resource (e.g. RDS) we must configure a VPC.
 
 ### Prising
 
@@ -38,7 +38,20 @@ Leverage industry-dominant languages including Python, Goland, Java, Node.js, an
 
 ### Triggers
 
-Lambda function are meant to be triggered by Scheduled event using event bridge, change in an S3 Bucket, message in SNS queue, etc.&#x20;
+Lambda function needs to be triggered:
+
+* by Scheduled event using event bridge,&#x20;
+* HTTP requests
+* change in an S3 Bucket,&#x20;
+* message in SNS queue
+* etc.&#x20;
+
+### Use Cases
+
+* Simple Data processing
+* Quick file manipulation
+* Some realtime data analysis&#x20;
+* automating operations tasks (e.g. shout down EC2 instances at the end of the day)
 
 ### Quotas&#x20;
 
@@ -51,6 +64,6 @@ Lambda function are meant to be triggered by Scheduled event using event bridge,
   * can run up to 900 seconds
 * Deployments and Configuration:
   * Compressed deployment package (.zip) size must be <= 50 MB
-  * Uncompressed deployment package (unzipped) must be <= 250 MB
+  * Uncompressed deployment package (unzipped) must be <= 250 MB. If you have a big deployment package we should upload it to S3 bucket ant reference it from the lum
   * Request and response payload sizes up to 6 MB
   * Streamed responses up to 20 MB
