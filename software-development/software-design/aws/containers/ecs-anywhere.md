@@ -1,6 +1,6 @@
 # ECS Anywhere
 
-ECS Anywhere is an extension of Amazon's Elastic Container Service (ECS) that allows you to run and manage container workloads on your own infrastructure, outside of AWS data centers. Here are the key points about ECS Anywhere:
+ECS Anywhere is an extension (a feature) of Amazon's Elastic Container Service (ECS) that allows you to run and manage container workloads on your own infrastructure, outside of AWS data centers. Here are the key points about ECS Anywhere:
 
 1. Extended reach: It enables you to run ECS tasks on any infrastructure, including on-premises servers, virtual machines, or edge devices.
 2. Consistent management: You can use the same ECS APIs, CLI commands, and console to manage containers across different environments.
@@ -19,4 +19,4 @@ Requirements are:
 * Easily create and installation script within the ECS console.
 * Scripts contain SSM activation keys and commands for required software.
 * Execute scripts on on-premises VMs or bare-metal servers.
-* Deploy containers using the EXTERNAL launch type.
+* To deploy containers you to need to use the EXTERNAL launch type within Amazon ECS.&#x20;
