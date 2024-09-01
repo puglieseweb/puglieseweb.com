@@ -6,6 +6,8 @@
 
 * [Software Design](software-development/software-design/README.md)
   * [AWS](software-development/software-design/aws-course/README.md)
+    * [On-Premises](software-development/software-design/aws/on-premises/README.md)
+      * [SSM Agent](software-development/software-design/aws/on-premises/ssm-agent.md)
     * [Containers](software-development/software-design/aws/containers/README.md)
       * [Amazon ECS](software-development/software-design/aws/containers/amazon-ecs.md)
     * [Serverless](software-development/software-design/aws/serverless/README.md)
