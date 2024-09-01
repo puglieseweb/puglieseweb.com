@@ -9,6 +9,7 @@
     * [On-Premises](software-development/software-design/aws/on-premises/README.md)
       * [SSM Agent](software-development/software-design/aws/on-premises/ssm-agent.md)
     * [Containers](software-development/software-design/aws/containers/README.md)
+      * [ECS Anywhere](software-development/software-design/aws/containers/ecs-anywhere.md)
       * [Amazon ECS](software-development/software-design/aws/containers/amazon-ecs.md)
     * [Serverless](software-development/software-design/aws/serverless/README.md)
       * [AWS SAM](software-development/software-design/aws/serverless/aws-sam.md)
