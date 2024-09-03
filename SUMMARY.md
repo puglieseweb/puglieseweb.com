@@ -6,6 +6,7 @@
 
 * [Software Design](software-development/software-design/README.md)
   * [AWS](software-development/software-design/aws-course/README.md)
+    * [Load Balancers](software-development/software-design/aws/load-balancers.md)
     * [Monitoring](software-development/software-design/aws/monitoring/README.md)
       * [Amazon Managed Service for Prometheus](software-development/software-design/aws/monitoring/amazon-managed-service-for-prometheus.md)
       * [Amazon Managed Grafana](software-development/software-design/aws/monitoring/amazon-managed-grafana.md)
