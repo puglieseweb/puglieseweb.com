@@ -1,4 +1,11 @@
-# Load Balancers
+# Elastic Load Balancers
+
+There are 4 ELB types:
+
+1. Application Load Balancers (Layer 7)
+2. Network Load Balancers (Layer 4)
+3. Gateway Load Balancers (Layer 3)
+4. Classic Load Balaners (Layer4/7)
 
 ### Layer 7 Application Load Balancer (ALB)
 
@@ -52,4 +59,63 @@ It's important to note that for optimal reliability, it's generally recommended 
 
 ## Path-Based Routing
 
-traffing can be routed based on the resource uri path to different AZs
+Traffic can be routed based on the resource uri path to different AZs.
+
+
+
+## Network Load Balancer
+
+NLB provides extreme performances (allows tens of thousands concurrent connections).
+
+NLB is a Layer 4 Load balancing (works at Transport layer). After a connection request, the NLB select a target from the target group for the default rule.
+
+It attempts to open a TCP connection to the selected target on the port specified in the listener configuration.&#x20;
+
+The listener on a NLB then forwards the request to the target group. **There are no rules, unlike with ALB.**
+
+
+
+* **Protocols supported: TCP, UDP, TLS, TCP\_UDP**&#x20;
+* **Ports supported: 1-65535**
+
+You can use a TLS listener to offload the work of encryption and decryption to your load balancer so your applications can focus on their business logic.&#x20;
+
+If the protocol is TLS you must deploy exactly one SSL server certificate on the listener.&#x20;
+
+
+
+Key Features of NLBs at Layer 4:
+
+* NLBs can handle TCP, UDP, and TLS traffic.
+* They're capable of handling millions of requests per second with low latency.
+* NLBs provide static IP addresses for each Availability Zone, as well as one static IP for the load balancer.
+* They support zonal isolation, where each load balancer node in the Availability Zone uses an independent IP address.
+
+The correction mainly concerns the IP address allocation. Let me elaborate:
+
+* Static IP per Availability Zone: Each NLB node in an Availability Zone gets a static IP address. This means if you have the NLB in three AZs, you'll get three static IP addresses, one for each AZ.
+* Elastic IP (Optional): You can optionally assign one Elastic IP address per Availability Zone to the NLB, allowing you to keep the same IP address even if you need to recreate the NLB.
+* Single DNS Name: The NLB is accessed via a single DNS name, which resolves to the node IPs in the enabled Availability Zones.
+
+## Classing Load Balancer&#x20;
+
+CLB is the same of ALB  (Layer 7 load balancer) but can also use X-Forward-ror and Sticky sessions. Application that relay on TCP protocol and also use Layer 4 load balancing.
+
+
+
+X-Forwarded-For  request header contains the original IP address of the client.&#x20;
+
+<figure><img src="https://documents.lucid.app/documents/53875b19-93a1-4800-81d1-8c84d6351a09/pages/gTC9GbPsHvN3?a=4785&#x26;x=443&#x26;y=1365&#x26;w=795&#x26;h=382&#x26;store=1&#x26;accept=image%2F*&#x26;auth=LCA%2010e0235b5783992f6850e7b779ae2d7d33f9a6a677801aeff2d913ae4bc809b0-ts%3D1725388407" alt=""><figcaption></figcaption></figure>
+
+504 error is Gateway timeout: if your application stops responding, the classing load balancer responds with a 504. This normally means that the application is having an issue at web server layer or database layer.
+
+
+
+## Deregistration Dealy
+
+In case of CLB is called connection drainng.
+
+Allows the Load balancer to keep existing connection open if the EC2 instance are de-registered or become unhelfhy.&#x20;
+
+
+
