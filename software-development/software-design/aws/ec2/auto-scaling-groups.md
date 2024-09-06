@@ -26,3 +26,18 @@ For example:
 4. Script install and configure application&#x20;
 5. Once the application is validate to be working correctly, the instance sends a complete-lifescycle-action command
 
+## Autoscaling Policies&#x20;
+
+* Step Scaling. Applies stepped adjustments to vary the scaling depending on the size of the alarm breach
+* Simple Scaling. Relies on metrics for scaling needs. Example: Add 1 instance if the CPU Utilization metric > 80%
+* Target Tracking. Uses a scaling metric and value that your ASG should maintain at all times. Example: Maintain ASG Average CPU Utilization = 50%
+* Instance Warm-up and Cooldown.&#x20;
+  * Warm-up stops instances from being placed behind the load balancer, failing the health check, and being terminated prematurely.
+  * Cooldown. Pauses Auto Scaling for a set amout of time. Helps to avoid runaway scaling events.
+  * Avoid Thrashing. You want to create instances quickly and spin them down slowly.&#x20;
+
+## Scaling types
+
+* Reactive scaling. Playig catchup. Once the load is there, you meansure it and then determine if you need to create more resources.
+* Scheduled Scaling. If you have a predictable workload, create a scaling event to get your resources ready to go before they're actually needed.&#x20;
+* Predictive Scaling. AWS uses its machine learning algorithms to determine when it need to scale. They are reevaluated every 24 hours to create a forecast for the next 48.
