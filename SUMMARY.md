@@ -59,6 +59,8 @@
       * [Auto scaling groups](software-development/software-design/aws/ec2/auto-scaling-groups.md)
       * [Launch Template vs. Launch Configuration](software-development/software-design/aws/ec2/launch-template-vs.-launch-configuration.md)
     * [Databases](software-development/software-design/aws-course/databases/README.md)
+      * [Scaling DynamoDB](software-development/software-design/aws/databases/scaling-dynamodb.md)
+      * [Scaling Relational Databases](software-development/software-design/aws/databases/scaling-relational-databases.md)
       * [Time-Series Data (Amazon Timestream)](software-development/software-design/aws/databases/time-series-data-amazon-timestream.md)
       * [Graph DBs](software-development/software-design/aws/databases/graph-dbs/README.md)
         * [Amazon Neptune](software-development/software-design/aws/databases/graph-dbs/amazon-neptune.md)
