@@ -1,5 +1,24 @@
 # AWS
 
+| Service                 | Synchronous/Asynchronous | Decoupling Type         | Message Order                             | Application Load Type           |
+| ----------------------- | ------------------------ | ----------------------- | ----------------------------------------- | ------------------------------- |
+| Amazon SQS              | Asynchronous             | Queue-based             | Not guaranteed (Standard), FIFO available | Variable, burst-capable         |
+| Amazon SNS              | Asynchronous             | Pub/Sub                 | Not guaranteed                            | High throughput, fan-out        |
+| Amazon EventBridge      | Asynchronous             | Event-driven            | Not guaranteed                            | Serverless event routing        |
+| AWS Step Functions      | Both                     | Workflow                | Guaranteed (within workflow)              | Long-running, complex processes |
+| Amazon MQ               | Both                     | Message broker          | Guaranteed (depends on protocol)          | Enterprise messaging            |
+| Amazon Kinesis          | Asynchronous             | Stream processing       | Ordered within shards                     | Real-time data streaming        |
+| AWS Lambda              | Both                     | Serverless compute      | N/A (depends on trigger)                  | Event-driven, scalable compute  |
+| Amazon API Gateway      | Synchronous              | API management          | N/A                                       | HTTP-based API requests         |
+| Amazon ECS/EKS          | Both                     | Container orchestration | N/A                                       | Containerized applications      |
+| AWS AppSync             | Both                     | GraphQL API             | N/A                                       | Real-time data synchronization  |
+| Amazon DynamoDB Streams | Asynchronous             | Change data capture     | Ordered within shards                     | Database change events          |
+| AWS Batch               | Asynchronous             | Job queue               | FIFO within job queue                     | Batch processing workloads      |
+
+###
+
+###
+
 ### User Groups
 
 Create IAM Groups and assign your users to groups. Group permissions are assigned using IAM policy documents. Your users will automatically inherit the permissions of the group.
@@ -20,7 +39,7 @@ attaching and detaching roles to running EC2 instances without having to stop or
 
 
 
-### througputHow computer communicate
+### througput How computer communicate
 
 * Linux SSH uses port 22
 * Windows RDP uses port 3389

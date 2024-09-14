@@ -5,7 +5,10 @@
 ## Software development
 
 * [Software Design](software-development/software-design/README.md)
+  * [Page](software-development/software-design/page.md)
   * [AWS](software-development/software-design/aws-course/README.md)
+    * [AppFlow](software-development/software-design/aws/appflow.md)
+    * [Step Functions](software-development/software-design/aws/step-functions.md)
     * [Batch](software-development/software-design/aws/batch.md)
     * [Decoupling Workflow](software-development/software-design/aws/decoupling-workflow/README.md)
       * [DLQ](software-development/software-design/aws/decoupling-workflow/dlq.md)
@@ -72,6 +75,7 @@
       * [Graph DBs](software-development/software-design/aws/databases/graph-dbs/README.md)
         * [Amazon Neptune](software-development/software-design/aws/databases/graph-dbs/amazon-neptune.md)
       * [NoSQL](software-development/software-design/aws/databases/nosql/README.md)
+        * [EMR](software-development/software-design/aws/databases/nosql/emr.md)
         * [Apache Cassandra (Amazon Keyspaces)](software-development/software-design/aws/databases/nosql/apache-cassandra-amazon-keyspaces.md)
         * [Redshift](software-development/software-design/aws/databases/nosql/redshift.md)
         * [MongoDB (Amazon DocumentDB)](software-development/software-design/aws/databases/nosql/mongodb-amazon-documentdb.md)
