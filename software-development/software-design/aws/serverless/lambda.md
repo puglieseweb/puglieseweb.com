@@ -67,3 +67,14 @@ Lambda function needs to be triggered:
   * Uncompressed deployment package (unzipped) must be <= 250 MB. If you have a big deployment package we should upload it to S3 bucket ant reference it from the lum
   * Request and response payload sizes up to 6 MB
   * Streamed responses up to 20 MB
+
+### Lambda native disk spece
+
+Lambda native disk space refers to the temporary file storage available to AWS Lambda functions during their execution. Here are the key points:
+
+1. Size: By default, AWS Lambda provides 512 MB of ephemeral disk space.
+2. Location: This space is in the /tmp directory.
+3. Lifecycle: The storage is temporary and only available during the execution of the Lambda function. It's cleared after the function finishes executing.
+4. Use cases: It's useful for temporary file operations, caching, or storing intermediate results during function execution.
+5. Limitations: If you need more storage or persistent storage, you'd need to use other AWS services like S3 or EFS.
+6. Performance: Reading from and writing to this disk space is generally faster than accessing network-based storage, but slower than in-memory operations.

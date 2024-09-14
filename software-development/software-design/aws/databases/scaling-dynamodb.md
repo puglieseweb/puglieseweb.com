@@ -13,4 +13,4 @@ On-Demand:
 * Use Case: sporadic workload
 * Effort to use: simple select on-demand
 * Cost: pay small amount of money per read and write. Less cost effective.&#x20;
-*
+

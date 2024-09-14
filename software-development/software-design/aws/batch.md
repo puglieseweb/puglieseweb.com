@@ -14,7 +14,7 @@ Important Concepts
 * Job Queues: jobs reside in a queue until they are scheduled for execution in a compute environment.
 * Compute Environment: set of managed or unmanaged compute resources used to run jobs
 
-
+<figure><img src="../../../.gitbook/assets/AWS - Batches.svg" alt=""><figcaption></figcaption></figure>
 
 | Fargate                                 | EC2                                       |
 | --------------------------------------- | ----------------------------------------- |
@@ -27,8 +27,20 @@ Important Concepts
 
 
 
-| AWS Batch     | AWS Lambda                                                                                            |   |
-| ------------- | ----------------------------------------------------------------------------------------------------- | - |
-| no time limit | 15 min execution time                                                                                 |   |
-|               | limited native disk space, and EFS requires functions live within a VPC. It addes overhead and costs. |   |
-|               |                                                                                                       |   |
+| AWS Batch                                 | AWS Lambda                                                                                            |
+| ----------------------------------------- | ----------------------------------------------------------------------------------------------------- |
+| no time limit                             | 15 min execution time                                                                                 |
+|                                           | limited native disk space, and EFS requires functions live within a VPC. It addes overhead and costs. |
+| Batch uses Docker so can have any runtime | fully serverless with limited runtimes                                                                |
+
+
+
+| Batch Managed                                                  | Batch Unmanage                                              |
+| -------------------------------------------------------------- | ----------------------------------------------------------- |
+| AWS manages capacity and instance types                        | managed your own resouces                                   |
+| Compute resource specs are defined when environment is created | AmI must meet ECS AMI specs                                 |
+| ECS instances are launched into VPC  subnets                   | you manage everything                                       |
+| Default is the most recetn and approved Amazon ECS AMI         | Good choice for extremely complex or specific requirements  |
+| You can use own AMI                                            |                                                             |
+|                                                                |                                                             |
+|                                                                |                                                             |
