@@ -6,6 +6,7 @@
 
 * [Software Design](software-development/software-design/README.md)
   * [AWS](software-development/software-design/aws-course/README.md)
+    * [Batch](software-development/software-design/aws/batch.md)
     * [HA](software-development/software-design/aws/ha.md)
     * [Elastic Load Balancers](software-development/software-design/aws/elastic-load-balancers.md)
     * [Monitoring](software-development/software-design/aws/monitoring/README.md)
@@ -54,6 +55,7 @@
       * [Network Security Group](software-development/software-design/aws/vpc/network-security-group.md)
       * [NAT Gateway](software-development/software-design/aws/vpc/nat-gateway.md)
     * [Queue and Notification](software-development/software-design/aws/queue-and-notification.md)
+    * [SQS](software-development/software-design/aws/sqs.md)
     * [Cache](software-development/software-design/aws/cache.md)
     * [EC2](software-development/software-design/aws/ec2/README.md)
       * [Auto scaling groups](software-development/software-design/aws/ec2/auto-scaling-groups.md)
