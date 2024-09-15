@@ -64,6 +64,7 @@
       * [SNS (Topics)](software-development/software-design/aws/queue-and-notification/sns-topics.md)
       * [Amazon MQ Overview](software-development/software-design/aws/queue-and-notification/amazon-mq-overview.md)
       * [SQS](software-development/software-design/aws/queue-and-notification/sqs.md)
+      * [Kinesis](software-development/software-design/aws/queue-and-notification/kinesis.md)
     * [Cache](software-development/software-design/aws/cache.md)
     * [EC2](software-development/software-design/aws/ec2/README.md)
       * [Auto scaling groups](software-development/software-design/aws/ec2/auto-scaling-groups.md)
