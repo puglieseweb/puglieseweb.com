@@ -65,6 +65,7 @@
       * [Network Security Group](software-development/software-design/aws/vpc/network-security-group.md)
       * [NAT Gateway](software-development/software-design/aws/vpc/nat-gateway.md)
     * [Queue and Notification](software-development/software-design/aws/queue-and-notification/README.md)
+      * [MSK](software-development/software-design/aws/queue-and-notification/msk.md)
       * [SNS (Topics)](software-development/software-design/aws/queue-and-notification/sns-topics.md)
       * [Amazon MQ Overview](software-development/software-design/aws/queue-and-notification/amazon-mq-overview.md)
       * [SQS](software-development/software-design/aws/queue-and-notification/sqs.md)
