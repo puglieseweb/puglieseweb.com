@@ -7,6 +7,7 @@
 * [Software Design](software-development/software-design/README.md)
   * [Page](software-development/software-design/page.md)
   * [AWS](software-development/software-design/aws-course/README.md)
+    * [Athena & Glue](software-development/software-design/aws/athena-and-glue.md)
     * [AppFlow](software-development/software-design/aws/appflow.md)
     * [Step Functions](software-development/software-design/aws/step-functions.md)
     * [Batch](software-development/software-design/aws/batch.md)
