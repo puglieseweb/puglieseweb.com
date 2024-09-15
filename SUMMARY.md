@@ -19,6 +19,7 @@
     * [HA](software-development/software-design/aws/ha.md)
     * [Elastic Load Balancers](software-development/software-design/aws/elastic-load-balancers.md)
     * [Monitoring](software-development/software-design/aws/monitoring/README.md)
+      * [OpenSearch](software-development/software-design/aws/monitoring/opensearch.md)
       * [QuickSight](software-development/software-design/aws/monitoring/quicksight.md)
       * [Amazon Managed Service for Prometheus](software-development/software-design/aws/monitoring/amazon-managed-service-for-prometheus.md)
       * [Amazon Managed Grafana](software-development/software-design/aws/monitoring/amazon-managed-grafana.md)
