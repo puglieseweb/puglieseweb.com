@@ -7,6 +7,7 @@
 * [Software Design](software-development/software-design/README.md)
   * [Page](software-development/software-design/page.md)
   * [AWS](software-development/software-design/aws-course/README.md)
+    * [DDoS](software-development/software-design/aws/ddos.md)
     * [ETL](software-development/software-design/aws/etl/README.md)
       * [Data Pipeline](software-development/software-design/aws/etl/data-pipeline.md)
     * [Athena & Glue](software-development/software-design/aws/athena-and-glue.md)
