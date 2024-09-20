@@ -10,7 +10,6 @@ User pools and Itentity pools can be used either separatly or together.&#x20;
 
 
 ```plant-uml
-@startuml
 actor User
 participant "Client Application" as App
 participant "AWS Cognito" as Cognito
@@ -28,5 +27,4 @@ App -> API: 9. API request with Access token
 API -> API: 10. Validate token
 API --> App: 11. Return protected resource
 App --> User: 12. Display protected resource
-@enduml
 ```
