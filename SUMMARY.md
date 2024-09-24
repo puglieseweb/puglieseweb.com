@@ -5,10 +5,15 @@
 ## Software development
 
 * [AWS](software-development/aws/README.md)
+  * [Caching](software-development/aws/caching/README.md)
+    * [Global Accelerator (GA)](software-development/aws/caching/global-accelerator-ga.md)
+    * [DAX Accelerator](software-development/aws/caching/dax-accelerator.md)
+    * [ElastiChache](software-development/aws/caching/elastichache.md)
+    * [CloudFront (External Cache)](software-development/aws/caching/cloudfront-external-cache.md)
   * [Automation](software-development/aws/automation/README.md)
-    * [System Manager](software-development/aws/automation/system-manager.md)
+    * [System Manager (mainly for inside EC2 instances)](software-development/aws/automation/system-manager-mainly-for-inside-ec2-instances.md)
     * [AWS CloudFormation (Immutable AWS Architecture)](software-development/aws/automation/aws-cloudformation-immutable-aws-architecture.md)
-    * [Elastic Beanstalk](software-development/aws/automation/elastic-beanstalk.md)
+    * [Elastic Beanstalk (for simple solutions)](software-development/aws/automation/elastic-beanstalk-for-simple-solutions.md)
   * [Security](software-development/aws/security/README.md)
     * [AI based security](software-development/aws/security/ai-based-security/README.md)
       * [GuardDuty](software-development/aws/security/ai-based-security/guardduty.md)

@@ -1,4 +1,8 @@
-# System Manager
+# System Manager (mainly for inside EC2 instances)
+
+Key concepts to learn: Automation documents, Parameter Store, and possibly Session Manager)
+
+
 
 A suite of tools designed to let you view, control, an automate both your managed instances in AWS and on-premises.
 
