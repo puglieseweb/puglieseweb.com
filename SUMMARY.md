@@ -8,7 +8,7 @@
   * [Governance](software-development/aws/governance/README.md)
     * [Cross-Account Role Access](software-development/aws/governance/cross-account-role-access.md)
     * [Resource Access Manager (RAM)](software-development/aws/governance/resource-access-manager-ram.md)
-    * [Organizations](software-development/aws/governance/organizations.md)
+    * [Organizations, Accouts, OU, SCP](software-development/aws/governance/organizations-accouts-ou-scp.md)
   * [Caching](software-development/aws/caching/README.md)
     * [Global Accelerator (GA)](software-development/aws/caching/global-accelerator-ga.md)
     * [DAX Accelerator](software-development/aws/caching/dax-accelerator.md)
