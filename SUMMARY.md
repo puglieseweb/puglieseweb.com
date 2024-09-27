@@ -5,7 +5,12 @@
 ## Software development
 
 * [AWS](software-development/aws/README.md)
+  * [General considerations](software-development/aws/general-considerations.md)
   * [Governance](software-development/aws/governance/README.md)
+    * [AWS CUR](software-development/aws/governance/aws-cur.md)
+    * [Cost Explorer and Budgets](software-development/aws/governance/cost-explorer-and-budgets.md)
+    * [Directory Service](software-development/aws/governance/directory-service.md)
+    * [AWS Config](software-development/aws/governance/aws-config.md)
     * [Cross-Account Role Access](software-development/aws/governance/cross-account-role-access.md)
     * [Resource Access Manager (RAM)](software-development/aws/governance/resource-access-manager-ram.md)
     * [Organizations, Accouts, OU, SCP](software-development/aws/governance/organizations-accouts-ou-scp.md)
@@ -37,7 +42,7 @@
     * [DDoS](software-development/aws/security/ddos.md)
   * [ETL](software-development/aws/etl/README.md)
     * [Data Pipeline](software-development/aws/etl/data-pipeline.md)
-  * [Athena & Glue](software-development/aws/athena-and-glue.md)
+  * [Athena & AWS Glue: Serverless Data Solutions](software-development/aws/athena-and-aws-glue-serverless-data-solutions.md)
   * [AppFlow](software-development/aws/appflow.md)
   * [Step Functions](software-development/aws/step-functions.md)
   * [Batch](software-development/aws/batch.md)
