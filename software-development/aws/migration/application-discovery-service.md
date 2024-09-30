@@ -1,4 +1,4 @@
-# Discovery Service
+# Application Discovery Service
 
 This services:
 

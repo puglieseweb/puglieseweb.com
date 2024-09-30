@@ -1,4 +1,6 @@
-# AWS MGM
+# Application Migration Service (MGM)
+
+Used when you need to migrate VMs and reduce RTOs and RPOs
 
 AWS migration service allows to:
 
