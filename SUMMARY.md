@@ -66,6 +66,7 @@
     * [Elastic Beanstalk (for simple solutions)](software-development/aws/automation/elastic-beanstalk-for-simple-solutions.md)
   * [Security](software-development/aws/security/README.md)
     * [IAM](software-development/aws/security/iam.md)
+    * [STS](software-development/aws/security/sts.md)
     * [AI based security](software-development/aws/security/ai-based-security/README.md)
       * [GuardDuty](software-development/aws/security/ai-based-security/guardduty.md)
       * [Mecie (S3)](software-development/aws/security/ai-based-security/mecie-s3.md)
