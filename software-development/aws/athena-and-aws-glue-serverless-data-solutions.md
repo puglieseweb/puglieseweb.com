@@ -1,3 +1,7 @@
+---
+icon: user-magnifying-glass
+---
+
 # Athena & AWS Glue: Serverless Data Solutions
 
 AWS Athena and AWS Glue: Serverless Data Solutions

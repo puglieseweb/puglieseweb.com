@@ -60,7 +60,7 @@ package [reversed.domain.name].shared.[library_name];
 
 ### Project Structure <a href="#f7d7" id="f7d7"></a>
 
-![](<../../.gitbook/assets/image (5).png>)
+![](<../../.gitbook/assets/image (16).png>)
 
 ### Models & DTOs <a href="#f7d7" id="f7d7"></a>
 

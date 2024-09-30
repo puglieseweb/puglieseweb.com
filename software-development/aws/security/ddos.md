@@ -21,7 +21,7 @@ An Amplified Attack, more commonly known as an Amplification Attack or Reflectio
    * The DNS server responds with a much larger packet (potentially 3000-4000 bytes).
 3. Amplification Factor: The amplification factor is calculated by dividing the size of the response by the size of the request. In the DNS example: 3000 bytes (response) / 60 bytes (request) ≈ 50 times amplification
 
-<figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 ### Layer 7 DDoS attack&#x20;
 

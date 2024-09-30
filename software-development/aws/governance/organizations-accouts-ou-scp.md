@@ -1,4 +1,4 @@
-# Organizations
+# Organizations, Accouts, OU, SCP
 
 In an organization there are two types of Accouts
 
@@ -18,7 +18,7 @@ Concepts:
 * Multi-accounts Strategy: Allows to easily achive a multi-account design while maintaining centralised management.
 * Tag enforcement: enforces specific tags for all AWS resources for categorization and tracking.
 * Organization Unit (OU): Logical grouping of multiple accounts to allow for easy management and separation.&#x20;
-* Service Control Policies (SCPs): Json policies that get applied to OUs or accounts to restrict actions that are or are not allowed.
+* Service Control Policies (SCPs): Json policies that get applied to OUs or accounts to restrict actions that are or are not allowed. SCPs have the ultimate say as to whether an API call goes through. **SCPs are the only way to restrict what the root account can do.**
 * Management Account: SCPs do not affect the management account like they do all member accounts.
-* Account Best Practices: Create a centralized logging account for organizational CloudTrail logs. Also leverage cross-account roles for accessing member accounts.&#x20;
+* Account Best Practices: Create a centralized logging account for organizational CloudTrail logs. Also leverage cross-account roles for accessing member accounts. Y**ou can have multiple accounts for the same application.**
 

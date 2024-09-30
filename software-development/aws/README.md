@@ -46,21 +46,7 @@ In summary, use Secrets Manager for sensitive data that requires advanced featur
 
 ###
 
-### User Groups
-
-Create IAM Groups and assign your users to groups. Group permissions are assigned using IAM policy documents. Your users will automatically inherit the permissions of the group.
-
-### Roles
-
-Roles are the preferred option from a security perspective.&#x20;
-
-Roles avoid hard coding your credentials (access  key IDs and secret access key)&#x20;
-
-policies control a role's persission.&#x20;
-
-you can update a policy attached to a role, and it will take immediate effect.&#x20;
-
-attaching and detaching roles to running EC2 instances without having to stop or terminate these instances.
+###
 
 
 
