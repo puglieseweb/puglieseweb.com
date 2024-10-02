@@ -1,5 +1,27 @@
 # General considerations
 
+## OLTP and OLAP&#x20;
+
+| Aspect               | OLTP                                                                          | OLAP                                                                               |
+| -------------------- | ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| Purpose              | Manages day-to-day transactions and operational data                          | Analyzes historical data for business intelligence and decision-making             |
+| Primary AWS Services | - Amazon RDS\<br>- Amazon Aurora\<br>- Amazon DynamoDB (NoSQL)                | - Amazon Redshift\<br>- Amazon Athena\<br>- Amazon EMR                             |
+| Data Structure       | Normalized data models                                                        | Denormalized, dimensional models (star or snowflake schemas)                       |
+| Query Complexity     | Simple, predefined queries                                                    | Complex queries involving aggregations and joins                                   |
+| Data Volume          | Smaller datasets, frequent updates                                            | Large historical datasets, less frequent updates                                   |
+| Performance Focus    | Fast insert/update/delete operations                                          | Fast read and aggregation operations                                               |
+| Concurrency          | High concurrency, many simultaneous users                                     | Lower concurrency, fewer simultaneous users                                        |
+| Typical Data Age     | Current, operational data                                                     | Historical data, often spanning months or years                                    |
+| Backup and Recovery  | Point-in-time recovery, frequent backups                                      | Less frequent backups, focus on data retention                                     |
+| Scalability Approach | Vertical and horizontal scaling (e.g., RDS Multi-AZ, Aurora Serverless)       | Massive parallel processing (e.g., Redshift clusters)                              |
+| Data Consistency     | ACID compliance crucial                                                       | Eventually consistent models acceptable                                            |
+| Typical Use Cases    | - E-commerce transactions\<br>- Banking operations\<br>- Inventory management | - Sales trend analysis\<br>- Financial reporting\<br>- Customer behavior analytics |
+| Query Response Time  | Milliseconds to seconds                                                       | Seconds to minutes                                                                 |
+| Data Redundancy      | Minimal (normalized)                                                          | Accepted for performance (denormalized)                                            |
+| AWS Integration      | Tight integration with application layer (e.g., through API Gateway, Lambda)  | Integration with BI tools (e.g., QuickSight, third-party tools)                    |
+
+##
+
 ## Cross-region data replication
 
 Several AWS storage services offer cross-region capabilities. Here's a concise overview:
