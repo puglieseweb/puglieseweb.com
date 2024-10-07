@@ -1,10 +1,9 @@
 # Transcribe, Polly, Lex
 
 * Transcribe is used to convert audios, videos and images into text.&#x20;
-* Lex is the chat bots. A tool for formatting and preparing content for publication.
-* Polly is a tool that cleans and processes the raw transcript by turning the text into lifelike speech using a variety of languages and accents.
 * Polly:
   * Polly is a transcript editing and cleanup tool.
+  * turning the text into lifelike speech using a variety of languages and accents.
   * It's designed to take raw transcripts (often from automatic speech recognition systems) and help clean them up.
   * Features may include fixing punctuation, adjusting formatting, and correcting common transcription errors.
   * The goal is to transform raw, often messy transcripts into cleaner, more readable text.
@@ -16,9 +15,31 @@
 
 ## Alexa example
 
-Person -> Amazon Translate -> Lex -> Polly -> Perosn&#x20;
 
 
+```mermaid
+graph TD
+    A[User Voice Input] --> B[Speech Recognition]
+    B --> C[Transcribe]
+    C --> D[Raw Transcript]
+    D --> E[Poly]
+    E --> F[Cleaned Transcript]
+    F --> G[Natural Language Processing]
+    G --> H{Intent Recognition}
+    H --> |Query| I[Lex]
+    I --> J[Content Generation]
+    H --> |Command| K[Action Execution]
+    J --> L[Text-to-Speech]
+    K --> L
+    L --> M[Voice Response to User]
+
+    style B fill:#f9d5e5,stroke:#333,stroke-width:2px
+    style C fill:#f9d5e5,stroke:#333,stroke-width:2px
+    style E fill:#eeac99,stroke:#333,stroke-width:2px
+    style I fill:#e06377,stroke:#333,stroke-width:2px
+    style G fill:#b5e7a0,stroke:#333,stroke-width:2px
+    style H fill:#b5e7a0,stroke:#333,stroke-width:2px
+```
 
 ### Example 2
 
