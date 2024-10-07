@@ -1,13 +1,13 @@
 # Transcribe, Polly, Lex
 
-* Transcribe is used to convert audios, videos and images into text.&#x20;
-* Polly:
+* Transcribe (create text) is used to convert audios, videos and images into text.&#x20;
+* [Polly](https://aws.amazon.com/polly/) (Generate speech):
   * Polly is a transcript editing and cleanup tool.
   * turning the text into lifelike speech using a variety of languages and accents.
   * It's designed to take raw transcripts (often from automatic speech recognition systems) and help clean them up.
   * Features may include fixing punctuation, adjusting formatting, and correcting common transcription errors.
   * The goal is to transform raw, often messy transcripts into cleaner, more readable text.
-* Lex:
+* [Lex](https://aws.amazon.com/pm/lex/) (AI conversational application - chatbox):
   * Lex is a writing and publishing platform.
   * It's used for composing, editing, and publishing various types of content, including blog posts, articles, and potentially podcast show notes.
   * Lex often incorporates AI-assisted writing features to help with composition and editing.
