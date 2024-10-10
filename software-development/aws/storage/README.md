@@ -154,8 +154,6 @@ This diagram illustrates the key differences between DAS, NAS, and SAN storage a
 
 
 
-<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
-
 ### NAS, NFS, SMB
 
 
