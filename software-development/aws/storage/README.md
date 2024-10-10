@@ -99,6 +99,59 @@ graph TD
 
 ## Extra
 
+There are three type of Computer Storage:
+
+```mermaid
+graph TD
+    subgraph "DAS - Direct Attached Storage"
+    A[Server] -->|Direct Connection| B[Storage]
+    end
+
+    subgraph "NAS - Network Attached Storage"
+    C[Server 1] -->|LAN| D{Network}
+    E[Server 2] -->|LAN| D
+    D -->|LAN| F[NAS Device]
+    end
+
+    subgraph "SAN - Storage Area Network"
+    G[Server 1] -->|FC/iSCSI| H{SAN Fabric}
+    I[Server 2] -->|FC/iSCSI| H
+    H -->|FC/iSCSI| J[Storage Array 1]
+    H -->|FC/iSCSI| K[Storage Array 2]
+    end
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style B fill:#bbf,stroke:#333,stroke-width:2px
+    style C fill:#f9f,stroke:#333,stroke-width:2px
+    style E fill:#f9f,stroke:#333,stroke-width:2px
+    style F fill:#bfb,stroke:#333,stroke-width:2px
+    style G fill:#f9f,stroke:#333,stroke-width:2px
+    style I fill:#f9f,stroke:#333,stroke-width:2px
+    style J fill:#bbf,stroke:#333,stroke-width:2px
+    style K fill:#bbf,stroke:#333,stroke-width:2px
+```
+
+This diagram illustrates the key differences between DAS, NAS, and SAN storage architectures. Let's break down each one:
+
+1. DAS (Direct Attached Storage):
+   * Storage is directly connected to a single server.
+   * Simplest form of storage architecture.
+   * Not shared between multiple servers.
+   * Examples: Internal hard drives, external USB drives.
+2. NAS (Network Attached Storage):
+   * Storage device is connected to a network (LAN).
+   * Multiple servers can access the storage over the network.
+   * File-level access (typically uses protocols like NFS or SMB).
+   * Easier to set up and manage compared to SAN.
+   * Good for file sharing and collaboration.
+3. SAN (Storage Area Network):
+   * Dedicated high-speed network for storage.
+   * Multiple servers connect to the SAN fabric.
+   * Block-level access to storage arrays.
+   * Uses protocols like Fibre Channel (FC) or iSCSI.
+   * Highly scalable and high-performance.
+   * Good for databases, virtualization, and high-performance applications.
+
 
 
 <figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
