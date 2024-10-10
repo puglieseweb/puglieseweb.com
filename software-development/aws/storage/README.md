@@ -235,3 +235,44 @@ The diagram shows that client devices can access storage in two main ways:
 
 1. File-level access through NAS, which can use either SMB (for Windows) or NFS (for Unix/Linux) protocols.
 2. Block-level access through a SAN, which can use the iSCSI protocol.
+
+
+
+## EBS vs SAN
+
+Key Reasons for the Difference:
+
+1. Design Intent: SANs are purpose-built for sharing, while EBS is designed to provide simple, consistent block storage to individual EC2 instances.
+2. Concurrency Management: SANs have built-in mechanisms to handle concurrent access from multiple servers. EBS lacks these mechanisms (except in the limited Multi-Attach feature).
+3. Data Consistency: Ensuring data consistency with multiple writers is complex. EBS avoids this complexity by limiting access to a single instance.
+4. Performance Optimization: EBS is optimized for single-instance performance, which is simpler to manage and predict.
+5. Cloud Architecture: EBS's design aligns with AWS's model of providing scalable, easy-to-use services that abstract away complexity.
+
+
+
+```mermaid
+graph TD
+    subgraph "SAN Architecture"
+    A[Server 1] <-->|FC/iSCSI| B{SAN Fabric}
+    C[Server 2] <-->|FC/iSCSI| B
+    D[Server 3] <-->|FC/iSCSI| B
+    B <--> E[Shared Storage Array]
+    end
+
+    subgraph "EBS Architecture"
+    F[EC2 Instance 1] <-->|Block-level access| G[EBS Volume 1]
+    H[EC2 Instance 2] <-->|Block-level access| I[EBS Volume 2]
+    J[EC2 Instance 3] <-->|Block-level access| K[EBS Volume 3]
+    end
+
+    style A fill:#f9f,stroke:#333,stroke-width:2px
+    style C fill:#f9f,stroke:#333,stroke-width:2px
+    style D fill:#f9f,stroke:#333,stroke-width:2px
+    style E fill:#bbf,stroke:#333,stroke-width:2px
+    style F fill:#f9f,stroke:#333,stroke-width:2px
+    style G fill:#bfb,stroke:#333,stroke-width:2px
+    style H fill:#f9f,stroke:#333,stroke-width:2px
+    style I fill:#bfb,stroke:#333,stroke-width:2px
+    style J fill:#f9f,stroke:#333,stroke-width:2px
+    style K fill:#bfb,stroke:#333,stroke-width:2px
+```
