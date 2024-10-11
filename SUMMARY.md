@@ -5,6 +5,7 @@
 ## Software development
 
 * [AWS](software-development/aws/README.md)
+  * [AWS Regional Practices and Data Consistency Regional Isolation and Related Practices](software-development/aws/aws-regional-practices-and-data-consistency-regional-isolation-and-related-practices.md)
   * [Media (Elastic Transcoder, Kinesis)](software-development/aws/media-elastic-transcoder-kinesis.md)
   * [Machine Learning](software-development/aws/machine-learning/README.md)
     * [Amazon Translate](software-development/aws/machine-learning/amazon-translate.md)
@@ -83,6 +84,7 @@
     * [AWS WAF](software-development/aws/security/aws-waf.md)
     * [AWS Shield](software-development/aws/security/aws-shield.md)
     * [DDoS](software-development/aws/security/ddos.md)
+    * [AWS Cognito](software-development/aws/security/aws-cognito.md)
   * [ETL](software-development/aws/etl/README.md)
     * [Data Pipeline](software-development/aws/etl/data-pipeline.md)
   * [Athena & AWS Glue: Serverless Data Solutions](software-development/aws/athena-and-glue.md)
@@ -169,7 +171,6 @@
       * [Aurora](software-development/aws/databases/rds/aurora.md)
   * [Storage](software-development/aws/storage/README.md)
     * [S3](software-development/aws/storage/s3.md)
-    * [AWS Cognito](software-development/aws/storage/aws-cognito.md)
     * [EC2 Hibernation](software-development/aws/storage/ec2-hibernation.md)
     * [Snapshots](software-development/aws/storage/snapshots.md)
     * [EBS Volumes](software-development/aws/storage/ebs-volumes.md)
