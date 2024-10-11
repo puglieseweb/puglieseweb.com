@@ -5,5 +5,5 @@
 * Instance RAM must be less then 150 GB.
 * Intance Families include C3, C4, C5, M3, M5, R3, R4, and R5.
 * Available for Windows, Amazon Linux 2 AMI, and Ubuntu.
-* Instance cannot be hibernated for more then 60 days.
+* **Instance cannot be hibernated for more then 60 days**.
 * Available for On-Demand and Reserved Instances.
