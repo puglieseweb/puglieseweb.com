@@ -6,45 +6,105 @@ description: >-
 
 # EBS Volumes
 
-EBS volumes provide durable block storage that can be attached to EC2 or RDS Instances.
+EBS volumes provide durable, block-level storage that can be attached to Amazon EC2 instances. Key points include:
 
-EBS Volumes can be used for both RDS, EC2, Redshift, and Amazon VMware Cloud.
+1. **Usage**:
+   * Primarily designed for use with EC2 instances.
+   * Can be used as storage for some AWS services like Amazon RDS and Amazon WorkSpaces.
+2. **Compatibility**:
+   * Not directly usable with Amazon Redshift or VMware Cloud on AWS.
+   * Redshift uses its own cluster storage.
+   * VMware Cloud on AWS uses vSAN for storage.
+3. **Flexibility**:
+   * Volumes can be resized on the fly without detaching from instances.
+   * Volume types can be changed dynamically (e.g., from GP2 to GP3).
+4. **Data Persistence**:
+   * EBS volumes persist independently from the life of an EC2 instance.
+5. **Snapshots**:
+   * Point-in-time snapshots can be created for backup or volume recreation.
+6. **Encryption**:
+   * Supports encryption at rest using AWS Key Management Service (KMS).
+7. **Multi-Attach**:
+   * Some volume types support attaching to multiple EC2 instances simultaneously.
 
-You can resize EBS volumes on the fly as well as changing the volume types.&#x20;
+##
 
-SSD Volumes:
+| Feature          | GP2                           | GP3                         | io1                             | io2                                               | st1                         | sc1                        |
+| ---------------- | ----------------------------- | --------------------------- | ------------------------------- | ------------------------------------------------- | --------------------------- | -------------------------- |
+| Type             | SSD                           | SSD                         | SSD                             | SSD                                               | HDD                         | HDD                        |
+| Use Case         | Boot volumes, general-purpose | Broad range of workloads    | I/O-intensive, databases        | I/O-intensive, ultra-low latency                  | Big data, warehouses, ETL   | Infrequently accessed data |
+| Baseline IOPS    | 3 IOPS/GiB (min 100)          | 3,000                       | Provisioned (up to 50 IOPS/GiB) | Provisioned (up to 500 IOPS/GiB)                  | 40 per TB                   | 12 per TB                  |
+| Max IOPS         | 16,000                        | 16,000                      | 64,000                          | 64,000 (256,000 for Block Express)                | 500                         | 250                        |
+| Throughput       | Up to 250 MiB/s               | Up to 1,000 MiB/s           | Up to 1,000 MiB/s               | Up to 1,000 MiB/s (4,000 MiB/s for Block Express) | Up to 500 MB/s              | Up to 250 MB/s             |
+| Volume Size      | 1 GiB - 16 TiB                | 1 GiB - 16 TiB              | 4 GiB - 16 TiB                  | 4 GiB - 16 TiB                                    | 125 GiB - 16 TiB            | 125 GiB - 16 TiB           |
+| Durability       | 99.8-99.9%                    | 99.8-99.9%                  | 99.8-99.9%                      | Up to 99.999%                                     | 99.8-99.9%                  | 99.8-99.9%                 |
+| Boot Volume      | Yes                           | Yes                         | Yes                             | Yes                                               | No                          | No                         |
+| Burst Capability | Yes (up to 3,000 IOPS)        | No (consistent performance) | No                              | No                                                | Yes (up to 250 MB/s per TB) | Yes (up to 80 MB/s per TB) |
+| Cost             | Moderate                      | Lower than GP2              | High                            | Same as io1                                       | Low                         | Lowest                     |
 
-* GP2 (General Purpose):
-  * Suitable for boot disks and general applications.
-  * Up to 16,000 IOPS per volume.
-  * Up to 99.9% durability.
-* GP3:
-  * Suitable for high performance applications.
-  * Predictable 3,000 IOPS baseline performance and 125 MiB/s regardless of the volume size.
-  * Up to 99.9% durability.
-* Io1:
-  * Suitable for OLTP (online transaction processing) and letancy-sensitive applications.
-  * 50 IOPS/GiB
-  * Up to 64,000 IOPS per volume.
-  * High performance and most expensive.
-  * Up to 99.9% durability.
-* Io2:
-  * Suitable for OLTP (online transaction processing) and letancy-sensitive applications.
-  * 500 IOPS/GiB
-  * Up to 64,000 IOPS per volume.
-  * Up to 99.999% durability.
-  * Latest generation Provisioned IOPS volume.
+## AWS SSD Volume Types
 
-HDD Volumes:&#x20;
+### GP2 (General Purpose SSD):
 
-* st1 (Throughput Optimized HDD):
-  * Suitable for big data, data warehouse, ETL.
-  * Max throughput is 500 MB/s per volume.
-  * Cannot be  a boot volume.
-  * Up to 99.9% durability.
-* sc1 (Cold HDD):
-  * Max throughput of 250 MB/s per volume.
-  * Less frequently accessed data.
-  * Cannot be a boot volume.
-  * Lower cost.
-  * Up to 99.9% durability.
+* Suitable for boot volumes and general-purpose workloads.
+* Baseline performance of 3 IOPS/GiB, with a minimum of 100 IOPS.
+* Can burst up to 3,000 IOPS for volumes 334 GiB and smaller.
+* Maximum of 16,000 IOPS per volume (for volumes larger than 5,334 GiB).
+* Throughput up to 250 MiB/s.
+* 99.8-99.9% durability.
+
+### GP3 (Latest Generation General Purpose SSD):
+
+* Suitable for a broad range of workloads.
+* Predictable 3,000 IOPS baseline performance and 125 MiB/s regardless of volume size.
+* Can provision up to 16,000 IOPS and 1,000 MiB/s per volume.
+* More cost-effective than GP2 for most workloads.
+* 99.8-99.9% durability.
+
+### io1 (Provisioned IOPS SSD):
+
+* Suitable for I/O-intensive workloads, particularly database workloads.
+* Provision up to 50 IOPS per GiB.
+* Up to 64,000 IOPS per volume.
+* Up to 1,000 MiB/s of throughput per volume.
+* High performance and higher cost.
+* 99.8-99.9% durability.
+
+### io2 (Provisioned IOPS SSD):
+
+* Latest generation of Provisioned IOPS volumes.
+* Designed for I/O-intensive workloads requiring consistent ultra-low latency.
+* Provision up to 500 IOPS per GiB.
+* Up to 64,000 IOPS per volume (256,000 IOPS for io2 Block Express).
+* Up to 1,000 MiB/s of throughput per volume (4,000 MiB/s for io2 Block Express).
+* Higher durability: up to 99.999%.
+* Same price as io1 with better performance and durability.
+
+## AWS HDD Volume Types
+
+### st1 (Throughput Optimized HDD):
+
+* Designed for frequently accessed, throughput-intensive workloads.
+* Ideal for big data, data warehouses, log processing, and ETL workloads.
+* Baseline throughput of 40 MB/s per TB.
+* Ability to burst up to 250 MB/s per TB.
+* Maximum throughput of 500 MB/s per volume.
+* Baseline IOPS of 40 per TB, with ability to burst up to 500 IOPS per TB.
+* Maximum IOPS of 500 per volume.
+* Cannot be used as a boot volume.
+* Minimum volume size of 125 GiB.
+* 99.8-99.9% durability.
+
+### sc1 (Cold HDD):
+
+* Designed for less frequently accessed workloads.
+* Suitable for scenarios where the lowest storage cost is important.
+* Baseline throughput of 12 MB/s per TB.
+* Ability to burst up to 80 MB/s per TB.
+* Maximum throughput of 250 MB/s per volume.
+* Baseline IOPS of 12 per TB, with ability to burst up to 80 IOPS per TB.
+* Maximum IOPS of 250 per volume.
+* Cannot be used as a boot volume.
+* Minimum volume size of 125 GiB.
+* 99.8-99.9% durability.
+* Lower cost compared to st1, making it ideal for infrequently accessed data.
