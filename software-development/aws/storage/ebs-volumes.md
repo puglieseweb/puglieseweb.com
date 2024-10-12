@@ -27,7 +27,7 @@ EBS volumes provide durable, block-level storage that can be attached to Amazon 
 7. **Multi-Attach**:
    * Some volume types support attaching to multiple EC2 instances simultaneously.
 
-##
+## EBS Volume tyeps
 
 | Feature          | sc1                        | st1                         | GP2                           | GP3                         | io1                             | io2                                               |
 | ---------------- | -------------------------- | --------------------------- | ----------------------------- | --------------------------- | ------------------------------- | ------------------------------------------------- |

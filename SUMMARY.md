@@ -4,7 +4,9 @@
 
 ## Software development
 
+* [Untitled](software-development/untitled.md)
 * [AWS](software-development/aws/README.md)
+  * [Q\&A](software-development/aws/q-and-a.md)
   * [AWS Regional Practices and Data Consistency Regional Isolation and Related Practices](software-development/aws/aws-regional-practices-and-data-consistency-regional-isolation-and-related-practices.md)
   * [Media (Elastic Transcoder, Kinesis)](software-development/aws/media-elastic-transcoder-kinesis.md)
   * [Machine Learning](software-development/aws/machine-learning/README.md)
@@ -155,7 +157,6 @@
     * [Auto scaling groups](software-development/aws/ec2/auto-scaling-groups.md)
     * [Launch Template vs. Launch Configuration](software-development/aws/ec2/launch-template-vs.-launch-configuration.md)
   * [Databases](software-development/aws/databases/README.md)
-    * [Scaling DynamoDB](software-development/aws/databases/scaling-dynamodb.md)
     * [Scaling Relational Databases](software-development/aws/databases/scaling-relational-databases.md)
     * [Time-Series Data (Amazon Timestream)](software-development/aws/databases/time-series-data-amazon-timestream.md)
     * [Graph DBs](software-development/aws/databases/graph-dbs/README.md)
@@ -165,7 +166,10 @@
       * [Apache Cassandra (Amazon Keyspaces)](software-development/aws/databases/nosql/apache-cassandra-amazon-keyspaces.md)
       * [Redshift](software-development/aws/databases/nosql/redshift.md)
       * [MongoDB (Amazon DocumentDB)](software-development/aws/databases/nosql/mongodb-amazon-documentdb.md)
-      * [DynamoDB](software-development/aws/databases/nosql/dynamodb.md)
+      * [DynamoDB](software-development/aws/databases/nosql/dynamodb/README.md)
+        * [DynamoDB Consistency Models and ACID Properties](software-development/aws/databases/nosql/dynamodb/dynamodb-consistency-models-and-acid-properties.md)
+        * [DynamoDB Partition Keys](software-development/aws/databases/nosql/dynamodb/dynamodb-partition-keys.md)
+        * [DynamoDB capacity models](software-development/aws/databases/nosql/dynamodb/scaling-dynamodb.md)
       * [Amazon Quantum Ledger DB (QLDB)](software-development/aws/databases/nosql/amazon-quantum-ledger-db-qldb.md)
     * [RDS](software-development/aws/databases/rds/README.md)
       * [Aurora](software-development/aws/databases/rds/aurora.md)

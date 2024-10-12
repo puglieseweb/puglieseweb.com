@@ -112,3 +112,15 @@ Managed multi-master, multi-region replication
 
 
 
+## Key notes
+
+* **Partitions**: DynamoDB automatically spreads data across partitions. Understanding partition keys and their impact on performance is crucial.
+* **Secondary Indexes**: DynamoDB supports both Global Secondary Indexes (GSI) and Local Secondary Indexes (LSI). Know their differences and use cases.
+* **Read/Write Capacity Units**: Understand how RCUs and WCUs are calculated, especially for different item sizes and consistency models.
+* **Scaling**: Be familiar with both auto-scaling for provisioned capacity and the automatic scaling of on-demand capacity.
+* **Integration**: DynamoDB integrates well with other AWS services. Know common patterns like using Lambda with DynamoDB Streams or using DynamoDB as a session store for applications.
+* **Cost Optimization**: Understand strategies for optimizing DynamoDB costs, such as choosing the right capacity mode, using DAX for caching, and leveraging TTL (Time to Live) for automatic item deletion.
+* **Limits**: Be aware of DynamoDB's various limits, such as maximum item size (400 KB) and maximum partition key size (2 KB).
+
+
+
