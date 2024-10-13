@@ -1,0 +1,56 @@
+graph TB
+    subgraph "Product Service"
+        API[ProductAPI]
+        PPS[ProductPricingService]
+        PEP[PublicEventPublisher]
+        SNS1[SNS: Product Events]
+        SNS2[SNS: Pricing Events]
+        Lambda[Lambda: PricingChanged Handler]
+
+        API -->|Publish| SNS1
+        SNS1 -.->|Consume| PPS
+        PPS -->|Publish| SNS2
+        SNS2 -.->|Consume| Lambda
+        Lambda -->|Update| API
+        SNS1 -.->|Consume| PEP
+    end
+
+    subgraph "Inventory Service"
+        ACL[InventoryAntiCorruptionLayer]
+        SOS[StockOrderingService]
+        SF[Step Functions]
+
+        ACL -->|Process| SOS
+        SOS ==>|Initiate| SF
+    end
+
+    subgraph "Analytics Service"
+        AS[Analytics Service]
+        DD[Datadog]
+
+        AS -->|Update Metrics| DD
+    end
+
+    EB[EventBridge]
+
+    PEP -->|Publish| EB
+    EB -.->|Distribute| ACL
+    EB -.->|Distribute| AS
+
+    classDef aws fill:#FF9900,stroke:#232F3E,stroke-width:2px;
+    class API,PPS,PEP,Lambda,ACL,SOS,AS aws;
+    classDef awsService fill:#FF9900,stroke:#232F3E,stroke-width:2px,stroke-dasharray: 5 5;
+    class SNS1,SNS2,SF,EB,DD awsService;
+
+    subgraph "Legend"
+        L1[" "]
+        L2[" "]
+        L3[" "]
+        L4[" "]
+        L1 -->|Synchronous Operation| L2
+        L2 -.->|Asynchronous Operation| L3
+        L3 ==>|Workflow Initiation| L4
+    end
+
+    classDef legendClass fill:none,stroke:none;
+    class L1,L2,L3,L4 legendClass;
