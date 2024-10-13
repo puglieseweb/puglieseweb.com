@@ -114,6 +114,7 @@
     * [SSM Agent](software-development/aws/on-premises/ssm-agent.md)
   * [Containers](software-development/aws/containers/README.md)
     * [EKS Anywhere](software-development/aws/containers/eks-anywhere.md)
+    * [ECR (Elastic Container Registry)](software-development/aws/containers/ecr-elastic-container-registry.md)
     * [ECS Anywhere](software-development/aws/containers/ecs-anywhere.md)
     * [Amazon ECS](software-development/aws/containers/amazon-ecs.md)
   * [Serverless](software-development/aws/serverless/README.md)
