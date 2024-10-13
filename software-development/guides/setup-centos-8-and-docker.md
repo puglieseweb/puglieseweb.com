@@ -6,7 +6,7 @@ description: Collection of commands required to setup CentOS development environ
 
 ## Installing Ntfs Support
 
-Command to enable NTFS/FAT32 file systems support: 
+Command to enable NTFS/FAT32 file systems support:
 
 ```bash
 sudo dnf install epel-release -y
@@ -24,16 +24,15 @@ sudo dnf install java-11-openjdk-devel
 
 * `sudo dnf install git`
 * [https://help.github.com/en/enterprise/2.16/user/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent](https://help.github.com/en/enterprise/2.16/user/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
-* `vim ~/.ssh/config`
+*   `vim ~/.ssh/config`
 
-  and paste and save the following content:
+    and paste and save the following content:
 
-  ```text
-  Host github.com
-  Hostname ssh.github.com
-  Port 443
-  ```
-
+    ```
+    Host github.com
+    Hostname ssh.github.com
+    Port 443
+    ```
 * `chmod 600 ~/.ssh/config`
 
 ## Installing Docker CE
@@ -44,7 +43,7 @@ By default podman-docker is installed. and this will cause the following error:
 
 To avoid this issue run the following commands:
 
-```text
+```
 sudo dnf remove -y docker docker-client docker-client-latest docker-common docker-latest docker-latest-logrotate docker-logrotate docker-selinux docker-engine-selinux docker-engine
 sudo dnf -y install dnf-plugins-core
 sudo dnf config-manager --add-repo=https://download.docker.com/linux/centos/docker-ce.repo
@@ -58,7 +57,7 @@ sudo systemctl enable docker
 
 #### Test Docker CE
 
-```text
+```
 docker --version
 docker run hello-world
 sudo docker run hello-world
@@ -68,7 +67,7 @@ sudo docker run -it ubuntu bash
 
 ## Installing Docker Compose
 
-```text
+```
 sudo curl -L "https://github.com/docker/compose/releases/download/1.25.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 sudo usermod -aG docker $USER
@@ -89,7 +88,7 @@ For each network interface managed by the NetworkManager daemon, a configuration
 
 We can manually change the NIC configuration files:
 
-```text
+```
 sudo vim /etc/sysconfig/network-scripts/ifcfg-[NIC_NAME]
 sudo nmcli connection down [NIC_NAME] 
 sudo nmcli connection up [NIC_NAME]
@@ -97,7 +96,7 @@ sudo nmcli connection up [NIC_NAME]
 
 By running the `ip addr` command again we can verify the IP has changed:
 
-```text
+```
 ip addr | grep [NIC_NAME]
 ```
 {% endtab %}
@@ -105,7 +104,7 @@ ip addr | grep [NIC_NAME]
 {% tab title="Option 2" %}
 using `nmtui`:
 
-```text
+```
 sudo nmtui
 sudo nmcli connection down [NIC_NAME] 
 sudo nmcli connection up [NIC_NAME]
@@ -124,33 +123,33 @@ sudo systemctl restart NetworkManager
 {% endtab %}
 {% endtabs %}
 
-#### Container B has not access to Container A and log file error is: 
+#### Container B has not access to Container A and log file error is:
 
 `NO ROUTE TO HOST network request from container to...`
 
-This was firewall issue in the OS hosting docker. To troubleshoot the issue: 1\) Check if the port from container A is accessible from the localhost:
+This was firewall issue in the OS hosting docker. To troubleshoot the issue: 1) Check if the port from container A is accessible from the localhost:
 
-1. `ss | head -1 1.`ss -l \| grep LISTEN \| grep tcp
+1. `ss | head -1 1.`ss -l | grep LISTEN | grep tcp
 2. `telnet localhost 2181`
 3. check `docker logs -f containerA` to watch the connection happening
 4. If the connection can happen from the hosting operation system, and not from container B, then it try to temporary disable the `firewalld` to verify if this fixes the issue.
 5. Add appropriate firewall configuration
 
-```text
+```
 # Masquerading allows for docker ingress and egress (this is the juicy bit)
 firewall-cmd --zone=public --add-masquerade --permanen
 # Reload firewall to apply permanent rules
 firewall-cmd --reload
 ```
 
-Further information on Docker networking time issue can be found here: 
+Further information on Docker networking time issue can be found here:
 
 * [https://pythonspeed.com/articles/docker-connection-refused/](https://pythonspeed.com/articles/docker-connection-refused/)
 * [https://www.cyberciti.biz/faq/how-can-i-setup-the-mtu-for-my-network-interface/](https://www.cyberciti.biz/faq/how-can-i-setup-the-mtu-for-my-network-interface/)
 
 ## Installing Gradle
 
-```text
+```
 wget https://services.gradle.org/distributions/gradle-5.1-bin.zip -P /tmp
 sudo unzip -d /opt/gradle /tmp/gradle-5.1-bin.zip
 sudo vim /etc/profile.d/gradle.sh
@@ -162,7 +161,7 @@ paste the following lines:
 >
 > export PATH=${GRADLE\_HOME}/bin:${PATH}
 
-```text
+```
 sudo chmod +x /etc/profile.d/gradle.sh
 source /etc/profile.d/gradle.sh
 gradle -v
@@ -170,7 +169,7 @@ gradle -v
 
 ## Installing Kubernetes
 
-[https://www.techrepublic.com/article/how-to-install-kubernetes-on-centos-8/](https://www.techrepublic.com/article/how-to-install-kubernetes-on-centos-8/) [https://www.youtube.com/watch?v=Araf8JYQn3w&list=PL34sAs7\_26wNBRWM6BDhnonoA5FMERax0&index=3&t=0s](https://www.youtube.com/watch?v=Araf8JYQn3w&list=PL34sAs7_26wNBRWM6BDhnonoA5FMERax0&index=3&t=0s)
+[https://www.techrepublic.com/article/how-to-install-kubernetes-on-centos-8/](https://www.techrepublic.com/article/how-to-install-kubernetes-on-centos-8/) [https://www.youtube.com/watch?v=Araf8JYQn3w\&list=PL34sAs7\_26wNBRWM6BDhnonoA5FMERax0\&index=3\&t=0s](https://www.youtube.com/watch?v=Araf8JYQn3w\&list=PL34sAs7\_26wNBRWM6BDhnonoA5FMERax0\&index=3\&t=0s)
 
 ## Installing Intellij
 
@@ -179,3 +178,16 @@ gradle -v
 3. `sh /opt/idea/idea-IU-183.6156.11/bin/idea.sh`
 4. follow the installation steps
 
+## Installing NodeJS
+
+```
+yum module list nodejs
+sudo yum module install nodejs/development
+dnf install nodejs
+sudo yum module install nodejs/development
+node --version
+```
+
+## Other Links
+
+[https://serverspace.io/support/help/how-to-install-docker-on-centos-8/](https://serverspace.io/support/help/how-to-install-docker-on-centos-8/)
