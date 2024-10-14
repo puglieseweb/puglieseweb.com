@@ -7,6 +7,8 @@
 * [AWS Pro](software-development/aws-pro/README.md)
   * [Comparison of Deployment Strategies in AWS](software-development/aws-pro/comparison-of-deployment-strategies-in-aws.md)
   * [Software Deployment Strategies](software-development/aws-pro/software-deployment-strategies.md)
+* [AWS Q\&A](software-development/aws-q-and-a/README.md)
+  * [VPC](software-development/aws-q-and-a/vpc.md)
 * [AWS](software-development/aws/README.md)
   * [Q\&A](software-development/aws/q-and-a.md)
   * [AWS Regional Practices and Data Consistency Regional Isolation and Related Practices](software-development/aws/aws-regional-practices-and-data-consistency-regional-isolation-and-related-practices.md)
