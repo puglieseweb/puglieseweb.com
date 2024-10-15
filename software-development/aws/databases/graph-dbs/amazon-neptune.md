@@ -1,6 +1,6 @@
 # Amazon Neptune
 
-A graph database stores nodes and relationships insteads of tables or documents.
+A graph database stores nodes and relationships instead of tables or documents.
 
 Neptune is Amazon's graph database service. Neptune is a fast, reliable, fully managed graph database service that makes it easy to build and  run applications.
 
