@@ -1,6 +1,6 @@
 # Comprehend
 
-Use natural-language processing (NPS) to help you undestand the meaning of sentences in your text (e.g. positive or negative sentences)
+Use natural-language processing (NLP) to help you understand the meaning of sentences in your text (e.g. positive or negative sentences)
 
 
 
