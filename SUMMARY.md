@@ -12,7 +12,7 @@
 * [AWS](software-development/aws/README.md)
   * [Q\&A](software-development/aws/q-and-a.md)
   * [AWS Regional Practices and Data Consistency Regional Isolation and Related Practices](software-development/aws/aws-regional-practices-and-data-consistency-regional-isolation-and-related-practices.md)
-  * [Media (Elastic Transcoder, Kinesis)](software-development/aws/media-elastic-transcoder-kinesis.md)
+  * [Media Services (Elastic Transcoder, Kinesis)](software-development/aws/media-elastic-transcoder-kinesis.md)
   * [Machine Learning](software-development/aws/machine-learning/README.md)
     * [Amazon Translate](software-development/aws/machine-learning/amazon-translate.md)
     * [Transcribe, Polly, Lex](software-development/aws/machine-learning/transcribe-polly-lex.md)
