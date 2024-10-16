@@ -1,6 +1,6 @@
 # EC2 Hibernation
 
-EC2 Hibernation preserves the in-memory RAM on persistent storage (EBS). This feature offers several benefits and has specific limitations:
+EC2 Hibernation preserves the in-memory RAM on persistent storage (EBS). This feature offers several benefits and has specific limitations.
 
 ### Benefits
 
