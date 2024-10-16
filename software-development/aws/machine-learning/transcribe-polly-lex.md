@@ -1,5 +1,7 @@
 # Transcribe, Polly, Lex
 
+
+
 * Transcribe convert audios, videos and images into text.&#x20;
 * [Polly](https://aws.amazon.com/polly/) (Generate speech):
   * Polly is a transcript editing and cleanup tool.
@@ -12,6 +14,12 @@
   * It's used for composing, editing, and publishing various types of content, including blog posts, articles, and potentially podcast show notes.
   * Lex often incorporates AI-assisted writing features to help with composition and editing.
   * It provides a streamlined interface for writing and publishing content directly to the web.
+
+
+
+<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+
+
 
 ## Alexa example
 
