@@ -4,17 +4,23 @@ An Auto Scaling group contains a collection of EC2 instances that are treated as
 
 
 
-<mark style="color:purple;">**Auto Scaling is vital to create high available application by spreading resources (e.g. EC2 instances) out over multiple AZs and utilizing ELB**</mark>&#x20;
+<mark style="color:purple;">**Auto Scaling is vital to create high available applications by spreading resources (e.g. EC2 instances) out over multiple AZs, utilising ELB.**</mark>
 
 
 
-1. Define Your Template. You pick from your available launch template or launch configurations.&#x20;
+Steps:
+
+1. Define Your Template. You pick from your available _launch template_ or _launch configurations._&#x20;
 2. Networking and Purchasing. Pick your networking space and purchasing option. Using multiple AZs allows for high availability (HA).
 3. ELB Configuration. EC2 instances can be registered behind a load balancer. The Auto Scaling group can be set to respect the load balancer health checks.&#x20;
-4. Set Scaling Policies. Minimum, maximum, and desired capacity needs to be set to ensure you don't have too many or too few resources.
+4. Set Scaling Policies. **Minimum**, **maximum**, and d**esired capacity** needs to be set to ensure you don't have too many or too few resources.
 5. Notification. SNS can act as a notification tool, allowing you to let someone know when a scaling event occurs.
 
 ## Lifecycle Hooks
+
+
+
+We can add lifecycle Hooks to both _**pending**_ and _**terminating**_ stages on and EC2 Auto Scaling Group.
 
 {% embed url="https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-lifecycle.html" %}
 
