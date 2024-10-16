@@ -1,6 +1,15 @@
 # Q\&A
 
+## What are the availability SLAs for the different AWS Application SLAs?&#x20;
 
+| Service           | Monthly Region-Level Availability SLA | Monthly Instance-Level (or equivalent) Availability SLA |
+| ----------------- | ------------------------------------- | ------------------------------------------------------- |
+| EC2               | 99.99%                                | 99.5% for individual EC2 instances                      |
+| ECS               | 99.99%                                | No specific instance-level SLA                          |
+| EKS               | 99.95%                                | No specific instance-level SLA                          |
+| Elastic Beanstalk | No specific SLA published             | No specific instance-level SLA                          |
+| App Runner        | No specific SLA published             | No specific instance-level SLA                          |
+| Lambda            | 99.95%                                | No specific instance-level SLA (serverless)             |
 
 ## What are the difference between Beanstalk and App Runner?
 
@@ -74,6 +83,7 @@ Key differences:
      * Limited execution time (15 minutes max)
    * Best for: Event-driven, sporadic workloads, microservices
 2. **Amazon EC2 (Traditional)**
+   * EC2, which offers a 99.99% availability SLA
    * Language support: Any (you have full control over the instance)
    * Pros:
      * Full control over the environment
