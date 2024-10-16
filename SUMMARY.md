@@ -108,6 +108,7 @@
     * [EC2 Hibernation](software-development/aws/ec2/ec2-hibernation.md)
     * [Elastic Load Balancing (ELB)](software-development/aws/ec2/elastic-load-balancing-elb.md)
     * [VPC](software-development/aws/ec2/vpc/README.md)
+      * [Elastic Network Interface (ENI)](software-development/aws/ec2/vpc/elastic-network-interface-eni.md)
       * [Transit Gateway](software-development/aws/ec2/vpc/transit-gateway.md)
       * [5G Networks](software-development/aws/ec2/vpc/5g-networks.md)
       * [Direct Connect](software-development/aws/ec2/vpc/direct-connect.md)
