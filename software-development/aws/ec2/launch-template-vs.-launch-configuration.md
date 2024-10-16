@@ -6,11 +6,11 @@ Launch Template:
 
 * Capable of leveraging **all** EC2 Auto Scaling features.
 * Supports versioning&#x20;
-* More granularity
+* More granularity.
 
-Launch Configurations
+Launch Configurations:
 
 * Only for certain EC2 Auto Scaling future
 * Immutable&#x20;
-* Limited configuration options&#x20;
+* Limited configuration options.
 
