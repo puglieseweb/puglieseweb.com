@@ -12,7 +12,7 @@
   * [DB Q\&A](software-development/aws-q-and-a/db-q-and-a.md)
   * [AWS Application Servers Q\&A](software-development/aws/q-and-a.md)
   * [General Q\&A](software-development/aws/general-considerations.md)
-  * [VPC](software-development/aws-q-and-a/vpc.md)
+  * [VPC Q\&A](software-development/aws-q-and-a/vpc-q-and-a.md)
 * [AWS](software-development/aws/README.md)
   * [AWS Regional Practices and Data Consistency Regional Isolation and Related Practices](software-development/aws/aws-regional-practices-and-data-consistency-regional-isolation-and-related-practices.md)
   * [Media Services (Elastic Transcoder, Kinesis)](software-development/aws/media-elastic-transcoder-kinesis.md)
