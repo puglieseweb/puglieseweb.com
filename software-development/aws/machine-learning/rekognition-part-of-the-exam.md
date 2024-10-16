@@ -1,10 +1,8 @@
 # Rekognition (part of the exam)
 
-Computer Vision product that automates the recognition of pircutures and videos using deep learning and neural networks.&#x20;
+Rekognition is Computer Vision Product that automates the **recognition of pictures and videos using deep learning and neural networks.** It understand and lables what is in pictures and videos.&#x20;
 
-
-
-use case: understand and lable what is in pictures and videos.&#x20;
+### Use Cases
 
 * Content Moderation&#x20;
 * Face detection&#x20;
