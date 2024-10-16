@@ -2,6 +2,37 @@
 
 
 
+## What are the difference between Beanstalk and App Runner/
+
+Both AWS Elastic Beanstalk and AWS App Runner are managed services designed to simplify application deployment, but they have some key differences:
+
+1. Level of abstraction:
+   * Elastic Beanstalk: Provides a platform-as-a-service (PaaS) environment with more control over the underlying infrastructure.
+   * App Runner: Offers a higher level of abstraction, focusing on a source-to-service experience with less infrastructure management
+2. Infrastructure control:
+   * Elastic Beanstalk: Allows more fine-grained control over EC2 instances, load balancers, and other AWS resources.
+   * App Runner: Abstracts away most infrastructure details, managing them automatically.
+3. Scaling:
+   * Elastic Beanstalk: Offers both time-based and metric-based auto-scaling options.
+   * App Runner: Provides automatic scaling based on incoming traffic, with less configuration required.
+4. Deployment options:
+   * Elastic Beanstalk: Supports various deployment strategies (rolling, immutable, blue/green) and can deploy from multiple sources (ZIP, Docker, Git).
+   * App Runner: Primarily designed for deploying from source code repositories or container registries.
+5. Language/framework support:
+   * Elastic Beanstalk: Supports a wide range of programming languages and frameworks through preconfigured platforms.
+   * App Runner: Initially focused on containerized applications, but now also supports source code deployments for specific runtimes.
+6. Customization:
+   * Elastic Beanstalk: Offers extensive customization options through configuration files and extension hooks.
+   * App Runner: Provides fewer customization options, focusing on simplicity and rapid deployment.
+7. Use cases:
+   * Elastic Beanstalk: Better suited for applications that require more control over the infrastructure or have complex deployment requirements.
+   * App Runner: Ideal for simpler web applications, microservices, or APIs that benefit from a streamlined deployment process.
+8. Pricing model:
+   * Elastic Beanstalk: You pay for the AWS resources used (e.g., EC2 instances, load balancers).
+   * App Runner: Charges based on the compute and memory resources consumed by your application, with a simpler pricing structure.
+
+In summary, Elastic Beanstalk offers more control and flexibility but requires more configuration, while App Runner provides a simpler, more automated experience with less customization. The choice between them often depends on your application's complexity, your team's expertise, and your specific requirements for infrastructure control.
+
 ## What are the difference between Beanstalk and ECS?
 
 Amazon Elastic Beanstalk:
