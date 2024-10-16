@@ -1,8 +1,8 @@
 ---
-description: EBS (Elastic Block Storage) volumes VS Instance Store
+description: Amazon Machine Images
 ---
 
-# Amazon Machine Images
+# AMI
 
 An Amazon Machine Image (AMI) provides the information required to launch an instance. Yo can base an AMI on:
 
