@@ -101,7 +101,7 @@
     * [AWS CloudFormation (Immutable AWS Architecture)](software-development/aws/automation/aws-cloudformation-immutable-aws-architecture.md)
     * [Elastic Beanstalk (for simple solutions)](software-development/aws/automation/elastic-beanstalk-for-simple-solutions.md)
   * [EC2](software-development/aws/ec2/README.md)
-    * [Auto scaling groups](software-development/aws/ec2/auto-scaling-groups.md)
+    * [Auto Scaling Groups (ASG)](software-development/aws/ec2/auto-scaling-groups.md)
     * [Launch Template vs. Launch Configuration](software-development/aws/ec2/launch-template-vs.-launch-configuration.md)
     * [EC2 Hibernation](software-development/aws/ec2/ec2-hibernation.md)
   * [Security](software-development/aws/security/README.md)
