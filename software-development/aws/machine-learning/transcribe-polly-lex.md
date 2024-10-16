@@ -1,6 +1,6 @@
 # Transcribe, Polly, Lex
 
-* Transcribe (create text) is used to convert audios, videos and images into text.&#x20;
+* Transcribe convert audios, videos and images into text.&#x20;
 * [Polly](https://aws.amazon.com/polly/) (Generate speech):
   * Polly is a transcript editing and cleanup tool.
   * turning the text into lifelike speech using a variety of languages and accents.
