@@ -2,7 +2,7 @@
 
 
 
-## What are the difference between Beanstalk and App Runner/
+## What are the difference between Beanstalk and App Runner?
 
 Both AWS Elastic Beanstalk and AWS App Runner are managed services designed to simplify application deployment, but they have some key differences:
 
