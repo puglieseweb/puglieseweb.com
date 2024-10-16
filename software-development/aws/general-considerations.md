@@ -173,6 +173,14 @@ Data transfer between VPCs (Virtual Private Clouds) in AWS can be accomplished t
 
 Let's create a comparison table to highlight the key features of each method:
 
+| Method          | Best For                                                    | Scalability                     | Security                                         | Cost                                                | Ease of Setup |
+| --------------- | ----------------------------------------------------------- | ------------------------------- | ------------------------------------------------ | --------------------------------------------------- | ------------- |
+| VPC Peering     | Direct connections between a few VPCs                       | Limited (non-transitive)        | High                                             | Low (only pay for data transfer)                    | Easy          |
+| Transit Gateway | Connecting many VPCs and on-premises networks               | High (thousands of connections) | High                                             | Medium (pay for TGW + data transfer)                | Medium        |
+| PrivateLink     | Accessing services across VPCs without exposing to internet | High                            | Very High                                        | Medium-High (pay for ENI + data processing)         | Medium        |
+| VPN             | Secure connections over internet                            | Medium                          | Medium-High (encrypted but over public internet) | Low-Medium (pay for VPN connection + data transfer) | Medium        |
+| Direct Connect  | High-bandwidth, consistent network performance              | High                            | Very High                                        | High (dedicated connection costs)                   | Complex       |
+
 VPC Data Transfer Methods ComparisonClick to open document
 
 Key considerations for choosing a method:
