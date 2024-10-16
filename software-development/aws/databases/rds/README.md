@@ -19,7 +19,7 @@ Amazon RDS stands for Relational Database Service.
 3. MariaDB
 4. Oracle
 5. Microsoft SQL Server
-6. Amazon Aurora (MySQL and PostgreSQL compatible)
+6. Amazon Aurora (MySQL and PostgreSQL compatible).
 
 ### Key Features
 
@@ -27,7 +27,7 @@ Amazon RDS stands for Relational Database Service.
 
 * Enabled by default
 * Retention period: 1 to 35 days
-* **Important**: Automatic Backups must be enabled to deploy a read replica
+* **Important**: Automatic Backups must be enabled to deploy a read replica.
 
 #### Multi-AZ (Availability Zone) Deployment
 
@@ -36,7 +36,7 @@ Amazon RDS stands for Relational Database Service.
 * Creates an exact copy of the primary DB (standby DB) in another AZ
 * Synchronous replication
 * Automatic failover to standby in case of issues with primary
-* Supported by all RDS engines except Aurora (Aurora has its own HA architecture)
+* Supported by all RDS engines except Aurora (Aurora has its own HA architecture).
 
 ### Multi-AZ Failover Process
 
@@ -44,7 +44,7 @@ Amazon RDS stands for Relational Database Service.
 2. AWS performs DNS failover to standby instance
 3. Standby is promoted to new primary
 4. Same connection string is maintained
-5. No manual intervention required
+5. No manual intervention required.
 
 #### Read Replicas
 
@@ -56,34 +56,34 @@ Amazon RDS stands for Relational Database Service.
 * Can be promoted to be standalone databases (e.g., for OLAP workloads)
   * Promotion breaks the replication
 * Up to 5 Read Replicas per DB instance
-* **Note**: Automatic Backups must be enabled to use Read Replicas
+* **Note**: Automatic Backups must be enabled to use Read Replicas.
 
 #### Scaling
 
 * Vertical Scaling: Change instance type (requires downtime)
 * Storage Scaling: Increase storage size (no downtime)
-* Read Scaling: Add Read Replicas
+* Read Scaling: Add Read Replicas.
 
 ### Security
 
 * Encryption at rest using KMS
 * Encryption in transit using SSL
-* IAM DB Authentication for MySQL and PostgreSQL
+* IAM DB Authentication for MySQL and PostgreSQL.
 
 ### Monitoring
 
 * Enhanced Monitoring: OS-level metrics
-* Performance Insights: Database performance analysis
+* Performance Insights: Database performance analysis.
 
 ### Maintenance
 
 * Automated minor version upgrades
-* Maintenance windows for updates
+* Maintenance windows for updates.
 
 ### RDS vs. EC2 Hosted Databases
 
 * RDS: Managed service, easier to administer
-* EC2: More control, but requires more management
+* EC2: More control, but requires more management.
 
 ### Important Exam Points
 
@@ -94,7 +94,7 @@ Amazon RDS stands for Relational Database Service.
 5. Aurora is always Multi-AZ enabled
 6. RDS supports both single-AZ and Multi-AZ deployments (except Aurora)
 7. Read Replicas can be promoted to standalone databases
-8. Maximum of 5 Read Replicas per DB instance
+8. Maximum of 5 Read Replicas per DB instance.
 
 ### Pricing Considerations
 
@@ -102,6 +102,6 @@ Amazon RDS stands for Relational Database Service.
 * Storage GB/month
 * I/O requests/month
 * Data transfer
-* Additional features (Multi-AZ, Read Replicas)
+* Additional features (Multi-AZ, Read Replicas).
 
 Remember to review the AWS documentation for the most up-to-date information, as service features and limits can change over time.

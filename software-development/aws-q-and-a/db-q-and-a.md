@@ -1,5 +1,45 @@
 # DB Q\&A
 
+## What does it meant that the retention period of an automated back up is between 1 to 35 days?
+
+Edit
+
+The retention period for automated backups in Amazon RDS refers to how long AWS keeps these backups before automatically deleting them. Let me break this down for you:
+
+1. Definition:
+   * The retention period is the number of days that Amazon RDS retains automated backups.
+   * After this period, the backups are automatically deleted.
+2. Range:
+   * The minimum retention period is 1 day.
+   * The maximum retention period is 35 days.
+   * You can set any whole number of days within this range.
+3. What it means in practice:
+   * If you set a retention period of 7 days, for example:
+     * RDS will keep daily backups for the past 7 days.
+     * On day 8, the oldest backup (from day 1) will be deleted.
+     * This process continues daily, always maintaining 7 days of backups.
+4. Importance:
+   * Longer retention periods provide more recovery options but consume more storage.
+   * Shorter retention periods reduce storage costs but limit how far back you can recover.
+5. Key points:
+   * Automated backups occur daily during the preferred backup window.
+   * They capture transaction logs throughout the day (allowing point-in-time recovery).
+   * You can restore to any point within the retention period.
+6. Default setting:
+   * If you don't specify a retention period, RDS typically defaults to 7 days.
+7. Changing the retention period:
+   * You can modify the retention period at any time.
+   * Increasing it will retain existing backups longer.
+   * Decreasing it may result in immediate deletion of older backups.
+8. Storage implications:
+   * Backups are stored in Amazon S3.
+   * You're charged for backup storage that exceeds the size of your provisioned database.
+9. Exam tip:
+   * Remember the range (1-35 days) for potential exam questions.
+   * Understand that this is for automated backups, not manual snapshots (which can be retained indefinitely).
+
+Here's a simple diagram to illustrate how the retention period works:
+
 ## Can I use Amazon Aurora Global Database for bidirectional data replication across regions
 
 Yes, you can use Amazon Aurora Global Database for bidirectional data replication across regions. However, it's important to note some key points about how this works:
