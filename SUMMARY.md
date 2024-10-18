@@ -112,6 +112,7 @@
     * [EC2 Hibernation](software-development/aws/ec2/ec2-hibernation.md)
     * [Elastic Load Balancing (ELB)](software-development/aws/ec2/elastic-load-balancing-elb.md)
     * [VPC](software-development/aws/ec2/vpc/README.md)
+      * [Gateway Load Balancer (GWLB)](software-development/aws/ec2/vpc/gateway-load-balancer-gwlb.md)
       * [Transit Gateway](software-development/aws/ec2/vpc/transit-gateway.md)
       * [5G Networks](software-development/aws/ec2/vpc/5g-networks.md)
       * [Direct Connect](software-development/aws/ec2/vpc/direct-connect.md)
