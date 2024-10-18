@@ -65,3 +65,51 @@ To set up identities from your corporate environment in AWS, you'll typically us
 6. Test the federation to ensure users can access AWS resources
 
 This setup allows your corporate users to access AWS resources using their existing corporate credentials.
+
+
+
+
+
+1. IAM Roles for EC2:
+   * IAM roles are designed to be used by AWS services, including EC2 instances.
+   * Roles provide temporary security credentials that are automatically rotated.
+   * This is the AWS-recommended best practice for granting permissions to EC2 instances.
+2. Security:
+   * Using roles eliminates the need to store long-term credentials on the EC2 instances.
+   * This approach is more secure as it doesn't require managing and rotating access keys.
+3. Ease of Management:
+   * Roles can be easily attached to EC2 instances at launch time or to running instances.
+   * Permissions can be modified by updating the role, which immediately affects all instances using that role.
+4. Scalability:
+   * As new EC2 instances are launched, they can automatically assume the role without additional configuration.
+
+## Addition notes
+
+IAM Policies:
+
+* IAM policies cannot be directly attached to EC2 instances.
+* Policies define permissions but need to be attached to **IAM users, groups, or roles.**
+
+
+
+IAM group:
+
+* IAM groups are for organizing IAM users, not for EC2 instances.
+
+
+
+IAM roles:
+
+* IAM Roles for EC2:
+  * IAM roles are designed to be used by AWS services, including EC2 instances.
+  * Roles provide temporary security credentials that are automatically rotated.
+  * This is the AWS-recommended best practice for granting permissions to EC2 instances.
+* Security:
+  * Using roles eliminates the need to store long-term credentials on the EC2 instances.
+  * This approach is more secure as it doesn't require managing and rotating access keys.
+* Ease of Management:
+  * Roles can be easily attached to EC2 instances at launch time or to running instances.
+  * Permissions can be modified by updating the role, which immediately affects all instances using that role.
+* Scalability:
+  * As new EC2 instances are launched, they can automatically assume the role without additional configuration.
+
