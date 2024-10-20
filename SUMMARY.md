@@ -4,6 +4,7 @@
 
 ## Software development
 
+* [AWS Key Learning](software-development/aws-key-learning.md)
 * [AWS Pro](software-development/aws-pro/README.md)
   * [Comparison of Deployment Strategies in AWS](software-development/aws-pro/comparison-of-deployment-strategies-in-aws.md)
   * [Software Deployment Strategies](software-development/aws-pro/software-deployment-strategies.md)
@@ -89,6 +90,7 @@
           * [DynamoDB capacity models](software-development/aws/storage/databases/nosql/dynamodb/scaling-dynamodb.md)
         * [Amazon Quantum Ledger DB (QLDB)](software-development/aws/storage/databases/nosql/amazon-quantum-ledger-db-qldb.md)
       * [RDS](software-development/aws/storage/databases/rds/README.md)
+        * [RDS Multi-AZ VS RDS Proxy](software-development/aws/storage/databases/rds/rds-multi-az-vs-rds-proxy.md)
         * [Scaling Relational Databases](software-development/aws/storage/databases/rds/scaling-relational-databases.md)
         * [Aurora](software-development/aws/storage/databases/rds/aurora.md)
     * [Caching](software-development/aws/storage/caching/README.md)
