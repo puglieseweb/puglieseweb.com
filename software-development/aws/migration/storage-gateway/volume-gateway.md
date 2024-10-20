@@ -10,4 +10,4 @@ description: This is useful to back up drivers into the cloud
 * for S3 you an take snapshot in EBS and restore volumes on AWS
 * Volume Gateways can be used for both migration or for backups
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
