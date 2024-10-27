@@ -10,6 +10,7 @@
   * [Comparison of Deployment Strategies in AWS](software-development/aws-pro/comparison-of-deployment-strategies-in-aws.md)
   * [Software Deployment Strategies](software-development/aws-pro/software-deployment-strategies.md)
 * [AWS Q\&A](software-development/aws-q-and-a/README.md)
+  * [AWS Prep](software-development/aws-q-and-a/aws-prep.md)
   * [Big Data/ AI Q\&A](software-development/aws-q-and-a/big-data-ai-q-and-a.md)
   * [DB Q\&A](software-development/aws-q-and-a/db-q-and-a.md)
   * [AWS Application Servers Q\&A](software-development/aws/q-and-a.md)
