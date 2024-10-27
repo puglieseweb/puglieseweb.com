@@ -105,10 +105,10 @@ Managed multi-master, multi-region replication
 * No application rewrites
 * Replication latency under **1 second**&#x20;
 
-### How to enable DynamoDB replica across reagion:
+### How to enable DynamoDB replica across region:
 
 1. Enable Global tables
-2. Create a replica on another rigion (not that DynamoDB Stream must be enabled)
+2. Create a replica on another region (not that DynamoDB Stream must be enabled)
 
 
 
