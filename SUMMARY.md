@@ -130,6 +130,7 @@
       * [NAT Gateway](software-development/aws/ec2/vpc/nat-gateway.md)
   * [Security](software-development/aws/security/README.md)
     * [IAM](software-development/aws/security/iam.md)
+    * [Cross-Account Access in AWS: Resource-Based Policies vs IAM Roles](software-development/aws/security/cross-account-access-in-aws-resource-based-policies-vs-iam-roles.md)
     * [STS](software-development/aws/security/sts.md)
     * [AI based security](software-development/aws/security/ai-based-security/README.md)
       * [GuardDuty](software-development/aws/security/ai-based-security/guardduty.md)
