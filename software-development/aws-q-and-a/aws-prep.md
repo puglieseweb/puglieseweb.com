@@ -28,7 +28,7 @@ Increase the memory allocation for this Lambda function to 1,024 MB if this chan
 
 Correct. In this case, the team increases the memory allocation by 100%. The new run time is more than 100% faster (less than 1 minute), so a reduction in the overall costs will occur.
 
-Duration is calculated from the time your code begins running until it returns or otherwise terminates, rounded up to the nearest 100 milliseconds. The price depends on the amount of memory that you allocate to your function. In the Lambda resource model, you choose the amount of memory that you want for your function, and you receive proportional CPU power and other resources. An increase in memory size initiates an equivalent increase in CPU that is available to your function.
+Duration is calculated from the time your code begins running until it returns or otherwise terminates, rounded up to the nearest 100 milliseconds. The price depends on the amount of memory that you allocate to your function. In the Lambda resource model, you choose the amount of memory that you want for your function, and you receive proportional CPU power and other resources. **An increase in memory size initiates an equivalent increase in CPU that is available to your function.**
 
 For more information about Lambda pricing, see [AWS Lambda Pricing](https://aws.amazon.com/lambda/pricing/).
 
