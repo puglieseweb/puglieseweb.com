@@ -6,6 +6,7 @@
 
 * [AWS Example architectures](software-development/aws-example-architectures.md)
 * [AWS Key Learning](software-development/aws-key-learning.md)
+* [AWS 99.999% Architecture](software-development/aws-99.999-architecture.md)
 * [AWS Pro](software-development/aws-pro/README.md)
   * [Comparison of Deployment Strategies in AWS](software-development/aws-pro/comparison-of-deployment-strategies-in-aws.md)
   * [Software Deployment Strategies](software-development/aws-pro/software-deployment-strategies.md)
