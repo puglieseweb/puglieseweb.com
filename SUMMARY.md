@@ -29,6 +29,7 @@
     * [Textract](software-development/aws/machine-learning/textract.md)
     * [Kendra](software-development/aws/machine-learning/kendra.md)
     * [Sagemaker (part of the exam)](software-development/aws/machine-learning/sagemaker-part-of-the-exam/README.md)
+      * [Real-time interfaces](software-development/aws/machine-learning/sagemaker-part-of-the-exam/real-time-interfaces.md)
       * [Elastic Inference (EI)](software-development/aws/machine-learning/sagemaker-part-of-the-exam/elastic-inference-ei.md)
       * [SageMaker Neo](software-development/aws/machine-learning/sagemaker-part-of-the-exam/sagemaker-neo.md)
     * [Rekognition (part of the exam)](software-development/aws/machine-learning/rekognition-part-of-the-exam.md)
