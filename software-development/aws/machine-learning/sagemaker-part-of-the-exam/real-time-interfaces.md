@@ -43,5 +43,3 @@ predictor = model.deploy(
     instance_type='ml.t2.medium',
     initial_instance_count=1)
 ```
-
-Would you like me to elaborate on any of these steps?
