@@ -19,6 +19,7 @@
   * [VPC Q\&A](software-development/aws-q-and-a/vpc-q-and-a.md)
 * [AWS](software-development/aws/README.md)
   * [Big Data](software-development/aws/big-data/README.md)
+    * [Processing & Analytics](software-development/aws/big-data/processing-and-analytics.md)
     * [BigData Storage Solutions](software-development/aws/big-data/bigdata-storage-solutions.md)
     * [EMR](software-development/aws/big-data/emr.md)
   * [AWS Regional Practices and Data Consistency Regional Isolation and Related Practices](software-development/aws/aws-regional-practices-and-data-consistency-regional-isolation-and-related-practices.md)
