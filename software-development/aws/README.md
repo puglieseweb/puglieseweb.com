@@ -1,6 +1,121 @@
 # AWS
 
+Here's a categorized breakdown of major AWS services:
 
+1. Business Intelligence (BI)
+
+* Visualization & Reporting
+  * QuickSight
+  * Managed Grafana
+  * CloudWatch Dashboards
+
+2. Artificial Intelligence (AI)
+
+* Vision
+  * Rekognition
+  * Lookout for Vision
+* Language/Text
+  * Comprehend
+  * Translate
+  * Textract
+  * Transcribe
+  * Kendra
+* Speech
+  * Polly
+  * Lex
+* Generative AI
+  * Bedrock
+  * CodeWhisperer
+  * Amazon Q
+
+3. Machine Learning (ML)
+
+* Development & Deployment
+  * SageMaker (all components)
+  * SageMaker Studio
+  * SageMaker Canvas
+* Specialized ML Solutions
+  * Forecast
+  * Fraud Detector
+  * Personalize
+  * Comprehend
+
+4. Big Data Processing
+
+* Storage & Lakes
+  * S3
+  * Lake Formation
+  * OpenSearch
+* Processing & Analytics
+  * EMR
+  * Kinesis
+  * Glue
+  * Athena
+* Data Warehouse
+  * Redshift
+  * Redshift Spectrum
+
+5. Data Integration & ETL
+
+* Services
+  * Glue ETL
+  * Data Pipeline
+  * DMS (Database Migration Service)
+  * AppFlow
+
+6. Databases
+
+* Relational
+  * RDS
+  * Aurora
+* NoSQL
+  * DynamoDB
+  * DocumentDB
+  * Neptune
+* In-Memory
+  * ElastiCache
+  * MemoryDB
+
+7. Real-Time Analytics
+
+* Streaming
+  * Kinesis Data Streams
+  * Kinesis Firehose
+  * MSK (Managed Kafka)
+* Processing
+  * Kinesis Analytics
+  * Kinesis Data Analytics for Apache Flink
+
+8. Governance & Security
+
+* Data Governance
+  * Lake Formation
+  * Macie
+  * CloudTrail
+* Security
+  * KMS
+  * IAM
+  * Shield
+
+Common Integration Pattern:
+
+```
+Data Sources → Integration → Processing → Analytics → Consumption
+(DBs, S3)    (Glue)      (EMR, ML)   (Redshift) (QuickSight, 
+                                               Custom Apps)
+```
+
+Cross-cutting services that span multiple categories:
+
+* AWS Lambda (serverless compute)
+* EventBridge (event routing)
+* Step Functions (workflow orchestration)
+* CloudWatch (monitoring)
+* CloudFormation (infrastructure as code)
+
+
+
+## Services Summary
 
 | Service                 | Synchronous/Asynchronous | Decoupling Type         | Message Order                             | Application Load Type           |
 | ----------------------- | ------------------------ | ----------------------- | ----------------------------------------- | ------------------------------- |

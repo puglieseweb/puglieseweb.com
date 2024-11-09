@@ -1,4 +1,4 @@
-# AWS BI
+# Business intelligence
 
 The key BI tools available in AWS ecosystem are:
 
