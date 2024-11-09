@@ -4,6 +4,8 @@
 
 ## Software development
 
+* [AI, Analytics, Big Data, ML](software-development/ai-analytics-big-data-ml/README.md)
+  * [AWS BI](software-development/ai-analytics-big-data-ml/aws-bi.md)
 * [AWS Example architectures](software-development/aws-example-architectures.md)
 * [AWS Key Learning](software-development/aws-key-learning.md)
 * [AWS 99.999% Architecture](software-development/aws-99.999-architecture.md)
