@@ -1,12 +1,30 @@
 # Comprehend
 
-Use natural-language processing (NLP) to help you understand the meaning of sentences in your text (e.g. positive or negative sentences)
+Amazon Comprehend is natural language processing (NLP) service that extracts meaning and insights from text.
 
+**Key Features:**
 
+* Sentiment analysis (positive/negative)
+* Entity recognition
+* Key phrase extraction
+* Language detection
+* Document classification
 
-Use cases:
+**Use Cases:**
 
-1. Analyse Call Center calls&#x20;
-2. Index and Search Product review
-3. Automatically search contracts and for examples of recent court case decisions.
-4. Process Financial Documents.&#x20;
+1. Call Center Analytics
+   * Analyze customer conversations
+   * Track sentiment trends
+   * Identify common issues
+2. Product Review Analysis
+   * Index customer feedback
+   * Track sentiment patterns
+   * Extract key product mentions
+3. Legal Document Processing
+   * Search contract terms
+   * Analyze court decisions
+   * Extract relevant case law
+4. Financial Document Analysis
+   * Process reports and filings
+   * Extract key financial data
+   * Identify market trends

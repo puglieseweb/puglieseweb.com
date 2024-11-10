@@ -1,19 +1,42 @@
 # Transcribe, Polly, Lex
 
+## AWS Audio & Conversational AI Services
+
+### Amazon Transcribe
+
+Converts audio and video into text using automatic speech recognition (ASR).
+
+### Amazon Polly
+
+[Polly](https://aws.amazon.com/polly/) (Generate speech):
+
+* Text-to-speech service that creates lifelike speech
+* Supports multiple languages and accents
+* Natural-sounding voices for various applications
+* Used for:
+  * Audio content creation
+  * Voice response systems
+  * E-learning materials
+  * Accessibility solutions
+
+### Amazon Lex
+
+[Lex](https://aws.amazon.com/pm/lex/) (AI conversational application - chatbox):
+
+* Conversational AI service for building chatbots and voice interfaces
+* Powers technology behind Amazon Alexa
+* Key features:
+  * Natural language understanding
+  * Speech recognition
+  * Dialog management
+  * Integration with AWS services
+* Common uses:
+  * Customer service bots
+  * Virtual assistants
+  * Automated information systems
+  * Interactive voice response (IVR)
 
 
-* Transcribe convert audios, videos and images into text.&#x20;
-* [Polly](https://aws.amazon.com/polly/) (Generate speech):
-  * Polly is a transcript editing and cleanup tool.
-  * turning the text into lifelike speech using a variety of languages and accents.
-  * It's designed to take raw transcripts (often from automatic speech recognition systems) and help clean them up.
-  * Features may include fixing punctuation, adjusting formatting, and correcting common transcription errors.
-  * The goal is to transform raw, often messy transcripts into cleaner, more readable text.
-* [Lex](https://aws.amazon.com/pm/lex/) (AI conversational application - chatbox):
-  * Lex is a writing and publishing platform.
-  * It's used for composing, editing, and publishing various types of content, including blog posts, articles, and potentially podcast show notes.
-  * Lex often incorporates AI-assisted writing features to help with composition and editing.
-  * It provides a streamlined interface for writing and publishing content directly to the web.
 
 
 

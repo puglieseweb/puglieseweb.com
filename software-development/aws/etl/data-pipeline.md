@@ -2,7 +2,7 @@
 
 AWS Data Pipeline is a managed ETL service for automating movement and transformation of data.
 
-This service is designed for orchestrating and automating the movement and transformation of data. Let me break down its core concepts for you.
+This service is designed for orchestrating and automating the movement and transformation of data. Core concepts are:
 
 1. Pipeline Definition:
    * The core of Data Pipeline is the pipeline definition.
@@ -80,3 +80,52 @@ Web service that allows:
 3. copying CSV files or data between S3 buckets&#x20;
 4. Exporting RDS data to S3
 5. Copying data to Redshift
+
+
+
+```mermaid
+flowchart TB
+    subgraph Console["AWS Data Pipeline Console/API"]
+        Pipeline["Pipeline Definition"]
+    end
+
+    subgraph Components["Pipeline Components"]
+        Activities["Activities<br>(Copy, EMR, SQL)"]
+        Preconditions["Preconditions<br>(DynamoDB, Exists)"]
+        Resources["Resources<br>(EC2, EMR)"]
+        Schedule["Schedule"]
+        DataNodes["Data Nodes<br>(S3, RDS, DynamoDB)"]
+    end
+
+    subgraph Tasks["Task Runners"]
+        TR1["Task Runner 1<br>(EC2/On-Premise)"]
+        TR2["Task Runner 2<br>(EC2/On-Premise)"]
+    end
+
+    subgraph Sources["Data Sources"]
+        S3["Amazon S3"]
+        RDS["Amazon RDS"]
+        DDB["DynamoDB"]
+        OnPrem["On-Premise Data"]
+    end
+
+    subgraph Destinations["Data Destinations"]
+        DestS3["Amazon S3"]
+        Redshift["Amazon Redshift"]
+        EMR["Amazon EMR"]
+        DestDDB["DynamoDB"]
+    end
+
+    Pipeline --> Components
+    Components --> Tasks
+    Sources --> Tasks
+    Tasks --> Destinations
+
+    classDef aws fill:#FF9900,stroke:#232F3E,stroke-width:2px,color:white;
+    classDef component fill:#147EBA,stroke:#232F3E,stroke-width:2px,color:white;
+    classDef runner fill:#3B48CC,stroke:#232F3E,stroke-width:2px,color:white;
+
+    class Pipeline,Console aws;
+    class Activities,Preconditions,Resources,Schedule,DataNodes component;
+    class TR1,TR2 runner;
+```
