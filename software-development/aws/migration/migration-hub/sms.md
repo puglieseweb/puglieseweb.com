@@ -1,23 +1,25 @@
 # SMS
 
-Used if you need to migrate VMs form on-premise to AWS
+AWS Server Migration Service (SMS) is a tool designed to migrate virtual machines from on-premises environments to AWS.
 
-SMS allows you to automate and schedule a window where you can move your VMs to AWS by
+### Key Features
 
-* scheduling&#x20;
-* uploading
-* Converting
-* Create an AMI&#x20;
+* Automates the VM migration process
+* Allows scheduling of migration windows
+* Performs incremental migrations of server groups
+* Enables quick testing of migrated servers
+* Minimizes downtime during migration
 
-It supports:
+### Migration Process
 
-* vSphere
-* Hyper-V
-* SCVMM
-* Azure VMs
+1. Schedule migration window
+2. Upload VM data
+3. Convert VM to AWS format
+4. Create Amazon Machine Image (AMI)
 
-Since SMS does incremental migration of chosen server groups
+### Supported Platforms
 
-SMS allows for quick testing of your migrated servers (thanks to incremental migration).
-
-SmS minimizes downtimes&#x20;
+* VMware vSphere
+* Microsoft Hyper-V
+* Microsoft System Center Virtual Machine Manager (SCVMM)
+* Microsoft Azure VMs
