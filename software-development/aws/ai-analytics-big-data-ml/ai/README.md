@@ -66,5 +66,3 @@ Data Sources → Data Prep → AI Processing → Business Apps
 (S3, RDS)    (Glue)     (SageMaker)    (Applications)
          ↳ Bedrock API calls for GenAI ↗
 ```
-
-Would you like details about any specific service or architecture pattern?
