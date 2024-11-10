@@ -1,17 +1,30 @@
 # Snow Family
 
-The Snow Family is a set of secure appliances. They provide, data collection and build-in computing. Used at the edge, in remote location with no data center access or reliable network connectivity, data migration.
+The Snow Family is a set of secure appliances that provide data collection and built-in computing capabilities. These devices are designed for use at the edge, in remote locations with limited or no data center access and unreliable network connectivity.
 
-1. Snowcone: small, robust edge computing. Can hold up to 8TB of data.&#x20;
-2. Snowball: Storage, compute, and GPU. Can hold up to 81 TB of data.
-3. Snowmobile: Up to 100 PB in a very large truck.
+**Device Types**
 
-Both Ways. The Snow Family work to get data into AWS&#x20;
+1. **Snowcone**
+   * Small, robust edge computing device
+   * Storage capacity: Up to 8TB
+2. **Snowball**
+   * Provides storage, compute, and GPU capabilities
+   * Storage capacity: Up to 81TB
+3. **Snowmobile**
+   * Extreme-scale data transfer solution
+   * Storage capacity: Up to 100PB
+   * Delivered in a secure shipping container on a truck
 
+**Data Transfer**
 
+* Bidirectional data transfer capabilities (into and out of AWS)
+* Secure method for large-scale data migration
 
-Use Case scenarions:
+**Use Cases**
 
-1. Hybrid when on-premises storage is required
-2. if on-premise storage is out of space
-3. Storege gatway need to run as VM on-premise
+1. Hybrid cloud deployments requiring on-premises storage
+2. Data center migration when on-premises storage is at capacity
+3. Storage Gateway deployment as a virtual machine (VM) on-premises
+4. Edge computing in locations with limited connectivity
+5. Large-scale data migration projects
+
