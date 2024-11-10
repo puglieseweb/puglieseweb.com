@@ -2,33 +2,47 @@
 
 The Database Migration Service (DMS) allows to migrate relational database, data warehouses, NoSQL databases, and other data stores.
 
-* the migration can either be in or out of AWS.
-* one-time or continuously ongoing replication.&#x20;
-* &#x20;SCT (schema Covertion Tool) to translate database schemas
+*   ## AWS Database Migration Service (DMS)
 
-You schedule tasks to run on the DMS server to move data.
+    ### Overview
 
-Creates the tables and primary keys if they do not exist on the target, or you can create the target tables beforehand.&#x20;
+    AWS DMS enables migration of various database types including:
 
-Source and target data stores are referred to as endpoints. One endpoints must reside in AWS.
+    * Relational databases
+    * Data warehouses
+    * NoSQL databases
+    * Other data stores
 
-You can migrate between different database engines.&#x20;
+    ### Key Features
 
-You can even use the converted schemas with databases running on EC2 or data stored in S3.
+    * Supports migrations both into and out of AWS
+    * Offers one-time or continuous replication
+    * Uses Schema Conversion Tool (SCT) for database schema translation
+    * Allows migration between different database engines
+    * Can work with databases on EC2 or data stored in S3
 
+    ### How It Works
 
+    * Migration tasks are scheduled to run on the DMS server
+    * Source and target data stores are called endpoints
+      * At least one endpoint must be in AWS
+    * DMS can automatically create target tables and primary keys if needed
+      * Alternatively, you can create target tables in advance
 
-Three different migrations types:
+    ### Migration Types
 
-1. Full Load migration. All existing data is moved from sources to targets in parallel
-2. Full Load and CDC to captures changes to the source tables during migration.
-3. CDC only.&#x20;
+    1. **Full Load**
+       * Moves all existing data from source to target in parallel
+    2. **Full Load + CDC (Change Data Capture)**
+       * Performs full load migration
+       * Captures changes to source tables during migration
+    3. **CDC Only**
+       * Only captures and applies ongoing changes
+       * Ensures transactional integrity of the target database
 
-**CDC guarantees transactional integrety of the target database**
+    ### Large-Scale Migration
 
-
-
-## **Migrate Large Data Stores with AWS Snowball with DMF CDC**
+    For large data stores, AWS DMS can be used in conjunction with AWS Snowball and CDC for efficient migration.
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 

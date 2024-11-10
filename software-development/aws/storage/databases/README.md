@@ -1,5 +1,65 @@
 # Databases
 
+## Relational Databases vs Data Warehouses
+
+### Relational Databases (OLTP - Online Transaction Processing)
+
+1. **Purpose**
+   * Designed for day-to-day operations
+   * Handles real-time transactions and updates
+   * Manages current, operational data
+2. **Characteristics**
+   * Optimized for fast, small transactions
+   * Normalized data structure (reduces redundancy)
+   * Frequent updates/writes
+   * Typically smaller data volume
+   * Row-oriented storage
+3. **Use Cases**
+   * Customer orders
+   * Inventory management
+   * Banking transactions
+   * User accounts
+   * Hotel/airline reservations
+
+### Data Warehouses (OLAP - Online Analytical Processing)
+
+1. **Purpose**
+   * Designed for business intelligence
+   * Historical data analysis
+   * Reporting and complex queries
+2. **Characteristics**
+   * Optimized for complex queries
+   * Denormalized data structure (for query performance)
+   * Primarily read operations
+   * Much larger data volumes
+   * Column-oriented storage
+   * Stores historical data over time
+3. **Use Cases**
+   * Business reporting
+   * Sales trend analysis
+   * Financial forecasting
+   * Customer behavior analysis
+   * Performance metrics
+
+### Key Differences
+
+| Aspect             | Relational Database         | Data Warehouse       |
+| ------------------ | --------------------------- | -------------------- |
+| Data Updates       | Continuous, real-time       | Periodic batch loads |
+| Query Type         | Simple, standardized        | Complex, ad-hoc      |
+| Data Scope         | Current                     | Historical           |
+| Size               | Gigabytes                   | Terabytes/Petabytes  |
+| Users              | Operations staff, customers | Analysts, executives |
+| Performance Metric | Transaction speed           | Query response time  |
+| Data Model         | Highly normalized           | Often denormalized   |
+
+### Example
+
+Imagine a retail company:
+
+* **Relational Database**: Handles current inventory, processing sales, managing customer accounts
+* **Data Warehouse**: Analyzes sales patterns over years, customer buying behavior, seasonal trends, and store performance comparisons
+
 ## OLTP vs OLAP
 
 OLTP (Online Transaction Processing) and OLAP (Online Analytical Processing) are two fundamental types of data processing systems, each designed for different purposes and use cases. Here's a comprehensive comparison:
