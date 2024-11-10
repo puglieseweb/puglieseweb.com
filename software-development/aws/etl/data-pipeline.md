@@ -1,5 +1,9 @@
 # Data Pipeline
 
+It's worth noting that while Amazon Data Pipeline is still supported, AWS has been putting more emphasis on newer services like AWS Glue for ETL workloads. However, Data Pipeline remains useful for certain complex workflow scenarios, especially those involving on-premises data sources.
+
+
+
 AWS Data Pipeline is a managed ETL service for automating movement and transformation of data.
 
 This service is designed for orchestrating and automating the movement and transformation of data. Core concepts are:
@@ -50,7 +54,7 @@ Amazon Data Pipeline is particularly useful for scenarios like:
 * Loading data into Amazon Redshift for analysis
 * Orchestrating complex ETL workflows across multiple AWS services
 
-It's worth noting that while Amazon Data Pipeline is still supported, AWS has been putting more emphasis on newer services like AWS Glue for ETL workloads. However, Data Pipeline remains useful for certain complex workflow scenarios, especially those involving on-premises data sources.
+
 
 Activities are pipeline components that define the work to perform.
 
