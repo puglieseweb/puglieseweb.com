@@ -1,13 +1,31 @@
-# Application Migration Service (MGM)
+# MGN
 
-Used when you need to migrate VMs and reduce RTOs and RPOs
+AWS Application Migration Service (MGN) is a service designed to streamline application migration to AWS while minimizing Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).
 
-AWS migration service allows to:
+### Key Features
 
-* Lift and Shift: Automated lift-and-shift service for expediting migration of apps to AWS
-* Flexible: used for physical, virtual, or cloud servers to avoid cutover windows or disruptions
-* Replicates source servers into AWS, and automatically convert and launches on AWS to migrate quickly&#x20;
-* RTO and RPO. RTO is measured in minutes, depending on OS boot time. RPO is measured in sub-seconds.&#x20;
+#### Lift-and-Shift Capabilities
+
+* Automated service for quick application migration to AWS
+* Streamlines the migration process of existing applications
+
+#### Flexible Source Environment Support
+
+* Physical servers
+* Virtual machines
+* Cloud servers
+* Minimizes cutover windows and service disruptions
+
+#### Automated Migration Process
+
+* Replicates source servers to AWS
+* Automatically converts servers to cloud-native format
+* Launches applications directly on AWS
+
+#### Performance Metrics
+
+* **RTO (Recovery Time Objective)**: Measured in minutes, varies based on operating system boot time
+* **RPO (Recovery Point Objective)**: Measured in sub-seconds for minimal data loss
 
 
 
