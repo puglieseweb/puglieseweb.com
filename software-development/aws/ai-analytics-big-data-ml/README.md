@@ -10,7 +10,7 @@ We can thinking about AI, Analytics, Big Data and ML in this way:
 You could visualize it as a hierarchy:
 
 ```
-CopyAI (Broadest: Creating intelligent systems)
+AI (Broadest: Creating intelligent systems)
     ↳ Analytics (Getting insights from data)
         ↳ Big Data (Infrastructure & Processing)
             ↳ Machine Learning (Learning patterns from data)
