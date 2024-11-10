@@ -1,5 +1,50 @@
 # ETL
 
+
+
+```mermaid
+flowchart TB
+    subgraph Glue["AWS Glue Architecture"]
+        direction TB
+        GC[Data Catalog]
+        GC --> GCraw[Raw Data Tables]
+        GC --> GCproc[Processed Data Tables]
+        
+        GT[ETL Jobs]
+        GT --> |Serverless| GS[Spark/Python]
+        
+        GD[Development Endpoints]
+        GD --> GT
+    end
+
+    subgraph Pipeline["AWS Data Pipeline"]
+        direction TB
+        PD[Pipeline Definition]
+        PT[Task Runners]
+        PR[EC2 Resources]
+        
+        PD --> PT
+        PT --> PR
+    end
+
+    subgraph Sources["Data Sources"]
+        S3[("S3")]
+        RDS[("RDS")]
+        RED[("Redshift")]
+    end
+
+    Sources --> Glue
+    Sources --> Pipeline
+
+    classDef modern fill:#147EBA,stroke:#232F3E,stroke-width:2px,color:white;
+    classDef legacy fill:#FF9900,stroke:#232F3E,stroke-width:2px,color:white;
+    classDef source fill:#3B48CC,stroke:#232F3E,stroke-width:2px,color:white;
+
+    class Glue,GC,GT,GD modern;
+    class Pipeline,PD,PT,PR legacy;
+    class Sources,S3,RDS,RED source;
+```
+
 | ETL Solution                            | Type                                          | Key Features                                                             | Best For                                                            | Scalability | Ease of Use              |
 | --------------------------------------- | --------------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------- | ----------- | ------------------------ |
 | AWS Glue                                | Fully managed ETL service                     | Serverless, auto-scaling, visual ETL job creation                        | Large-scale data integration, data catalog                          | Automatic   | High                     |
