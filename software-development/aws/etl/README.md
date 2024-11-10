@@ -1,6 +1,11 @@
 # ETL
 
+The diagram below shows how:
 
+1. Glue provides a more integrated, serverless approach
+2. Data Pipeline requires more manual configuration
+3. Glue's Data Catalog provides central metadata management
+4. Both can access the same data sources, but Glue offers more built-in capabilities
 
 ```mermaid
 flowchart TB
