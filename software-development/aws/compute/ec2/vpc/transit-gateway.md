@@ -2,7 +2,7 @@
 
 AWS Transit Gateway connects VPCs and on-premises networks through a central hub. This simplifies your network and puts an end to complex peering relationships. **It acts as a cloud router** - each new connection is only made once.
 
-<figure><img src="../../../../.gitbook/assets/AWS - Transit Gateway.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/AWS - Transit Gateway.png" alt=""><figcaption></figcaption></figure>
 
 
 
