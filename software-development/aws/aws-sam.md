@@ -1,8 +1,6 @@
 # SAM
 
-I'll review, correct, and enhance the explanation of AWS SAM with more technical details and practical examples.
-
-## AWS Serverless Application Model (SAM)
+## AWS Serverless Application Model (SAM) Overview
 
 ### Overview
 
