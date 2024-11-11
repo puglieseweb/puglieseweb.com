@@ -8,6 +8,52 @@ description: Identity and Access Management
 
 
 
+
+
+```mermaid
+flowchart TB
+    subgraph IAM["AWS IAM"]
+        direction TB
+        
+        subgraph Principals["IAM Principals"]
+            Users["IAM Users\n(Long-term credentials)"]
+            Roles["IAM Roles\n(Temporary credentials)"]
+        end
+        
+        subgraph Groups["IAM Groups"]
+            AdminGroup["Admin Group"]
+            DevGroup["Developer Group"]
+            ReadGroup["Read-Only Group"]
+        end
+        
+        subgraph Policies["IAM Policies"]
+            ManagedPol["AWS Managed Policies"]
+            CustomPol["Customer Managed Policies"]
+            InlinePol["Inline Policies"]
+        end
+
+        Users --> |"Belongs to"| Groups
+        Users --> |"Can assume"| Roles
+        
+        Groups --> |"Attached to"| ManagedPol
+        Groups --> |"Attached to"| CustomPol
+        Groups --> |"Embedded in"| InlinePol
+        
+        Roles --> |"Trust Policy"| TrustRel["Trust Relationships\n(Who can assume)"]
+        Roles --> |"Permission Policy"| ManagedPol
+        Roles --> |"Permission Policy"| CustomPol
+        
+        EC2["EC2 Instances"] --> |"Can assume"| Roles
+        Lambda["Lambda Functions"] --> |"Can assume"| Roles
+        FedUsers["Federated Users"] --> |"Can assume"| Roles
+        
+        style IAM fill:#f5f5f5,stroke:#333
+        style Principals fill:#e1f5fe,stroke:#0288d1
+        style Groups fill:#e8f5e9,stroke:#388e3c
+        style Policies fill:#fff3e0,stroke:#f57c00
+    end
+```
+
 AWS IAM (Identity and Access Management) provides several types of identities to manage access to AWS resources:
 
 1. IAM Users:
