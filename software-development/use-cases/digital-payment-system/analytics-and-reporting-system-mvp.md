@@ -1,6 +1,6 @@
-# Page 1
+# Analytics & Reporting System MVP
 
-I'll create a diagram showing how to implement a minimal viable reporting solution on AWS, focusing on the business application and data publishing, while deferring the full Analytics & Reporting system implementation.
+A minimal viable reporting solution on AWS, focusing on the business application and data publishing, while deferring the full Analytics & Reporting system implementation.
 
 
 
