@@ -24,7 +24,7 @@
 | Execution Guarantee | Exactly-once execution                         | At-least-once execution                   |
 | Duration Limit      | Up to 1 year                                   | Up to 5 minutes                           |
 | Best Used For       | Long-running workflows requiring audit history | High-event-rate workloads                 |
-| Performance         | -                                              | Up to 2,000 executions/second             |
+| Performance         | Up to 2,000 executions/second                  | Up to 100,000 executions/second           |
 | Use Case Example    | Complex business processes                     | IoT data streaming and ingestion          |
 | Pricing Model       | Per state transition                           | Based on executions, duration, and memory |
 
