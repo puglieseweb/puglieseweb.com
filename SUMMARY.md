@@ -211,6 +211,8 @@
     * [Route 53 Traffic Flow](software-development/aws/route-53/route-53-traffic-flow.md)
   * [Messaging Queue and Notification](software-development/aws/queue-and-notification/README.md)
     * [EventBridge](software-development/aws/messaging-queue-and-notification/eventbridge.md)
+    * [EventBridge VS Kinesis](software-development/aws/queue-and-notification/eventbridge-vs-kinesis.md)
+    * [Messaging](software-development/aws/queue-and-notification/messaging.md)
     * [MSK](software-development/aws/queue-and-notification/msk.md)
     * [SNS (Topics)](software-development/aws/queue-and-notification/sns-topics.md)
     * [Amazon MQ Overview](software-development/aws/queue-and-notification/amazon-mq-overview.md)
