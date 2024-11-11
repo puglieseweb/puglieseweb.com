@@ -7,7 +7,7 @@
 1. **Identity-based Policies**
    * Attached to IAM users, groups, or roles
    * Define what actions the identity can perform
-   * Can be AWS managed, customer managed, or inline
+   * Can be AWS managed, customer managed (CMP), or inline
 2. **Resource-based Policies**
    * Attached directly to resources (e.g., S3 buckets)
    * Define who can access the resource and what actions they can perform
