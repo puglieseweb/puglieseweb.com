@@ -172,7 +172,6 @@
   * [Decoupling Workflow](software-development/aws/decoupling-workflow/README.md)
     * [DLQ](software-development/aws/decoupling-workflow/dlq.md)
     * [SQS](software-development/aws/decoupling-workflow/sqs.md)
-  * [HA](software-development/aws/ha.md)
   * [Elastic Load Balancers](software-development/aws/elastic-load-balancers.md)
   * [Monitoring](software-development/aws/monitoring/README.md)
     * [OpenSearch](software-development/aws/monitoring/opensearch.md)

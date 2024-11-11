@@ -1,22 +1,37 @@
 # AppFlow
 
-* Thsi service is used to Ingest data from third-party SaaS vendors and stores them in Amazon S3
-* Integration. Fully managed integration service for exchanging data between SaaS apps and AWS services
-* Bi-Directional data transfer
+Amazon AppFlow service ingests data from third-party SaaS vendors and stores it in Amazon S3.
 
-### Concepts
+### Key Features
 
-* Flow. Transfer data between source and destination
-* Data Mapping. Determinate how source data is stored within the destination
-* Filters. Controls which data is transferred
-* Triggers. How the flow is started. Supported types are:
+* Fully managed integration service for exchanging data between SaaS applications and AWS services
+* Bi-directional data transfer capabilities
+
+### Core Concepts
+
+#### Flow
+
+* Manages data transfer between source and destination
+
+#### Data Mapping
+
+* Determines how source data is stored within the destination
+
+#### Filters
+
+* Controls which data is transferred
+
+#### Triggers
+
+* Determines how the flow is initiated
+* Supported trigger types:
   * Run on demand
   * Run on event
-  * Run on schedule&#x20;
+  * Run on schedule
 
-Example of use cases
+### Common Use Cases
 
-1. Transfer Salesforse records to Amazon Redshift&#x20;
-2. Ingesting and analyzing Slack conversations in S3
-3. Migrating Zendesk and other help desk support tickets to Snowflake
-4. Transferring aggregate data on a scheduled basis to S3 (Up to 100 GB per flow)
+1. Transfer Salesforce records to Amazon Redshift
+2. Ingest and analyze Slack conversations in S3
+3. Migrate Zendesk and other help desk support tickets to Snowflake
+4. Transfer aggregate data to S3 on a scheduled basis (up to 100 GB per flow)
