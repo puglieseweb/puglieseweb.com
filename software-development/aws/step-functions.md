@@ -1,53 +1,53 @@
 # Step Functions
 
-* Serveless orchestration service meant for event-driven task execution.&#x20;
-* Combining different AWS services for business applications.
-* Main components are **state machines** and **tasks.**
-* Steps. A step is a state withing a workflow (state machine)
-* State Machine. A particular workflow with different event-driven steps.
-* Comes with a graphical console and a workflow view flows
-* has Tasks. Specific states within a workflow (state machine) representing a single unit of work.
+[AWS Step Functions](https://aws.amazon.com/step-functions/) are a serverless orchestration service designed for event-driven task execution, enabling the combination of various AWS services for business applications.
 
-## Workflows types
+### Core Components
 
-Each workflow has executions. Execution are instances where you run your workflows in order to execute tasks.&#x20;
+#### State Machines
 
+* Represents a workflow with different event-driven steps
+* Uses Amazon States Language
+* Includes a graphical console and workflow viewer
+* Each workflow can have multiple executions (instances of running workflows)
 
+#### States (Steps)
 
-| Standard Workflow                                                        | Express Workflow                                                     |
-| ------------------------------------------------------------------------ | -------------------------------------------------------------------- |
-| Exactly-once execution                                                   | At-least-one workflow execution                                      |
-| Can run for up 1 year                                                    | up to 5 minutes                                                      |
-| Useful for long-running workflows that need to have an auditable history | Useful for high-event-rate workloads                                 |
-| rates up to 2,000 executions per second                                  | Exampel use is IoT data streaming and ingestion                      |
-| pricing based per state transition                                       | Pricing based on number of executions, duration, and memory consumed |
-|                                                                          |                                                                      |
-|                                                                          |                                                                      |
+* Represent individual units of work within a workflow
+* Each state is referenced by a unique name
+* Can make decisions based on input, perform actions, or pass output
 
-### States and State Machines
+### Workflow Types
 
-* Flexible. States are used to make decisions based on input, perform certain actions, or pass output.
-* Use Amazon States Language.&#x20;
-* States are elements within the state machine referenced by name
+| Feature             | Standard Workflows                             | Express Workflows                         |
+| ------------------- | ---------------------------------------------- | ----------------------------------------- |
+| Execution Guarantee | Exactly-once execution                         | At-least-once execution                   |
+| Duration Limit      | Up to 1 year                                   | Up to 5 minutes                           |
+| Best Used For       | Long-running workflows requiring audit history | High-event-rate workloads                 |
+| Performance         | -                                              | Up to 2,000 executions/second             |
+| Use Case Example    | Complex business processes                     | IoT data streaming and ingestion          |
+| Pricing Model       | Per state transition                           | Based on executions, duration, and memory |
 
-Example can be an online pickup order: Each step in this workflow is considered a state.
+### State Types
 
-### States
+1. **Pass State**
+   * Passes input directly to output
+2. **Task State**
+   * Performs a single unit of work
+   * Can integrate with services like Lambda, Batch, and SNS
+3. **Choice State**
+   * Adds branching logic to the state machine
+4. **Wait State**
+   * Creates specific time delays
+5. **Succeed State**
+   * Stops execution successfully
+6. **Fail State**
+   * Stops execution and marks as failed
+7. **Parallel State**
+   * Executes multiple branches simultaneously
+8. **Map State**
+   * Runs steps based on elements of an input array
 
-Pass state: passes any input directly to its output&#x20;
+#### Real-World Example
 
-Task state: Single unit of work performed (e.g. Lambda, Batch, and SNS)
-
-Chose state: Brancing logic to the state machine
-
-Wait state: create a specific time delay within the state machine
-
-Succeed state: Stops executions successfully&#x20;
-
-Fail state: Stop executions and marks them as failures
-
-Parallel state: Runs parallel branches of executions within state machine
-
-Map state: runs a set of steps based on elements of an input array
-
-###
+An online pickup order workflow where each step in the process represents a different state in the state machine.
