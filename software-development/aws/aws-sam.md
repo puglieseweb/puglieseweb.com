@@ -69,7 +69,6 @@ graph LR
         D -->|sam logs| J[CloudWatch Logs]
         D -->|sam trace| K[X-Ray Traces]
     end
-
 ```
 
 5. Advanced Features
@@ -141,36 +140,3 @@ sam deploy --config-file # Use config file
 * CloudWatch for monitoring
 * AWS Step Functions for orchestration
 
-
-
-```mermaid
-flowchart LR
-    subgraph "On-Premises"
-        NFS[NFS Share]
-        SMB[SMB Share]
-        Agent[DataSync Agent]
-    end
-
-    subgraph "AWS Cloud"
-        subgraph "AWS Storage Services"
-            S3[(Amazon S3)]
-            EFS[(Amazon EFS)]
-            FSx[(Amazon FSx)]
-        end
-    end
-
-    NFS --> Agent
-    SMB --> Agent
-    
-    Agent -->|Secure Transfer| S3
-    Agent -->|Secure Transfer| EFS
-    Agent -->|Secure Transfer| FSx
-
-    style Agent fill:#FF9900,stroke:#FF9900,color:white
-    style S3 fill:#3F8624,stroke:#3F8624,color:white
-    style EFS fill:#3F8624,stroke:#3F8624,color:white
-    style FSx fill:#3F8624,stroke:#3F8624,color:white
-
-    classDef onPrem fill:#232F3E,stroke:#232F3E,color:white
-    class NFS,SMB onPrem
-```
