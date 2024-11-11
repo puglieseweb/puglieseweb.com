@@ -1,35 +1,73 @@
 # SNS (Topics)
 
-A push-based messaging service: any messages sent by a producer arrives at the SNS topic and it is sent to all consumers
+Amazon SNS (Simple Notification Service) is a fully managed pub/sub messaging service where publishers send messages to topics and these messages are automatically delivered to all subscribed endpoints/consumers.
 
-Use cases:&#x20;
+_Key Features:_
 
-* Alert systems or person
+* Message size:
+  * Standard: Up to 256 KB of text in any format
+  * Extended: Up to 2 GB using **Amazon SNS Extended Client Library** (stores payload in S3)
+* Encryption:
+  * In-transit encryption by default
+  * At-rest encryption using KMS (optional)
+* Access Control:
+  * IAM policies
+  * SNS Access policies (define who can publish/subscribe)
 
-Supported Subscribers:
+_Supported Subscribers:_
 
-* Kinesis Data Firehose, SQS, Lamda, email, HTTP(s),SMS, and platform application endpoint.
-* Message size up to 256 KB of text in any format, but you can also leverage the **SNS Extended Library** allowing messages up to 2GB. in this case the payload is stored in S3 and the published message is a reference to the object in S3
-* DLQ Support&#x20;
-* support SQS FIFO
-* Encrypted in transit by default, and can be encrytped at rest.
-* has Access policies do define who can published and subscribe
+* Application integration:
+  * Amazon SQS
+  * AWS Lambda
+  * Amazon Kinesis Data Firehose
+* Messaging:
+  * HTTP/HTTPS endpoints
+  * Email
+  * SMS
+  * Mobile push notifications
+  * Platform application endpoints
 
-SNS Fanout:
+_Message Filtering:_
 
-* Message are replicated to multiple endpoint subscriptions.
-* Allows for fully decoupled parallel asynchronous processing
+* Subscription filter policies allow filtering messages before delivery
+* Reduces unnecessary message processing
+
+_Message Reliability:_
+
+* Dead Letter Queues (DLQ) support for failed message delivery
+* Custom retry policies supported for HTTP/HTTPS endpoints
+* Message durability through multiple Availability Zone replication
+
+_Messaging Types:_
+
+* Standard Topics:
+  * Best-effort ordering
+  * At-least-once delivery
+* FIFO Topics:
+  * Strict message ordering
+  * Exactly-once message delivery
+  * Must have SQS FIFO queues as subscribers
+
+_SNS Fanout Pattern:_
+
+* Pushes messages to multiple subscribing endpoints simultaneously
+* Enables parallel, asynchronous processing
+* Provides complete decoupling between publishers and subscribers
+* Common use cases:
+  * Application alerts
+  * Monitoring systems
+  * Workflow processing
+  * Cross-account/cross-region message delivery
+
+_Best Practices:_
+
+* Use filter policies to reduce unnecessary message delivery
+* Implement DLQ for handling failed deliveries
+* Monitor delivery metrics using CloudWatch
+* Use FIFO topics when message ordering is critical
 
 
 
-You can add also Filtering policies.
 
 
-
-SNS only support custom retry polices for HTTP(s) endpoints
-
-
-
-
-
-<figure><img src="../../../../.gitbook/assets/AWS - SNS (1).svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/AWS - SNS (1).svg" alt=""><figcaption></figcaption></figure>
