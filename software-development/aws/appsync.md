@@ -1,3 +1,9 @@
+---
+description: >-
+  AWS AppSync is an enterprise-level, fully managed API management service that
+  connects applications to events, data, and AI models.
+---
+
 # AppSync
 
 * Robust, scalable GraphQL interface for application developers&#x20;
