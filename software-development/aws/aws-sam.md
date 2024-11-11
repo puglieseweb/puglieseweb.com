@@ -1,4 +1,4 @@
-# AWS SAM
+# SAM
 
 AWS SAM stands for AWS Serverless Application Model.
 
