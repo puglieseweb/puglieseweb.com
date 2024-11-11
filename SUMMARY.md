@@ -4,13 +4,13 @@
 
 ## Software development
 
-* [AWS Example architectures](software-development/aws-example-architectures/README.md)
-  * [Digital Payment System](software-development/aws-example-architectures/digital-payment-system/README.md)
-    * [Analytics & Reporting System MVP](software-development/aws-example-architectures/digital-payment-system/analytics-and-reporting-system-mvp.md)
-    * [Data Pipeline](software-development/aws-example-architectures/digital-payment-system/data-pipeline.md)
+* [AWS Example architectures](software-development/aws-example-architectures.md)
+  * [Digital Payment System](software-development/use-cases/digital-payment-system/README.md)
+    * [Analytics & Reporting System MVP](software-development/use-cases/digital-payment-system/analytics-and-reporting-system-mvp.md)
+    * [Data Pipeline](software-development/use-cases/digital-payment-system/data-pipeline.md)
     * [Monitoring and visualization solution for your event-driven architecture (EDA) in AWS.](software-development/aws-example-architectures/digital-payment-system/monitoring-and-visualization-solution-for-your-event-driven-architecture-eda-in-aws..md)
-    * [Reporting](software-development/aws-example-architectures/digital-payment-system/reporting.md)
-    * [Data](software-development/aws-example-architectures/digital-payment-system/data.md)
+    * [Reporting](software-development/use-cases/digital-payment-system/reporting.md)
+    * [Data](software-development/use-cases/digital-payment-system/data.md)
 * [AWS Key Learning](software-development/aws-key-learning.md)
 * [AWS NFRs](software-development/aws-nfrs/README.md)
   * [AWS Integration Pattern Comparison Matrix](software-development/aws-nfrs/aws-integration-pattern-comparison-matrix.md)

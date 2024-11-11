@@ -1,6 +1,6 @@
 # Monitoring and visualization solution for your event-driven architecture (EDA) in AWS.
 
-Let me help you design a monitoring and visualization solution for your event-driven architecture (EDA) in AWS.
+The monitoring and visualization solution for your event-driven architecture (EDA) in AWS look like:
 
 
 
