@@ -1,20 +1,78 @@
 # Batch
 
-1. Batched Workloads: allows to run batch computing workloads within AWS (run on EC2 or ECS/Fargate)&#x20;
-2. Remove any heavy lifting for configuration and management of infrastructure
-3. Automatically provision and scale
-4. No install required
+## AWS Batch Overview
+
+A fully managed service for running batch computing workloads on AWS infrastructure (EC2 or ECS/Fargate).
+
+### Key Benefits
+
+1. Zero infrastructure management overhead
+2. Automatic provisioning and scaling
+3. No installation required
+
+### Core Components
+
+#### 1. Jobs
+
+* Basic unit of work in AWS Batch
+* Can be implemented as:
+  * Shell scripts
+  * Executable files
+  * Docker containers
+
+#### 2. Job Definitions
+
+* Blueprints for job execution
+* Specify:
+  * Resource requirements
+  * Environment configuration
+  * Job parameters
+
+#### 3. Job Queues
+
+* Holding area for submitted jobs
+* Jobs wait here until:
+  * Resources are available
+  * Scheduling conditions are met
+* Can set multiple priority levels
+
+#### 4. Compute Environments
+
+Types:
+
+1. **Managed**
+   * AWS handles capacity and instance management
+   * Automatic scaling
+   * ECS/Fargate support
+2. **Unmanaged**
+   * User controls compute resources
+   * Greater customization options
+   * Manual scaling
+
+Here's a visual representation of how these components interact:
 
 
 
-Important Concepts
 
-* Jobs: Units of work that are submitted to AWS Batch (e.g. shell scripts, executables, and Docker images)
-* Job Definitions: Specify how jobs are run (blueprint for the resources in the job)
-* Job Queues: jobs reside in a queue until they are scheduled for execution in a compute environment.
-* Compute Environment: set of managed or unmanaged compute resources used to run jobs
 
-<figure><img src="../../../.gitbook/assets/AWS - Batches.svg" alt=""><figcaption></figcaption></figure>
+```mermaid
+flowchart LR
+    J[Jobs] --> JD[Job Definitions]
+    JD --> JQ[Job Queues]
+    JQ --> CE[Compute Environment]
+    
+    subgraph CE[Compute Environment]
+        EC2[EC2 Instances]
+        ECS[ECS/Fargate]
+    end
+    
+    style J fill:#f9f,stroke:#333
+    style JD fill:#bbf,stroke:#333
+    style JQ fill:#bfb,stroke:#333
+    style CE fill:#fbb,stroke:#333
+```
+
+<figure><img src="../../.gitbook/assets/AWS - Batches.svg" alt=""><figcaption></figcaption></figure>
 
 | Fargate                                 | EC2                                       |
 | --------------------------------------- | ----------------------------------------- |

@@ -168,7 +168,7 @@
     * [Data Pipeline](software-development/aws/etl/data-pipeline.md)
   * [AppFlow](software-development/aws/appflow.md)
   * [Step Functions](software-development/aws/step-functions.md)
-  * [Batch](software-development/aws/batch/README.md)
+  * [Batch](software-development/aws/batch.md)
     * [Spring Boot Batch VS AWS Batch](software-development/aws/batch/spring-boot-batch-vs-aws-batch.md)
   * [Decoupling Workflow](software-development/aws/decoupling-workflow/README.md)
     * [DLQ](software-development/aws/decoupling-workflow/dlq.md)
