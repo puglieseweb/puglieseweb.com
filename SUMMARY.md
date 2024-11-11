@@ -217,6 +217,7 @@
     * [SQS](software-development/aws/queue-and-notification/sqs.md)
 * [Use Cases](software-development/use-cases/README.md)
   * [Digital Payment System](software-development/use-cases/digital-payment-system/README.md)
+    * [Reporting](software-development/use-cases/digital-payment-system/reporting.md)
     * [Data](software-development/use-cases/digital-payment-system/data.md)
 * [Software Design](software-development/software-design/README.md)
   * [Page](software-development/software-design/page.md)
