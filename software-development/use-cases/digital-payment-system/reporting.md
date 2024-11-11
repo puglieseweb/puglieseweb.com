@@ -73,6 +73,76 @@ mindmap
 
 Let me explain the key aspects of each report category:
 
+```mermaid
+flowchart TB
+    subgraph ReportingSystem["Enterprise Reporting System"]
+        direction TB
+        
+        subgraph Internal["Internal Client Reports"]
+            direction TB
+            OpReports["Operational Reports"]
+            FinReports["Financial Reports"]
+            CompReports["Compliance Reports"]
+            AdminReports["Administrative Reports"]
+            
+            subgraph OpDetails["Operational Details"]
+                PerfMetrics["Performance Metrics"]
+                ResUtilization["Resource Utilization"]
+                SysHealth["System Health"]
+                IncidentReports["Incident Reports"]
+            end
+            
+            subgraph FinDetails["Financial Details"]
+                CostAnalysis["Cost Analysis"]
+                BudgetTracking["Budget Tracking"]
+                ResourceCost["Resource Costs"]
+                Forecasting["Cost Forecasting"]
+            end
+        end
+        
+        subgraph External["External Client Reports"]
+            direction TB
+            UsageReports["Usage Reports"]
+            BillReports["Billing Reports"]
+            SLAReports["SLA Reports"]
+            
+            subgraph UsageDetails["Usage Details"]
+                ServiceUsage["Service Usage"]
+                APIMetrics["API Metrics"]
+                ResourceConsumption["Resource Consumption"]
+            end
+            
+            subgraph BillDetails["Billing Details"]
+                Invoice["Invoices"]
+                CostBreakdown["Cost Breakdown"]
+                ServiceCharges["Service Charges"]
+            end
+        end
+        
+        subgraph Access["Access Control"]
+            IAMRoles["IAM Roles"]
+            
+            subgraph Internal_Access["Internal Access"]
+                AdminRole["Admin Role"]
+                AnalystRole["Analyst Role"]
+                AuditorRole["Auditor Role"]
+            end
+            
+            subgraph External_Access["External Access"]
+                ClientRole["Client Role"]
+                ReadOnlyRole["Read-Only Role"]
+            end
+        end
+    end
+    
+    Internal_Access -->|"Full Access"| Internal
+    External_Access -->|"Limited Access"| External
+    
+    style Internal fill:#e1f5fe,stroke:#0288d1
+    style External fill:#e8f5e9,stroke:#388e3c
+    style Access fill:#fff3e0,stroke:#f57c00
+```
+
 1. Internal Reports
 
 Financial Reports:
