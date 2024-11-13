@@ -4,8 +4,9 @@
 
 ## Software development
 
-* [Cloud Data Security Principles](software-development/cloud-data-security-principles.md)
-* [Vaultless Tokenization](software-development/vaultless-tokenization.md)
+* [Cloud Data Security Principles](software-development/cloud-data-security-principles/README.md)
+  * [Security Controls and Data Protection Framework](software-development/cloud-data-security-principles/security-controls-and-data-protection-framework.md)
+  * [Vaultless Tokenization](software-development/cloud-data-security-principles/vaultless-tokenization.md)
 * [AWS Example architectures](software-development/aws-example-architectures.md)
   * [Digital Payment System](software-development/use-cases/digital-payment-system/README.md)
     * [Analytics & Reporting System MVP](software-development/use-cases/digital-payment-system/analytics-and-reporting-system-mvp.md)
