@@ -2,8 +2,6 @@
 
 I'll update the architecture to include the wallet services and differentiate between provisioning and payment token states. I'll create two diagrams: one for the overall architecture and another focused on the state management and reporting.
 
-
-
 ```mermaid
 
 flowchart TB
