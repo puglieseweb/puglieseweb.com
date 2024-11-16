@@ -17,10 +17,14 @@
     * Supports complex event filtering and transformation
     * Can integrate with many AWS services and SaaS applications
 
+| Characteristic | Topics      | Fanout        |
+| -------------- | ----------- | ------------- |
+| Filtering      | Topic-based | Complex rules |
+| Scalability    | Good        | Best          |
+| Flexibility    | Medium      | High          |
+| Complexity     | Medium      | Higher        |
 
-
-```mermaid
-```
+<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 | Feature             | SQS                                     | SNS                                         | Kinesis                                            | EventBridge                                                    |
 | ------------------- | --------------------------------------- | ------------------------------------------- | -------------------------------------------------- | -------------------------------------------------------------- |
