@@ -1,2 +1,0 @@
-# CloudWatch Logs Insights
-
