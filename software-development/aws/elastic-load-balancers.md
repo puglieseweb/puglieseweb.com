@@ -7,6 +7,22 @@ There are 4 ELB types:
 3. Gateway Load Balancers (Layer 3)
 4. Classic Load Balaners (Layer4/7)
 
+
+
+### Comparison Chart
+
+```
+CopyFeature          | ALB           | NLB           | GWLB
+-----------------|---------------|---------------|----------------
+Max Throughput   | 100 Gbps      | 100 Gbps      | 100 Gbps
+Latency         | ~400ms        | <100ms        | Low
+Protocol Layer  | Layer 7       | Layer 4       | Layer 3/4
+Use Case        | Web apps      | TCP/UDP apps  | Security apps
+TLS Termination | Yes           | Yes           | No
+HTTP/2          | Yes           | No            | No
+WebSocket       | Yes           | Yes           | No
+```
+
 ### Layer 7 Application Load Balancer (ALB)
 
 ALB are Layer 7 aware and support only two linsteners: HTTP adn HTTPS.
