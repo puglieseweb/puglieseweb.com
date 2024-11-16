@@ -225,7 +225,6 @@
   * [Messaging Queue and Notification](software-development/aws/queue-and-notification/README.md)
     * [EventBridge](software-development/aws/messaging-queue-and-notification/eventbridge.md)
     * [EventBridge(Event Router) VS Kinesis(Event Stream)](software-development/aws/queue-and-notification/eventbridge-event-router-vs-kinesis-event-stream.md)
-    * [Messaging](software-development/aws/queue-and-notification/messaging.md)
     * [MSK](software-development/aws/queue-and-notification/msk.md)
     * [SNS (Topics)](software-development/aws/queue-and-notification/sns-topics.md)
     * [SQS](software-development/aws/queue-and-notification/sqs.md)
@@ -286,6 +285,7 @@
 
 ## Working for an enterprise
 
+* [Next step](working-for-an-enterprise/next-step.md)
 * [Job roles](working-for-an-enterprise/job-roles/README.md)
   * [SME role](working-for-an-enterprise/job-roles/sme-role.md)
 * [Common issues](working-for-an-enterprise/untitled.md)

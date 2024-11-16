@@ -1,12 +1,12 @@
-# EventBridge VS Kinesis
+# EventBridge(Event Router) VS Kinesis(Event Stream)
 
 [Check out What are event-driven architectures](https://serverlessland.com/event-driven-architecture/what-are-event-driven-architectures)
 
 
 
-Let me explain the key differences between AWS Event Router (EventBridge) and Event Streams (Kinesis):
+The key differences between AWS Event Router (EventBridge) and Event Streams (Kinesis):
 
-Event Router (EventBridge):
+Event Router (EventBridge) are:
 
 * Acts like a serverless event bus for routing events between AWS services, SaaS apps, and custom applications
 * Best for event-driven architectures where you need to connect multiple services based on rules/patterns
