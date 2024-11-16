@@ -132,3 +132,9 @@ To summarise all Components of Observability in AWS are:
 | Cost Model             | Pay for what you use (ingestion, storage, retrieval)                                                                 | Free tier available, then pay for events recorded                                                       |
 | Cross-account Support  | Limited (requires additional setup)                                                                                  | Built-in support for organization-wide trails                                                           |
 | Custom Inputs          | Supports custom metrics and logs                                                                                     | Does not support custom inputs                                                                          |
+
+
+
+## Resources
+
+[https://cloudonaut.io/deep-dive-aws-cloudtrail/](https://cloudonaut.io/deep-dive-aws-cloudtrail/)
