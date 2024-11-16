@@ -228,7 +228,7 @@
     * [MSK](software-development/aws/queue-and-notification/msk.md)
     * [SNS (Topics)](software-development/aws/queue-and-notification/sns-topics.md)
     * [SQS](software-development/aws/queue-and-notification/sqs.md)
-    * [Amazon MQ Overview](software-development/aws/queue-and-notification/amazon-mq-overview.md)
+    * [Amazon MQ](software-development/aws/queue-and-notification/amazon-mq-overview.md)
 * [Software Design](software-development/software-design/README.md)
   * [Page](software-development/software-design/page.md)
   * [Event-based Microservices](software-development/software-design/event-based-microservices/README.md)
