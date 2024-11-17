@@ -2,6 +2,8 @@
 
 [AWS Step Functions](https://aws.amazon.com/step-functions/) are a serverless orchestration service designed for event-driven task execution, enabling the combination of various AWS services for business applications.
 
+<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+
 ### Core Components
 
 #### State Machines
