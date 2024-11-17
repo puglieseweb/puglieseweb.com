@@ -28,6 +28,40 @@ flowchart TB
     style Core fill:#fff3e0,stroke:#f57c00
 ```
 
+```mermaid
+flowchart TB
+    subgraph AWS_Identity_Center["AWS Identity Center (formerly AWS SSO)"]
+        IDSTORE[Identity Store]
+        SSO_Portal[SSO Portal]
+    end
+    
+    subgraph IAM["AWS IAM"]
+        Roles[IAM Roles]
+        Users[IAM Users]
+        Policies[IAM Policies]
+    end
+    
+    subgraph Cognito["Amazon Cognito"]
+        UserPools[User Pools]
+        IdentityPools[Identity Pools]
+    end
+
+    IDSTORE --> SSO_Portal
+    SSO_Portal --> Roles
+    
+    UserPools --> IdentityPools
+    IdentityPools --> Roles
+    
+    ExtIdentity[External Identity Providers] --> AWS_Identity_Center
+    ExtIdentity --> UserPools
+    
+    Users --> Roles
+    Roles --> Policies
+    
+    Client[Client Applications] --> UserPools
+    WebApp[Web/Mobile Apps] --> IdentityPools
+```
+
 
 
 1. AWS IAM (Identity and Access Management):
@@ -62,38 +96,3 @@ Key Relationships:
 * **IAM provides the underlying authorization mechanism used by both services**
 * They can be used together: e.g., Cognito for customer access to applications, AWS Identity Center for employee access to AWS accounts
 
-
-
-```mermaid
-flowchart TB
-    subgraph AWS_Identity_Center["AWS Identity Center (formerly AWS SSO)"]
-        IDSTORE[Identity Store]
-        SSO_Portal[SSO Portal]
-    end
-    
-    subgraph IAM["AWS IAM"]
-        Roles[IAM Roles]
-        Users[IAM Users]
-        Policies[IAM Policies]
-    end
-    
-    subgraph Cognito["Amazon Cognito"]
-        UserPools[User Pools]
-        IdentityPools[Identity Pools]
-    end
-
-    IDSTORE --> SSO_Portal
-    SSO_Portal --> Roles
-    
-    UserPools --> IdentityPools
-    IdentityPools --> Roles
-    
-    ExtIdentity[External Identity Providers] --> AWS_Identity_Center
-    ExtIdentity --> UserPools
-    
-    Users --> Roles
-    Roles --> Policies
-    
-    Client[Client Applications] --> UserPools
-    WebApp[Web/Mobile Apps] --> IdentityPools
-```
