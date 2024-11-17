@@ -6,6 +6,8 @@
 
 The key differences between AWS Event Router (EventBridge) and Event Streams (Kinesis) are:
 
+<figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+
 #### Event Router (EventBridge)
 
 * Acts like a serverless event bus for routing events between AWS services, SaaS apps, and custom applications
