@@ -216,6 +216,7 @@
     * [CloudWatch](software-development/aws/monitoring/cloudwatch.md)
     * [X-Ray](software-development/aws/monitoring/x-ray.md)
   * [On-Premises](software-development/aws/on-premises/README.md)
+    * [ECS/EKS Anyware](software-development/aws/on-premises/ecs-eks-anyware.md)
     * [SSM Agent](software-development/aws/on-premises/ssm-agent.md)
   * [Serverless Application Repository](software-development/aws/serverless-application-repository.md)
   * [Troubleshooting](software-development/aws/troubleshooting.md)
