@@ -59,7 +59,7 @@ Key Relationships:
 
 * Both Cognito and AWS Identity Center ultimately use IAM roles for access control
 * Cognito is customer-facing while AWS Identity Center is workforce-facing
-* IAM provides the underlying authorization mechanism used by both services
+* **IAM provides the underlying authorization mechanism used by both services**
 * They can be used together: e.g., Cognito for customer access to applications, AWS Identity Center for employee access to AWS accounts
 
 
