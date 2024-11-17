@@ -1,32 +1,37 @@
 # AWS WAF
 
-Operte at Layer 7.
+Operates at Layer 7 (Application Layer)
 
-AWS WAF is a web application firewall that lets monitor the HTTP and HTTPS requests that are forwarded to Amazon CloudFront or an Application Load Balancer.
+AWS WAF (Web Application Firewall) lets you monitor HTTP and HTTPS requests that are forwarded to Amazon CloudFront, Application Load Balancer, API Gateway, or AppSync.
 
-AWS WAF also lets control access to the content.
+AWS WAF lets you control access to your content based on conditions you configure.
 
-You can configure:
+You can configure rules based on:
 
-* conditions such as what IP address are allowed and make requests
-* query string parameters that are allowed to be passed&#x20;
-* etc.
+* IP addresses that are allowed to make requests
+* Geographic locations (countries) requests originate from
+* Query string parameters
+* HTTP headers and their values
+* Request body content
+* URI paths
+* Size constraints
 
-Gives 403 status code if the content is not allowed
+Returns a 403 Forbidden status code if the request is blocked.
 
+3 different behaviors (actions):
 
+1. Allow - Allow all requests except the ones you specify
+2. Block - Block all requests except the ones you specify
+3. Count - Count the requests that match the properties you specify (useful for testing rules)
 
-3 different behaviours:
+You can define conditions using Web ACL rules based on:
 
-1. Allow all requests except the ones you specify.
-2. Block all requests except the one you specify.
-3. Count the requests that match the properties you specify
-
-You can define condition by:
-
-1. IP addresses the requests originate from
-2. Country that requests originated from
-3. Values in request headers.
-4. Presence of SQL code that is likely to e malicious (SQL injection attack)
-5. Presence of a script that is likely to be malicious (know as cross-site scripting)
-6. String that appear in requests - either specific strings or string that match regular expression patterns.
+1. IP addresses that requests originate from (IP sets)
+2. Countries that requests originate from (geo-matching)
+3. Values in request headers
+4. Presence of malicious SQL code (SQL injection attacks)
+5. Presence of malicious scripts (Cross-Site Scripting/XSS attacks)
+6. Strings that appear in requests - either specific strings or regex patterns
+7. Rate-based rules to prevent DDoS attacks
+8. Size constraints
+9. Custom rules using AWS Managed Rules or your own rule groups
