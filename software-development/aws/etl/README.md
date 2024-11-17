@@ -1,5 +1,9 @@
 # ETL
 
+## AWS Glue VS AWS Data Pipeline&#x20;
+
+Glue replaces AWS Data Pipeline.
+
 The diagram below shows how:
 
 1. Glue provides a more integrated, serverless approach
