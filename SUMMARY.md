@@ -203,6 +203,7 @@
   * [Elastic Load Balancers](software-development/aws/elastic-load-balancers.md)
   * [Monitoring](software-development/aws/monitoring/README.md)
     * [OpenSearch](software-development/aws/monitoring/opensearch.md)
+    * [CloudWatch Logs Insights VS AWS X-Ray](software-development/aws/monitoring/cloudwatch-logs-insights-vs-aws-x-ray.md)
     * [QuickSight](software-development/aws/monitoring/quicksight.md)
     * [Amazon Managed Service for Prometheus](software-development/aws/monitoring/amazon-managed-service-for-prometheus.md)
     * [Amazon Managed Grafana](software-development/aws/monitoring/amazon-managed-grafana.md)
