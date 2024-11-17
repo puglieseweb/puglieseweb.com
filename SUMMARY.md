@@ -146,7 +146,7 @@
     * [STS](software-development/aws/security/sts.md)
     * [AI based security](software-development/aws/security/ai-based-security/README.md)
       * [GuardDuty](software-development/aws/security/ai-based-security/guardduty.md)
-      * [Mecie (S3)](software-development/aws/security/ai-based-security/mecie-s3.md)
+      * [Macie (S3)](software-development/aws/security/ai-based-security/mecie-s3.md)
     * [AWS Network Firewall](software-development/aws/security/aws-network-firewall.md)
     * [Security Hub](software-development/aws/security/security-hub.md)
     * [Detective](software-development/aws/security/detective.md)
