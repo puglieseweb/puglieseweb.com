@@ -1,6 +1,6 @@
 # Containers
 
-Conteiners are a great option for long running applications.
+Containers are a great option for long running applications.
 
 Containers can be run in:
 
