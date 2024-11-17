@@ -40,12 +40,12 @@ flowchart TB
 2. Amazon Cognito:
 
 * Focused on customer/end-user identity management
+* Translates external identities into IAM roles
 * Primarily used for web/mobile applications
 * Provides two main components:
   * User Pools: Handle user registration, authentication, and profile management
   * Identity Pools: Provide temporary AWS credentials to access AWS services
 * Can federate with social and enterprise identity providers
-* Translates external identities into IAM roles
 
 3. AWS Identity Center (formerly AWS SSO):
 
