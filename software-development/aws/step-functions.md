@@ -19,14 +19,21 @@
 
 ### Workflow Types
 
-| Feature             | Standard Workflows                             | Express Workflows                         |
-| ------------------- | ---------------------------------------------- | ----------------------------------------- |
-| Execution Guarantee | Exactly-once execution                         | At-least-once execution                   |
-| Duration Limit      | Up to 1 year                                   | Up to 5 minutes                           |
-| Best Used For       | Long-running workflows requiring audit history | High-event-rate workloads                 |
-| Performance         | Up to 2,000 executions/second                  | Up to 100,000 executions/second           |
-| Use Case Example    | Complex business processes                     | IoT data streaming and ingestion          |
-| Pricing Model       | Per state transition                           | Based on executions, duration, and memory |
+
+
+
+
+| **Feature**         | **Standard Workflows**                         | **Express Workflows (Async)**                          | **Express Workflows (Sync)**                             |
+| ------------------- | ---------------------------------------------- | ------------------------------------------------------ | -------------------------------------------------------- |
+| Execution Guarantee | Exactly-once execution                         | At-least-once execution                                | At-least-once execution                                  |
+| Duration Limit      | Up to 1 year                                   | Up to 5 minutes                                        | Up to 30 seconds                                         |
+| Best Used For       | Long-running workflows requiring audit history | High-volume event processing with eventual consistency | High-volume API orchestration needing immediate response |
+| Performance         | Up to 2,000 executions/second                  | Up to 100,000 executions/second                        | Up to 100,000 executions/second                          |
+| Use Case Example    | Complex business processes                     | IoT data streaming and ingestion                       | Real-time transaction processing                         |
+| Pricing Model       | Per state transition                           | Based on executions, duration, and memory              | Based on executions, duration, and memory                |
+| Response Type       | Asynchronous                                   | Asynchronous                                           | Synchronous (waits for workflow completion)              |
+
+The key difference between Async and Sync Express workflows is that synchronous executions wait for the workflow to complete and return the result, while asynchronous executions start the workflow but don't wait for completion. Sync Express workflows also have a shorter duration limit of 30 seconds compared to 5 minutes for async Express workflows.
 
 ### State Types
 
