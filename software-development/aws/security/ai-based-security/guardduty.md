@@ -1,25 +1,27 @@
 # GuardDuty
 
-A threat detection service that uses machine learning to continuously monitor for malicious behaviour.&#x20;
+Amazon GuardDuty is a threat detection service that uses machine learning to continuously monitor for malicious behavior.
 
-It looks of
+It looks for:
 
-* unusual API calls, calls from a know malicious IP
-* Attempts to disable CloudTrail logging
-* Unauthorised deployments&#x20;
+* Unusual API calls, including calls from known malicious IP addresses
+* Attempts to disable AWS CloudTrail logging
+* Unauthorized deployments
 * Compromised instances
-* Reconnaissance by would-be attackers&#x20;
-* Port scanning, failed logins
+* Reconnaissance by would-be attackers
+* Port scanning and failed login attempts
 
 Features:
 
-* Alerts appear in the GuardDuty console and CloudWatch Events.&#x20;
-* Receives feeds from third parties like Proofpoint and CrowdStrike, as well as AWS Security, about known malicius domains and IP addresses, etc.&#x20;
-* Monitors CloudTrail logs, VPC Flow Logs, and DNS logs.
-* Automated responses using CloudWatch Events and Lambda
-* Machine learning and anomaly detections.
+* Alerts appear in the GuardDuty console and Amazon EventBridge
+* Receives threat intelligence feeds from third parties like Proofpoint and CrowdStrike, as well as AWS Security, about known malicious domains and IP addresses
+* Monitors AWS CloudTrail logs, VPC Flow Logs, and DNS logs
+* Supports automated responses using Amazon EventBridge and AWS Lambda
+* Uses machine learning and anomaly detection
 
 Threat Detection with AI:
 
-* 7-14 days to set a baseline - what is normal behaviour on your accout?
-* findings can be found on GuardDuty console and CloudWatch Events.
+* Takes 7-14 days to establish a baseline of normal behavior on your account
+* Findings can be viewed in the GuardDuty console and Amazon EventBridge
+
+\
