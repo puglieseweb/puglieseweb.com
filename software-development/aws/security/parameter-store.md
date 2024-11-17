@@ -1,14 +1,40 @@
-# Parameter Store
+# System Manager Parameter Store
 
-This service is free but has the following limiations:
+AWS Systems Manager Parameter Store is a capability that provides secure, hierarchical storage for configuration data management and secrets management. While it offers a free tier, understanding both its benefits and limitations is important.
 
-1. Limit to 10,000 keys&#x20;
-2. No key rotation
+Key Features:
 
-It is a capability of AWS Systems Manger that provides secure, hierarchical storage for configuration data management and secrets management.
+* Secure, scalable key-value storage
+* Hierarchical organization of parameters
+* Integration with other AWS services
+* Version tracking of parameter changes
+* Protection through AWS IAM policies
+* Option for standard (free) and advanced tiers
 
-You can store data such as:
+Storage Capabilities:
 
-* passwords,&#x20;
-* database strings,
-* Amazon Machine Image (AMI) IDs, and license codes as parameter values. You can store values as plain text or encypted data.
+* Plain text parameters
+* Encrypted secure strings (using AWS KMS)
+* Parameter types supported:
+  * Passwords and secrets
+  * Database connection strings
+  * API keys
+  * Amazon Machine Image (AMI) IDs
+  * License codes
+  * Configuration data
+
+Standard (Free) Tier Limitations:
+
+1. Maximum of 10,000 parameters per AWS account and Region
+2. Parameter value size limit of 4KB
+3. No automated parameter rotation
+4. No parameter policies
+5. Standard throughput (40 transactions per second)
+
+To overcome these limitations, you can upgrade to the Advanced Tier, which offers:
+
+* Up to 100,000 parameters
+* Parameter value size up to 8KB
+* Parameter policies for expiration and notification
+* Higher throughput (100 transactions per second)
+* Automated parameter rotation capability

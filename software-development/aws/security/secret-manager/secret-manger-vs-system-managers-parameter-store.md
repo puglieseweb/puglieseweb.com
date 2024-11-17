@@ -1,8 +1,6 @@
 # Secret Manger VS System Manager's Parameter Store
 
-## AWS Secrets Manager VS AWS Systems Manager's Parameter Store&#x20;
-
-Both AWS Secrets Manager and AWS Systems Manager Parameter Store are services for storing and managing configuration data, but they have some key differences that make them suitable for different use cases. Here's a brief overview of when to use each:
+Use Secrets Manager for sensitive data that requires advanced features like automatic rotation, and use Parameter Store for general configuration data and when cost is a significant factor. Here's a brief overview of when to use each:
 
 AWS Secrets Manager:
 
@@ -20,5 +18,3 @@ AWS Systems Manager's Parameter Store:
 4. **Integration with other AWS services**. When working closely with other AWS Systems Manager features or services that integrate well with Parameter Store.
 5. **Cost-sensitive scenarios**. Parameter Store has a free tier and is generally less expensive for storing a large number of small parameters.
 6. **Smaller parameter values.** For storing values up to **8,192 bytes in size** (4,096 bytes for standard parameters).
-
-In summary, use Secrets Manager for sensitive data that requires advanced features like automatic rotation, and use Parameter Store for general configuration data and when cost is a significant factor.

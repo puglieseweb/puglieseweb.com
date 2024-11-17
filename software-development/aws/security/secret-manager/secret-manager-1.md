@@ -1,6 +1,8 @@
-# AWS KMS vs AWS Secret Manager
+# Secret Manager VS AWS KMS
 
-AWS KMS:
+While they serve different primary purposes, these services can be used together. For example, you might use KMS to encrypt the secrets stored in Secrets Manager for an additional layer of security.
+
+### AWS KMS
 
 1. Primary function: Manages cryptographic keys
 2. Use cases:
@@ -11,7 +13,7 @@ AWS KMS:
    * Integrates with many AWS services for data encryption
    * Provides audit trails for key usage
 
-AWS Secrets Manager:
+### AWS Secrets Manager
 
 1. Primary function: Stores, rotates, and manages secrets
 2. Use cases:
@@ -30,5 +32,5 @@ Key differences:
 2. Functionality: KMS provides cryptographic operations, whereas Secrets Manager offers secure storage and retrieval of sensitive information.
 3. Rotation: Secrets Manager has built-in secret rotation capabilities, while KMS focuses on key rotation.
 
-While they serve different primary purposes, these services can be used together. For example, you might use KMS to encrypt the secrets stored in Secrets Manager for an additional layer of security
+
 
