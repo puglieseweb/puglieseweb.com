@@ -95,6 +95,7 @@
     * [Organizations, Accouts, OU, SCP](software-development/aws/governance/organizations-accouts-ou-scp.md)
   * [Storages](software-development/aws/storage/README.md)
     * [S3](software-development/aws/storage/s3/README.md)
+      * [MFA Delete  VS Object Lock](software-development/aws/storage/s3/mfa-delete-vs-object-lock.md)
       * [S3 Standard VS S3 Intelligent-Tiering](software-development/aws/storage/s3/s3-standard-vs-s3-intelligent-tiering.md)
     * [Volumes](software-development/aws/storage/volumes/README.md)
       * [Snapshots](software-development/aws/storage/volumes/snapshots.md)
