@@ -85,6 +85,7 @@
       * [RDS](software-development/aws/storage/databases/rds/README.md)
         * [RDS Multi-AZ VS RDS Proxy](software-development/aws/storage/databases/rds/rds-multi-az-vs-rds-proxy.md)
         * [Scaling Relational Databases](software-development/aws/storage/databases/rds/scaling-relational-databases.md)
+        * [Aurora Blue/Green deployments](software-development/aws/storage/databases/rds/aurora-blue-green-deployments.md)
         * [Aurora](software-development/aws/storage/databases/rds/aurora.md)
       * [Amazon Aurora Serverless](software-development/aws/storage/databases/amazon-aurora-serverless.md)
     * [Caching](software-development/aws/storage/caching/README.md)
