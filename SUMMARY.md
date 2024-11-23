@@ -47,6 +47,7 @@
     * [Big Data](software-development/aws/ai-analytics-big-data-ml/big-data/README.md)
       * [Kinesis](software-development/aws/ai-analytics-big-data-ml/big-data/kinesis.md)
       * [Processing & Analytics](software-development/aws/ai-analytics-big-data-ml/big-data/processing-and-analytics/README.md)
+        * [Amazon Athena VS Amazon Redshift](software-development/aws/ai-analytics-big-data-ml/big-data/processing-and-analytics/amazon-athena-vs-amazon-redshift.md)
         * [Athena & AWS Glue: Serverless Data Solutions](software-development/aws/ai-analytics-big-data-ml/big-data/processing-and-analytics/athena-and-glue.md)
       * [BigData Storage Solutions](software-development/aws/ai-analytics-big-data-ml/big-data/bigdata-storage-solutions.md)
       * [EMR](software-development/aws/ai-analytics-big-data-ml/big-data/emr.md)
