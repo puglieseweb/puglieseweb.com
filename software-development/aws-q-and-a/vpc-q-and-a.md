@@ -20,13 +20,13 @@ Gateway VPC endpoints are particularly useful for organizations that want to enh
 
 ## Q: "How does Amazon VPC enhance the security of your EC2 instances?"
 
-A: Amazon VPC lets you create a private network within AWS. This gives you control over your network settings, like IP address ranges, subnets, route tables, and gateways. It also enables you to use **security groups** and network **ACLs** to control inbound and outbound traffic**, enhancing your instances' security.**
+A: Amazon VPC lets you create a private network within AWS. This gives you control over your network settings, like IP address ranges, subnets, route tables, and gateways. It also enables you to use **security groups** and network **ACLs** to control inbound and outbound traffi&#x63;**, enhancing your instances' security.**
 
 
 
 ## **Q: "What is an Internent Gaweway?"**
 
-**A: "**An internet gateway is a connects VPC to the internet. It allows resources in your public subnets, like EC2 instances, to communicate with the internet. Here's how it works:
+**A: "**&#x41;n internet gateway is a connects VPC to the internet. It allows resources in your public subnets, like EC2 instances, to communicate with the internet. Here's how it works:
 
 * **Outbound Traffic**: When an instance in a public subnet sends traffic to the internet, the internet gateway **translates the instance's private IP address to the public IP address**, allowing it to communicate with external services.
 * **Inbound Traffic**: For incoming requests, the internet gateway **routes traffic to the appropriate instance in your VPC**. This requires setting up proper **routing** and **security group rules**.

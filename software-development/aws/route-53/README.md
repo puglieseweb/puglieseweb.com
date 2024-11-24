@@ -73,7 +73,7 @@ CNAMEs cannot be used for naked domain names (zone apex record). You cannot have
 
 ### Alias Records
 
-Alias records exists within a  domain registrar space**.** Alias records are used to map resource record sets in your hosted zone to load balancers, CloudFront distributions, or S3 buckets that are configured as websites.&#x20;
+Alias records exists within a  domain registrar spac&#x65;**.** Alias records are used to map resource record sets in your hosted zone to load balancers, CloudFront distributions, or S3 buckets that are configured as websites.&#x20;
 
 Alias records work like a CNAME record in that you can map one DNS name (www.puglieseweb.com) to  another "target" DNS name (elb1234.elb.amazonaws.com).
 

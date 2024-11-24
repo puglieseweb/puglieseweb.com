@@ -2,6 +2,14 @@
 
 Aurora Blue/Green deployments is the most optimal solution because it provides a safer and more automated way to handle database upgrades with minimal downtime. Let me create a diagram to explain this.
 
+
+
+<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
 Aurora Blue/Green Deployment ArchitectureClick to open diagram
 
 Aurora Blue/Green deployments are superior to both previous solutions (SQS Queue and Read Replica promotion) for several reasons:
