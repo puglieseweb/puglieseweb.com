@@ -1,5 +1,16 @@
 # Security
 
+GuardDuty is like your security guard doing constant patrols. They actively monitor for suspicious activity (like unusual API calls, potential compromised instances, or malicious IP addresses) and alert you when something seems off. The guard doesn't fix issues but watches 24/7 and reports threats.
+
+Detective is like your forensics team that arrives after an incident. When something suspicious happens, Detective helps you investigate by gathering detailed evidence, establishing timelines, and visualizing connections between resources. It's your tool for root cause analysis and understanding the full scope of security issues.
+
+Inspector is like your building inspector who performs scheduled checks. They go through a checklist looking for known vulnerabilities, misconfigurations, and deviations from security best practices in your EC2 instances and container workloads. Think of it as your regular security assessment tool.
+
+Shield is like your building's physical armor and anti-missile defense system. It specifically protects against DDoS attacks:
+
+* Shield Standard (free) is like basic reinforced walls
+* Shield Advanced is like a sophisticated missile defense system with a dedicated response team
+
 ## AWS Identity Management Types (Most Secure to Least Secure)
 
 1. **IAM Roles with AWS Security Token Service (STS)**
