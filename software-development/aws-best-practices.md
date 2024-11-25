@@ -1,5 +1,7 @@
 # AWS Best Practices
 
+Follows principle of least privilege
+
 ## Use Private subnets
 
 When deploying EC2 instances for an e-commerce application, there are very few legitimate use cases for placing them in public subnets. Let me break this down:
