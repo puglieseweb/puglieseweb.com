@@ -22,3 +22,12 @@ Another way to frame it:
 * Analytics is like the reasoning process
 * Big Data is like the memory and processing power
 * ML is like the learning mechanism
+
+
+
+## Big Data Characteristics (The 3 Vs):
+
+1. Volume: Handles massive datasets (terabytes to petabytes)
+2. Variety: Supports multiple data types (structured, semi-structured, unstructured)
+3. Velocity: Efficiently processes data ingestion, storage, and analysis
+
