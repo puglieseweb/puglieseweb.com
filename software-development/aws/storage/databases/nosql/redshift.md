@@ -18,8 +18,6 @@
    * Automated snapshots stored in S3 (S3 bucket management handled by AWS)
 3. Data Processing
    * Best practice: Use large batch inserts for optimal performance
-   * Redshift Spectrum allows direct querying of S3 data without loading into Redshift tables
-   * Enhanced VPC Routing forces COPY and UNLOAD operations through your VPC
-
-##
+   * **Redshift Spectrum** allows **direct querying of S3 data without loading** into Redshift tables
+   * **Enhanced VPC Routing** forces COPY and UNLOAD operations through your VPC
 

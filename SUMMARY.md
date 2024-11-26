@@ -80,7 +80,7 @@
         * [Amazon Neptune](software-development/aws/storage/databases/graph-dbs/amazon-neptune.md)
       * [NoSQL](software-development/aws/storage/databases/nosql/README.md)
         * [Apache Cassandra (Amazon Keyspaces)](software-development/aws/storage/databases/nosql/apache-cassandra-amazon-keyspaces.md)
-        * [Redshift](software-development/aws/storage/databases/nosql/redshift/README.md)
+        * [Redshift](software-development/aws/storage/databases/nosql/redshift.md)
           * [Redshift's ACID compliance](software-development/aws/storage/databases/nosql/redshift/redshifts-acid-compliance.md)
         * [MongoDB (Amazon DocumentDB)](software-development/aws/storage/databases/nosql/mongodb-amazon-documentdb.md)
         * [DynamoDB](software-development/aws/storage/databases/nosql/dynamodb/README.md)
