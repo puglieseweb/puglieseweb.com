@@ -23,6 +23,7 @@
   * [AWS Integration Pattern Comparison Matrix](software-development/aws-nfrs/aws-integration-pattern-comparison-matrix.md)
   * [AWS 99.999% Architecture](software-development/aws-nfrs/aws-99.999-architecture.md)
 * [AWS Best Practices](software-development/aws-best-practices/README.md)
+  * [Principle of centralized control](software-development/aws-best-practices/principle-of-centralized-control.md)
   * [For CPU Spikes in DB use RDS Proxy](software-development/aws-best-practices/for-cpu-spikes-in-db-use-rds-proxy.md)
   * [API Security](software-development/aws-best-practices/api-security.md)
   * [Lambda VS ECS](software-development/aws-best-practices/lambda-vs-ecs.md)
