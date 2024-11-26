@@ -182,6 +182,8 @@
         * [ECS Fargate VS EKS Fargate](software-development/aws/compute/containers/fargate/ecs-fargate-vs-eks-fargate.md)
       * [ECR (Elastic Container Registry)](software-development/aws/compute/containers/ecr-elastic-container-registry.md)
     * [EC2](software-development/aws/compute/ec2/README.md)
+      * [EC2 Purchase Options](software-development/aws/compute/ec2/ec2-purchase-options/README.md)
+        * [Spot instances VS Spot Fleet](software-development/aws/compute/ec2/ec2-purchase-options/spot-instances-vs-spot-fleet.md)
       * [EC2 Instance Types](software-development/aws/compute/ec2/ec2-instance-types.md)
       * [Auto Scaling Groups (ASG)](software-development/aws/compute/ec2/auto-scaling-groups.md)
       * [Launch Template vs. Launch Configuration](software-development/aws/compute/ec2/launch-template-vs.-launch-configuration.md)
