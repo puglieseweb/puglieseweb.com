@@ -2,7 +2,7 @@
 
 There are three different types of AWS Storage Gateway services:
 
-1. Amazon S3 File Gateway:
+1. Amazon S3 File Gateway (**good** **file sharing**):
    * Provides a file interface to Amazon S3
    * Supports SMB and NFS protocols
    * Files are stored as objects in S3 buckets
@@ -10,8 +10,8 @@ There are three different types of AWS Storage Gateway services:
 2. Volume Gateway:
    * Presents iSCSI block storage volumes to applications
    * Comes in two modes:
-     * Cached Volumes: Primary data in S3, frequently accessed data cached locally (good for data migration)
-     * Stored Volumes: Primary data stored locally, asynchronously backed up to S3 as EBS snapshots (good for backups)&#x20;
+     * Cached Volumes: Primary data in S3, frequently accessed data cached locally (**good for data migration**)
+     * Stored Volumes: Primary data stored locally, asynchronously backed up to S3 as EBS snapshots (**good for backups**)&#x20;
 3. Tape Gateway (previously called "AWS Storage Gateway – Virtual Tape Library"):
    * Provides a virtual tape infrastructure
    * Compatible with major backup software applications
