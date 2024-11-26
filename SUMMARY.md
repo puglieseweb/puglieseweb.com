@@ -89,6 +89,7 @@
           * [DynamoDB capacity models](software-development/aws/storage/databases/nosql/dynamodb/scaling-dynamodb.md)
         * [Amazon Quantum Ledger DB (QLDB)](software-development/aws/storage/databases/nosql/amazon-quantum-ledger-db-qldb.md)
       * [RDS](software-development/aws/storage/databases/rds/README.md)
+        * [DR for RDS](software-development/aws/storage/databases/rds/dr-for-rds.md)
         * [RDS Multi-AZ VS RDS Proxy](software-development/aws/storage/databases/rds/rds-multi-az-vs-rds-proxy.md)
         * [Scaling Relational Databases](software-development/aws/storage/databases/rds/scaling-relational-databases.md)
         * [Aurora Blue/Green deployments](software-development/aws/storage/databases/rds/aurora-blue-green-deployments.md)
