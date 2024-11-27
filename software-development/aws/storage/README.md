@@ -1,13 +1,12 @@
-# Storage
+# Storages
 
 * Volumes exist on EBS, whereas Snapshots exist on S3.
 
-1. EC2 Instance: This is a virtual server in the AWS cloud.
-2. EBS Volume:
+1. EBS Volume:
    * Attached to EC2 instances
    * Provides block-level storage
    * Allows read and write operations
-3. EBS Snapshot:
+2. EBS Snapshot:
    * A point-in-time copy of an EBS volume
    * Stored incrementally in Amazon S3
    * Can be used to create new EBS volumes
