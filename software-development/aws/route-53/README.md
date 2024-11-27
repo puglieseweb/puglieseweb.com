@@ -4,7 +4,7 @@ Route 53 is Amazon's DNS service. It allows to register domain names, create hos
 
 Route 53 is named after Route 66 (one of the original highways across the United States) but is called 53 because DNS operate on port 53.&#x20;
 
-There are 7 Routing Polices available with Route 53:
+There are 7 Routing Policies available with Route 53:
 
 1. Simple Routing
 2. Weighted Routing
@@ -53,6 +53,10 @@ Example&#x20;
 
 if I type "puglieseweb.com" the brower goes to the ".com" record and looks up the "puglieseweb" record. The browser will be given an NS record (e.g. ns.awsdns.com). ns.awsdns.com is where the SOA is stored.
 
+&#x20;ns.awsdns.com's A record is an IP Adrress&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+
 
 
 ## DNS Records
@@ -67,7 +71,7 @@ Time to live (TTL) is the length that a DNS record is cached on either the resol
 
 ### CNAME
 
-A CNAME (canonical name) can be used to resolve one domain name to another. For example, you may have a mobile website with the domain name http://m.puglieseweb.com that is used for when users browse to your domain name on their mobile devices. CNAME allows to map for eample http://mobile.puglieseweb.com to resolve to the same IP address of http://m.puglieseweb.com
+A CNAME (canonical name) can be used to resolve one domain name to another. For example, you may have a mobile website with the domain name http://m.puglieseweb.com that is used for when users browse to your domain name on their mobile devices. CNAME allows to map for example http://mobile.puglieseweb.com to resolve to the same IP address of http://m.puglieseweb.com
 
 CNAMEs cannot be used for naked domain names (zone apex record). You cannot have a CNAME for http://puglieseweb.com
 
