@@ -64,6 +64,109 @@ flowchart TB
 
 
 
+```mermaid
+flowchart TD
+    subgraph "IAM User"
+        User[IAM User]
+        Perms[Permanent Credentials\nAccess Key & Secret]
+    end
+
+    subgraph "IAM Group"
+        Group[IAM Group]
+        GPerms[Group Permissions\nAttached Policies]
+    end
+
+    subgraph "IAM Role"
+        Role[IAM Role]
+        TPerms[Temporary Credentials\nSession Token]
+        TP[Trust Policy]
+    end
+
+    User --> |Member of| Group
+    User --> |Can assume| Role
+    Group --> |Can grant\nassume role\npermission| Role
+    User --> Perms
+    Group --> GPerms
+    Role --> TPerms
+    TP --> |Controls who\ncan assume| Role
+
+    note1[Users inherit\ngroup permissions]
+    note2[Group can grant\nsts:AssumeRole permission]
+
+    classDef user fill:#e1f3d8,stroke:#333,stroke-width:2px;
+    classDef group fill:#f9d1ff,stroke:#333,stroke-width:2px;
+    classDef role fill:#dae8fc,stroke:#333,stroke-width:2px;
+    classDef note fill:#fff2cc,stroke:#333,stroke-width:2px;
+
+    class User,Perms user;
+    class Group,GPerms group;
+    class Role,TPerms,TP role;
+    class note1,note2 note;
+```
+
+
+
+
+
+```mermaid
+flowchart TD
+    subgraph "Identity Types"
+        Users[IAM Users\nLong-term credentials]
+        Groups[IAM Groups\nCollection of users]
+        Roles[IAM Roles\nTemporary credentials]
+    end
+
+    subgraph "Policy Types"
+        MP[Managed Policies\nStandalone reusable]
+        CP[Customer Managed\nPolicies]
+        IP[Inline Policies\nEmbedded directly]
+        TP[Trust Policies\nWho can assume role]
+        BP[AWS Managed\nPolicies]
+    end
+
+    subgraph "Common Use Cases"
+        HU[Human Users\nEmployees/Developers]
+        SA[Service Accounts\nApplications]
+        FC[Federated Users\nExternal Identity]
+        CS[Cross-Account\nAccess]
+    end
+
+    %% Relationships
+    Users --> MP
+    Users --> IP
+    Groups --> MP
+    Groups --> IP
+    Roles --> MP
+    Roles --> IP
+    Roles --> TP
+
+    MP --> CP
+    MP --> BP
+
+    Users --> Groups
+    
+    %% Use case connections
+    Users --> HU
+    Users --> SA
+    Roles --> FC
+    Roles --> CS
+    Roles --> SA
+
+    %% Styling
+    classDef identity fill:#e1f3d8,stroke:#333,stroke-width:2px;
+    classDef policy fill:#dae8fc,stroke:#333,stroke-width:2px;
+    classDef usecase fill:#fff2cc,stroke:#333,stroke-width:2px;
+
+    class Users,Groups,Roles identity;
+    class MP,CP,IP,TP,BP policy;
+    class HU,SA,FC,CS usecase;
+
+    %% Notes
+    note1[Policy Evaluation:\nExplicit DENY overrides any ALLOW]
+    note2[Best Practice:\nUse least privilege principle]
+    note3[Groups:\nEasier permission management]
+```
+
 1. AWS IAM (Identity and Access Management):
 
 * The foundational service for managing access to AWS resources
