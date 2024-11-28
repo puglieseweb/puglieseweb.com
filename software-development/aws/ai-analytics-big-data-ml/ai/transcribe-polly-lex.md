@@ -101,7 +101,7 @@ Lex output is JSON structured data containing:
 
 ```mermaid
 graph TD
-    A[User Voice Input] --> B[Amazon Transcribe]
+    A[User Voice Input] --> D[Amazon Comprehend]
     B --> C[Text Transcript]
     C --> D[Amazon Lex]
     D --> E{Intent Processing}
@@ -114,6 +114,11 @@ graph TD
     %% Optional Comprehend Integration
     C -.->|Optional Text Analytics| J[Amazon Comprehend]
     J -.->|Enhanced Text| D
+
+
+    %% Optional Transcribe Integration
+    A[User Voice Input] -.-> |Optional Transcribe integration| B[Amazon Transcribe]
+    
 
     style B fill:#f9d5e5,stroke:#333,stroke-width:2px
     style D fill:#e06377,stroke:#333,stroke-width:2px
