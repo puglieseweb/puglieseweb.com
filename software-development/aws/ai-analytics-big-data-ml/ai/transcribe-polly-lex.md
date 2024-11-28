@@ -101,26 +101,25 @@ Lex output is JSON structured data containing:
 
 ```mermaid
 graph TD
-    A[User Voice Input] --> B[Speech Recognition]
-    B --> C[Transcribe]
-    C --> D[Raw Transcript]
-    D --> E[Comprehend]
-    E --> F[Cleaned Transcript]
-    F --> G[Natural Language Processing]
-    G --> H{Intent Recognition}
-    H --> |Query| I[Lex]
-    I --> J[Content Generation]
-    H --> |Command| K[Action Execution]
-    J --> L[Text-to-Speech]
-    K --> L
-    L --> M[Voice Response to User]
+    A[User Voice Input] --> B[Amazon Transcribe]
+    B --> C[Text Transcript]
+    C --> D[Amazon Lex]
+    D --> E{Intent Processing}
+    E -->|Query| F[Content Generation]
+    E -->|Command| G[Action Execution]
+    F --> H[Amazon Polly]
+    G --> H
+    H --> I[Voice Response to User]
+
+    %% Optional Comprehend Integration
+    C -.->|Optional Text Analytics| J[Amazon Comprehend]
+    J -.->|Enhanced Text| D
 
     style B fill:#f9d5e5,stroke:#333,stroke-width:2px
-    style C fill:#f9d5e5,stroke:#333,stroke-width:2px
-    style E fill:#eeac99,stroke:#333,stroke-width:2px
-    style I fill:#e06377,stroke:#333,stroke-width:2px
-    style G fill:#b5e7a0,stroke:#333,stroke-width:2px
-    style H fill:#b5e7a0,stroke:#333,stroke-width:2px
+    style D fill:#e06377,stroke:#333,stroke-width:2px
+    style E fill:#b5e7a0,stroke:#333,stroke-width:2px
+    style H fill:#f9d5e5,stroke:#333,stroke-width:2px
+    style J fill:#eeac99,stroke:#333,stroke-width:2px
 ```
 
 ### Example 2
