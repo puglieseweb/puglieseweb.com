@@ -37,7 +37,7 @@ Another way to frame it:
 
 The main analytics and business intelligence services in AWS are:
 
-Data Analytics Services:
+Data Analytics (what might happen) services:
 
 1. Amazon Redshift - Fully managed data warehouse service for large-scale analytics
 2. Amazon EMR (Elastic MapReduce) - Big data processing using Apache frameworks like Hadoop, Spark
@@ -46,7 +46,7 @@ Data Analytics Services:
 5. Amazon OpenSearch Service (formerly Elasticsearch) - Search and analytics engine
 6. Amazon MSK (Managed Streaming for Apache Kafka) - Fully managed Apache Kafka service
 
-Business Intelligence & Visualization:
+Business Intelligence & Visualization (what has happen):
 
 1. Amazon QuickSight - Cloud-native BI service with ML insights
 2. AWS Glue - Fully managed ETL (Extract, Transform, Load) service
