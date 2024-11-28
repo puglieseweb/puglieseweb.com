@@ -64,6 +64,7 @@
     * [Business intelligence](software-development/aws/ai-analytics-big-data-ml/business-intelligence.md)
     * [Machine Learning](software-development/aws/ai-analytics-big-data-ml/machine-learning/README.md)
       * [Sagemaker (part of the exam)](software-development/aws/ai-analytics-big-data-ml/machine-learning/sagemaker-part-of-the-exam/README.md)
+        * [Common Amazon SageMaker Endpoint usage patterns](software-development/aws/ai-analytics-big-data-ml/machine-learning/sagemaker-part-of-the-exam/common-amazon-sagemaker-endpoint-usage-patterns.md)
         * [Integration patterns with Amazon SageMaker](software-development/aws/ai-analytics-big-data-ml/machine-learning/sagemaker-part-of-the-exam/integration-patterns-with-amazon-sagemaker.md)
         * [Real-time interfaces](software-development/aws/ai-analytics-big-data-ml/machine-learning/sagemaker-part-of-the-exam/real-time-interfaces.md)
         * [Elastic Inference (EI)](software-development/aws/ai-analytics-big-data-ml/machine-learning/sagemaker-part-of-the-exam/elastic-inference-ei.md)
