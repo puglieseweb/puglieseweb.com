@@ -31,3 +31,41 @@ Another way to frame it:
 2. Variety: Supports multiple data types (structured, semi-structured, unstructured)
 3. Velocity: Efficiently processes data ingestion, storage, and analysis
 
+
+
+### Analytics and business intelligence services&#x20;
+
+The main analytics and business intelligence services in AWS are:
+
+Data Analytics Services:
+
+1. Amazon Redshift - Fully managed data warehouse service for large-scale analytics
+2. Amazon EMR (Elastic MapReduce) - Big data processing using Apache frameworks like Hadoop, Spark
+3. Amazon Athena - Interactive query service for analyzing data in S3 using standard SQL
+4. Amazon Kinesis - Real-time data streaming and analytics
+5. Amazon OpenSearch Service (formerly Elasticsearch) - Search and analytics engine
+6. Amazon MSK (Managed Streaming for Apache Kafka) - Fully managed Apache Kafka service
+
+Business Intelligence & Visualization:
+
+1. Amazon QuickSight - Cloud-native BI service with ML insights
+2. AWS Glue - Fully managed ETL (Extract, Transform, Load) service
+3. Amazon DataZone - Data governance and sharing service
+
+Data Lake Solutions:
+
+1. AWS Lake Formation - Helps build, manage, and secure data lakes
+2. Amazon S3 - Object storage that serves as the foundation for data lakes
+
+Machine Learning Analytics:
+
+1. Amazon SageMaker - Build, train, and deploy machine learning models
+2. Amazon Comprehend - Natural language processing and text analytics
+
+Each of these services has specific use cases:
+
+* For SQL-based ad-hoc querying of data in S3, Athena is ideal
+* For traditional data warehousing, Redshift is the go-to service
+* For real-time analytics, Kinesis is the primary choice
+* For business dashboards and visualizations, QuickSight is commonly used
+
