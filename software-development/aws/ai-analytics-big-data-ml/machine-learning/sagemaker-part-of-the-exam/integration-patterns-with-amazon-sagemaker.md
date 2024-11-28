@@ -40,15 +40,18 @@ flowchart TD
     ECS[ECS/EKS]
     
     %% Data Flow Patterns
-    S3 --> Glue
+    S3 --> Studio
+    S3 --> Training
+    S3 --> Processing
+    
     RDS --> Glue
     RedShift --> Glue
     DynamoDB --> Lambda
     Kinesis --> Lambda
     
-    Glue --> Studio
-    EMR --> Studio
-    Lambda --> Studio
+    Glue --> S3
+    EMR --> S3
+    Lambda --> S3
     
     Studio --> Training
     Studio --> Processing
