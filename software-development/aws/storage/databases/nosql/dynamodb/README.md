@@ -1,126 +1,110 @@
 # DynamoDB
 
-Amazon DynameDB is a fast flexible NoSQL database service for all applications that need consistent, single-digit millisecond latency at any scale.
+DynamoDB is a fully managed NoSQL database service offering consistent, single-digit millisecond latency at any scale. It supports both **document and key-value data models**, making it ideal for mobile, web, gaming, ad-tech, IoT, and many other applications.
 
-It is fully managed database and supports both **document and key-value data models**.
+### Core Features
 
-Its flexible data model and reliable performance make it a great fit for mobile, web, gaming, ad-tech, IoT, and may other applications.
-
-
-
-### Key characteristics:&#x20;
+#### Storage and Consistency
 
 * Stored on SSD storage
-* Spread across 3 geographically distinct data centers
-* Eventually consistent reads (default). Consistency across all copies of data is usually reached within a second. Repeating a read after a short time should return the updated data. Best read performance.
-* Strongly consistent reads. Returns a result that reflects all writes that received a successful response prior to the read.
+* Data spread across 3 geographically distinct data centers
+* Two consistency models:
+  * Eventually consistent reads (default): Updates typically propagate within one second
+  * Strongly consistent reads: Returns results reflecting all successful writes prior to the read
 
-### DynameDB Accelerator (DAX)
+#### DynamoDB Accelerator (DAX)
 
 * Fully managed, highly available, in-memory cache
-* 10x performance improvement&#x20;
-* Reduces request time from milliseconds to microseconds - even under load
-* No need for developers to manage caching logic
-* Compatible with DynamoDB API calls.
+* Improves performance by 10x
+* Reduces request time from milliseconds to microseconds
+* Automatically handles caching logic
+* Compatible with DynamoDB API calls
 
-### On-Demand Capacity
+#### Capacity Options
+
+**On-Demand Capacity:**
 
 * Pay-per-request pricing
-* Balance cost and performance&#x20;
-* No minimum capacity&#x20;
-* No charge for read/write - only storage and backups
-* pay more per request than with provisioned capacity
-* Use for new product launches&#x20;
+* No minimum capacity requirements
+* Charges only for storage and backups
+* Higher per-request cost compared to provisioned capacity
+* Ideal for new product launches
 
-### Security
+#### Security Features
 
-* Encryption at rest using KMS
-* Site-to-site VPN
-* Direct Connect (DX)
+* KMS encryption at rest
+* Site-to-site VPN support
+* Direct Connect (DX) integration
 * IAM policies and roles
-* Fine-grained access
-* Integrates with CloudWatch and CloudTrail
-* VPC endpoints&#x20;
+* Fine-grained access control
+* CloudWatch and CloudTrail integration
+* VPC endpoints
 
+### Advanced Features
 
+#### DynamoDB Transactions
 
-### DynomoDB Transactions
+Supports ACID transactions across multiple tables within the same AWS account and region:
 
-DynomeDB Transactions enable ACID (all or nothing) across 1 or more tables withing a single AWS account and region.
+* Atomic: All changes must succeed or none are applied
+* Consistent: Data remains consistent before and after transactions
+* Isolated: Transactions are protected from interference
+* Durable: Changes persist after completion
 
-ACID:
+Transaction options:
 
-* Atomic: All changes to the data must be performed successfully or not at all
-* Consistent: Data must be in a consistent state before and after the transaction
-* Isolated: No other process can change the data while the transaction is running
-* Durable: The changes made by a transaction must persist.
+* Read options: eventual consistency, strong consistency, or transactional
+* Write options: standard or transactional
+* Limits: Up to 25 items or 4 MB of data
 
-Transaction has:
+#### Backup and Recovery
 
-* 3 options for reads:&#x20;
-  * eventual consistency
-  * strong consistency
-  * transactional
-* 2 options for write:
-  * standard
-  * transactional
-* Up to 25 items or 4 MB of data
+**On-Demand Backup:**
 
+* Full backups available anytime
+* No performance impact
+* Consistent within seconds
+* Same-region operation
 
+**Point-in-Time Recovery:**
 
-### On-Demand Backup and Restore
+* **35-day recovery window**
+* Incremental backup system
+* **5-minute recovery point objective (RPO)**
+* Optional feature
 
-* Full backup at any time
-* Zero impact on table performance or availability&#x20;
-* Consistent within seconds and retained until deleted
-* Operats within same region as teh source table
+#### DynamoDB Streams
 
-### Point-in-time recovery
+A **Stream** is divided into **Shards** and a shard contains **Stream Data**.
 
-* Protects against accidental writes or deletes&#x20;
-* Restore to any point in the last **35 days**
-* Incremental backups
-* Not enabled by default
-* Latest restorable: **5 minutes in the past**
+* Time-ordered sequence of item-level modifications
+* 24-hour retention period
+* Captures inserts, updates, and deletes
+* Lambda function integration for stored procedure-like functionality
 
-### **DynamoDB Stream**
+#### Global Tables
 
-DynamoDB Steam: Time-ordered sequence of item-level changes in a table
+* Multi-master, multi-region replication
+* Sub-second replication latency
+* Built on DynamoDB streams
+* Requires streams enablement
+* No application modifications needed
+* Replication latency is under **1 second**
 
-A **Stream** is divided  in **Shards** and a Shard contains multiple **Stream Data.**
+### Important Considerations
 
-Streams are stored for 24 hours
+#### Technical Aspects
 
-Inserts, updates, and deletes&#x20;
+* Partition management is automatic but requires understanding of partition keys
+* Supports Global Secondary Indexes (GSI) and Local Secondary Indexes (LSI)
+* Read/Write Capacity Units (RCU/WCU) calculations vary by item size and consistency
+* Auto-scaling available for both provisioned and on-demand capacity
 
-Combine with Lambda functions for functionalities like stored procedures
+#### Integration and Optimization
 
-## Global Tables&#x20;
+* Seamless integration with AWS services
+* Cost optimization through capacity mode selection, DAX usage, and TTL
+* Key limits: 400 KB maximum item size, 2 KB maximum partition key size
+* Common patterns include Lambda integration and session state management
 
-Managed multi-master, multi-region replication
-
-* Globally distributed applications
-* Based on DynamoDB streams
-* Multi-region redundancy for disaster recovery or high availability
-* No application rewrites
-* Replication latency under **1 second**&#x20;
-
-### How to enable DynamoDB replica across region:
-
-1. Enable Global tables
-2. Create a replica on another region (not that DynamoDB Stream must be enabled)
-
-
-
-## Key notes
-
-* **Partitions**: DynamoDB automatically spreads data across partitions. Understanding partition keys and their impact on performance is crucial.
-* **Secondary Indexes**: DynamoDB supports both Global Secondary Indexes (GSI) and Local Secondary Indexes (LSI). Know their differences and use cases.
-* **Read/Write Capacity Units**: Understand how RCUs and WCUs are calculated, especially for different item sizes and consistency models.
-* **Scaling**: Be familiar with both auto-scaling for provisioned capacity and the automatic scaling of on-demand capacity.
-* **Integration**: DynamoDB integrates well with other AWS services. Know common patterns like using Lambda with DynamoDB Streams or using DynamoDB as a session store for applications.
-* **Cost Optimization**: Understand strategies for optimizing DynamoDB costs, such as choosing the right capacity mode, using DAX for caching, and leveraging TTL (Time to Live) for automatic item deletion.
-* **Limits**: Be aware of DynamoDB's various limits, such as maximum item size (400 KB) and maximum partition key size (2 KB).
-
-
-
+\

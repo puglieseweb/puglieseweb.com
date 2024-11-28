@@ -86,6 +86,7 @@
           * [Redshift's ACID compliance](software-development/aws/storage/databases/nosql/redshift/redshifts-acid-compliance.md)
         * [MongoDB (Amazon DocumentDB)](software-development/aws/storage/databases/nosql/mongodb-amazon-documentdb.md)
         * [DynamoDB](software-development/aws/storage/databases/nosql/dynamodb/README.md)
+          * [Additional DynamoDB Features and Concepts](software-development/aws/storage/databases/nosql/dynamodb/additional-dynamodb-features-and-concepts.md)
           * [DynamoDB Consistency Models and ACID Properties](software-development/aws/storage/databases/nosql/dynamodb/dynamodb-consistency-models-and-acid-properties.md)
           * [DynamoDB Partition Keys](software-development/aws/storage/databases/nosql/dynamodb/dynamodb-partition-keys.md)
           * [DynamoDB capacity models](software-development/aws/storage/databases/nosql/dynamodb/scaling-dynamodb.md)
