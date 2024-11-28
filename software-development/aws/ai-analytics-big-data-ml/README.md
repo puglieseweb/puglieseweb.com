@@ -1,5 +1,79 @@
 # AI, Analytics, Big Data, ML
 
+
+
+```mermaid
+flowchart TD
+    %% Data Sources
+    subgraph Sources [Data Sources]
+        Analytics["Analytics Systems
+        (QuickSight, Kinesis Analytics)"]
+        BI["Business Intelligence
+        (QuickSight)"]
+        ERP["ERP Systems
+        (Database Migration Service)"]
+        CRM["CRM Systems 
+        (AppFlow, DMS)"]
+        IOT["IoT
+        (IoT Core, IoT Analytics)"]
+        Social["Social Media
+        (Kinesis, AppFlow)"]
+    end
+
+    %% Data Lake Layers
+    subgraph DataLake [Data Lake Infrastructure]
+        Raw["Raw Zone
+        (S3 + Lake Formation)"]
+        Process["Processing Layer
+        (Glue, EMR, Lambda)"]
+        Curated["Curated Zone
+        (S3 + Athena/Redshift)"]
+        Catalog["Data Catalog
+        (Glue Catalog)"]
+    end
+
+    %% Consumers
+    subgraph Consumers [Data Consumers]
+        ML["Machine Learning
+        (SageMaker)"]
+        DataScience["Data Science
+        (SageMaker Studio)"]
+        Reporting["Enterprise Reporting
+        (QuickSight)"]
+        Apps["Applications
+        (ECS, Lambda)"]
+    end
+
+    %% Flow Patterns
+    Analytics --> Raw
+    BI --> Raw
+    ERP --> Raw
+    CRM --> Raw
+    IOT --> Raw
+    Social --> Raw
+
+    Raw --> Process
+    Process --> Curated
+    Process --> Catalog
+    Curated --> Catalog
+
+    Curated --> ML
+    Curated --> DataScience
+    Curated --> Reporting
+    Curated --> Apps
+
+    %% Styling
+    classDef source fill:#97c2fc,stroke:#2d6aa5,stroke-width:2px
+    classDef lake fill:#f8cecc,stroke:#b85450,stroke-width:2px
+    classDef consumer fill:#d5e8d4,stroke:#82b366,stroke-width:2px
+
+    class Analytics,BI,ERP,CRM,IOT,Social source
+    class Raw,Process,Curated,Catalog lake
+    class ML,DataScience,Reporting,Apps consumer
+```
+
+
+
 We can thinking about AI, Analytics, Big Data and ML in this way:
 
 * Analytics is the overall goal (getting insights from data)
