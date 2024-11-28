@@ -2,6 +2,8 @@
 
 Amazon Comprehend is natural language processing (NLP) service that extracts meaning and insights from text.
 
+&#x20;Comprehend accepts text input in different formats.
+
 Comprehend response is a json structure data.&#x20;
 
 **Key Features:**
