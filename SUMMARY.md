@@ -155,6 +155,7 @@
   * [Security](software-development/aws/security/README.md)
     * [Identity Management Services](software-development/aws/security/identity-management-services/README.md)
       * [IAM](software-development/aws/security/identity-management-services/iam/README.md)
+        * [IAM Policy Examples](software-development/aws/security/identity-management-services/iam/iam-policy-examples.md)
         * [AWS IAM Policies Study Guide](software-development/aws/security/identity-management-services/iam/aws-iam-policies-study-guide.md)
         * [Cross-Account Access in AWS: Resource-Based Policies vs IAM Roles](software-development/aws/security/identity-management-services/iam/cross-account-access-in-aws-resource-based-policies-vs-iam-roles.md)
       * [Cognito](software-development/aws/security/identity-management-services/cognito.md)
