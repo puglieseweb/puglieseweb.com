@@ -2,6 +2,8 @@
 
 Results from Glue or EMR jobs, as well as intermediate processing data, should typically be stored in S3. Let me create a diagram showing the common data storage patterns:
 
+
+
 ```mermaid
 flowchart LR
     subgraph "Data Sources"
@@ -44,7 +46,6 @@ flowchart LR
     class Raw,Inter,Results source;
     class S3Raw,S3Stage,S3Results,EMRHDFS,GlueTemp storage;
     class Life,Comp,Part,Format practice;
-
 ```
 
 Here's the recommended approach for storing different types of data:
