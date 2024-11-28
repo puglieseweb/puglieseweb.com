@@ -131,5 +131,3 @@ I've created a diagram showing the key integration patterns for Amazon SageMaker
 * API Gateway for RESTful interfaces
 * App Runner for containerized applications
 * ECS/EKS for container orchestration
-
-Would you like me to add any specific integration patterns or modify the existing flows?
