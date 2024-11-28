@@ -128,17 +128,20 @@ graph TD
 
 ```mermaid
 graph TD
-    A[Audio Input] --> B[Transcribe]
+    A[Audio Input] --> B[Amazon Transcribe]
     B --> C[Raw Transcript]
-    C --> D[Pully]
+    C --> D[Amazon Comprehend/Lambda]
     D --> E[Cleaned Transcript]
-    E --> F[Lex]
-    F --> G[Formatted Content]
-    G --> H[Published Output]
+    E --> F[Amazon Lex]
+    F --> G[Generated Response]
+    G --> |Text Output| H[Published Text]
+    G --> |Voice Output| I[Amazon Polly]
+    I --> J[Audio Output]
 
     style B fill:#f9d5e5,stroke:#333,stroke-width:2px
     style D fill:#eeac99,stroke:#333,stroke-width:2px
     style F fill:#e06377,stroke:#333,stroke-width:2px
+    style I fill:#f9d5e5,stroke:#333,stroke-width:2px
 ```
 
 
