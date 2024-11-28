@@ -149,6 +149,7 @@
     * [AWS CloudFormation (Immutable AWS Architecture)](software-development/aws/automation/aws-cloudformation-immutable-aws-architecture.md)
     * [SAM](software-development/aws/aws-sam.md)
   * [Networking](software-development/aws/networking/README.md)
+    * [CIDR ranges examples](software-development/aws/networking/cidr-ranges-examples.md)
     * [Enhanced Networking](software-development/aws/networking/enhanced-networking.md)
     * [Elastic Fabric Adapter (EFA)](software-development/aws/networking/elastic-fabric-adapter-efa.md)
     * [Elastic Network Interface (ENI)](software-development/aws/networking/elastic-network-interface-eni.md)
