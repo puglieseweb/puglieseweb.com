@@ -1,6 +1,6 @@
 # IAM Policy Examples
 
-Here are key IAM policy examples for SAA-C03:
+Here are key IAM policy examples:
 
 1. S3 Read-Only Access:
 
