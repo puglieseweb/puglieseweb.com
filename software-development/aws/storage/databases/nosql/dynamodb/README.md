@@ -53,7 +53,10 @@ Supports ACID transactions across multiple tables within the same AWS account an
 
 Transaction options:
 
-* Read options: eventual consistency, strong consistency, or transactional
+* Read options:&#x20;
+  * eventual consistency (default): When reading data, you might get a response that doesn't reflect the results of a recently completed write
+  * strong consistency: Provides consistency for a single item operation. Doesn't provide isolation from concurrent modifications
+  * transactional: Provides consistency across multiple items and tables (ACID transaction)
 * Write options: standard or transactional
 * Limits: Up to 25 items or 4 MB of data
 
