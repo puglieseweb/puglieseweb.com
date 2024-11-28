@@ -69,6 +69,7 @@
         * [Integration patterns with Amazon SageMaker](software-development/aws/ai-analytics-big-data-ml/machine-learning/sagemaker-part-of-the-exam/integration-patterns-with-amazon-sagemaker.md)
         * [Common Amazon SageMaker Endpoint usage patterns](software-development/aws/ai-analytics-big-data-ml/machine-learning/sagemaker-part-of-the-exam/common-amazon-sagemaker-endpoint-usage-patterns.md)
         * [Real-time interfaces](software-development/aws/ai-analytics-big-data-ml/machine-learning/sagemaker-part-of-the-exam/real-time-interfaces.md)
+        * [ML Example](software-development/aws/ai-analytics-big-data-ml/machine-learning/sagemaker-part-of-the-exam/ml-example.md)
   * [Storages](software-development/aws/storage/README.md)
     * [S3](software-development/aws/storage/s3/README.md)
       * [MFA Delete  VS Object Lock](software-development/aws/storage/s3/mfa-delete-vs-object-lock.md)
