@@ -104,7 +104,7 @@ graph TD
     A[User Voice Input] --> B[Speech Recognition]
     B --> C[Transcribe]
     C --> D[Raw Transcript]
-    D --> E[Poly]
+    D --> E[Comprehend]
     E --> F[Cleaned Transcript]
     F --> G[Natural Language Processing]
     G --> H{Intent Recognition}
