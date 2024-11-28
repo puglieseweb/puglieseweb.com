@@ -1,5 +1,14 @@
 # Integration patterns with Amazon SageMaker
 
+Typical Usage Pattern:
+
+1. Data scientists develop and test models in Jupyter notebooks
+2. Once the model is ready, the workflow is converted to a Step Functions state machine
+3. Step Functions handles the production deployment and retraining
+4. Notebooks remain useful for ad-hoc analysis and investigation
+
+
+
 An example of end-to-end AWS service integration patterns with Amazon SageMaker as the central ML service is:
 
 
