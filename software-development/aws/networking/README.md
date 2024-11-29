@@ -1,10 +1,50 @@
 # Networking
 
-There are different networking devices:
+Network Interface Types in AWS:
 
-* ENI
-* EFA
-* Enhanced Networking
+1. Elastic Network Interface (**ENI**):
+
+* Basic networking interface that serves as a virtual network card
+* Real-world example: A financial services company running both customer-facing applications and internal audit systems on the same EC2 instance
+  * Primary ENI handles customer transactions on the production network
+  * Secondary ENI connects to a separate, isolated network for audit logging and compliance monitoring
+  * This separation ensures audit logs cannot be tampered with via the production network
+* Another example: Multi-homed web application
+  * Primary ENI for public internet traffic
+  * Secondary ENI connected to internal services like databases
+  * Enables security through network segregation without need for additional instances
+
+2. Elastic Fabric Adapter (**EFA**):
+
+* Specialized network interface for high-performance computing workloads
+* Real-world example: Pharmaceutical company running molecular dynamics simulations
+  * Uses EFA-enabled instances in a cluster to simulate protein folding
+  * Achieves near-bare-metal performance with OS-bypass capability
+  * Reduces simulation time from days to hours
+* Another example: Financial risk analysis
+  * Investment bank running Monte Carlo simulations across a cluster
+  * EFA enables low-latency communication between nodes
+  * Processes millions of scenarios in real-time for risk calculations
+
+3. **Enhanced Networking**:
+
+* High-performance networking using SR-IOV (Single Root I/O Virtualization)
+* Real-world example: Video streaming service
+  * Uses enhanced networking with throughput between 10 Gbps and 100 Gbps
+  * Handles thousands of concurrent video streams
+  * Provides consistent low-latency delivery to end users
+* Another example: Real-time gaming platform
+  * Leverages enhanced networking for reliable, high-throughput game server instances
+  * Supports thousands of concurrent players with minimal latency
+  * Uses either Intel 82599 VF or Elastic Network Adapter (ENA) depending on instance type
+
+Key Differences and When to Use Each:
+
+* Use ENI when you need network segregation or multiple networks at minimal cost
+* Choose EFA when you need HPC-level performance and OS-bypass capabilities
+* Implement Enhanced Networking when you need reliable high bandwidth but don't require the specialized capabilities of EFA
+
+Note that Enhanced Networking is automatically enabled on most modern EC2 instance types, while ENI and EFA require specific configuration and are used for specialized use cases.
 
 | Feature                  | Elastic Network Interface (ENI)                     | Elastic Fabric Adapter (EFA)                      | Enhanced Networking                                    |
 | ------------------------ | --------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------ |
