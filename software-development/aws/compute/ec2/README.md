@@ -109,9 +109,9 @@ Placement groups influence the placement of a group of interdependent instances 
 
 Types:
 
-* Cluster: Packs instances close together inside an Availability Zone
-* Partition: Spreads instances across logical partitions
-* Spread: Strictly places instances on distinct hardware
+* **Cluster Placement Group**: Packs instances close together **inside an Availability Zone** (low network latency, high network throughput for HPC). All EC2 instances are placed within a rack.
+* **Partition Placement Group:** Spreads instances across logical partitions (Multiple EC2 instances; HDFS, HBase, and Cassandra). All EC2 instances are placed within a rack. Each partition represents a rack. If a rack fails (hardware failure), it may affect multiple instances on that rack, but only within that partition. Can spread multiple AZs.
+* **Spread Placement Group**: Strictly places instances on distinct hardware (when you need to separate critical EC2 instances to run on a separated hardware). **Each instance is placed in its own distinct rack. Each rack has at most one instance.** Can spread multiple AZs.
 
 ### 12. EC2 Enhanced Networking
 
