@@ -5,6 +5,7 @@
 ## Software development
 
 * [Cloud Data Security Principles](software-development/cloud-data-security-principles/README.md)
+  * [Separation of Duties (SoD)](software-development/cloud-data-security-principles/separation-of-duties-sod.md)
   * [Security Controls and Data Protection Framework](software-development/cloud-data-security-principles/security-controls-and-data-protection-framework.md)
   * [Vaultless Tokenization](software-development/cloud-data-security-principles/vaultless-tokenization.md)
 * [Multi-cloud strategies](software-development/multi-cloud-strategies.md)
