@@ -1,5 +1,10 @@
 # Networking
 
+There are two types of VPC Endpoints:
+
+* Interface Endpoint (ENI)&#x20;
+* Gateway Endpoing (used for S3 and Dyname DB)&#x20;
+
 <figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
 
 
