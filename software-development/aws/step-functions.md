@@ -4,6 +4,45 @@
 
 <figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
+AWS Step Functions has two main types of workflows:
+
+1. Standard Workflows:
+
+* Can run for up to 1 year
+* Best for long-running, auditable workflows
+* Follows exactly-once execution model
+* Higher pricing
+* Useful for orchestrating human approval workflows
+* Good for business process workflows
+
+2. Express Workflows:
+
+Split into two subtypes:
+
+Synchronous Express:
+
+* Run up to 5 minutes
+* Returns result after workflow completes
+* Good for request-response patterns
+* Real-time processing scenarios
+
+Asynchronous Express:
+
+* Run up to 5 minutes
+* Doesn't wait for workflow completion
+* Better for high-volume event processing
+* Fire-and-forget scenarios
+* Message processing use cases
+
+The main differences between Standard and Express are:
+
+* Execution time limits (1 year vs 5 minutes)
+* Execution model (exactly-once vs at-least-once)
+* Pricing (Standard costs more per state transition)
+* Execution tracking (Standard provides full audit history)
+
+Choose Standard when you need long-running workflows with full history and exactly-once execution. Choose Express when you need high-volume, short-lived workflows where at-least-once execution is acceptable.
+
 ### Core Components
 
 #### State Machines
