@@ -59,6 +59,37 @@ _SNS Fanout Pattern:_
   * Workflow processing
   * Cross-account/cross-region message delivery
 
+_SNS Topic Subscribers Models:_
+
+SNS topic subscribers can be registered in two ways:
+
+1. Subscription Registration (Push Model):
+
+* The topic owner creates the subscription
+* Done through AWS Console, AWS CLI, or AWS SDKs
+* You specify the endpoint (like an SQS queue, Lambda function, HTTP/S endpoint, email, etc.)
+* For HTTP/S endpoints, SNS sends a subscription confirmation message
+* The endpoint must confirm the subscription by sending back the token
+
+2. Subscription Request (Pull Model):
+
+* The subscriber initiates the subscription request
+* Used mainly for cross-account scenarios
+* Requires explicit approval from the topic owner
+* Topic owner must have a subscription policy allowing the request
+
+Supported endpoint types include:
+
+* Amazon SQS queues
+* AWS Lambda functions
+* HTTP/HTTPS endpoints
+* Email addresses
+* Mobile push notifications
+* SMS messages
+* Amazon Kinesis Data Firehose
+
+For protocols requiring authentication (like HTTPS), the endpoint must actively confirm the subscription by responding to SNS's confirmation message before messages can be received
+
 _Best Practices:_
 
 * Use filter policies to reduce unnecessary message delivery
