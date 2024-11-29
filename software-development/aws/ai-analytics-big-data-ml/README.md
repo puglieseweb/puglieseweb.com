@@ -1,5 +1,58 @@
 # AI, Analytics, Big Data, ML
 
+```mermaid
+flowchart TD
+    %% Data Sources
+    subgraph Sources [Data Sources]
+        Analytics[Analytics Systems]
+        BI[Business Intelligence]
+        ERP[ERP Systems]
+        CRM[CRM Systems]
+        IOT[IoT Devices]
+        Social[Social Media]
+    end
+
+    %% Data Lake Layers
+    subgraph DataLake [Data Lake]
+        Raw[Raw Zone]
+        Curated[Curated Zone]
+        Enriched[Enriched Zone]
+    end
+
+    %% Consumers
+    subgraph Consumers [Data Consumers]
+        ML[Machine Learning]
+        DataScience[Data Science]
+        Reporting[Enterprise Reporting]
+        Apps[Applications]
+    end
+
+    %% Flow Patterns
+    Analytics --> Raw
+    BI --> Raw
+    ERP --> Raw
+    CRM --> Raw
+    IOT --> Raw
+    Social --> Raw
+
+    Raw --> Curated
+    Curated --> Enriched
+
+    Enriched --> ML
+    Enriched --> DataScience
+    Enriched --> Reporting
+    Enriched --> Apps
+
+    %% Styling
+    classDef source fill:#97c2fc,stroke:#2d6aa5,stroke-width:2px
+    classDef lake fill:#f8cecc,stroke:#b85450,stroke-width:2px
+    classDef consumer fill:#d5e8d4,stroke:#82b366,stroke-width:2px
+
+    class Analytics,BI,ERP,CRM,IOT,Social source
+    class Raw,Curated,Enriched lake
+    class ML,DataScience,Reporting,Apps consumer
+```
+
 
 
 ```mermaid
