@@ -1,6 +1,6 @@
 # Networking
 
-Network Interface Types in AWS:
+There are three types of Network Interface Types in AWS:
 
 1. Elastic Network Interface (**ENI**):
 
