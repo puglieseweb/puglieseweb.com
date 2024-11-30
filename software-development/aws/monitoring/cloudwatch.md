@@ -16,3 +16,40 @@ Custom metrics (requiring CloudWatch agent) are:
 
 
 
+### CloudWatch default metrics
+
+EC2 (Think "CPU-DNS"):
+
+* CPU: CPUUtilization (%)
+* Disk: DiskRead/Write (Ops and Bytes)
+* Network: NetworkIn/Out
+* Status: StatusCheckFailed
+
+EBS (Think "VRW"):
+
+* Volume Read/Write (Bytes & Ops)
+* VolumeQueueLength
+
+RDS (Think "CPU-FD"):
+
+* CPU Usage
+* Free Memory
+* DB Connections
+* Free Storage
+
+Load Balancer (Think "RHE"):
+
+* Request Count
+* Healthy/Unhealthy Hosts
+* Error codes (4XX/5XX)
+
+Lambda (Think "TED"):
+
+* Throttles
+* Errors
+* Duration
+
+Remember: Default monitoring is 5 min, detailed is 1 min (costs extra).
+
+
+
