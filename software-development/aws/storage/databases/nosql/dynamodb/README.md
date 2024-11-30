@@ -20,17 +20,45 @@ DynamoDB is a fully managed NoSQL database service offering consistent, single-d
 * Automatically handles caching logic
 * Compatible with DynamoDB API calls
 
-#### Capacity Options
+## Capacity Modes Options
 
-**On-Demand Capacity:**
+DynamoDB has three capacity modes for managing throughput:
+
+1. Provisioned Capacity (default):
+
+* You specify Read Capacity Units (RCU) and Write Capacity Units (WCU)
+* Pay for provisioned capacity whether used or not
+* Can enable Auto Scaling
+* Good for predictable workloads
+
+2. On-Demand Capacity:
 
 * Pay-per-request pricing
-* No minimum capacity requirements
-* Charges only for storage and backups
-* Higher per-request cost compared to provisioned capacity
-* Ideal for new product launches
+* No capacity planning needed
+* More expensive per request
+* Good for unpredictable workloads
+* No throttling
 
-#### Security Features
+3. Global Tables:
+
+* Multi-region write capability
+* Uses On-Demand or Provisioned
+* Active-active configuration
+* Sub-second latency
+
+## Capacity Units
+
+* 1 RCU = 1 strongly consistent read/sec for items up to 4KB
+* 1 RCU = 2 eventually consistent reads/sec for items up to 4KB
+* 1 WCU = 1 write/sec for items up to 1KB
+
+## Auto Scaling Settings
+
+* Target utilization (default 70%)
+* Minimum capacity
+* Maximum capacity
+
+## Security Features
 
 * KMS encryption at rest
 * Site-to-site VPN support
@@ -40,7 +68,7 @@ DynamoDB is a fully managed NoSQL database service offering consistent, single-d
 * CloudWatch and CloudTrail integration
 * VPC endpoints
 
-### Advanced Features
+## Advanced Features
 
 #### DynamoDB Transactions
 
