@@ -1,5 +1,9 @@
 # Event Bridge VS SNS
 
+[https://lumigo.io/blog/5-reasons-why-you-should-use-eventbridge-instead-of-sns/](https://lumigo.io/blog/5-reasons-why-you-should-use-eventbridge-instead-of-sns/)
+
+
+
 Key differentiators:
 
 * EventBridge offers richer filtering and routing capabilities
