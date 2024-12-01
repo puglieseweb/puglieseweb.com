@@ -20,13 +20,17 @@ If there is the need of accessing files randomly for S3 than use Intelligent-Tie
 ### 2. S3 Storage Classes
 
 * Standard: Default, high durability, availability, and performance
-* Intelligent-Tiering: Automatic cost savings for data with unknown or changing access patterns
+* Intelligent-Tiering: Automatic cost savings for data with unknown or changing access patterns:
+  * AUTOmatically moves objects between tiers
+  * 4 access tiers: Frequent, Infrequent, Archive Instant, Deep Archive
+  * 3 monitoring periods: 30 days (Frequent → Infrequent), 90 days (→ Archive Instant), 180 days (→ Deep Archive)
+  * 2 ways objects can move: Both up and down tiers based on access patterns
 * Standard-IA (Infrequent Access): Lower cost for infrequently accessed data
 * One Zone-IA: Lower cost for infrequently accessed data that doesn't require multi-AZ resilience
 * Glacier **Instant Retrieval:** Lowest cost storage for long-lived data accessed **once per quarter**
 * Glacier **Flexible Retrieval:** Archived data with retrieval times **from minutes to hours**
 * Glacier **Deep Archive:** Lowest cost storage for long-term retention, with retrieval time of **hours**
-* Outposts: Object storage on AWS Outposts on-premises
+* **Outposts**: Object storage on AWS Outposts on-premises
 
 As April 2024 this are the prices:&#x20;
 
@@ -105,7 +109,7 @@ As April 2024 this are the prices:&#x20;
 
 ### 14. Object Lock
 
-* Write Once Read Many (WORM) model
+* **Write Once Read Many (WORM) model**
 * Helps prevent objects from being deleted or overwritten for a fixed time or indefinitely
 
 ### 15. Inventory

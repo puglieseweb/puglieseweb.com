@@ -1,19 +1,31 @@
 # Saving Plans
 
-* Flexible Pricing: Offering of flexible pricing models for up to 72% savings on compute!
-* Lower Prices: Lower prices for EC2 instances ragardless of instance family, size, OS, tenancy, or Region
-* Variety: Saving can also apply to AWS Lamba and AWS Fargate usage.
-* SageMaker: Plan for lowring Amazon SageMaker instance pricing.
-* Commitments: saving are provided as a trade for long-term commitments. There are one-year or three-year pricing options.
-* Pricing Plan Options:
-  * All Upfront
-  * Partial Upfront
-  * No Upfront
+AWS offers flexible pricing models with up to 72% savings on compute through the following features:
 
-Saving Plans Types
+### Core Benefits
 
-Three Different Plan Types:
+* **Lower Prices**: Reduced rates for EC2 instances across all instance families, sizes, operating systems, tenancy types, and regions
+* **Extended Coverage**: Savings applicable to AWS Lambda and AWS Fargate usage
+* **SageMaker Integration**: Planned price reductions for Amazon SageMaker instances
+* **Long-term Benefits**: Savings provided in exchange for long-term commitments of one or three years
 
-* Compute Savings: Most flexible savings plan. Applies to any EC2 compute, Lambda, or Fargate usage. Up to 66% savign on compute
-* EC2 Instance Saving: Stricter savings plan. Applies only to EC2 instances of a specific instance family in specific Regions. Up to 72% savings.
-* SageMaker Savings. Apply to SageMaker instances regardless of instance family or sizing. Any Region and any component. Up to 64% savings
+### Payment Options
+
+* All Upfront
+* Partial Upfront
+* No Upfront
+
+### Savings Plan Types
+
+1. **Compute Savings Plans**
+   * Most flexible option
+   * Applies to EC2 compute, Lambda, or Fargate usage
+   * Up to 66% savings on compute
+2. **EC2 Instance Savings Plans**
+   * Instance family-specific in selected regions
+   * Highest potential savings at up to 72%
+   * More restrictive terms
+3. **SageMaker Savings Plans**
+   * Applicable across all instance families and sizes
+   * Works in any region and with any component
+   * Up to 64% savings available

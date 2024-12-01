@@ -22,8 +22,8 @@ S3 Intelligent-Tiering:
 
 1. Best for:
    * Data with unknown or changing access patterns
-   * Long-lived data (>30 days)
-   * Objects larger than 128KB
+   * Long-lived data **(>30 days)**
+   * Objects larger than **128KB**
    * When you want to optimize costs automatically
 
 Common Use Cases:

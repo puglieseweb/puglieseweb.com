@@ -1,19 +1,21 @@
 # AWS Compute Optimizer
 
-* Optimizes: Analyzes configurations and utilization metrics of your AWS resources.
-* Reporting: Reports current usage optimizations and potential recommendations
-* Graphs: Provides graphical history data and projected utilization metrics
-* Information Decisions: Use graphs, metric data, and recommendations for moving or resizing resources
+### Core Functions
 
-Compute Optimizer work with the following resources:
+* **Analytics**: Analyzes configurations and utilization metrics of your AWS resources
+* **Performance Reports**: Delivers current usage optimizations and potential recommendations
+* **Visual Data**: Provides graphical historical data and projected utilization metrics
+* **Decision Support**: Enables informed decisions for resource movement or resizing based on graphs, metrics, and recommendations
+
+### Supported Resources
 
 * Amazon EC2
-* Auto Scaling Groups&#x20;
+* Auto Scaling Groups
 * Amazon EBS
 * AWS Lambda
 
-Supported Accounts:&#x20;
+### Account Types
 
-* Sandalone Account&#x20;
+* Standalone Account
 * Member Account within an AWS Organization
-* Management Account with recommendations based on the entire organization.
+* Management Account (with recommendations based on the entire organization)\

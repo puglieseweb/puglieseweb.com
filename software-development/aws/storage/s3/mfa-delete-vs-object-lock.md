@@ -12,8 +12,8 @@ Object Lock:
 
 * Enforces a "write-once-read-many" (WORM) model
 * Two modes:
-  1. Governance mode: Users with special permissions can override
-  2. Retention mode: NO ONE can delete objects until retention period expires, not even the root account
+  1. **Governance mode:** Users with special permissions can override
+  2. **Compliance mode:** NO ONE can delete objects until retention period expires, not even the root account
 * Cannot be disabled once enabled
 * More complex to manage but provides stronger compliance guarantees
 * Often used for regulatory requirements like SEC Rule 17a-4
