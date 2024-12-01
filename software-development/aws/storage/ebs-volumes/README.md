@@ -44,7 +44,7 @@ EBS volumes provide durable, block-level storage that can be attached to Amazon 
 
 ## AWS SSD Volume Types
 
-### GP2 (General Purpose SSD):
+### GP2 (General Purpose SSD)
 
 * Suitable for boot volumes and general-purpose workloads.
 * Baseline performance of 3 IOPS/GiB, with a minimum of 100 IOPS.
@@ -53,7 +53,25 @@ EBS volumes provide durable, block-level storage that can be attached to Amazon 
 * Throughput up to 250 MiB/s.
 * 99.8-99.9% durability.
 
-### GP3 (Latest Generation General Purpose SSD):
+#### GP2 IOPS calculation
+
+General Purpose SSD (gp2) IOPS are dependent on volume size at **a rate of 3 IOPS/GB**.
+
+For GP2 (General Purpose SSD) volumes, the IOPS calculation follows these rules:
+
+1. Baseline: 3 IOPS per GB
+2. Minimum: 100 IOPS
+3. Maximum: 16,000 IOPS
+
+For a 300 GB volume: 300 GB × 3 IOPS/GB = 900 IOPS
+
+To get 1000 IOPS with GP2, you would need approximately 334 GB of storage (1000 ÷ 3 = 333.33).
+
+
+
+### GP3 (Latest Generation General Purpose SSD)
+
+General Purpose SSD (gp3) includes 3,000 IOPS at no additional cost independent of volume size.
 
 * Suitable for a broad range of workloads.
 * Predictable 3,000 IOPS baseline performance and 125 MiB/s regardless of volume size.
