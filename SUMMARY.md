@@ -258,6 +258,7 @@
   * [Messaging Queue and Notification](software-development/aws/queue-and-notification/README.md)
     * [EventBridge](software-development/aws/messaging-queue-and-notification/eventbridge.md)
     * [EventBridge(Event Router) VS Kinesis(Event Stream)](software-development/aws/queue-and-notification/eventbridge-event-router-vs-kinesis-event-stream.md)
+    * [Event Bridge VS SNS](software-development/aws/queue-and-notification/event-bridge-vs-sns.md)
     * [MSK](software-development/aws/queue-and-notification/msk.md)
     * [SNS (Topics)](software-development/aws/queue-and-notification/sns-topics.md)
     * [SQS](software-development/aws/queue-and-notification/sqs.md)
