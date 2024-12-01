@@ -42,6 +42,7 @@
   * [General Q\&A](software-development/aws/general-considerations.md)
   * [VPC Q\&A](software-development/aws-q-and-a/vpc-q-and-a.md)
 * [AWS](software-development/aws/README.md)
+  * [DRs](software-development/aws/drs.md)
   * [AI, Analytics, Big Data, ML](software-development/aws/ai-analytics-big-data-ml/README.md)
     * [Extra](software-development/aws/ai-analytics-big-data-ml/extra/README.md)
       * [Glue and EMR](software-development/aws/ai-analytics-big-data-ml/extra/glue-and-emr.md)
