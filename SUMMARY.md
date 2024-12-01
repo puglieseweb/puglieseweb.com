@@ -32,7 +32,7 @@
   * [Use CloudFront for Dynamic content](software-development/aws-best-practices/use-cloudfront-for-dynamic-content.md)
 * [AWS Pro](software-development/aws-pro/README.md)
   * [Comparison of Deployment Strategies in AWS](software-development/aws-pro/comparison-of-deployment-strategies-in-aws.md)
-  * [Page 1](software-development/aws-pro/page-1.md)
+  * [Bedrock vs EMR](software-development/aws-pro/bedrock-vs-emr.md)
   * [Software Deployment Strategies](software-development/aws-pro/software-deployment-strategies.md)
 * [AWS Q\&A](software-development/aws-q-and-a/README.md)
   * [AWS Prep](software-development/aws-q-and-a/aws-prep.md)
