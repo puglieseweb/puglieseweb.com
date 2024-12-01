@@ -2,7 +2,7 @@
 
 ## AWS Transfer Family
 
-A service that enables file transfers into and out of AWS storage services using standard transfer protocols.
+A service that enables file transfers into and out of AWS storage services using standard transfer protocols. It allows applications (e.g. legacy applications) to read and write from S3 or EFS.
 
 ### Supported Protocols
 
