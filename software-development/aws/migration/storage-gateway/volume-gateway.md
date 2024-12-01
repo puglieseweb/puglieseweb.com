@@ -4,8 +4,8 @@ AWS Storage Gateway - Volume Gateway
 
 * Presents storage volumes using iSCSI protocol
 * Two operating modes:
-  * Cached mode: Primary data in S3, frequently accessed data cached locally
-  * Stored mode: Primary data stored locally, asynchronously backed up to S3
+  * **Cached mode:** Primary data in S3, frequently accessed data cached locally
+  * **Stored mode**: Primary data stored locally, asynchronously backed up to S3
 
 Key Features:
 
