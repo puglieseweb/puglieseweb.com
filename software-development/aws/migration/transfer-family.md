@@ -15,6 +15,37 @@ A service that enables file transfers into and out of AWS storage services using
 * Amazon S3 (Simple Storage Service)
 * Amazon EFS (Elastic File System)
 
+
+
+
+
+```mermaid
+graph LR
+    subgraph "Transfer Protocols"
+        SFTP[SFTP]
+        FTPS[FTPS]
+        FTP[FTP]
+        AS2[AS2]
+    end
+
+    subgraph "Storage Backend"
+        S3[(Amazon S3)]
+        EFS[(Amazon EFS)]
+    end
+
+    SFTP -->|Supported| S3
+    SFTP -->|Supported| EFS
+    FTPS -->|Supported| S3
+    FTP -->|Supported| S3
+    AS2 -->|Supported| S3
+
+    classDef protocol fill:#1EC9E7,stroke:#232F3E,stroke-width:2px,color:black
+    classDef storage fill:#FF9900,stroke:#232F3E,stroke-width:2px,color:white
+    
+    class SFTP,FTPS,FTP,AS2 protocol
+    class S3,EFS storage
+```
+
 ### Key Benefit
 
 * Enables cloud migration of legacy systems without modifying existing workflows
