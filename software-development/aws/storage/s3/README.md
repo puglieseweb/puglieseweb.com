@@ -1,10 +1,11 @@
 # S3
 
-### Exam notes
+### Highlights
 
-Query and retrieve the files that are in Amazon **S3 by using Amazon Athena.**&#x20;
+Query and retrieve the files that are in &#x20;
 
-Query and retrieve the files that are in S3 Glacier by using **S3 Glacier Select.**
+* **S3** by using **Amazon Athena**
+* **S3 Glacier** by using **S3 Glacier Select**
 
 If there is the need of accessing files randomly for S3 than use Intelligent-Tiering&#x20;
 
@@ -13,7 +14,7 @@ If there is the need of accessing files randomly for S3 than use Intelligent-Tie
 * Object storage service for storing and retrieving any amount of data
 * Highly scalable, durable, and available
 * Objects are stored in buckets
-* Max object size: 5TB
+* **Max object size: 5GB**
 * Unlimited storage capacity
 
 ### 2. S3 Storage Classes
@@ -42,7 +43,7 @@ As April 2024 this are the prices:&#x20;
 
 ### 3. Data Consistency
 
-* **Strong read-after-write** consistency for all S3 GET, PUT, and LIST operations
+* **Strong read-after-write consistency** for all S3 GET, PUT, LIST, and POST operations.
 
 ### 4. Security and Access Control
 
