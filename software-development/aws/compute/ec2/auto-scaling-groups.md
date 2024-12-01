@@ -34,17 +34,45 @@ For example:
 
 ## Autoscaling Policies&#x20;
 
-* **Step Scaling**. Applies stepped adjustments to vary the scaling depending on the size of the alarm breach
-* **Simple Scaling**. Relies on metrics for scaling needs. Example: Add 1 instance if the CPU Utilization metric > 80%
-* **Target Tracking**. Uses a scaling metric and value that your ASG should maintain at all times. Example: Maintain ASG Average CPU Utilization = 50%
-* **Instance Warm-up** and **Cooldown**.&#x20;
-  * Warm-up stops instances from being placed behind the load balancer, failing the health check, and being terminated prematurely.
-  * Cooldown. Pauses Auto Scaling for a set amout of time. Helps to avoid runaway scaling events.
+### Target Tracking Scaling
+
+* Think of it like cruise control in your car
+* You set a target value (like CPU at 50%)
+* ASG automatically adjusts capacity to maintain this target
+* Example: If CPU goes to 60%, it adds instances. If CPU drops to 40%, it removes instances
+* Best for stable, predictable workloads
+* Simplest to set up and manag
+
+### Step Scaling
+
+* Like a staircase of responses based on how far metric deviates
+* More aggressive response for larger breaches
+* Example:
+  * If CPU is 60-70%: Add 1 instance
+  * If CPU is 70-80%: Add 2 instances
+  * If CPU is >80%: Add 4 instances
+* More precise control over scaling
+* Better for handling varying degrees of load changes
+* No cooldown period between each step adjustment
+
+### Simple Scaling
+
+* Like a basic if-then rule
+* Single metric threshold triggers a single action
+* Example: "If CPU > 80%, add 2 instances"
+* Waits for cooldown period before making another adjustment
+* Can lead to capacity ping-pong (adding/removing too frequently)
+* Less granular control
+
+### **Instance Warm-up** and **Cooldown**.&#x20;
+
+* Warm-up stops instances from being placed behind the load balancer, failing the health check, and being terminated prematurely.
+* Cooldown. Pauses Auto Scaling for a set amout of time. Helps to avoid runaway scaling events.
 * Avoid Thrashing. **You want to create instances quickly and spin them down slowly.**&#x20;
 
 ## Scaling types
 
-* **Reactive scaling**. Playig catchup. Once the load is there, you meansure it and then determine if you need to create more resources.
+* **Reactive scaling**. Playing catch up. Once the load is there, you measure it and then determine if you need to create more resources.
 * **Scheduled Scaling.** If you have a predictable workload, create a scaling event to get your resources ready to go before they're actually needed.&#x20;
 * **Predictive Scaling**. AWS uses its machine learning algorithms to determine when it need to scale. **Predictions are reevaluated every 24** hours to create a forecast for the next 48.
 

@@ -1,13 +1,13 @@
 # EventBridge
 
-AWS EventBridge is a serverless event bus service provided by Amazon Web Services (AWS). It's designed to facilitate event-driven communication between applications. Here's a comprehensive overview:
+AWS EventBridge is a **serverless event bus** service provided by Amazon Web Services (AWS). It's designed to facilitate event-driven communication between applications. Here's a comprehensive overview:
 
 Key Features:
 
 1. Event Routing
    * Routes events from AWS services, SaaS applications, and custom applications to target services
    * Supports up to 10,000 events/second per account
-   * Maximum event size of 256KB
+   * **Maximum event size of 256KB**
 2. Serverless Architecture
    * Fully managed service with no infrastructure to maintain
    * Auto-scaling based on event volume
@@ -27,17 +27,20 @@ Key Features:
    * Custom event buses for application-specific events
    * Partner event buses for SaaS integration
    * Resource-based policies for access control
-6. Schema Registry
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+1. Schema Registry
    * Automatic schema inference from events
    * Schema versioning support
    * Code bindings generation for popular programming languages
    * OpenAPI schema support
-7. Integration Capabilities
+2. Integration Capabilities
    * Native integration with 100+ AWS services
    * SaaS provider integration (e.g., Zendesk, DataDog)
    * Custom integration via API destinations
    * Support for CloudFormation and Infrastructure as Code
-8. Cross-Account Features
+3. Cross-Account Features
    * Event sharing across AWS accounts
    * Organization-wide event management
    * Resource-based permissions for fine-grained access control
@@ -101,3 +104,9 @@ Best Practices:
 2. Implement idempotent processing in targets
 3. Monitor failed deliveries and DLQ metrics
 4. Set appropriate retry policies based on your use case
+
+
+
+### Example
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
