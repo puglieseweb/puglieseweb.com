@@ -77,6 +77,7 @@
       * [MFA Delete  VS Object Lock](software-development/aws/storage/s3/mfa-delete-vs-object-lock.md)
       * [S3 Standard VS S3 Intelligent-Tiering](software-development/aws/storage/s3/s3-standard-vs-s3-intelligent-tiering.md)
     * [Volumes](software-development/aws/storage/volumes/README.md)
+      * [Instance Storage](software-development/aws/storage/volumes/instance-storage.md)
       * [Snapshots](software-development/aws/storage/volumes/snapshots.md)
       * [EBS Volumes](software-development/aws/storage/volumes/ebs-volumes/README.md)
         * [EBS Multi-Attach](software-development/aws/storage/volumes/ebs-volumes/ebs-multi-attach.md)
