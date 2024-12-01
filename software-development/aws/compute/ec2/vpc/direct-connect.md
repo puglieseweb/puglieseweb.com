@@ -1,5 +1,49 @@
 # Direct Connect
 
+
+
+```mermaid
+graph LR
+    subgraph "On-Premises"
+        DC["Corporate Data Center"]
+        CG["Customer Gateway"]
+    end
+
+    subgraph "AWS Cloud"
+        VPC["Virtual Private Cloud (VPC)"]
+        VGW["Virtual Private Gateway"]
+    end
+
+    subgraph "Internet"
+        INT["Public Internet"]
+    end
+    
+    subgraph "Direct Connect Location"
+        DX["Direct Connect Router"]
+    end
+
+    %% VPN Connection
+    CG -- "IPsec VPN Tunnel<br>(Encrypted)" --> INT
+    INT -- "IPsec VPN Tunnel<br>(Encrypted)" --> VGW
+    
+    %% Direct Connect Connection
+    DC -- "Dedicated Private Connection" --> DX
+    DX -- "Dedicated Private Connection" --> VGW
+    
+    %% Final Connection to VPC
+    VGW --> VPC
+
+    classDef aws fill:#FF9900,stroke:#232F3E,stroke-width:2px,color:black;
+    classDef onprem fill:#85BBF0,stroke:#232F3E,stroke-width:2px,color:black;
+    classDef internet fill:#E8E8E8,stroke:#232F3E,stroke-width:2px,color:black;
+    
+    class VPC,VGW aws;
+    class DC,CG onprem;
+    class INT internet;
+```
+
+## Direct Connect
+
 AWS Direct Connect is a dedicated network connection service that creates a private, high-bandwidth link between your on-premises infrastructure and AWS. Think of it as a private highway between your data center and Amazon's cloud, bypassing the public internet.
 
 * The connection if private.
