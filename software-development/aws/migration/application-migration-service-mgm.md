@@ -1,6 +1,6 @@
-# MGN
+# MGN (Application Migration Service)
 
-AWS Application Migration Service (MGN) is a service designed to streamline application migration to AWS while minimizing Recovery Time Objectives (RTO) and Recovery Point Objectives (RPO).
+AWS Application Migration Service (MGN) is a service designed to streamline application migration to AWS while minimizing RTO (minuts) and RPO (sub-seconds).
 
 ### Key Features
 
