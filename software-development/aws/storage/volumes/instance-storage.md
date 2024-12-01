@@ -1,6 +1,10 @@
 # Instance Storage
 
-Instance storage in AWS (also called ephemeral storage) is physical disk storage that's directly attached to the host EC2 instance. Here are its key characteristics:
+Instance storage in AWS (also called ephemeral storage) is physical disk storage that's directly attached to the host EC2 instance. It is categorized as "block-level storage" that comes directly attached to EC2 instances.
+
+
+
+Here are its key characteristics:
 
 1. It's temporary - all data is lost when the instance stops or terminates (data persists during reboots)
 2. Provides very high IOPS and lowest latency since it's physically attached to the host
