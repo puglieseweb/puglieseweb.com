@@ -267,7 +267,7 @@
     * [Amazon MQ](software-development/aws/queue-and-notification/amazon-mq-overview.md)
     * [DLQ](software-development/aws/queue-and-notification/dlq.md)
 * [Software Design](software-development/software-design/README.md)
-  * [Page](software-development/software-design/page.md)
+  * [Transaction VS Operation DBs](software-development/software-design/transaction-vs-operation-dbs.md)
   * [Event-based Microservices](software-development/software-design/event-based-microservices/README.md)
     * [Relations database to event messages](software-development/software-design/event-based-microservices/relations-database-to-messages.md)
   * [Hexagonal Architecture with Java Spring](software-development/software-design/hexagonal-architecture-with-java-spring.md)
