@@ -1,5 +1,6 @@
-# Create Auto Scaling Group
+# Creating a Custom AMI and Deploying an Auto Scaling Group behind an Application Load Balancer
 
+During this hands-on lab you will undergo the process of standing up a working Web Server on Amazon EC2, creating a custom AMI using the instance, and then deploying an Auto Scaling Group using the newly created AMI.\
 
 
 ## Create AMI of Amazon EC2 Instance
