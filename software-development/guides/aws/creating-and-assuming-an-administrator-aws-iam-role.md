@@ -1,8 +1,6 @@
 # Creating and Assuming an Administrator AWS IAM Role
 
-**Learning Objectives**
-
-Successfully complete this lab by achieving the following learning objectives.
+In this Hands-on Lab we are going to work through creating a brand-new IAM Role within your AWS Sandbox account. This IAM Role will be granted Administrator Access permissions within the same account.
 
 ## Create IAM Role
 

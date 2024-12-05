@@ -1,8 +1,6 @@
 # Standing Up an Apache Web Server EC2 Instance and Sending Logs to Amazon CloudWatch
 
-**Learning Objectives**
-
-Successfully complete this lab by achieving the following learning objectives.
+During this hands-on lab you will learn how to leverage the AWS Secrets Manager to securely create and rotate an administrator password for an Amazon Aurora deployment
 
 ## 1Install and Configure the Amazon CloudWatch Agent
 
