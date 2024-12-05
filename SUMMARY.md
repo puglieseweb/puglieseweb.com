@@ -293,6 +293,7 @@
     * [Guide to File Extensions in React Projects](software-development/technologies/reactjs/guide-to-file-extensions-in-react-projects.md)
 * [Guides](software-development/guides/README.md)
   * [OCP](software-development/guides/ocp.md)
+  * [Create Auto Scaling Group](software-development/guides/create-auto-scaling-group.md)
   * [Load Balancer VS Reverse Proxy](software-development/guides/load-balancer-vs-reverse-proxy.md)
   * [Health check](software-development/guides/health-check.md)
   * [Load Balancer](software-development/guides/load-balancer.md)
