@@ -295,6 +295,8 @@
   * [OCP](software-development/guides/ocp.md)
   * [AWS](software-development/guides/aws/README.md)
     * [Creating and Assuming an Administrator AWS IAM Role](software-development/guides/aws/creating-and-assuming-an-administrator-aws-iam-role.md)
+    * [Standing Up an Amazon Aurora Database with an Automatically Rotated Password Using AWS Secrets Manag](software-development/guides/aws/standing-up-an-amazon-aurora-database-with-an-automatically-rotated-password-using-aws-secrets-manag.md)
+    * [Standing Up an Apache Web Server EC2 Instance and Sending Logs to Amazon CloudWatch](software-development/guides/aws/standing-up-an-apache-web-server-ec2-instance-and-sending-logs-to-amazon-cloudwatch.md)
     * [Create Auto Scaling Group](software-development/guides/aws/create-auto-scaling-group.md)
   * [Load Balancer VS Reverse Proxy](software-development/guides/load-balancer-vs-reverse-proxy.md)
   * [Health check](software-development/guides/health-check.md)
