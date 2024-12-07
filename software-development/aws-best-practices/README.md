@@ -42,3 +42,26 @@ The correct architecture should keep all e-commerce application components in pr
 * NAT Gateway for outbound internet access
 * VPC endpoints for AWS services access
 * Bastion host (if needed) as the only other EC2 instance in public subnet
+
+
+
+### System-level metrics from EC2
+
+* CloudWatch agent is the recommended way to collect system-level metrics from EC2 instances
+* It can monitor swap usage and other memory metrics not available through standard EC2 metrics
+* The agent can run scripts on schedule to gather and publish custom metrics
+
+### make the web server accessible on port 443&#x20;
+
+To make the web server accessible on port 443 (HTTPS), you need:
+
+1. Security Group:
+
+* Allow inbound TCP 443 from 0.0.0.0/0
+* Security groups are stateful, so return traffic is automatically allowed
+
+2. Network ACL:
+
+* Allow inbound TCP 443 from 0.0.0.0/0
+* Allow outbound TCP 32768-65535 to 0.0.0.0/0 (for ephemeral ports)
+* NACLs are stateless, so both inbound and outbound rules are needed
