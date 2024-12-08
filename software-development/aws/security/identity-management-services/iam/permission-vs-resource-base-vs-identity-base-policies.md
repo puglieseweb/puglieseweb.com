@@ -46,9 +46,9 @@ graph LR
 
 Key Differences:
 
+* Identity-based policies are attached to users/groups and define what those identities can do across AWS services
 * Permission policies (role policies) are attached to roles and define what that role can do
 * Resource-based policies are attached to resources (like S3 buckets) and define who can access that resource
-* Identity-based policies are attached to users/groups and define what those identities can do across AWS services
 
 A common real-world example might combine these:
 
@@ -56,9 +56,9 @@ A common real-world example might combine these:
 2. Those roles have permission policies defining what AWS services they can access
 3. The resources they need to access might have resource-based policies allowing access from those roles
 
+### Examples
 
-
-Let me show examples of each type:
+Let's provide some examples of each type:
 
 1. Permission Policy (Role Policy):
 
