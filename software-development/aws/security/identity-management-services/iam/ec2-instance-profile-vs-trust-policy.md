@@ -1,6 +1,4 @@
-# EC2 instance profile VS Trust relationship policy
-
-compare EC2 instance profile to a trust relationship policy and tell me when I should use a trust relationship policiy
+# EC2 instance profile VS Trust policy
 
 Let me break this down:
 
@@ -12,7 +10,7 @@ EC2 Instance Profile:
 * Best practice for EC2 instances accessing AWS services
 * Example use case: When your EC2 instance needs to access S3, DynamoDB, or other AWS services
 
-Trust Relationship Policy:
+Trust Relationship Policy (or Trust Policy):
 
 * Defines which entities can assume an IAM role
 * Used primarily for cross-account access or service-to-service authentication
@@ -23,7 +21,7 @@ Trust Relationship Policy:
   * Allowing external identity providers (like Azure AD) to assume roles
   * Enabling AWS services to act on your behalf (like CloudFormation)
 
-When to use a Trust Relationship Policy:
+When to use a Trust Policy:
 
 1.  Cross-account access:
 
