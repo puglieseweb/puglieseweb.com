@@ -24,5 +24,20 @@ To enable NAT functionality for private subnets to access the internet, you need
 3. Ensure you have an Internet Gateway attached to your VPC
 4. Have the proper routing set up in your public subnet
 
-Keep in mind that NAT Gateways incur additional AWS charges, which is another reason they're not enabled by default.
+Keep in mind that NAT Gateways incur additional AWS charges, which is another reason they're not enabled by default
+
+
+
+## Reducting Costs
+
+If you're looking to reduce costs, you could consider:
+
+1. Using a NAT Instance instead of a NAT Gateway
+   * Cheaper but requires more management
+   * Less reliable as it's a single point of failure
+   * You manage the instance yourself
+2. Using other architectural patterns:
+   * Placing instances in public subnets where appropriate
+   * Scheduling NAT Gateway usage if you don't need 24/7 availability
+   * Using VPC endpoints for AWS services instead of routing through NAT
 
