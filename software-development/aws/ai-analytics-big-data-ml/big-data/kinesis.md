@@ -16,13 +16,30 @@ The are two versions of Kinesis:
 | Speed      | Real time                                                             | near real time (within 60s)                                                     |
 | Difficulty | you are are responsible for crating consumers and scaling the streams | Plug and play with AWS Architecture. Scaling and consumers are handled by AWS!  |
 
-Kinesis Data Stream:&#x20;
+### Kinesis Data Stream
 
 <figure><img src="https://documents.lucid.app/documents/53875b19-93a1-4800-81d1-8c84d6351a09/pages/mo..56Qw57hr?a=5970&#x26;x=79&#x26;y=-10&#x26;w=1767&#x26;h=1096&#x26;store=1&#x26;accept=image%2F*&#x26;auth=LCA%20a176c76df5d1240feaa550122bc826b7e81d6088e72e89e545d97aa5ddaae387-ts%3D1726396829" alt=""><figcaption></figcaption></figure>
 
 
 
-Kinesis Firehose:
+Kinesis Data Streams has some specific limitations on the number of consumers that can read from a stream:
+
+For shared consumer mode (classic):
+
+* You can have up to 5 consumer applications (using the same Group ID) reading from a stream simultaneously
+* These share the throughput of the shard
+
+For enhanced fan-out:
+
+* You can register up to 20 consumers per stream
+* Each consumer gets its own dedicated 2MB/second throughput per shard
+* You need to register each consumer explicitly using the RegisterStreamConsumer API
+
+This is quite different from SNS, which allows you to have practically unlimited subscribers (there are soft limits but they're very high).
+
+If you need to broadcast data to many consumers, SNS would be a better choice than Kinesis. Alternatively, you could set up a Lambda function to read from Kinesis and then fan out the data to multiple destinations, but this adds complexity and latency.
+
+### Kinesis Firehose
 
 <figure><img src="https://documents.lucid.app/documents/53875b19-93a1-4800-81d1-8c84d6351a09/pages/~y..sptvYpEQ?a=6054&#x26;x=103&#x26;y=-10&#x26;w=1233&#x26;h=1079&#x26;store=1&#x26;accept=image%2F*&#x26;auth=LCA%203aca1f13ff10b47be25406ff77bb0c529ddc6c04812a7cb6e2f2a8799c700bd7-ts%3D1726396829" alt=""><figcaption></figcaption></figure>
 

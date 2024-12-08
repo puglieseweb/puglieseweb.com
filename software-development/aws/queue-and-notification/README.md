@@ -1,4 +1,4 @@
-# Messaging Queue and Notification
+# Messaging, Events and Streaming
 
 
 
@@ -17,15 +17,6 @@
     * Supports complex event filtering and transformation
     * Can integrate with many AWS services and SaaS applications
 
-| Characteristic | Topics      | Fanout        |
-| -------------- | ----------- | ------------- |
-| Filtering      | Topic-based | Complex rules |
-| Scalability    | Good        | Best          |
-| Flexibility    | Medium      | High          |
-| Complexity     | Medium      | Higher        |
-
-<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
-
 | Feature             | SQS                                     | SNS                                         | Kinesis                                            | EventBridge                                                    |
 | ------------------- | --------------------------------------- | ------------------------------------------- | -------------------------------------------------- | -------------------------------------------------------------- |
 | Type                | Queue service                           | Pub/sub messaging                           | Real-time data streaming                           | Event bus                                                      |
@@ -40,6 +31,10 @@
 | Replay Capability   | No built-in replay                      | No replay                                   | Yes, with enhanced fan-out                         | Limited replay with archive and replay feature                 |
 | Latency             | Low (but higher than SNS)               | Lowest                                      | \~200 ms                                           | Low                                                            |
 | Data Transformation | No built-in transformation              | No built-in transformation                  | Basic with Kinesis Data Analytics                  | Built-in transformation with EventBridge Pipes                 |
+
+### Common Architecture Patterns
+
+<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 ## Key Differences
 
