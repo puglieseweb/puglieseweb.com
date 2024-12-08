@@ -1,4 +1,6 @@
-# EventBridge
+# EventBridge (Event Router)
+
+EventBridge is an Event router that routes events based on rules.
 
 AWS EventBridge is a **serverless event bus** service provided by Amazon Web Services (AWS). It's designed to facilitate event-driven communication between applications. Here's a comprehensive overview:
 

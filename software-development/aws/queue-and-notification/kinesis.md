@@ -1,4 +1,6 @@
-# Kinesis
+# Kinesis (Event Stream)
+
+Kinesis is an Event stream that handles real-time data streaming.
 
 Kinesis allows to ingest, process, and analyse real-time streaming data.
 

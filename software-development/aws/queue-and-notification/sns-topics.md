@@ -1,4 +1,6 @@
-# SNS (Topics)
+# SNS (Event broadcaster)
+
+SNS is an Event broadcaster that fans out messages to multiple subscribers using topics.
 
 Amazon SNS (Simple Notification Service) is a fully managed pub/sub messaging service where publishers send messages to topics and these messages are automatically delivered to all subscribed endpoints/consumers.
 

@@ -1,4 +1,6 @@
-# SQS
+# SQS (Message Queue)
+
+SQS is a Message queue that queues messages for reliable processing.
 
 ## Amazon SQS Queue Types and Message Ordering
 
