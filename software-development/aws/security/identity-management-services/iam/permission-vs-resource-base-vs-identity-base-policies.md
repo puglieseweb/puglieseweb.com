@@ -1,5 +1,49 @@
 # Permission VS Resource Base vs Identity Base policies
 
+
+
+```mermaid
+graph LR
+    subgraph "Identity-Based Policies"
+        U[IAM User]
+        G[IAM Group]
+        IBP[Identity-Based Policy]
+        U -->|attached to| IBP
+        G -->|attached to| IBP
+    end
+
+    subgraph "Role & Trust Policies"
+        R[IAM Role]
+        TP[Trust Policy]
+        PP[Permission Policy]
+        R -->|has| TP
+        R -->|has| PP
+        TP -->|defines who can\nassume role| R
+        PP -->|defines what role\ncan do| R
+    end
+
+    subgraph "Resource-Based Policies"
+        S3[S3 Bucket]
+        RBP[Resource-Based Policy]
+        S3 -->|has| RBP
+        RBP -->|controls access to| S3
+    end
+
+    IBP -->|can allow\nassume role| R
+    R -->|can access| S3
+    RBP -->|can grant direct\naccess to| U
+
+    classDef policy fill:#f9f,stroke:#333,stroke-width:2px
+    classDef resource fill:#bbf,stroke:#333,stroke-width:2px
+    classDef identity fill:#bfb,stroke:#333,stroke-width:2px
+    
+    class IBP,TP,PP,RBP policy
+    class S3 resource
+    class U,G,R identity
+```
+
+
+
 Key Differences:
 
 * Permission policies (role policies) are attached to roles and define what that role can do
