@@ -1,4 +1,6 @@
-# AWS CloudFormation (Immutable AWS Architecture)
+# CloudFormation
+
+CloudFormation allows implementing Immutable AWS Architecture.
 
 ### Core Concepts
 
