@@ -2,21 +2,38 @@
 
 DynamoDB is a fully managed NoSQL database service offering consistent, single-digit millisecond latency at any scale. It supports both **document and key-value data models**, making it ideal for mobile, web, gaming, ad-tech, IoT, and many other applications.
 
+### Key Points
+
+1. **Switching between modes**:
+   * Can switch between Provisioned and On-Demand **once per 24 hours**
+2. **Global Tables**:
+   * Both modes support **DynamoDB Global Tables for multi-region replication**
+3. **Backup and Restore**:
+   * Both modes support on-demand backup and restore
+4. **Read Consistency**:
+   * **Both modes support eventually consistent and strongly consistent reads**
+5. **DAX (DynamoDB Accelerator)**:
+   * Compatible with both capacity modes
+6. **Use case identification**:
+   * Be prepared to recommend the appropriate capacity mode based on given scenarios
+
+###
+
 ### Core Features
 
 #### Storage and Consistency
 
 * Stored on SSD storage
-* Data spread across 3 geographically distinct data centers
+* Data spread across 3 geographically distinct Availability Zones (AZs) withign the same Region.
 * Two consistency models:
-  * Eventually consistent reads (default): Updates typically propagate within one second
-  * Strongly consistent reads: Returns results reflecting all successful writes prior to the read
+  * **Eventually consistent reads** (default): Updates typically propagate within one second
+  * **Strongly consistent reads**: Returns results reflecting all successful writes prior to the read
 
 #### DynamoDB Accelerator (DAX)
 
 * Fully managed, highly available, in-memory cache
 * Improves performance by 10x
-* Reduces request time from milliseconds to microseconds
+* Reduces request time from milliseconds to **microseconds**
 * Automatically handles caching logic
 * Compatible with DynamoDB API calls
 
@@ -24,33 +41,78 @@ DynamoDB is a fully managed NoSQL database service offering consistent, single-d
 
 DynamoDB has three capacity modes for managing throughput:
 
-1. Provisioned Capacity (default):
+### **1. Provisioned Capacit**y (default)
 
 * You specify Read Capacity Units (RCU) and Write Capacity Units (WCU)
 * Pay for provisioned capacity whether used or not
 * Can enable Auto Scaling
 * Good for predictable workloads
 
-2. On-Demand Capacity:
+#### Capacity Units Calculation
+
+* **Use Case**:
+  * For predictable workloads
+  * When you can forecast read and write capacity requirements
+*   **How it works**:
+
+    You specify Read Capacity Units (RCUs) and Write Capacity Units (WCUs)
+
+    * 1 RCU = 1 strongly consistent read/sec for items up to 4KB
+    * 1 RCU = 2 eventually consistent reads/sec for items up to 4KB
+    * 1 WCU = 1 write/sec for items up to 1KB
+* **Scaling**:
+  * Can use Auto Scaling to automatically adjust provisioned capacity
+  * Set upper and lower bounds for scaling
+* **Cost**:
+  * Most cost-effective for predictable workloads
+  * Pay for provisioned capacity whether you use it or not
+* **Performance**:
+  * Consistent performance if capacity is set correctly
+  * Can lead to throttling if capacity is set too low
+* **Effort**:
+  * Requires monitoring and adjusting capacity based on usage patterns
+  * Need to review past usage to set appropriate scaling bounds
+
+
+
+### **2. On-Demand Capacity**
+
+
 
 * Pay-per-request pricing
 * No capacity planning needed
 * More expensive per request
 * Good for unpredictable workloads
 * No throttling
+* **Use Case**:
+  * For unpredictable workloads
+  * New applications with unknown traffic patterns
+  * Applications with sporadic, short-lived spikes in traffic
+* **How it works**:
+  * Automatically scales up and down based on actual traffic
+  * No need to specify RCUs and WCUs
+* **Scaling**:
+  * Instantaneous and unlimited scaling
+  * Can handle sudden and large spikes in traffic
+* **Cost**:
+  * Pay per request pricing
+  * Generally more expensive than well-optimized Provisioned capacity
+  * No charges for read and write capacity that you don't use
+* **Performance**:
+  * Consistent performance regardless of load
+  * No throttling due to capacity misconfigurations
+* **Effort**:
+  * Simple to use - just select On-Demand mode
+  * No capacity planning required
 
-3. Global Tables:
+### **3. Global Tables**
 
 * Multi-region write capability
 * Uses On-Demand or Provisioned
 * Active-active configuration
 * Sub-second latency
 
-## Capacity Units
-
-* 1 RCU = 1 strongly consistent read/sec for items up to 4KB
-* 1 RCU = 2 eventually consistent reads/sec for items up to 4KB
-* 1 WCU = 1 write/sec for items up to 1KB
+##
 
 ## Auto Scaling Settings
 

@@ -25,18 +25,7 @@
 * Limited to 20 GSIs per table
 * Has its own provisioned throughput
 
-### Read/Write Capacity Units
 
-**Read Capacity Unit (RCU)**:
-
-* 1 strongly consistent read per second for items up to 4 KB
-* 2 eventually consistent reads per second for items up to 4 KB
-* Larger items require additional RCUs
-
-**Write Capacity Unit (WCU)**:
-
-* 1 write per second for items up to 1 KB
-* Larger items require additional WCUs
 
 ### Data Types
 
