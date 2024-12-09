@@ -7,6 +7,10 @@ Security groups are associated with the following:
 
 
 
+**Security groups can't do deny rules. Instead use NACLs to block IP ranges.**
+
+
+
 A network security group is not directly associated with a subnet, VPN, Availability Zone (AZ), or Region. Instead,&#x20;
 
 
