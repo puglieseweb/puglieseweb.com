@@ -2,6 +2,24 @@
 
 The Snow Family is a set of secure appliances that provide data collection and built-in computing capabilities. These devices are designed for use at the edge, in remote locations with limited or no data center access and unreliable network connectivity.
 
+According to AWS best practices, **if transferring more than 100 TB of data, using AWS Snow Family devices is generally more cost-effective** and faster than transfer over a 10 Gbps Direct Connect.
+
+Calculation:
+
+* 10 Gbps ≈ 1.25 GB/second (theoretical max)
+* Practical transfer speed is typically 70-80% of theoretical
+* 100 TB would take approximately 100-120 hours over Direct Connect
+* Additional factors: network consistency, bandwidth sharing, and data transfer costs
+
+Consider Snow devices if:
+
+1. Data volume > 100 TB
+2. Transfer time sensitivity is critical
+3. Network bandwidth is shared/inconsistent
+4. Data transfer costs are a concern
+
+
+
 **Device Types**
 
 1. **Snowcone**
