@@ -60,12 +60,39 @@ As April 2024 this are the prices:&#x20;
 
 ### 5. Encryption
 
-* Server-Side Encryption (SSE):
-  * SSE-S3: S3-managed keys
-  * SSE-KMS: AWS KMS-managed keys
-  * SSE-C: Customer-provided keys
-* Client-Side Encryption
-* Encryption in transit (SSL/TLS)
+There are three types of Server-Side Encryption (SSE):
+
+* SSE-S3 (S3-managed keys):
+  * Default encryption option
+  * Simplest implementation - S3 handles key management
+  * Good for basic security requirements
+  * No additional cost
+* SSE-KMS (AWS KMS-managed keys):
+  * When you need audit trails for key usage
+  * Required key rotation and control
+  * Separate permissions for key management
+  * Integration with other AWS services
+* SSE-C (Customer-provided keys):
+  * Full control over encryption keys
+  * Keys never stored in AWS
+  * Must provide key with every request
+  * Higher security requirements
+
+Client-Side Encryption:
+
+* Most sensitive data requiring encryption before reaching AWS
+* Complete control over encryption process
+* Higher application complexity
+* Use when regulatory requirements mandate it
+
+Encryption in transit  (SSL/TLS)
+
+* Always enabled by default for HTTPS endpoints
+* Protects data during transfer
+* Required for compliance standards
+* No additional configuration needed
+
+
 
 ### 6. Versioning
 

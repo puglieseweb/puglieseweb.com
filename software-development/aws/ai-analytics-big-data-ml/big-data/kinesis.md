@@ -4,6 +4,13 @@ Kinesis is an Event stream that handles real-time data streaming.
 
 Kinesis allows to ingest, process, and analyse real-time streaming data.
 
+**The maximum size for a single record in Amazon Kinesis Data Streams is 1 MB. The API has a per-request limit of 1 MB/s for writes to a single shard, or 1,000 records per second.**\
+
+
+**Kinesis Data Streams ensures ordered processing in shareds**
+
+
+
 AWS Kinesis effectively provides alternatives to Apache Kafka, for real-time data streaming, Apache Flink (Kinesis Data Analytics) for both handling stream processing and analytics.&#x20;
 
 
