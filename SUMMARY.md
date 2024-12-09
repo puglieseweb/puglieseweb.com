@@ -36,6 +36,7 @@
       * [Comparison of Deployment Strategies in AWS](software-development/aws/others/aws-pro/comparison-of-deployment-strategies-in-aws.md)
       * [Bedrock vs EMR](software-development/aws/others/aws-pro/bedrock-vs-emr.md)
       * [Software Deployment Strategies](software-development/aws/others/aws-pro/software-deployment-strategies.md)
+    * [Page](software-development/aws/others/page.md)
     * [AWS Q\&A](software-development/aws/others/aws-q-and-a/README.md)
       * [AWS Prep](software-development/aws/others/aws-q-and-a/aws-prep.md)
       * [prepexam](software-development/aws/others/aws-q-and-a/prepexam.md)
