@@ -44,68 +44,9 @@ graph LR
 
 
 
-Key Differences:
+There are tree main types of policies:&#x20;
 
-* Identity-based policies are attached to users/groups and define what those identities can do across AWS services
-* Permission policies (role policies) are attached to roles and define what that role can do
-* Resource-based policies are attached to resources (like S3 buckets) and define who can access that resource
-
-A common real-world example might combine these:
-
-1. A developer has an identity-based policy allowing them to assume certain roles
-2. Those roles have permission policies defining what AWS services they can access
-3. The resources they need to access might have resource-based policies allowing access from those roles
-
-### Examples
-
-Let's provide some examples of each type:
-
-1. Permission Policy (Role Policy):
-
-```json
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "dynamodb:GetItem",
-                "dynamodb:PutItem",
-                "dynamodb:UpdateItem"
-            ],
-            "Resource": "arn:aws:dynamodb:us-west-2:123456789012:table/MyTable"
-        }
-    ]
-}
-```
-
-This policy would be attached to a role and defines what actions that role can perform.
-
-2. Resource-Based Policy (e.g., S3 Bucket Policy):
-
-```json
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "AllowCrossAccountAccess",
-            "Effect": "Allow",
-            "Principal": {
-                "AWS": "arn:aws:iam::123456789012:role/CrossAccountRole"
-            },
-            "Action": [
-                "s3:GetObject",
-                "s3:PutObject"
-            ],
-            "Resource": "arn:aws:s3:::my-bucket/*"
-        }
-    ]
-}
-```
-
-This policy is attached directly to the S3 bucket and controls access to that specific resource.
-
-3. Identity-Based Policy (attached to IAM user/group):
+* **Identity-based** policies are attached to users/groups and define what those identities can do across AWS services
 
 ```json
 {
@@ -136,3 +77,58 @@ This policy is attached directly to the S3 bucket and controls access to that sp
 ```
 
 This policy would be attached directly to an IAM user or group and allows them to start/stop EC2 instances tagged as "Production" and view all instances.
+
+* **Permission policies** (role policies) are attached to roles and define what that role can do
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:GetItem",
+                "dynamodb:PutItem",
+                "dynamodb:UpdateItem"
+            ],
+            "Resource": "arn:aws:dynamodb:us-west-2:123456789012:table/MyTable"
+        }
+    ]
+}
+```
+
+This policy would be attached to a role and defines what actions that role can perform.
+
+* **Resource-based** (e.g. S3 bucket policy) policies are attached to resources (like S3 buckets) . Resource-based policy must declare the "Principle" element to define who can access that resource.
+
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowCrossAccountAccess",
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::123456789012:role/CrossAccountRole"
+            },
+            "Action": [
+                "s3:GetObject",
+                "s3:PutObject"
+            ],
+            "Resource": "arn:aws:s3:::my-bucket/*"
+        }
+    ]
+}
+```
+
+This policy is attached directly to the S3 bucket and controls access to that specific resource.
+
+
+
+### Example
+
+A common real-world example might combine these:
+
+1. A developer has an identity-based policy allowing them to assume certain roles
+2. Those roles have permission policies defining what AWS services they can access
+3. The resources they need to access might have resource-based policies allowing access from those roles
