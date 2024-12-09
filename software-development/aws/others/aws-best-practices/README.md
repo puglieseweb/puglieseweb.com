@@ -65,3 +65,15 @@ To make the web server accessible on port 443 (HTTPS), you need:
 * Allow inbound TCP 443 from 0.0.0.0/0
 * Allow outbound TCP 32768-65535 to 0.0.0.0/0 (for ephemeral ports)
 * NACLs are stateless, so both inbound and outbound rules are needed
+
+
+
+## &#x20;Enable EBS encryption by default for the AWS Region.
+
+To ensure that all Amazon Elastic Block Store (Amazon EBS) volumes restored from unencrypted EBS snapshots are encrypted, the correct solution is to Enable EBS encryption by default for the AWS Region.
+
+Here's why:
+
+* When you enable EBS encryption by default for an AWS Region, all new EBS volumes created in that region will be encrypted, including volumes restored from unencrypted snapshots.
+* This setting applies to all EBS volumes created by any user or service in the specified region, providing a blanket encryption policy.
+* Enabling encryption by default at the region level is the simplest and most comprehensive way to ensure all restored volumes are encrypted, without the need to specify encryption settings for each individual volume.

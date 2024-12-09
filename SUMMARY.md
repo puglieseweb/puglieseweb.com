@@ -75,6 +75,7 @@
         * [Real-time interfaces](software-development/aws/ai-analytics-big-data-ml/machine-learning/sagemaker-part-of-the-exam/real-time-interfaces.md)
         * [ML Example](software-development/aws/ai-analytics-big-data-ml/machine-learning/sagemaker-part-of-the-exam/ml-example.md)
   * [Databases](software-development/aws/databases/README.md)
+    * [Capturing data modification events](software-development/aws/databases/capturing-data-modification-events.md)
     * [Time-Series Data (Amazon Timestream)](software-development/aws/databases/time-series-data-amazon-timestream.md)
     * [Graph DBs](software-development/aws/databases/graph-dbs/README.md)
       * [Amazon Neptune](software-development/aws/databases/graph-dbs/amazon-neptune.md)

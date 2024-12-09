@@ -46,6 +46,8 @@ EBS volumes provide durable, block-level storage that can be attached to Amazon 
 
 ### GP2 (General Purpose SSD)
 
+**GP2 volumes provide millisecond latency and are well-suited for small, random I/O operations.**
+
 * Suitable for boot volumes and general-purpose workloads.
 * Baseline performance of 3 IOPS/GiB, with a minimum of 100 IOPS.
 * Can burst up to 3,000 IOPS for volumes 334 GiB and smaller.
@@ -55,7 +57,7 @@ EBS volumes provide durable, block-level storage that can be attached to Amazon 
 
 #### GP2 IOPS calculation
 
-General Purpose SSD (gp2) IOPS are dependent on volume size at **a rate of 3 IOPS/GB**.
+**General Purpose SSD (gp2) IOPS are dependent on volume size at a rate of 3 IOPS/GB.**
 
 For GP2 (General Purpose SSD) volumes, the IOPS calculation follows these rules:
 
@@ -80,6 +82,12 @@ General Purpose SSD (gp3) includes 3,000 IOPS at no additional cost independent 
 * 99.8-99.9% durability.
 
 ### io1 (Provisioned IOPS SSD):
+
+
+
+**Provisioned IOPS SSD (io1) suitable Sub-millisecond latency and vest for I/O-intensive workloads.**
+
+
 
 * Suitable for I/O-intensive workloads, particularly database workloads.
 * Provision up to 50 IOPS per GiB.
