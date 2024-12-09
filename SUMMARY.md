@@ -95,6 +95,7 @@
       * [Aurora Blue/Green deployments](software-development/aws/databases/rds/aurora-blue-green-deployments.md)
       * [Aurora](software-development/aws/databases/rds/aurora.md)
     * [Amazon Aurora Serverless](software-development/aws/databases/amazon-aurora-serverless.md)
+    * [Sharing RDS DB instance with an external auditor](software-development/aws/databases/sharing-rds-db-instance-with-an-external-auditor.md)
   * [Caching](software-development/aws/caching/README.md)
     * [DAX Accelerator](software-development/aws/caching/dax-accelerator.md)
     * [ElastiChache](software-development/aws/caching/elastichache.md)
