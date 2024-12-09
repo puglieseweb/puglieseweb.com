@@ -17,7 +17,7 @@ However, you can still achieve similar functionality through these approaches:
 For example, you could create a policy like:
 
 ```json
-jsonCopy{
+{
     "Version": "2012-10-17",
     "Statement": [{
         "Effect": "Allow",

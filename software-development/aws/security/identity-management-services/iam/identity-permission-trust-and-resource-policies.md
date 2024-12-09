@@ -1,4 +1,4 @@
-# Permission VS Resource Base vs Identity Base policies
+# Identity, Permission, Trust and Resource Policies
 
 
 
@@ -44,7 +44,11 @@ graph LR
 
 
 
-There are tree main types of policies:&#x20;
+There are the following types of policies:&#x20;
+
+
+
+### **Identity-based** Policies
 
 * **Identity-based** policies are attached to users/groups and define what those identities can do across AWS services
 
@@ -78,28 +82,61 @@ There are tree main types of policies:&#x20;
 
 This policy would be attached directly to an IAM user or group and allows them to start/stop EC2 instances tagged as "Production" and view all instances.
 
-* **Permission policies** (role policies) are attached to roles and define what that role can do
+
+
+### Role Policies
+
+IAM role must have two types of policies:
+
+1. **Trust Policy** (only one):
+   1. Defines WHO can assume the role
+   2. Sometimes called "trust relationship policy"
+   3. Always uses the **sts:AssumeRole** action
+   4. Must include Principal element
 
 ```json
 {
     "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "dynamodb:GetItem",
-                "dynamodb:PutItem",
-                "dynamodb:UpdateItem"
-            ],
-            "Resource": "arn:aws:dynamodb:us-west-2:123456789012:table/MyTable"
-        }
-    ]
+    "Statement": [{
+        "Effect": "Allow",
+        "Principal": {
+            "Service": "lambda.amazonaws.com"
+        },
+        "Action": "sts:AssumeRole"
+    }]
 }
 ```
 
-This policy would be attached to a role and defines what actions that role can perform.
+2. **Permission Policies** (can have multiple):
+   1. Define WHAT the role can do
+   2. Lists allowed/denied AWS actions
+   3. No Principal element needed
+   4. Can attach multiple permission policies to a role
 
-* **Resource-based** (e.g. S3 bucket policy) policies are attached to resources (like S3 buckets) . Resource-based policy must declare the "Principle" element to define who can access that resource.
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [{
+        "Effect": "Allow",
+        "Action": [
+            "s3:GetObject",
+            "s3:PutObject"
+        ],
+        "Resource": "arn:aws:s3:::my-bucket/*"
+    }]
+}
+```
+
+Think of it this way:
+
+* Trust Policy = Who can use this role?
+* Permission Policy = What can this role do?
+
+Both are required for a role to be functional. You can't have a role without a trust policy, and a role without permission policies wouldn't be able to do anything.
+
+### **Resource-based**
+
+**Resource-based** (e.g. S3 bucket policy) policies are attached to resources (like S3 buckets) . Resource-based policy must declare the "Principle" element to define who can access that resource.
 
 ```json
 {
