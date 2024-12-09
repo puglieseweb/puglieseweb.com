@@ -36,7 +36,7 @@ graph TD
 
 * **S3**: Used for serveless object storage.
 * **Glacier**: Used for archiving objects
-* **EFS**: Network File System (NFS) for Linux instances. Centralized?? storage solution across multiple AZs
+* **EFS**: Network File System (NFS) for Linux instances. Centralized storage solution across multiple AZs
 * **FSx for Lustre**: File storage for high performace computing Linux file systems.
 * **EBS Volumes**: Persistence storage for EC2 instances
 * **Instance Storage**: Ephemoral storage for EC2 instances&#x20;

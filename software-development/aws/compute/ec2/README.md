@@ -143,5 +143,56 @@ Enhanced networking uses single root I/O virtualization (SR-IOV) to provide high
 * Basic Monitoring: Metric data available automatically in 5-minute periods at no charge
 * Detailed Monitoring: Metric data available in 1-minute periods for an additional cost
 
-Remember to review AWS documentation for the most up-to-date information, as service features and limits may change over time.
+Here are the key EC2 metrics available by default through Amazon CloudWatch:
+
+#### Basic Monitoring (5-minute intervals):
+
+1. CPU:
+
+* CPUUtilization (%)
+
+2. Disk:
+
+* DiskReadOps (Count)
+* DiskWriteOps (Count)
+* DiskReadBytes (Bytes)
+* DiskWriteBytes (Bytes)
+
+3. Network:
+
+* NetworkIn (Bytes)
+* NetworkOut (Bytes)
+* NetworkPacketsIn (Count)
+* NetworkPacketsOut (Count)
+
+4. Status Checks:
+
+* StatusCheckFailed (Count)
+* StatusCheckFailed\_Instance (Count)
+* StatusCheckFailed\_System (Count)
+
+#### Detailed Monitoring (1-minute intervals, additional cost):
+
+* Same metrics as above but with higher frequency
+* Must be explicitly enabled
+* Additional charges apply
+
+Important Notes:
+
+* Memory utilization is NOT included by default
+* Disk metrics only available for instance store volumes
+* For EBS volumes, you need to check EBS-specific metrics
+* CPU credit metrics available only for T-class instances:
+  * CPUCreditUsage
+  * CPUCreditBalance
+  * CPUSurplusCreditBalance
+  * CPUSurplusCreditsCharged
+
+To get memory, disk space, and other system-level metrics, you need to:
+
+1. Install CloudWatch Agent
+2. Configure custom metrics collection
+3. Pay for custom metrics
+
+
 

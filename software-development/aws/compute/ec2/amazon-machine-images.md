@@ -24,3 +24,29 @@ In short:
 * You need an AMI to create a Launch Template
 * AMIs can be used across multiple Launch Templates
 * Launch Templates are required for some newer features like mixed instance types in ASG
+
+## How to create an AMI
+
+&#x20;You can create an Amazon Machine Image (AMI) in two main ways:
+
+1. From a running EC2 instance:
+
+* Creates a point-in-time snapshot of the instance
+* Can be done while the instance is running (though for consistency, it's better to stop it first)
+* Captures all EBS volumes attached to the instance
+* Preserves all installed software, configurations, and data
+
+2. From an existing EBS snapshot:
+
+* Creates an AMI directly from a snapshot of a root volume
+* Useful when you have a snapshot but the original instance no longer exists
+* You can modify some configurations during creation (like instance type compatibility)
+* Can add additional EBS volume snapshots during AMI creation
+
+Important considerations:
+
+* Creating from a running instance might capture inconsistent state if applications are actively writing data
+* For production systems, it's recommended to stop the instance first
+* If you create from a snapshot, it must be a snapshot of a root volume
+* The resulting AMI will retain the permissions and encryption settings of the source snapshots
+
