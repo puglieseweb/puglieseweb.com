@@ -89,8 +89,29 @@ Types of load balancers:
 
 ### 9. EC2 Instance Metadata and User Data
 
-* Instance Metadata: Data about your instance that you can use to configure or manage the running instance
-* User Data: Script that you can provide when launching your instance to perform common automated configuration tasks
+* Instance Metadata: Data about your instance that you can use to configure or manage the running instance. Instance metadata can be accessed usign IMDSv1 (Legacy method, less secure):
+
+```bash
+curl http://169.254.169.254/latest/meta-data/
+```
+
+Common metadata endpoints:
+
+```bash
+bashCopy/latest/meta-data/ami-id                  # AMI ID
+/latest/meta-data/instance-id             # Instance ID
+/latest/meta-data/instance-type           # Instance type
+/latest/meta-data/local-ipv4              # Private IP
+/latest/meta-data/public-ipv4             # Public IP
+/latest/meta-data/iam/security-credentials/# IAM role credentials
+/latest/meta-data/placement/availability-zone # AZ information
+```
+
+* User Data: Script that you can provide when launching your instance to perform common automated configuration tasks. To get user data (if configured):
+
+```bash
+bashCopycurl http://169.254.169.254/latest/user-data
+```
 
 ### 10. EC2 Hibernation
 
