@@ -7,7 +7,7 @@ Amazon Elastic Container Service  (ECS) is a service that allows you to easily l
 * Contains can have individual roles attached, making security a breeze
 * Extremely easy to set up and scale to handle any workload
 
-
+## Deployment Options
 
 There are three Amazon ECS (Elastic Container Service) deployment options.
 
@@ -46,3 +46,11 @@ Key Decision Factors:
 3. Operational overhead: Fargate requires least management, followed by EC2, then Anywhere
 4. Infrastructure requirements: Consider specific hardware needs, compliance requirements, or existing investments
 5. Scaling needs: Fargate provides seamless scaling, EC2 requires more planning, Anywhere depends on your infrastructure
+
+## Task vs Service
+
+* A Task is a one-time run of containers
+* A Service maintains a specified number of Tasks running continuously
+* Services can integrate with load balancers and handle task replacement if tasks fail
+
+For example, if you have a task definition for a web application that includes both a web container and a Redis container, each "task" would be a running instance of both these containers, deployed together as a unit.

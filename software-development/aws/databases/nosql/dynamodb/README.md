@@ -112,7 +112,49 @@ DynamoDB has three capacity modes for managing throughput:
 * Active-active configuration
 * Sub-second latency
 
-##
+## DynamoDB limits and constraints
+
+Item Size Limits:
+
+* **Maximum item size: 400 KB** (including attribute names and values)
+
+Table Limits:
+
+* No limit on number of items per table
+* No limit on table size
+* Maximum number of tables per account: 2500 by default (can be increased)
+* Maximum partition key length: 2048 bytes
+* Maximum sort key length: 1024 bytes
+
+Throughput Limits (for provisioned capacity mode):
+
+* Per table minimum: 1 RCU and 1 WCU
+* Per table maximum: 40,000 RCU and 40,000 WCU (can be increased)
+* Per partition: 3,000 RCU and 1,000 WCU
+
+Secondary Indexes:
+
+* Maximum number of local secondary indexes per table: 5
+* Maximum number of global secondary indexes per table: 20
+* Each secondary index adds another copy of data with different key schema
+
+API Specific Limits:
+
+* BatchGetItem: Up to 100 items or 16 MB per request
+* BatchWriteItem: Up to 25 items or 16 MB per request
+* Query and Scan: Result set size limit of 1 MB per call
+* Transactional operations: Up to 25 items or 4 MB per transaction
+
+Attribute Naming and Data Types:
+
+* Attribute names: Maximum length of 64 KB
+* Number of attributes per item: No fixed limit, but must fit within 400 KB item size
+* Supports data types: String, Number, Binary, Boolean, Null, Lists, Maps, Sets
+
+Time To Live (TTL):
+
+* One TTL attribute per table
+* Must be a Number data type representing epoch timestamp
 
 ## Auto Scaling Settings
 
