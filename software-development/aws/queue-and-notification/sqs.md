@@ -2,6 +2,14 @@
 
 SQS is a Message queue that queues messages for reliable processing.
 
+Amazon SQS is the ideal solution to:
+
+* Handles drastic message volume spikes up to 100k/sec
+* Decouples message producers from consumers
+* Automatically scales to match demand
+* Allows multiple consumers to process messages independently
+* Maintains message durability and availability
+
 ## Amazon SQS Queue Types and Message Ordering
 
 ### Queue Types and Their Characteristics

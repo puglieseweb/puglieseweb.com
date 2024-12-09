@@ -1,10 +1,20 @@
 # PrivateLink
 
+AWS PrivateLink is specifically designed for this SaaS provider use case. It allows you to expose a service to thousands of VPCs (both your own and other accounts) without requiring VPC peering, VPN, or Direct Connect.
+
+Key points from AWS docs:
+
+1. Service providers can create an endpoint service using a Network Load Balancer
+2. Consumers can create VPC endpoints to connect to the service
+3. Traffic stays on the AWS network and doesn't traverse the internet
+4. Minimal administrative overhead - no need to manage VPC peering, VPN, or Direct Connect connections
+5. Scales to thousands of consumers
+
 * The best way to expose a service VPC to tens, hundreds, or thousands of customer VPCs&#x20;
 * Doesn't require VPC peering; no route tables, NAT gateways, internet gateways, etc.
 * Requires a **Network Load Balancer** on the service VPC and an **ENI** on the customer VPC.
 
-<figure><img src="../../../../../.gitbook/assets/AWS - PrivateLink.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/AWS - PrivateLink.png" alt=""><figcaption></figcaption></figure>
 
 
 
