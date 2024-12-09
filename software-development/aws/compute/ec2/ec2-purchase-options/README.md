@@ -27,7 +27,7 @@ Here are all the main options:
   * AWS regions
   * EC2, Lambda, and Fargate
 
-### **Spot Instances/Fleet (as discussed earlier)**
+### **Spot Instances/Fleet**
 
 * Up to 90% discount
 * Can be interrupted
