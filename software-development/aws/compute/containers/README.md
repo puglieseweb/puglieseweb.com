@@ -15,6 +15,8 @@ Containers can be run in:
 
 
 
+## ECS Launch Types
+
 Amazon ECS is a container orchestration service that lets you run Docker containers. When using ECS, you have two launch types for running your containers:
 
 ### ECS with EC2
@@ -34,11 +36,26 @@ Amazon ECS is a container orchestration service that lets you run Docker contain
 * Better for variable workloads or when you want minimal infrastructure management
 * Higher cost per container compared to EC2 launch type
 
-### EKS with Fargate:&#x20;
+## EKS with Fargate
 
-AWS Fargate can be used with Amazon EKS (Elastic Kubernetes Service)! Let me explain how this works.
+AWS Fargate can be used with Amazon EKS (Elastic Kubernetes Service).
 
-### Key differences in detail:
+When you deploy a pod:
+
+1. EKS makes scheduling decisions
+2. Fargate creates the necessary compute resources
+3. Pod gets its own isolated CPU, memory, and networking
+4. You pay only for resources used by the pods
+
+Key differences from standard EKS:
+
+* No node management required
+* No capacity planning needed
+* Each pod is more isolated
+* Not all Kubernetes features are supported (like DaemonSets)
+* Cannot run privileged containers
+
+## EC2 VS Fargate
 
 Infrastructure Management:
 
