@@ -63,7 +63,7 @@ Let's provide some examples of each type:
 1. Permission Policy (Role Policy):
 
 ```json
-jsonCopy{
+{
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -84,7 +84,7 @@ This policy would be attached to a role and defines what actions that role can p
 2. Resource-Based Policy (e.g., S3 Bucket Policy):
 
 ```json
-jsonCopy{
+{
     "Version": "2012-10-17",
     "Statement": [
         {
@@ -108,7 +108,7 @@ This policy is attached directly to the S3 bucket and controls access to that sp
 3. Identity-Based Policy (attached to IAM user/group):
 
 ```json
-jsonCopy{
+{
     "Version": "2012-10-17",
     "Statement": [
         {
