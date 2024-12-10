@@ -92,10 +92,10 @@ topic.addSubscription(new subs.SqsSubscription(queue, {
 
 ```mermaid
 flowchart TD
-    A[Client Application] --> B[SNS Topic]
-    B -->|New Order Events| C[SQS Queue - OrderProcessing]
-    B -->|All Events| D[SQS Queue - Email]
-    B -->|Cancel Events| E[SQS Queue - OrderCancellation]
+    A[Client Application] --> B[SNS Topic<br>Throughput: 300K msg/s per API action]
+    B -->|New Order Events| C[SQS Queue - OrderProcessing<br>Standard: 3K msg/s default<br>FIFO: 300 msg/s per API action]
+    B -->|All Events| D[SQS Queue - Email<br>Standard: 3K msg/s default<br>FIFO: 300 msg/s per API action]
+    B -->|Cancel Events| E[SQS Queue - OrderCancellation<br>Standard: 3K msg/s default<br>FIFO: 300 msg/s per API action]
     
     C --> F[OrderProcessing Service]
     D --> G[Email Service]
