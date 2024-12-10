@@ -10,6 +10,20 @@ Amazon SQS is the ideal solution to:
 * Allows multiple consumers to process messages independently
 * Maintains message durability and availability
 
+
+
+Multiple consumers can read from the same SQS queue, but each message will only be processed by one consumer. This is called "competing consumers" pattern:
+
+Key points:
+
+* Messages are distributed among consumers
+* Each message is processed by only one consumer
+* Message remains invisible to other consumers during processing
+* Good for workload distribution but not for broadcasting
+* For broadcasting to multiple consumers, use SNS instead
+
+If you need all consumers to process every message, use SNS with multiple SQS queues as subscribers.
+
 ## Amazon SQS Queue Types and Message Ordering
 
 ### Queue Types and Their Characteristics

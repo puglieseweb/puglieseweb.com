@@ -2,6 +2,8 @@
 
 Amazon CloudFront is a Content Delivery Network (CDN) that securely delivers data, videos, applications, and APIs to customers globally through a network of edge locations. Content is served from the edge location closest to the user, which significantly reduces latency by minimizing the distance data needs to travel.
 
+**The beauty of CloudFront is that one distribution gives you global reach, and Origin Groups provide the high availability you need across regions.**
+
 **CloudFront automatically encrypts data in transit using HTTPS/TLS,** ensuring secure content delivery. For additional security, you can control access to your content using either:
 
 * **Signed URLs** - generate per-file access tokens with customizable expiration times
