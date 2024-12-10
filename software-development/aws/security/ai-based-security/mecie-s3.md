@@ -8,8 +8,7 @@ Uses machine learning and pattern recognition to discover sensitive data stored 
 * Can alert about buckets shared with AWS accounts outside of those defined in your AWS Organizations.
 * Ideal for compliance frameworks like HIPAA (Health Insurance Portability and Accountability Act) and GDPR (General Data Protection Regulation).
 * Can send alerts to Amazon EventBridge and integrates with your event management system.
-
-
+* Supports automated remediation actions using AWS services, such as AWS Step Functions
 
 ```mermaid
 flowchart LR
@@ -34,6 +33,3 @@ flowchart LR
     style Queue fill:#FF4F8B
     style Webhook fill:#3F8624
 ```
-
-* Supports automated remediation actions using AWS services, such as AWS Step Functions
-
