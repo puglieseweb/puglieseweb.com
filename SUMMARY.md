@@ -13,6 +13,7 @@
   * [Others](software-development/aws/others/README.md)
     * [AWS Example architectures](software-development/aws/others/aws-example-architectures/README.md)
       * [Digital Payment System](software-development/aws/others/aws-example-architectures/digital-payment-system/README.md)
+        * [Marketplace Application](software-development/aws/others/aws-example-architectures/digital-payment-system/marketplace-application.md)
         * [Analytics & Reporting System MVP](software-development/aws/others/aws-example-architectures/digital-payment-system/analytics-and-reporting-system-mvp.md)
         * [Reporting System 2](software-development/aws/others/aws-example-architectures/digital-payment-system/reporting-system-2.md)
         * [Data Pipeline](software-development/aws/others/aws-example-architectures/digital-payment-system/data-pipeline.md)
