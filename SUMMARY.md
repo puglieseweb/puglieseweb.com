@@ -186,7 +186,7 @@
     * [Enhanced Networking](software-development/aws/networking/enhanced-networking.md)
     * [Elastic Fabric Adapter (EFA)](software-development/aws/networking/elastic-fabric-adapter-efa.md)
     * [Elastic Network Interface (ENI)](software-development/aws/networking/elastic-network-interface-eni.md)
-  * [Security](software-development/aws/security/README.md)
+  * [Security Overview](software-development/aws/security/README.md)
     * [Identity Management Services](software-development/aws/security/identity-management-services/README.md)
       * [IAM](software-development/aws/security/identity-management-services/iam/README.md)
         * [Identity, Permission, Trust and Resource Policies](software-development/aws/security/identity-management-services/iam/identity-permission-trust-and-resource-policies/README.md)
