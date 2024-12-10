@@ -5,6 +5,12 @@ AWS Fargate is a serverless compute engine for docker containers. AWS owns and m
 * Requires use of ECS or EKS.
 * Can use both Linux and Windos containers.&#x20;
 
+With ECS Fargate you can set:
+
+* Desired count (baseline number of tasks)
+* Minimum count (floor)
+* Maximum count (ceiling)
+
 Difference between EC2 and Fargate are:
 
 * EC2:
