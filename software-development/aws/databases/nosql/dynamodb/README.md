@@ -17,7 +17,14 @@ DynamoDB is a fully managed NoSQL database service offering consistent, single-d
 6. **Use case identification**:
    * Be prepared to recommend the appropriate capacity mode based on given scenarios
 
-###
+### Secondary Indexes&#x20;
+
+In DynamoDB, you can have:
+
+* Up to 20 Global Secondary Indexes (GSIs) per table
+* Up to 5 Local Secondary Indexes (LSIs) per table
+
+Note that LSIs must be created when the table is created, while GSIs can be added or removed at any time.
 
 ### Core Features
 

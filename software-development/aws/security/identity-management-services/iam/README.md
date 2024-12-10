@@ -6,7 +6,7 @@ description: Identity and Access Management
 
 **Use AWS SSO for internal user management and Cognito for external.**&#x20;
 
-
+**Resource-based policies control access TO your resource, while roles control access FROM your resource to other services.**
 
 
 
