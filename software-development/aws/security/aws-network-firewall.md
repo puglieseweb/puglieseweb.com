@@ -4,7 +4,7 @@ AWS Network Firewall deploys managed network protection across VPCs that can ins
 
 Key features:
 
-* AWS manages the underlying infrastructure
+* AWS manages the underlying infrastructure.
 * Provides an Intrusion Prevention System (IPS) for active traffic flow inspection
 
 Use cases:
