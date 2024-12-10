@@ -1,6 +1,11 @@
 # Amazon Aurora Serverless
 
-Two terms to able to be able to differentiate: **Aurora Provisioned** and **Aurora Serverless.**&#x20;
+
+
+&#x20;Aurora Serveless provides a relatively simple, c**ost-effective option for infrequent, intermittent, or unpredictable workloads.**
+
+* An on-demand, auto-scaling configuration for MySQL and Postgres compatible edition
+* Aurora Serverless DB cluster automatically stands up, shout down, and scales capacity up or down based on your application's needs.
 
 
 

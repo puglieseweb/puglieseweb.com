@@ -9,6 +9,14 @@ EFS (Elastic File System): When you need a **distributed, highly resilient stora
 * Data is stored across multiple AZs within a region
 * Read-after-write consistency
 
+## Lyfecycle policies&#x20;
+
+It is possible to configure the lifecycle policies for a EFS file system.
+
+For example you can configure Lifecycle policy for EFS IA after 7 days.
+
+For more information refer to the [AWS Documentation](https://docs.aws.amazon.com/efs/latest/ug/lifecycle-management-efs.html).
+
 ## EFS throughput modes
 
 Choose Provisioned when you need consistent performance above baseline or can't rely on burst credits. Choose Bursting for variable workloads where occasional performance spikes are acceptable.

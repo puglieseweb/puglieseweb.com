@@ -1,4 +1,4 @@
-# Aurora
+# Aurora (Provisioned)
 
 There are versions: Aurora and Aurora Serverless
 
@@ -15,12 +15,7 @@ Keys caracteristics:
 * Storage is self-healing. Data blocks and disks are continuously scanned for errors and repaired automatically.
 * **Automated failover is only available with Aurora DB**
 
-### Aurora is Serverless
-
-&#x20;Aurora Serveless provides a relatively simple, c**ost-effective option for infrequent, intermittent, or unpredictable workloads.**
-
-* An on-demand, auto-scaling configuration for MySQL and Postgres compatible edition
-* Aurora Serverless DB cluster automatically stands up, shout down, and scales capacity up or down based on your application's needs.
+###
 
 ### Read Replicas
 
