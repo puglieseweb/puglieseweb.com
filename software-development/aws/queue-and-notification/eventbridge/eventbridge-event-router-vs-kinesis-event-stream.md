@@ -1,4 +1,4 @@
-# EventBridge(Event Router) VS Kinesis(Event Stream)
+# EventBridge VS Kinesis(Event Stream)
 
 [Check out What are event-driven architectures](https://serverlessland.com/event-driven-architecture/what-are-event-driven-architectures)
 
@@ -7,6 +7,28 @@
 The key differences between AWS Event Router (EventBridge) and Event Streams (Kinesis) are:
 
 <figure><img src="../../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+
+Here's a detailed comparison between Amazon EventBridge and Amazon Kinesis:
+
+| Feature             | Amazon EventBridge                                                                   | Amazon Kinesis                                                                                     |
+| ------------------- | ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| Primary Purpose     | Event routing and serverless event bus                                               | Real-time data streaming and processing                                                            |
+| Data Retention      | No built-in retention                                                                | 24 hours to 365 days                                                                               |
+| Maximum Record Size | 256KB                                                                                | 1MB                                                                                                |
+| Ordering            | No guaranteed ordering                                                               | Ordered within same partition key                                                                  |
+| Throughput          | Soft limit of 10,000 events/sec per region                                           | Up to 1MB/sec per shard or unlimited with on-demand                                                |
+| Scaling             | Automatic                                                                            | Manual (adding/removing shards) or on-demand                                                       |
+| Cost Model          | Pay per event                                                                        | Pay per shard-hour or on-demand capacity                                                           |
+| Processing Model    | Push-based                                                                           | Pull-based                                                                                         |
+| Replay Capability   | Yes, through archiving                                                               | Yes, using sequence numbers                                                                        |
+| Fan-out Support     | Yes, multiple targets per rule                                                       | Yes, multiple consumers per stream                                                                 |
+| Real-time Analytics | No built-in analytics                                                                | Yes, with Kinesis Data Analytics                                                                   |
+| Data Transformation | Yes, via input transformer                                                           | Only with additional processing                                                                    |
+| Cross-Region        | Yes                                                                                  | Yes, with replication                                                                              |
+| Cross-Account       | Yes                                                                                  | Yes                                                                                                |
+| Use Cases           | <p>• Serverless event routing<br>• Application integration<br>• SaaS integration</p> | <p>• Log aggregation<br>• Real-time metrics<br>• IoT data streaming<br>• Click stream analysis</p> |
+| Latency             | Milliseconds                                                                         | Sub-second                                                                                         |
+| Consumption Pattern | Push to targets                                                                      | Pull via GetRecords or Enhanced Fan-Out                                                            |
 
 #### Event Router (EventBridge)
 
