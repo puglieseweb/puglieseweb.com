@@ -34,4 +34,6 @@ It depends on the gateway type:
    * Stored volumes - Store all data locally, backup to S3
 3. Tape Gateway - Uses S3 and S3 Glacier
 
-**Note that While File Gateway and Volume Gateway Cached volumes seem similar, File Gateway provides file-level access (NFS/SMB) while Volume Gateway provides block-level access (iSCSI).**
+NOTE 1: **While File Gateway and Volume Gateway Cached volumes seem similar, File Gateway provides file-level access (NFS/SMB) while Volume Gateway provides block-level access (iSCSI).**
+
+NOTE 2:  **Block storage uses iSCSI protocol, not SMB. SMB is for file-level access, while iSCSI is for block-level access.**
