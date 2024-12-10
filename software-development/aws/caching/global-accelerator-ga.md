@@ -1,8 +1,8 @@
 # Global Accelerator (GA)
 
-> Global Accelerator is more focused on improving network performance for applications that require static IP addresses or fast regional failover.
+>
 
-
+Global Accelerator is more focused on improving network performance for applications that require static IP addresses or fast regional failover.
 
 A networking service that sends user's traffic through AWS's global network infrastructure via accelerators (it usese the AWS Backbone Network which  is less congestioned of the public network.&#x20;
 
