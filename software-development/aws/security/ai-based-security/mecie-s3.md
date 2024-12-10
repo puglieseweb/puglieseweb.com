@@ -26,7 +26,7 @@ flowchart LR
     SNS -->|HTTP| Webhook([Slack/Teams])
     
     style S3 fill:#FF9900
-    style Macie fill:#232F3E
+    style Macie fill:lightblue
     style EventBridge fill:#FF4F8B
     style SNS fill:#FF4F8B
     style Users fill:#3F8624
