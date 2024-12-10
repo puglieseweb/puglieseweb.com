@@ -28,6 +28,48 @@ Threat Detection with AI:
 
 Yu can use AWS Step Functions for automated remediation of GuardDuty findings. This is a common pattern for security automation. Here's how it typically works:
 
+
+
+```mermaid
+flowchart LR
+    subgraph "Data Sources"
+        VPC[(VPC Flow Logs)]
+        DNS[(DNS Logs)]
+        CT[(CloudTrail)]
+        S3[(S3 Logs)]
+    end
+
+    VPC & DNS & CT & S3 --> GD[Amazon GuardDuty]
+    GD -->|Findings| EB[Amazon EventBridge]
+    
+    subgraph "Response Options"
+        EB -->|Security Findings| SH[Security Hub]
+        EB -->|Notifications| SNS[SNS Topic]
+        EB -->|Automation| SF[Step Functions]
+        EB -->|Custom Logic| Lambda[Lambda]
+    end
+    
+    SH -->|Dashboard| SEC([Security Team])
+    SNS -->|Alerts| Teams([Slack/Teams])
+    SF -->|Remediation| Auto([Automated Actions])
+    Lambda -->|Custom| Custom([Custom Response])
+
+    style VPC fill:#FF9900
+    style DNS fill:#FF9900
+    style CT fill:#FF9900
+    style S3 fill:#FF9900
+    style GD fill:lightblue
+    style EB fill:#FF4F8B
+    style SH fill:lightblue
+    style SNS fill:#FF4F8B
+    style SF fill:#FF4F8B
+    style Lambda fill:#FF9900
+    style SEC fill:#3F8624
+    style Teams fill:#3F8624
+    style Auto fill:#3F8624
+    style Custom fill:#3F8624
+```
+
 1. GuardDuty → EventBridge
    * GuardDuty findings are automatically sent to EventBridge
    * You can create rules to filter specific finding types
