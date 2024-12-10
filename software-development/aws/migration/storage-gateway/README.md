@@ -24,5 +24,14 @@ Each gateway type serves different use cases:
 * Volume Gateway: Ideal for disaster recovery, backup, and cloud migration
 * Tape Gateway: Perfect for organizations wanting to replace physical tape backup systems
 
+### Where is the data stored?
 
+It depends on the gateway type:
 
+1. File Gateway - Store data in S3, with local caching.
+2. Volume Gateway:
+   * Cached volumes - Store data in S3, cache frequently accessed data locally
+   * Stored volumes - Store all data locally, backup to S3
+3. Tape Gateway - Uses S3 and S3 Glacier
+
+**Note that While File Gateway and Volume Gateway Cached volumes seem similar, File Gateway provides file-level access (NFS/SMB) while Volume Gateway provides block-level access (iSCSI).**
