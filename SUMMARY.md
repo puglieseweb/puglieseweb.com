@@ -111,6 +111,7 @@
       * [S3 Standard VS S3 Intelligent-Tiering](software-development/aws/storage/s3/s3-standard-vs-s3-intelligent-tiering.md)
     * [Instance Storage](software-development/aws/storage/instance-storage.md)
     * [EBS Volumes](software-development/aws/storage/ebs-volumes/README.md)
+      * [Burst Capacity & Baseline IOPS](software-development/aws/storage/ebs-volumes/burst-capacity-and-baseline-iops.md)
       * [Provisioned IOPS vs GP3](software-development/aws/storage/ebs-volumes/provisioned-iops-vs-gp3.md)
       * [EBS Multi-Attach](software-development/aws/storage/ebs-volumes/ebs-multi-attach.md)
     * [Snapshots](software-development/aws/storage/snapshots.md)
