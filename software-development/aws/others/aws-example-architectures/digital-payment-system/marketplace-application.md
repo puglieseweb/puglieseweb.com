@@ -119,3 +119,70 @@ Architecture:
 
 
 
+## Potential Improvements
+
+There are several potential improvements:
+
+1. Event Router Pattern:
+
+```
+API Gateway → Lambda (Router) → Multiple SNS Topics → SQS Queues
+```
+
+Benefits: Better event filtering, reduced SNS costs
+
+2. Direct Integration:
+
+```
+API Gateway → SQS → Lambda
+```
+
+Benefits: Simpler, cost-effective for single consumers
+
+3. EventBridge Pattern:
+
+```
+EventBridge → SNS/SQS/Lambda
+```
+
+
+
+```mermaid
+flowchart TD
+    A[Client Application] --> B[Amazon API Gateway]
+    B --> C[Amazon EventBridge<br>Default: 18,750 events/s<br>Custom Bus: 2,400 events/s]
+    
+    C -->|"rule: type='order.created'"| D[SQS Queue - OrderProcessing<br>Standard: 3K msg/s]
+    C -->|"rule: type IN ['order.created','order.cancelled']"| E[SQS Queue - Email<br>Standard: 3K msg/s]
+    C -->|"rule: type='order.cancelled'"| F[SQS Queue - OrderCancellation<br>Standard: 3K msg/s]
+    
+    C -.->|Archive| G[S3 Bucket<br>Event Archive]
+    C -.->|Failed Events| H[DLQ<br>Dead Letter Queue]
+    
+    D --> I[OrderProcessing Service]
+    E --> J[Email Service]
+    F --> K[OrderCancellation Service]
+    
+    style C fill:#f96,stroke:#333
+    style D fill:#9cf,stroke:#333
+    style E fill:#9cf,stroke:#333
+    style F fill:#9cf,stroke:#333
+    style G fill:#9cf,stroke:#333
+    style H fill:#ff9999,stroke:#333
+```
+
+Benefits:
+
+* Better event filtering
+* Content-based routing
+* Schema validation
+* Dead-letter queues
+* Replay capabilities
+
+EventBridge would be ideal here because:
+
+* Native CloudEvents support
+* Better filtering capabilities
+* Built-in error handling
+* Event archiving and replay
+* Direct Lambda integration
