@@ -1,18 +1,31 @@
-# AWS Heath
+# AWS Health
 
-* Gain visibility of resource performance and availability of AWS services or accounts.
-* View how the health events affect you and your services, resources, and accounts.&#x20;
-* maintain timeliness and relevant information with the events
-* Be prepared and automate by viewing upcoming maintanance tasks&#x20;
-* has near-instant delivery of notification and alerts to speed up troubleshooting or prevention.
+Gain visibility into resource performance and availability across AWS services and accounts.
 
-**You can automate action based on incoming events using Amazon EventBridge.**&#x20;
+### Key Features
 
-**Concepts:**
+* Monitor how health events affect your services, resources, and accounts.
+* Maintain timely and relevant information about events.
+* View and prepare for upcoming maintenance tasks.
+* Receive near-instant notifications and alerts for faster troubleshooting.
+* Automate actions based on incoming events using Amazon EventBridge.
 
-* AWS Health events:&#x20;
-* Account-specific event
-* Public event, not specific to your account
-* Event type code: include the affected service and the specific type of event
-* Event status: Report if the event is open, closed, or upcoming
-* Affected entities
+### Event Types
+
+1. Account-specific events
+   * Impacts your specific AWS resources/account.
+   * Example: EC2 instance scheduled maintenance.
+2. Public events
+   * Affects AWS services broadly.
+   * Not specific to individual accounts.
+   * Example: Regional service disruptions.
+
+### Event Components
+
+* Event type code: Identifies affected service and event type.
+* Event status: Open, closed, or upcoming.
+* Affected entities: Resources impacted by the event.
+* Category: Service, maintenance, or issue.
+* Severity: Indicates impact level.
+
+All this information helps you proactively manage your AWS infrastructure and respond quickly to issues.

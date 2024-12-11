@@ -145,7 +145,7 @@
     * [Service Catalog and Proton](software-development/aws/governance/service-catalog-and-proton/README.md)
       * [AWS Service Catalog](software-development/aws/governance/service-catalog-and-proton/aws-service-catalog.md)
       * [AWS Proton](software-development/aws/governance/service-catalog-and-proton/aws-proton.md)
-    * [AWS Heath](software-development/aws/governance/aws-heath.md)
+    * [AWS Health](software-development/aws/governance/aws-heath.md)
     * [AWS Licence Manager](software-development/aws/governance/aws-licence-manager.md)
     * [AWS Control Tower](software-development/aws/governance/aws-control-tower.md)
     * [AWS Trusted Advisor](software-development/aws/governance/aws-trusted-advisor.md)
