@@ -49,6 +49,7 @@
       * [VPC Q\&A](software-development/aws/others/aws-q-and-a/vpc-q-and-a.md)
   * [DRs](software-development/aws/drs.md)
   * [AI, Analytics, Big Data, ML](software-development/aws/ai-analytics-big-data-ml/README.md)
+    * [EMR](software-development/aws/ai-analytics-big-data-ml/emr.md)
     * [Extra](software-development/aws/ai-analytics-big-data-ml/extra/README.md)
       * [Glue and EMR](software-development/aws/ai-analytics-big-data-ml/extra/glue-and-emr.md)
       * [Redshift Use Cases](software-development/aws/ai-analytics-big-data-ml/extra/redshift-use-cases.md)

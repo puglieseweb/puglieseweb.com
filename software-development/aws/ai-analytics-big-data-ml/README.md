@@ -1,5 +1,30 @@
 # AI, Analytics, Big Data, ML
 
+## ELT: The Modern Data Pipeline Approach
+
+ELT represents a significant evolution in data integration methodology, particularly for machine learning applications. Unlike its predecessor ETL (Extract, Transform, Load), ELT postpones data transformation until after the loading phase, offering greater flexibility and efficiency in data processing.
+
+**Key Advantages of ELT**
+
+The primary advantage of ELT lies in its ability to maintain raw data integrity while optimizing resource utilization. When organizations collect data from multiple sources, especially in large volumes, immediate transformation can be both costly and potentially counterproductive. By loading raw data directly into a **data lake's staging zone**, organizations preserve the original data state while **deferring transformation costs** until specific business needs arise.
+
+**ELT vs. ETL: A Strategic Comparison**
+
+While ETL transforms data before loading, potentially optimizing for speed and reducing storage costs, ELT offers distinct benefits:
+
+* Preservation of raw data for future use cases
+* Flexibility to transform data based on evolving business requirements
+* Reduced initial processing overhead
+* Support for advanced analytics and machine learning workflows
+
+**Practical Implementation**
+
+In an ELT framework, organizations can create specific **views or data frames** to serve particular business needs. These transformations can be performed on-demand, whether for generating specific reports or **creating optimized datasets for machine learning models**. The transformed data can either be used directly or stored back in the data lake for repeated use.
+
+This approach particularly shines in modern cloud environments where storage is relatively inexpensive compared to computation costs, allowing organizations to maintain comprehensive data repositories while optimizing transformation expenses.
+
+<figure><img src="https://documents.lucid.app/documents/f75f8840-92a7-44fd-88af-0b4fdce4ab5d/pages/0_0?a=768&#x26;x=-557&#x26;y=-268&#x26;w=1673&#x26;h=1093&#x26;store=1&#x26;accept=image%2F*&#x26;auth=LCA%20199f529763b33110928e6a5f1f6cc81cf71011bc1e374cef861fe7f59d3f9ba7-ts%3D1734186518" alt=""><figcaption></figcaption></figure>
+
 ```mermaid
 flowchart TD
     %% Data Sources
