@@ -44,5 +44,5 @@ The Database Migration Service (DMS) allows to migrate relational database, data
 
     For large data stores, AWS DMS can be used in conjunction with AWS Snowball and CDC for efficient migration.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
