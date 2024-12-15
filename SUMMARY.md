@@ -87,6 +87,7 @@
       * [Feature Transformation and Scaling in Machine Learning](software-development/aws/ai-analytics-big-data-ml/machine-learning/feature-transformation-and-scaling-in-machine-learning.md)
       * [Data Binning: Transforming Continuous Data into Meaningful Categories](software-development/aws/ai-analytics-big-data-ml/machine-learning/data-binning-transforming-continuous-data-into-meaningful-categories.md)
       * [Categorical Data Encoding: Converting Categories to Numbers](software-development/aws/ai-analytics-big-data-ml/machine-learning/categorical-data-encoding-converting-categories-to-numbers.md)
+      * [Text Feature Extraction for Machine Learning](software-development/aws/ai-analytics-big-data-ml/machine-learning/text-feature-extraction-for-machine-learning.md)
   * [Databases](software-development/aws/databases/README.md)
     * [Capturing data modification events](software-development/aws/databases/capturing-data-modification-events.md)
     * [Time-Series Data (Amazon Timestream)](software-development/aws/databases/time-series-data-amazon-timestream.md)
