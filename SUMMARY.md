@@ -85,6 +85,8 @@
       * [Understanding Data Preparation](software-development/aws/ai-analytics-big-data-ml/machine-learning/understanding-data-preparation.md)
       * [Feature Engineering: Transforming Raw Data into Powerful Model Inputs](software-development/aws/ai-analytics-big-data-ml/machine-learning/feature-engineering-transforming-raw-data-into-powerful-model-inputs.md)
       * [Feature Transformation and Scaling in Machine Learning](software-development/aws/ai-analytics-big-data-ml/machine-learning/feature-transformation-and-scaling-in-machine-learning.md)
+      * [Data Binning: Transforming Continuous Data into Meaningful Categories](software-development/aws/ai-analytics-big-data-ml/machine-learning/data-binning-transforming-continuous-data-into-meaningful-categories.md)
+      * [Categorical Data Encoding: Converting Categories to Numbers](software-development/aws/ai-analytics-big-data-ml/machine-learning/categorical-data-encoding-converting-categories-to-numbers.md)
   * [Databases](software-development/aws/databases/README.md)
     * [Capturing data modification events](software-development/aws/databases/capturing-data-modification-events.md)
     * [Time-Series Data (Amazon Timestream)](software-development/aws/databases/time-series-data-amazon-timestream.md)
