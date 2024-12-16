@@ -6,7 +6,7 @@ description: Network Communication For Distributed Systems
 
 In contest of Distributed Systems, the TCP/IP Network Model defines a four layer abstraction model.
 
-![](<../../.gitbook/assets/image (12).png>)
+![](<../../.gitbook/assets/image (12) (1).png>)
 
 | 192.158. 1.38                             | :8081                                       | /path                                          |
 | ----------------------------------------- | ------------------------------------------- | ---------------------------------------------- |

@@ -8,7 +8,7 @@ Machine learning has revolutionized how organizations make predictions and decis
 
 Machine learning enables organizations to make data-driven predictions by identifying patterns in historical data. These predictions can range from customer behavior and market trends to equipment maintenance needs and resource optimization. The key to successful machine learning lies in following a structured approach through each phase of its lifecycle.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
 ### The Machine Learning Lifecycle Phases
 

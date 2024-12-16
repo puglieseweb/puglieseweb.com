@@ -4,11 +4,11 @@ Normalisation of a database is also done to optimise it for specif use case scen
 
 When events are sent to a broker, it often makes sense to flatten (de-normalise) any database relationship (e.g. one-to-many):
 
-![](<../../../.gitbook/assets/image (8).png>)
+![](<../../../.gitbook/assets/image (8) (1).png>)
 
 Flattening a message make it easy for different consumer types to use the message according to their needs:
 
-![](<../../../.gitbook/assets/image (3).png>)
+![](<../../../.gitbook/assets/image (3) (1).png>)
 
 Often we want to send a events every time there is a DB change (AKA Change Data Capture (CDC), for example to:
 

@@ -2,7 +2,7 @@
 
 Modern machine learning applications frequently work with complex data types such as images and speech. Understanding how to extract meaningful features from these data types is crucial for developing effective machine learning solutions. This guide explores the fundamental techniques used in both image and speech feature extraction.
 
-<figure><img src="../../../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
 ### Image Feature Extraction
 
@@ -50,7 +50,7 @@ The Prewitt Kernel, a 3x3 matrix, effectively identifies edges by comparing surr
 
 Speech recognition technology converts audio signals into text, requiring sophisticated feature extraction techniques to capture relevant acoustic information. This process presents unique challenges due to the variable nature of speech signals.
 
-<figure><img src="../../../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 #### Key Challenges in Speech Feature Extraction
 

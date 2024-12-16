@@ -108,7 +108,7 @@ where
 
 **By changing the value of R and W we can optimise our application for reads or writes.**
 
-![](<../../../.gitbook/assets/image (15).png>)
+![](<../../../.gitbook/assets/image (15) (1).png>)
 
 ![](<../../../.gitbook/assets/image (17).png>)
 

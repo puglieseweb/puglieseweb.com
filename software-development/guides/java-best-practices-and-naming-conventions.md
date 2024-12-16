@@ -60,7 +60,7 @@ package [reversed.domain.name].shared.[library_name];
 
 ### Project Structure <a href="#f7d7" id="f7d7"></a>
 
-![](<../../.gitbook/assets/image (16).png>)
+![](<../../.gitbook/assets/image (16) (1).png>)
 
 ### Models & DTOs <a href="#f7d7" id="f7d7"></a>
 
@@ -256,7 +256,7 @@ You can use the User spec to execute the login api for generating the Bearer tok
 
 The configuration of Swagger is being taken care of by class _BrsConfiguration_. I have defined two specs there with the help of “swaggerBRSApi” and “swaggerUserApi” methods. Since the login part is by default taken care of by Spring Security we don’t get to expose its apis implicitly as the rest of the apis defined in the system and for the same reason I have defined a controller in the config package with the name “FakeController” :
 
-Its purpose is to facilitate the generation of swagger documentation for login and logout apis, it will never come into existence during the application life cycle as the “/api/auth” api is being handled by the security filters defined in the code base. Here are some sample screenshots to help you visualise things a little better :![Image for post](https://miro.medium.com/max/60/1\*R-VGVO5iBj7n8RTWmUgzxA.png?q=20)![Image for post](https://miro.medium.com/max/867/1\*R-VGVO5iBj7n8RTWmUgzxA.png)Swagger UI![Image for post](https://miro.medium.com/max/60/1\*dyTeRrf\_bAqQQBR8lpyIvA.png?q=20)![Image for post](https://miro.medium.com/max/862/1\*dyTeRrf\_bAqQQBR8lpyIvA.png)/api/auth login, courtesy FakeController![Image for post](https://miro.medium.com/max/60/1\*QZ96PHvrQ24jTXVy1a-ueQ.png?q=20)![Image for post](https://miro.medium.com/max/693/1\*QZ96PHvrQ24jTXVy1a-ueQ.png)Authorize dialog for registering Bearer tokens![Image for post](https://miro.medium.com/max/60/1\*3aZdqVOk0-OfAX2jjbt\_zg.png?q=20)![Image for post](https://miro.medium.com/max/859/1\*3aZdqVOk0-OfAX2jjbt\_zg.png)BRS APIs![Image for post](https://miro.medium.com/max/60/1\*WZE0\_eNVpxKZh19E4yG9mQ.png?q=20)![Image for post](https://miro.medium.com/max/863/1\*WZE0\_eNVpxKZh19E4yG9mQ.png)BRS APIs listed out
+Its purpose is to facilitate the generation of swagger documentation for login and logout apis, it will never come into existence during the application life cycle as the “/api/auth” api is being handled by the security filters defined in the code base. Here are some sample screenshots to help you visualise things a little better :![Image for post](https://miro.medium.com/max/60/1*R-VGVO5iBj7n8RTWmUgzxA.png?q=20)![Image for post](https://miro.medium.com/max/867/1*R-VGVO5iBj7n8RTWmUgzxA.png)Swagger UI![Image for post](https://miro.medium.com/max/60/1*dyTeRrf_bAqQQBR8lpyIvA.png?q=20)![Image for post](https://miro.medium.com/max/862/1*dyTeRrf_bAqQQBR8lpyIvA.png)/api/auth login, courtesy FakeController![Image for post](https://miro.medium.com/max/60/1*QZ96PHvrQ24jTXVy1a-ueQ.png?q=20)![Image for post](https://miro.medium.com/max/693/1*QZ96PHvrQ24jTXVy1a-ueQ.png)Authorize dialog for registering Bearer tokens![Image for post](https://miro.medium.com/max/60/1*3aZdqVOk0-OfAX2jjbt_zg.png?q=20)![Image for post](https://miro.medium.com/max/859/1*3aZdqVOk0-OfAX2jjbt_zg.png)BRS APIs![Image for post](https://miro.medium.com/max/60/1*WZE0_eNVpxKZh19E4yG9mQ.png?q=20)![Image for post](https://miro.medium.com/max/863/1*WZE0_eNVpxKZh19E4yG9mQ.png)BRS APIs listed out
 
 To use the Swagger UI and execute the secured APIs, you will need to first operate the “/api/auth” from the User spec and generate a Bearer token. Once the token is issued, you can register it in the Authorize popup and then move on to the BRS spec to execute the secured APIs. If you don’t register the token then you will keep on receiving the HTTP 401 error.
 
@@ -275,7 +275,7 @@ The decorator pattern used by the Thymeleaf Layout dialect solves these issues. 
 * The code becomes shorter and cleaner.
 * As each content page references which template file to use, it is easy to use different templates for different areas of the application (e.g. public area and admin area).
 
-The layout for admin portal is designed as follows :![Image for post](https://miro.medium.com/max/60/1\*w7pdtGbGXYGSbELX3CGUDw.png?q=20)![Image for post](https://miro.medium.com/max/960/1\*w7pdtGbGXYGSbELX3CGUDw.png)Blog Like Layout
+The layout for admin portal is designed as follows :![Image for post](https://miro.medium.com/max/60/1*w7pdtGbGXYGSbELX3CGUDw.png?q=20)![Image for post](https://miro.medium.com/max/960/1*w7pdtGbGXYGSbELX3CGUDw.png)Blog Like Layout
 
 The individual areas in this layout serve the following purpose :
 
