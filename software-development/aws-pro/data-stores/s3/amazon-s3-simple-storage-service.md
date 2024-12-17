@@ -22,7 +22,7 @@
 
 S3 implements the following consistency patterns:
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **New Object PUTs**
    * Read-after-write consistency
@@ -42,7 +42,7 @@ S3 implements the following consistency patterns:
 
 ### Security Features
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Access Control Methods
 

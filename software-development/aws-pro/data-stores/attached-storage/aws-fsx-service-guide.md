@@ -19,7 +19,7 @@ _Note: The most common variants for AWS Solutions Architect-Professional exam ar
 
 ### How FSx Works
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Architecture Components
 
@@ -58,7 +58,7 @@ _Note: The most common variants for AWS Solutions Architect-Professional exam ar
 
 One of the most popular high-performance file storage systems currently in use.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Use Cases
 

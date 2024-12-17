@@ -2,7 +2,7 @@
 
 Data preparation is a crucial step in any data science or machine learning project. The quality of your data directly impacts the performance of your models and the reliability of your insights. This guide explores key concepts and techniques in data preparation, from handling missing values to addressing imbalanced datasets.
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Missing Data Analysis and Treatment
 

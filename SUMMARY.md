@@ -30,6 +30,8 @@
       * [Amazon Redshift Overview](software-development/aws-pro/data-stores/databases/amazon-redshift-overview.md)
       * [AWS Data Preparation Services](software-development/aws-pro/data-stores/databases/aws-data-preparation-services.md)
       * [Amazon Neptune](software-development/aws-pro/data-stores/databases/amazon-neptune.md)
+      * [Amazon ElastiCache](software-development/aws-pro/data-stores/databases/amazon-elasticache.md)
+      * [AWS Specialized Database Services](software-development/aws-pro/data-stores/databases/aws-specialized-database-services.md)
   * [Others](software-development/aws-pro/others/README.md)
     * [Comparison of Deployment Strategies in AWS](software-development/aws-pro/others/comparison-of-deployment-strategies-in-aws.md)
     * [Bedrock vs EMR](software-development/aws-pro/others/bedrock-vs-emr.md)
