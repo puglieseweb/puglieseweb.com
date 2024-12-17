@@ -8,7 +8,7 @@ When events are sent to a broker, it often makes sense to flatten (de-normalise)
 
 Flattening a message make it easy for different consumer types to use the message according to their needs:
 
-![](<../../../.gitbook/assets/image (3) (1) (1).png>)
+![](<../../../.gitbook/assets/image (3) (1) (1) (1).png>)
 
 Often we want to send a events every time there is a DB change (AKA Change Data Capture (CDC), for example to:
 

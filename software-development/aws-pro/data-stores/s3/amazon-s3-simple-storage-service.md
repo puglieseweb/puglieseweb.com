@@ -22,7 +22,7 @@
 
 S3 implements the following consistency patterns:
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **New Object PUTs**
    * Read-after-write consistency
@@ -42,7 +42,7 @@ S3 implements the following consistency patterns:
 
 ### Security Features
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Access Control Methods
 
@@ -74,7 +74,7 @@ Benefits:
 
 #### Storage Classes
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Multiple tiers available
 * Intelligent-Tiering:
@@ -95,7 +95,7 @@ Benefits:
 
 #### Analytics Capabilities
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Data lake functionality:
   * Compatible with Athena
