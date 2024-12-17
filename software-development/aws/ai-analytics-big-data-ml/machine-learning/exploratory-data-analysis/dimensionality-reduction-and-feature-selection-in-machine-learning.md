@@ -24,7 +24,7 @@ Dimensionality reduction techniques fall into two main categories: feature selec
 
 Feature selection identifies and retains the most relevant features while discarding others. This approach maintains the original features' interpretability while reducing dimensionality.&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 The three primary feature selection methods are:
 
@@ -58,7 +58,7 @@ These techniques incorporate feature selection into the model training process. 
 
 Feature extraction transforms the original feature space into a lower-dimensional representation while preserving important information.&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
