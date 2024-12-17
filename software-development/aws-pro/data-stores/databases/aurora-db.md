@@ -9,7 +9,7 @@
 
 ### Architecture and High Availability
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Instance Configuration
 
@@ -31,11 +31,11 @@
 * Reader endpoint: Routes through ELB to distribute read traffic
 * Optional custom instance and group endpoints available
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Global Databases
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 #### Configuration
 
@@ -46,7 +46,7 @@
 
 ### Aurora Serverless
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 #### Key Features
 
@@ -56,7 +56,7 @@
 * Scaling range: 0.5 to 128 ACUs
 * Stepwise scale-down approach similar to EC2 auto-scaling
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 ### Use Cases
 

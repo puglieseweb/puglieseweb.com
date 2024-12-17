@@ -6,7 +6,7 @@ FSx is an AWS file sharing service that addresses scenarios where EFS (Elastic F
 
 ### FSx Variants
 
-<figure><img src="../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 1. FSx for NetApp ONTAP
 2. FSx for OpenZFS

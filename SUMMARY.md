@@ -29,6 +29,7 @@
       * [Document DB](software-development/aws-pro/data-stores/databases/document-db.md)
       * [Amazon Redshift Overview](software-development/aws-pro/data-stores/databases/amazon-redshift-overview.md)
       * [AWS Data Preparation Services](software-development/aws-pro/data-stores/databases/aws-data-preparation-services.md)
+      * [Amazon Neptune](software-development/aws-pro/data-stores/databases/amazon-neptune.md)
   * [Others](software-development/aws-pro/others/README.md)
     * [Comparison of Deployment Strategies in AWS](software-development/aws-pro/others/comparison-of-deployment-strategies-in-aws.md)
     * [Bedrock vs EMR](software-development/aws-pro/others/bedrock-vs-emr.md)
