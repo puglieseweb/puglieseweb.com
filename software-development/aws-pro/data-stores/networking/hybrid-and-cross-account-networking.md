@@ -2,7 +2,7 @@
 
 ## AWS Direct Connect (DX)
 
-<figure><img src="../../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
 
 ### Key Features and Benefits
 
@@ -34,13 +34,13 @@
 * Provides centralized management of Direct Connect connections
 * Supports private virtual interfaces for VPC access
 
-<figure><img src="../../../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
 
 ## Site-to-Site VPN
 
-<figure><img src="../../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (106).png" alt=""><figcaption></figcaption></figure>
 
 ### Key Features
 
@@ -66,23 +66,23 @@
 
 
 
-<figure><img src="../../../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (107).png" alt=""><figcaption></figcaption></figure>
 
 * Automatic failover using BGP routing
 * Provides redundancy at lower cost than dual DX
 
 ### Dual Direct Connect
 
-<figure><img src="../../../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (108).png" alt=""><figcaption></figcaption></figure>
 
 * Two Direct Connect connections from different providers
 * Higher cost but completely private network
 * BGP routing for automatic failover
 * DX Site Link feature for inter-datacenter connectivity
 
-<figure><img src="../../../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (110).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (109).png" alt=""><figcaption></figcaption></figure>
 
 ### Multi-Region Architecture
 
@@ -91,9 +91,9 @@
 * Multiple Virtual Private Gateways for redundancy
 * Availability Zone redundancy within each region
 
-<figure><img src="../../../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (115).png" alt=""><figcaption></figcaption></figure>
 
 ## Exam Tips
 
