@@ -32,6 +32,7 @@
       * [Amazon Neptune](software-development/aws-pro/data-stores/databases/amazon-neptune.md)
       * [Amazon ElastiCache](software-development/aws-pro/data-stores/databases/amazon-elasticache.md)
       * [AWS Specialized Database Services](software-development/aws-pro/data-stores/databases/aws-specialized-database-services.md)
+      * [LAB - Deploy an Amazon RDS Multi-AZ and Read Replica in AWS](software-development/aws-pro/data-stores/databases/lab-deploy-an-amazon-rds-multi-az-and-read-replica-in-aws.md)
   * [Networking](software-development/aws-pro/data-stores/networking/README.md)
     * [Concept](software-development/aws-pro/data-stores/networking/concept.md)
     * [Network to VPC Connectivity](software-development/aws-pro/data-stores/networking/network-to-vpc-connectivity.md)
