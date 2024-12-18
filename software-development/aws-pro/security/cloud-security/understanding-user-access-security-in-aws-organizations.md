@@ -9,7 +9,7 @@ The human factor represents the greatest vulnerability in AWS environments, typi
 
 ### IAM Users vs. IAM Identity Center
 
-<figure><img src="../../../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (123).png" alt=""><figcaption></figcaption></figure>
 
 #### IAM Users
 
@@ -36,7 +36,7 @@ AD Connector (Active Directory Connector) provides the following capabilities:
 * Enables AWS permission management through IAM Identity Center
 * Preserves existing user and group structures
 
-<figure><img src="../../../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (125).png" alt=""><figcaption></figcaption></figure>
 
 ### Multi-Factor Authentication (MFA)
 

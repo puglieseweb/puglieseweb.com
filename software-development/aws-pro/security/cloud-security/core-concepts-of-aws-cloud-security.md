@@ -19,7 +19,7 @@ AWS operates under a shared responsibility model that clearly delineates securit
 * Cloud management software
 * Underlying cloud infrastructure security
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
 ### Principle of Least Privilege
 
@@ -33,7 +33,7 @@ This fundamental security concept requires that:
 
 ### Identity Security Framework
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
 #### Identity Components
 
@@ -59,11 +59,11 @@ This fundamental security concept requires that:
 4. Authorization token/key is provided
 5. Access to services is granted based on permissions
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 ### Network Security Considerations
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
 * VPC protection is paramount
 * Assume malicious actors will attempt:
@@ -81,7 +81,7 @@ This fundamental security concept requires that:
 * Resources could be exposed
 * Access keys might be leaked
 
-<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
 #### Best Practices
 
