@@ -1,5 +1,11 @@
 # S3
 
+In the "parking/tickets.csv" items
+
+* 'parking' is the bucket,
+* 'tickets.csv' is the object,
+* 'parking/tickets.csv' is the key.
+
 ### Highlights
 
 Query and retrieve the files that are in &#x20;

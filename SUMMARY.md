@@ -108,7 +108,7 @@
       * [BigData Storage Solutions](software-development/aws/ai-analytics-big-data-ml/big-data/bigdata-storage-solutions.md)
       * [EMR](software-development/aws/ai-analytics-big-data-ml/big-data/emr.md)
     * [Business intelligence](software-development/aws/ai-analytics-big-data-ml/business-intelligence.md)
-    * [Sagemaker](software-development/aws/ai-analytics-big-data-ml/sagemaker-part-of-the-exam/README.md)
+    * [Sagemaker](software-development/aws/ai-analytics-big-data-ml/machine-learning/sagemaker-part-of-the-exam/README.md)
       * [SageMaker Neo](software-development/aws/ai-analytics-big-data-ml/sagemaker-part-of-the-exam/sagemaker-neo.md)
       * [Elastic Inference (EI)](software-development/aws/ai-analytics-big-data-ml/sagemaker-part-of-the-exam/elastic-inference-ei.md)
       * [Integration patterns with Amazon SageMaker](software-development/aws/ai-analytics-big-data-ml/sagemaker-part-of-the-exam/integration-patterns-with-amazon-sagemaker.md)

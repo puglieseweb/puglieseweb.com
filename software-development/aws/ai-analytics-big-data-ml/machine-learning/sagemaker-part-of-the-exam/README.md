@@ -1,4 +1,6 @@
-# Sagemaker (part of the exam)
+# Sagemaker
+
+SageMaker provides integrated tools for data preparation, model building, training, and deployment, covering multiple stages of the machine learning pipeline.
 
 ## Core Concepts
 
