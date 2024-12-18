@@ -65,7 +65,7 @@ Routes traffic based on geographic distance between users and resources, with ad
 
 
 
-<figure><img src="../../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (121).png" alt=""><figcaption></figcaption></figure>
 
 #### 5. Latency-Based Routing Policy
 

@@ -13,7 +13,7 @@ There are different Load balancing strategies
 | Weighted Response Time | the load balancer send health check request to each server and measures the time each server takes to respond. If the server are buys handling real request it will take more time to respond to the heath check and the server is given a lower weight                                                                                                                                    |
 | Agent Based Policy     | Installs Agents that check: CPU Utilization, Inbound or outbound Network Traffic (bytes), disk operation (reads/writes), memory utilization, etc.                                                                                                                                                                                                                                          |
 
-![](<../../.gitbook/assets/image (11) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (11) (1) (1) (1) (1) (1).png>)
 
 The Load Balanncer can operated at:
 
@@ -21,7 +21,7 @@ The Load Balanncer can operated at:
   * the Load Balancer performs simple TCP packets forwarding between the client and the backend servers.
   * It does not inspect the content of the TCP stream beyond the first packets - Low overhead
 
-![](<../../.gitbook/assets/image (5) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (5) (1) (1) (1) (1).png>)
 
 * Layer 7 (Application Layer):
   * can make smarter routing decision based on the HTTP header

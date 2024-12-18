@@ -1,6 +1,6 @@
 # Amazon ElastiCache
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
 ### Core Characteristics
 
@@ -29,7 +29,7 @@
 * Advanced features and data structures
 * Not meant to replace persistent databases (RDS, DynamoDB)
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Common Use Cases
 

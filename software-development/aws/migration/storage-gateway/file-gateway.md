@@ -17,7 +17,7 @@ Local Cache:
 * Only stores a subset of your data based on access patterns
 * Cache can be refreshed or invalidated
 
-<figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 &#x20;Key features and details about AWS File Gateway:
 

@@ -41,7 +41,7 @@ A start of authority (SOA) record includes administrative information about the 
 * The current version of the data file
 * The default number of seconds for the time-to-live file on resource records
 
-<figure><img src="../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### NS record
 
