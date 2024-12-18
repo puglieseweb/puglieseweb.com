@@ -38,7 +38,7 @@ Regression is a supervised learning technique that predicts continuous numerical
 
 ### Regression vs. Classification
 
-<figure><img src="../../../../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (15) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 | Aspect             | Regression                 | Classification              |
 | ------------------ | -------------------------- | --------------------------- |

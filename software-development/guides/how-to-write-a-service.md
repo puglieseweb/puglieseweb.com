@@ -4,11 +4,11 @@
 
 2 Structure the code as follows:
 
-![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png>)
 
-![](<../../.gitbook/assets/image (4) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1).png>)
 
-![](<../../.gitbook/assets/image (6) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png>)
 
 Benefits:
 

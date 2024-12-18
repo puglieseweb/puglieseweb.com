@@ -10,9 +10,9 @@ AWS offers three types of Elastic Load Balancers (ELB) for distributing inbound 
 
 ### Key Characteristics
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Application Load Balancer (ALB)
 
@@ -32,7 +32,7 @@ AWS offers three types of Elastic Load Balancers (ELB) for distributing inbound 
 
 #### Routing Capabilities
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Application Load Balancer**
 
@@ -45,7 +45,7 @@ Rich routing options including:
 * Source IP
 * Query string parameters
 
-<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Network Load Balancer**
 
@@ -55,7 +55,7 @@ Limited routing options:
 * TCP connections persist for the duration of the connection
 * Ideal for raw throughput requirements
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Common Features Across All Load Balancers
 
@@ -90,7 +90,7 @@ Important for web applications that maintain session state:
 * Supports features like shopping carts and session parameters
 *
 
-    <figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Best Practices
 
