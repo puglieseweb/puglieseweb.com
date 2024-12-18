@@ -19,7 +19,7 @@ A hosted zone in Route 53 serves as a collection of records that define how traf
 * NS (Name Server) records
 * SOA (Start of Authority) record
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
 #### Cross-Account Structure
 

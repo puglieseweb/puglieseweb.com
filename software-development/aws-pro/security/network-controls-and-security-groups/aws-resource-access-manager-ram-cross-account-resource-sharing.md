@@ -4,7 +4,7 @@
 
 AWS Resource Access Manager (RAM) is a **centralized service that enables secure resource sharing across multiple AWS accounts.** This document outlines the key concepts, implementation process, and best practices for using RAM effectively within your AWS organization.
 
-<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 
 ### Core Concepts
 
@@ -24,7 +24,7 @@ AWS Resource Access Manager (RAM) is a **centralized service that enables secure
 
 ### Implementation Process
 
-<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Resource Selection
 
@@ -59,7 +59,7 @@ AWS Resource Access Manager (RAM) is a **centralized service that enables secure
 
 ### Common Use Cases
 
-<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 
 #### Network Infrastructure Sharing
 
@@ -91,7 +91,7 @@ AWS Resource Access Manager (RAM) is a **centralized service that enables secure
 
 ### Technical Considerations
 
-<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
 
 #### Regional Limitations
 

@@ -54,7 +54,7 @@ Now, let me provide some additional context and exam tips related to Auto Scalin
    * **Step Scaling:** Adjusts capacity based on specified CloudWatch alarms
    * **Simple Scaling**: Basic scaling based on a single scaling adjustment
 
-<figure><img src="../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Cooldown Periods**
    * Time after a scaling activity where further scaling activities are suspended

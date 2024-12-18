@@ -21,7 +21,7 @@ Glue Data Catalog replaces replaces schema registry for metadata management.
 
 
 
-<figure><img src="../../../../../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. AWS Athena:
    * Serverlessinteractive query service

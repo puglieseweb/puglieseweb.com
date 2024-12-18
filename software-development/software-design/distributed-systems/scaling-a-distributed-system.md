@@ -110,7 +110,7 @@ where
 
 ![](<../../../.gitbook/assets/image (15) (1) (1) (1) (1).png>)
 
-![](<../../../.gitbook/assets/image (17) (1) (1).png>)
+![](<../../../.gitbook/assets/image (17) (1) (1) (1).png>)
 
 Distributed databases uses both sharding and replication to guarantee:
 

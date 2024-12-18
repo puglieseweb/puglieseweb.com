@@ -81,7 +81,7 @@ Secures data as it moves between systems:
 
 #### CloudHSM vs KMS Comparison
 
-<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 ### AWS Certificate Manager (ACM)
 

@@ -6,7 +6,7 @@
 
 The key differences between AWS Event Router (EventBridge) and Event Streams (Kinesis) are:
 
-<figure><img src="../../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
 
 Here's a detailed comparison between Amazon EventBridge and Amazon Kinesis:
 

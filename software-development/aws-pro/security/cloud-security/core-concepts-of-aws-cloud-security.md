@@ -81,7 +81,7 @@ This fundamental security concept requires that:
 * Resources could be exposed
 * Access keys might be leaked
 
-<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Best Practices
 

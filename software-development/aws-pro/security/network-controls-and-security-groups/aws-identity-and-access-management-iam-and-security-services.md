@@ -1,6 +1,6 @@
 # AWS Identity and Access Management (IAM) and Security Services
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
 ### IAM Core Components
 
@@ -31,7 +31,7 @@ STS is a critical service for temporary credential management:
 * Enables cross-account access
 * Credentials are short-lived, reducing security risks
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
 
 #### Common STS Operations
 
@@ -48,11 +48,11 @@ STS is a critical service for temporary credential management:
 5. Token is provided to application
 6. Application uses token to access AWS services
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 ### Amazon Cognito
 
@@ -67,7 +67,7 @@ Designed specifically for mobile applications with built-in security features:
 
 ### Token Vending Machine (TVM)
 
-<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 #### Anonymous Mode
 
