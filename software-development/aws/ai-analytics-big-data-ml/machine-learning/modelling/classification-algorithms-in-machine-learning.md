@@ -10,7 +10,7 @@ Classification is a supervised learning technique that categorizes data points i
 
 * **Definition**: Problems with exactly two possible outcomes
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Example**: Fruit Quality Assessment
   * Input Features: texture, color, smell, appearance

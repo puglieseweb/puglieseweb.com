@@ -34,7 +34,7 @@ Secrets Manager supports two types of access policies:
 * Explicitly defines which entities can access specific secrets
 * Provides granular control over secret access
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Identity-Based Policies
 
@@ -43,7 +43,7 @@ Secrets Manager supports two types of access policies:
 * Allows for broader service-level access control
 * Supports temporary credential management
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Application Integration
 
@@ -74,7 +74,7 @@ Secrets Manager supports two types of access policies:
 * Implement proper error handling for secret access
 * Maintain static code while allowing for dynamic key rotation
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Security Architecture Benefits
 
