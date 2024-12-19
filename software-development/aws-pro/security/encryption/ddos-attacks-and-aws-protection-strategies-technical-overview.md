@@ -20,7 +20,7 @@ The term "phishing" originated in the AOL wares community of the mid-1990s:
 * Successfully disrupted Las Vegas Strip internet access for over an hour
 * Established DDoS as a significant security threat
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Types of DDoS Attacks
 
@@ -31,7 +31,7 @@ The term "phishing" originated in the AOL wares community of the mid-1990s:
 * Servers respond with significantly larger responses to target
 * Creates amplified traffic impact on victim
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Layer 7 (Application) Attacks
 

@@ -2,7 +2,7 @@
 
 ### Types of Auto Scaling Services
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 * WS Auto Scaling = Holistic scaling view + predictive scaling feature
 * EC2 Auto Scaling = Focused specifically on EC2 instance scaling
@@ -15,7 +15,7 @@
 * Provides horizontal scaling (scaling out)
 * Uses health checks and metrics to manage instance count
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Application Auto Scaling
 
@@ -26,7 +26,7 @@
   * EMR
 * Consolidates various service-specific scaling capabilities into a single API
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 3. AWS Auto Scaling
 
@@ -67,7 +67,7 @@ AWS Predictive Scaling:
 
 #### Configuration Components
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Launch Configuration**
    * AMI specifications
@@ -102,11 +102,11 @@ Within the Dynamic autoscaling group we have different Scaling policies:
   * Scheduled scaling (not supported)
 * Can be customized for specific scenarios
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Scaling Based on Amazon SQS
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

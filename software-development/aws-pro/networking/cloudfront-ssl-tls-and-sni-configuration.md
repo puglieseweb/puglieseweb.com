@@ -86,13 +86,13 @@ CloudFront offers various security policies to control SSL/TLS protocol support:
 * Can enforce TLS 1.2-only using TLS 1.2\_2018 policy
 * Policy selection affects browser compatibility vs. security trade-off
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Best Practices:
 
 1. Use SNI unless legacy browser support is crucial
 
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Implement the most restrictive security policy that meets your requirements
 3. Regular review and updates of security policies
