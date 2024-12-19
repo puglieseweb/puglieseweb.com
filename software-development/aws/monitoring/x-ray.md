@@ -1,6 +1,6 @@
 # X-Ray
 
-<figure><img src="../../../.gitbook/assets/image (29) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (29) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * App Insights: Collects application data for viewing, filtering, and gaining **insights about requests and responses.**
 * Downstream. View calls to downstream AWS resources and other microservicers/APIs or databases

@@ -2,7 +2,7 @@
 
 Event-driven architecture (EDA) is an architectural pattern that enables the integration of serverless services through asynchronous event triggering across AWS environments. This approach promotes scalability, cost efficiency, and alignment with the Well-Architected Framework.
 
-<figure><img src="../../../../.gitbook/assets/image (38).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (38) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Understanding Events
 
@@ -13,7 +13,7 @@ An event represents:
 * Information that is routed, filtered, and pushed to event consumers
 * Data that event consumers use to update state and implement backend changes
 
-<figure><img src="../../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Defining Serverless
 
@@ -38,7 +38,7 @@ Some AWS services labeled as "serverless" (e.g., Aurora Serverless, Neptune Serv
 
 ### Key Services in Event-Driven Architecture
 
-<figure><img src="../../../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (32) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. AWS Lambda
    * Serverless compute platform
@@ -82,7 +82,7 @@ Some AWS services labeled as "serverless" (e.g., Aurora Serverless, Neptune Serv
 * Supports decision trees and retries
 * Maintains workflow state
 
-<figure><img src="../../../../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (35) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Choreography
 
@@ -92,13 +92,13 @@ Some AWS services labeled as "serverless" (e.g., Aurora Serverless, Neptune Serv
 * Loose coupling
 * Can include orchestrated components
 
-<figure><img src="../../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Real-World Implementation Example
 
 #### Order Processing Workflow
 
-<figure><img src="../../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (37) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Front-end Application
    * Initiates new order

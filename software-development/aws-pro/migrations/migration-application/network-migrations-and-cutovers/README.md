@@ -4,7 +4,7 @@
 
 When migrating to AWS, avoiding IP address overlaps between your VPC and on-premise networks is crucial. VPCs support netmask ranges from /16 to /28, accommodating between 65,000 and 16 hosts respectively.
 
-<figure><img src="../../../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (39) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Reserved IP Addresses
 
@@ -22,7 +22,7 @@ For example, in a /28 network with 16 addresses:
 * Unusable addresses: 5 (reserved)
 * Available addresses: 11
 
-<figure><img src="../../../../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (40) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Network Connectivity Strategy
 

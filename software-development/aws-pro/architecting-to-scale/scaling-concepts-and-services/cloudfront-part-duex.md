@@ -8,7 +8,7 @@ CloudFront enhances content delivery performance through edge location caching, 
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Dynamic Content
    * Leverages **HTTP cookies forwarded from origin sites**

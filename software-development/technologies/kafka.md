@@ -12,7 +12,7 @@ description: >-
 
 ## Spring Client with Exactly One Semantic (EOS)
 
-![](<../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (14) (1) (1) (1) (1) (1) (1) (1).png>)
 
 In a Spring application we want to guaranty that `read→process-write` sequence is completed exactly once. This can done by configuring the container to start a transaction before invoking the Kafka listeners. If the listener successfully processes the record (or multiple records, when using a `BatchMessageListener`), **the container sends the offset(s) to the transaction** by using `producer.sendOffsetsToTransaction()`), before the transaction manager commits the transaction. If the listener throws an exception, the transaction is rolled back and the consumer is repositioned so that the rolled-back record(s) can be retrieved on the next poll.
 

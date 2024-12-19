@@ -2,7 +2,7 @@
 
 Feature engineering stands as a cornerstone of successful machine learning projects, serving as the bridge between raw data and effective model training. This critical process encompasses the selection, extraction, and transformation of variables to optimize model performance and deliver meaningful business insights.
 
-<figure><img src="../../../../../.gitbook/assets/image (43) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (43) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Understanding Feature Engineering
 
@@ -143,4 +143,4 @@ Feature engineering remains a crucial step in the machine learning pipeline, req
 
 Remember that feature engineering is an iterative process that should evolve with your understanding of the data and business needs. Regular evaluation and refinement of your feature engineering approach ensures continued model effectiveness and business value delivery.
 
-<figure><img src="../../../../../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (44) (1) (1).png" alt=""><figcaption></figcaption></figure>

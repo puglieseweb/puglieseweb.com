@@ -76,7 +76,7 @@ Example: 3000 bytes / 60 bytes = 50x amplification
 4. Using DDoS mitigation services
 5. Properly configuring DNS resolvers to prevent reflection attacks
 
-<figure><img src="../../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (20) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Layer 7 DDoS attack&#x20;
 

@@ -43,7 +43,7 @@ Sun Microsystems dominated high-performance computing in the 1980s and 1990s, co
 
 ### Sample Architecture: Dynamic Web Application
 
-<figure><img src="../../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (50) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Components
 

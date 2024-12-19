@@ -19,7 +19,7 @@ A hosted zone in Route 53 serves as a collection of records that define how traf
 * NS (Name Server) records
 * SOA (Start of Authority) record
 
-<figure><img src="../../../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (33) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Cross-Account Structure
 
@@ -52,11 +52,11 @@ The cross-account setup involves:
 * Configure it for the subdomain
 * Input the NS records from the child account
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Repeat this process for additional subdomains in other accounts
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Best Practices
 

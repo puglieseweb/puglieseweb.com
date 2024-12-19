@@ -2,7 +2,7 @@
 
 ### Overview
 
-<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 Compute Optimizer is a machine learning service designed to optimize AWS compute resources. It serves two primary purposes:
 
@@ -10,7 +10,7 @@ Compute Optimizer is a machine learning service designed to optimize AWS compute
 * Enhance performance by rightsizing under-provisioned resources
 * Can be implemented at single account or organization-wide level
 
-<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### How It Works
 
@@ -25,7 +25,7 @@ Compute Optimizer is a machine learning service designed to optimize AWS compute
 
 ### Compatible Resources
 
-<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **EC2 Instances**
    * Rightsizing recommendations
