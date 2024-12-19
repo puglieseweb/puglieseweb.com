@@ -24,7 +24,7 @@ A hybrid cloud architecture combines cloud resources with on-premises infrastruc
 
 #### Pattern 1: Hybrid Storage Solution
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Architecture Components**
 
@@ -43,7 +43,7 @@ A hybrid cloud architecture combines cloud resources with on-premises infrastruc
 
 #### Pattern 2: ERP Integration Pattern
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Components**
 
@@ -69,7 +69,7 @@ A hybrid cloud architecture combines cloud resources with on-premises infrastruc
 
 #### Pattern 3: VMware Hybrid Deployment
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Implementation Components**
 

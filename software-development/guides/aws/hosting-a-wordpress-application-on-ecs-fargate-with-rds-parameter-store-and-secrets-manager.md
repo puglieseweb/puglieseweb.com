@@ -4,7 +4,7 @@ How to deploy a WordPress application using several AWS services, including: Ama
 
 
 
-<figure><img src="../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (37) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

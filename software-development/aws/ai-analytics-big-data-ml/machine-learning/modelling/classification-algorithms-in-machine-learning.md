@@ -21,7 +21,7 @@ Classification is a supervised learning technique that categorizes data points i
 
 #### 2. Multiclass Classification
 
-<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Definition**: Problems with three or more possible classes
 * **Example**: Fruit Sorting System
@@ -31,7 +31,7 @@ Classification is a supervised learning technique that categorizes data points i
 
 #### 3. Multilabel Classification
 
-<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (9) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -46,7 +46,7 @@ Classification is a supervised learning technique that categorizes data points i
 
 #### 4. Imbalanced Classification
 
-<figure><img src="../../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Definition**: Problems where class distribution is significantly uneven
 * **Example**: Credit Card Fraud Detection
@@ -82,7 +82,7 @@ Classification is a supervised learning technique that categorizes data points i
 
 #### 1. Logistic Regression
 
-<figure><img src="../../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (11) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Key Features**:
   * Uses sigmoid curve for probability calculation
@@ -100,7 +100,7 @@ Classification is a supervised learning technique that categorizes data points i
 
 #### 2. Naive Bayes
 
-<figure><img src="../../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (12) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Key Features**:
   * Based on Bayes' Theorem
@@ -118,7 +118,7 @@ Classification is a supervised learning technique that categorizes data points i
 
 #### 3. Support Vector Machines (SVM)
 
-<figure><img src="../../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Key Features**:
   * Creates optimal hyperplane for separation
@@ -137,7 +137,7 @@ Classification is a supervised learning technique that categorizes data points i
 
 #### 4. K-Nearest Neighbors (KNN)
 
-<figure><img src="../../../../../.gitbook/assets/image (14) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (14) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Key Features**:
   * Uses distance metrics (Euclidean/Manhattan)

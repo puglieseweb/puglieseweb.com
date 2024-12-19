@@ -22,7 +22,7 @@
 
 Think of supervised learning as teaching with examples. The model learns from labeled data, similar to a student learning under a teacher's guidance.
 
-<figure><img src="../../../../../.gitbook/assets/image (13) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (13) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Key Applications:**
 

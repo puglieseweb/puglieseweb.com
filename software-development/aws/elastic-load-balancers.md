@@ -7,7 +7,7 @@ There are 4 ELB types:
 3. Gateway Load Balancers (Layer 3)
 4. Classic Load Balaners (Layer4/7)
 
-<figure><img src="../../.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (30) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Comparison Chart
 

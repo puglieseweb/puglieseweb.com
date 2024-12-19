@@ -34,13 +34,13 @@ Two potential solutions:
 * Maintains 15-second requirement
 * Optimizes resource utilization
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
 ### Scaling Methods Comparison
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
 #### Scaling Up (Vertical)
 

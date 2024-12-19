@@ -6,7 +6,7 @@ During this hands-on lab you will learn how to deploy an internet-facing Network
 
 When you are using and ALB the IP address for a give DNS name are constantly revolving, and if you are using an external DNS system you cannot create alias, like you could in Route 53. To overcome this issue we assing static IPs to a network load balancer
 
-<figure><img src="../../../.gitbook/assets/image (36).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (36) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## 1Create Target Group
 
