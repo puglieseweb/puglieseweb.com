@@ -108,9 +108,9 @@ where
 
 **By changing the value of R and W we can optimise our application for reads or writes.**
 
-![](<../../../.gitbook/assets/image (15) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (15) (1) (1) (1) (1) (1).png>)
 
-![](<../../../.gitbook/assets/image (17) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (17) (1) (1) (1) (1).png>)
 
 Distributed databases uses both sharding and replication to guarantee:
 

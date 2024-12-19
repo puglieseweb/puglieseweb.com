@@ -22,7 +22,7 @@
 
 Think of supervised learning as teaching with examples. The model learns from labeled data, similar to a student learning under a teacher's guidance.
 
-<figure><img src="../../../../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (13) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Key Applications:**
 
@@ -54,7 +54,7 @@ Types of Regression:
 
 Models discover patterns independently, without labeled data.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Key Applications:**
 
@@ -75,7 +75,7 @@ Models discover patterns independently, without labeled data.
 
 Learning through trial and error with feedback mechanisms.
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Key Applications:**
 

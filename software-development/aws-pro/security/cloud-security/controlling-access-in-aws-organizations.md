@@ -25,7 +25,7 @@ Service Control Policies are a fundamental tool for managing permissions across 
    * Implicitly **denies all actions not explicitly listed**
    * More restrictive approach
 
-<figure><img src="../../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Permission Evaluation
 

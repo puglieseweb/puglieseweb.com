@@ -28,7 +28,7 @@ Amazon Glacier is designed as a long-term archival storage solution, characteriz
 
 ### Security and Access Control
 
-<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Vault Policies
 
@@ -45,7 +45,7 @@ Amazon Glacier is designed as a long-term archival storage solution, characteriz
 
 ### Vault Lock Process
 
-<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Create Glacier Vault Lock
 2. Initiate lock process

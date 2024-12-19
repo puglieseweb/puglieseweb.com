@@ -1,6 +1,6 @@
 # AWS Identity and Access Management (IAM) and Security Services
 
-<figure><img src="../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### IAM Core Components
 

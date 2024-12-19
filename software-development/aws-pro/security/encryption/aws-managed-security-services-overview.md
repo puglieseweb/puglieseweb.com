@@ -1,10 +1,10 @@
 # AWS Managed Security Services Overview
 
-<figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Security Hub
 
-<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Primary Function
 
@@ -23,7 +23,7 @@ Security Hub serves as a centralized security management system for AWS environm
 
 ### Network Firewall vs. Web Application Firewall (WAF)
 
-<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Network Firewall
 
@@ -50,7 +50,7 @@ Security Hub serves as a centralized security management system for AWS environm
 
 ### AWS Shield
 
-<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Standard Shield
 
