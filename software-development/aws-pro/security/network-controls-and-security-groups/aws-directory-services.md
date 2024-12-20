@@ -1,6 +1,6 @@
 # AWS Directory Services
 
-<figure><img src="../../../../.gitbook/assets/image (18) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### AWS Cloud Directory
 
@@ -50,7 +50,7 @@
   * No trust relationship capabilities
   * Cannot integrate with existing AD infrastructure
 
-<figure><img src="../../../../.gitbook/assets/image (19) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Key Differences: AD Connector vs Simple AD
 

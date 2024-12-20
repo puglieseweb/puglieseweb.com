@@ -6,9 +6,9 @@
 
 AWS Step Functions is a managed workflow and orchestration platform designed for coordinating AWS components. It provides a scalable and highly available solution for managing complex workflows.
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Key Features
 
@@ -34,7 +34,7 @@ AWS Batch is designed for managing batch processing workloads on EC2 instances w
 
 #### Implementation Steps
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Define Compute Environment
    * Choose managed or unmanaged configuration
@@ -54,7 +54,7 @@ AWS Batch is designed for managing batch processing workloads on EC2 instances w
 
 ### Service Comparison Guide
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### AWS Step Functions
 

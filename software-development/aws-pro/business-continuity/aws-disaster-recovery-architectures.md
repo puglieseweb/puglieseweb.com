@@ -6,7 +6,7 @@ AWS provides four main disaster recovery architectures, each offering different 
 
 ### 1. Backup and Restore
 
-<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Description
 
@@ -35,9 +35,9 @@ The most basic DR strategy, focusing on data backup to AWS.
 
 ### 2. Pilot Light
 
-<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Description
 
@@ -73,9 +73,9 @@ Maintains minimal AWS footprint in standby mode, similar to a pilot light on a g
 
 ### 3. Warm Standby
 
-<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Description
 
@@ -117,7 +117,7 @@ Maintains a scaled-down but fully functional environment in AWS.
 
 ### 4. Multi-Site Active/Active
 
-<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Description
 

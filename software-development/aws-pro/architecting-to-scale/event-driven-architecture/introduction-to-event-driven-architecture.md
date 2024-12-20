@@ -13,7 +13,7 @@ An event represents:
 * Information that is routed, filtered, and pushed to event consumers
 * Data that event consumers use to update state and implement backend changes
 
-<figure><img src="../../../../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (31) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Defining Serverless
 

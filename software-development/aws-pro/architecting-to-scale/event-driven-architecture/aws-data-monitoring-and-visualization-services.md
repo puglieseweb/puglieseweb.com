@@ -1,6 +1,6 @@
 # AWS Data Monitoring and Visualization Services
 
-<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Overview of Data Collection Challenges
 
@@ -43,7 +43,7 @@ The key challenge lies in bridging the gap between data collection and deriving 
 
 #### Supported Data Sources
 
-<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Native AWS Services**
 
@@ -77,13 +77,13 @@ The key challenge lies in bridging the gap between data collection and deriving 
    * CloudWatch integration
    * Custom dataset creation for QuickSight
 
-<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Amazon OpenSearch
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Overview
 
@@ -102,7 +102,7 @@ The key challenge lies in bridging the gap between data collection and deriving 
 
 #### Use Cases
 
-<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Log Analysis**
    * More advanced querying than CloudWatch
@@ -117,7 +117,7 @@ The key challenge lies in bridging the gap between data collection and deriving 
    * Enables business insight visualization
    * Combines log metrics with business analytics
 
-<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Best Practices and Considerations
 

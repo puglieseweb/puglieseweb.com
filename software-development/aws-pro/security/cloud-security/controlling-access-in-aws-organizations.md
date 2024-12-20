@@ -1,6 +1,6 @@
 # Controlling Access in AWS Organizations
 
-<figure><img src="../../../../.gitbook/assets/image (28) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (28) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Service Control Policies (SCPs)
 
@@ -14,7 +14,7 @@ Service Control Policies are a fundamental tool for managing permissions across 
 * Only deny permissions, never grant them
 * Effects are inherited by all accounts below the target level
 
-<figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### SCP Implementation Types
 
@@ -25,7 +25,7 @@ Service Control Policies are a fundamental tool for managing permissions across 
    * Implicitly **denies all actions not explicitly listed**
    * More restrictive approach
 
-<figure><img src="../../../../.gitbook/assets/image (19) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Permission Evaluation
 
@@ -39,7 +39,7 @@ An action is only permitted when it is both:
 * Explicitly allowed by an IAM policy
 * Not denied by any applicable SCP
 
-<figure><img src="../../../../.gitbook/assets/image (23) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -54,13 +54,13 @@ AWS Config serves as a monitoring and compliance tool with the following feature
 * Allows creation of custom rules
 * Can identify specific non-compliant resources
 
-<figure><img src="../../../../.gitbook/assets/image (24) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (24) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### IAM Identity Center (formerly AWS SSO)
 
 IAM Identity Center is the recommended solution for managing user access across AWS accounts:
 
-<figure><img src="../../../../.gitbook/assets/image (25) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (25) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Key Features:
 
@@ -75,7 +75,7 @@ IAM Identity Center is the recommended solution for managing user access across 
 * Allows users to assume different roles based on their group membership
 * Facilitates granular access control between development and production environments
 
-<figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Implementation Example:
 
@@ -87,7 +87,7 @@ IAM Identity Center is the recommended solution for managing user access across 
 
 You can map one user to many permission sets to many accouts:
 
-<figure><img src="../../../../.gitbook/assets/image (27) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (27) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Best Practices
 

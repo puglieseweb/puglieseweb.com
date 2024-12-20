@@ -31,7 +31,7 @@ Amazon SQS is a highly scalable, hosted messaging queue service that provides se
 
 #### Example Architecture
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Consider an ERP system generating master data updates:
 

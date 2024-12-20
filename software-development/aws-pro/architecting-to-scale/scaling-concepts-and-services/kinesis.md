@@ -11,7 +11,7 @@ Kinesis is a suite of services designed for processing streaming data with the f
 * Default limit of 500 shards (can be increased upon request)
 * Functions as a transient data store
 
-<figure><img src="../../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Data Records
 
@@ -21,7 +21,7 @@ Each record consists of:
 * Sequence number
 * Data payload (up to 1 MB)
 
-<figure><img src="../../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Data Retention
 
@@ -36,27 +36,27 @@ Each record consists of:
    * Multiple processing options
    * Primary focus for exam
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Kinesis Firehose**
    * Automated data delivery
    * Multiple destination options
    * No immediate processing required
 
-<figure><img src="../../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Kinesis Analytics**
    * Real-time data analysis
    * Processing during ingestion
    * Pre-warehouse analytics
 
-<figure><img src="../../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Kinesis Video Streams**
    * Video stream processing
    * Less relevant for exam
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Technical Architecture
 
@@ -78,7 +78,7 @@ Each record consists of:
 
 Real-world architecture:
 
-<figure><img src="../../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Twitter API → Kinesis ingestion
 2. Firehose → S3 storage

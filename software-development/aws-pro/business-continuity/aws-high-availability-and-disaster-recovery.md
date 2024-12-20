@@ -1,12 +1,12 @@
 # AWS High Availability and Disaster Recovery
 
-<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Core Concepts and Definitions
 
 #### Business Continuity vs. Disaster Recovery
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Business Continuity (BC)**
   * Focus on minimizing business disruption
@@ -19,7 +19,7 @@
 
 #### Fault Tolerance vs. High Availability
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Fault Tolerance**
   * Complete ability to tolerate faults
@@ -43,7 +43,7 @@
 
 #### Recovery Objectives
 
-<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Recovery Time Objective (RTO)**
    * Time to restore business processes
@@ -56,7 +56,7 @@
    * Influences backup strategy
    * Drives data protection requirements
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Real-World Example: The S3 Outage of 2017
 
@@ -85,7 +85,7 @@
 
 
 
-<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Infrastructure Failures
 

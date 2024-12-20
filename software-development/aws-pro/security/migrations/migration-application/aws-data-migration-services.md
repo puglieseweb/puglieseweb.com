@@ -25,7 +25,7 @@ Database Migration Service is AWS's primary solution for relational database mig
   * Transferred to replication instance
   * Finally delivered to target database
 
-<figure><img src="../../../../../.gitbook/assets/image (16) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (16) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### DataSync
 
@@ -41,7 +41,7 @@ DataSync is AWS's modern solution for file system and object storage migration. 
   * Amazon Elastic File System
   * Amazon FSx
 
-<figure><img src="../../../../../.gitbook/assets/image (17) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (17) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### DataSync Implementation
 
@@ -66,7 +66,7 @@ Transfer Family facilitates secure file transfers for specific use cases. Key fe
   * Compression
 * External user authentication for secure file transfers
 
-<figure><img src="../../../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (18) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Transfer Family Implementation
 
@@ -77,7 +77,7 @@ Transfer Family facilitates secure file transfers for specific use cases. Key fe
 
 ### Key Takeaways
 
-<figure><img src="../../../../../.gitbook/assets/image (19) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (19) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Database Migration Service (DMS)**
    * Primary tool for database migrations

@@ -10,7 +10,7 @@ Elastic MapReduce (EMR) is not a single product but rather a collection of open-
 
 #### Central Components
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Hadoop HDFS (Hadoop Distributed File System)**
    * Primary storage system
@@ -75,7 +75,7 @@ Elastic MapReduce (EMR) is not a single product but rather a collection of open-
 
 #### Cluster Structure
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Master Node**
    * Controls cluster operations
@@ -90,7 +90,7 @@ Elastic MapReduce (EMR) is not a single product but rather a collection of open-
    * Ephemeral storage only
    * Scalable for performance
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Processing Steps
 

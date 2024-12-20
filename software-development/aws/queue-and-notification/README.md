@@ -34,7 +34,7 @@
 
 ### Common Architecture Patterns
 
-<figure><img src="../../../.gitbook/assets/image (28) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Key Differences
 

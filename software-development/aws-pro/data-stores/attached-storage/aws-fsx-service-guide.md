@@ -6,7 +6,7 @@ FSx is an AWS file sharing service that addresses scenarios where EFS (Elastic F
 
 ### FSx Variants
 
-<figure><img src="../../../../.gitbook/assets/image (21) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. FSx for NetApp ONTAP
 2. FSx for OpenZFS
@@ -15,11 +15,11 @@ FSx is an AWS file sharing service that addresses scenarios where EFS (Elastic F
 
 _Note: The most common variants for AWS Solutions Architect-Professional exam are Windows File Server and Lustre._
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### How FSx Works
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Architecture Components
 
@@ -58,7 +58,7 @@ _Note: The most common variants for AWS Solutions Architect-Professional exam ar
 
 One of the most popular high-performance file storage systems currently in use.
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Use Cases
 

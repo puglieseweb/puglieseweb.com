@@ -7,7 +7,7 @@ DynamoDB scaling operates across two primary dimensions:
 1. Throughput Capacity: Managed through read and write capacity units
 2. Storage Size: Individual items capped at 400KB, with unlimited total storage potential
 
-<figure><img src="../../../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (20) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Partition Management
 
@@ -18,13 +18,13 @@ DynamoDB scaling operates across two primary dimensions:
   * Partition Key (Hash Key): Primary identifier for record distribution
   * Sort Key (Range Key): Optional secondary key for record organization
 
-<figure><img src="../../../../.gitbook/assets/image (21) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
 #### Partition Calculation Formula
 
-<figure><img src="../../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The total number of partitions is determined by the maximum of:
 
@@ -40,7 +40,7 @@ Example:
 * Size Calculation: 10GB / 10GB = 1
 * Final Partition Count: 3 (rounded up from 2.66)
 
-<figure><img src="../../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (23) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Data Distribution and Hot Partition Prevention
 
@@ -50,11 +50,11 @@ Example:
 * Hash ranges are divided equally among partitions
 * With 2 partitions: 50% per partition
 
-<figure><img src="../../../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (25) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * With 3 partitions: 33.3% per partition
 
-<figure><img src="../../../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Avoiding Hot Partitions
 
@@ -66,7 +66,7 @@ Poor Design Example:
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (26) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -76,13 +76,13 @@ Optimized Design:
 * Use date as sort key
 * Benefit: Distributes load across partitions naturally
 
-<figure><img src="../../../../.gitbook/assets/image (27) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (27) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Scaling Methods
 
 #### Auto Scaling
 
-<figure><img src="../../../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (28) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Configuration:
    * Set provisioned capacity limits
@@ -110,7 +110,7 @@ Optimized Design:
 
 ### DynamoDB Accelerator (DAX)
 
-<figure><img src="../../../../.gitbook/assets/image (29) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (29) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Overview
 

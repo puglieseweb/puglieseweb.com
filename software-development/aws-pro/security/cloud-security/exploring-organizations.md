@@ -8,13 +8,13 @@ AWS Organizations is a service that enables centralized management of multiple A
 
 #### Core Components
 
-<figure><img src="../../../../.gitbook/assets/image (18) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Management Account**: The central account that provisions and manages the organization. Best practice is to keep this account free from workloads.
 * **Member Accounts**: Individual accounts containing specific resources and workloads.
 * **Organizational Units (OUs)**: Groups of accounts that share access patterns or serve similar applications/services. Policies applied to an OU affect all accounts within it.
 
-<figure><img src="../../../../.gitbook/assets/image (17) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (17) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Benefits of Multiple AWS Accounts
 
