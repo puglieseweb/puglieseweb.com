@@ -35,7 +35,7 @@ Today's massive data transfer challenges are addressed by the AWS Snow Family, a
    * Used for massive data migrations
    * Large enough to be visible in satellite imagery (as demonstrated by DigitalGlobe's migration)
 
-<figure><img src="../../../../.gitbook/assets/image (41) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (41) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Security and Transfer Process
 

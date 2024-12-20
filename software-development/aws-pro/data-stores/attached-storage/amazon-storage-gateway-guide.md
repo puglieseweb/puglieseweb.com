@@ -9,7 +9,7 @@ Amazon Storage Gateway is a virtual machine solution that:
 * Enables data synchronization between on-premises and AWS cloud storage
 * Includes bandwidth throttling capabilities
 
-<figure><img src="../../../../.gitbook/assets/image (51) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (51) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Core Use Cases
 
@@ -61,7 +61,7 @@ Amazon Storage Gateway is a virtual machine solution that:
 
 ### Implementation Example: Remote Office Scenario
 
-<figure><img src="../../../../.gitbook/assets/image (52) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (52) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Setup
 

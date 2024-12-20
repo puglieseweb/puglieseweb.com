@@ -6,6 +6,6 @@ In Apache Flink, when dealing with streaming data, Watermarks are used to handle
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (38) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (38) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (39) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (39) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

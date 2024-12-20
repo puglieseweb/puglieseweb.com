@@ -70,7 +70,7 @@ API Gateway is a fully managed AWS service that enables developers to create, pu
 
 #### REST API Architecture
 
-<figure><img src="../../../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
 
 **GET Request Flow**
 
@@ -91,7 +91,7 @@ API Gateway is a fully managed AWS service that enables developers to create, pu
 
 #### Response Caching
 
-<figure><img src="../../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
 
 **Benefits**
 

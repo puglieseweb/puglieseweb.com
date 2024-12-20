@@ -4,7 +4,7 @@
 
 CloudFormation is a powerful Infrastructure as Code (IaC) service that enables automated and repeatable deployment of AWS resources. It allows organizations to model and provision entire cloud environments using template files in JSON or YAML format.
 
-<figure><img src="../../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (58).png" alt=""><figcaption></figcaption></figure>
 
 ### Key Features
 
@@ -19,7 +19,7 @@ CloudFormation is a powerful Infrastructure as Code (IaC) service that enables a
 
 ### Core Components
 
-<figure><img src="../../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
 #### Templates
 
@@ -45,7 +45,7 @@ CloudFormation is a powerful Infrastructure as Code (IaC) service that enables a
 
 ### Stack Policies
 
-<figure><img src="../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
 #### Purpose
 
@@ -145,7 +145,7 @@ CloudWatchAlarm:
       - !Ref ScalingPolicy
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
 
 ### Implementation Considerations
 

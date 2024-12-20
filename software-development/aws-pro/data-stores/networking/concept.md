@@ -24,7 +24,7 @@
 
 _Mnemonic: "Please Do Not Throw Sausage Pizza Away"_
 
-<figure><img src="../../../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (66) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### AWS Responsibility Demarcation
 
@@ -58,9 +58,9 @@ _Mnemonic: "Please Do Not Throw Sausage Pizza Away"_
 * OS-dependent default settings
 * Important for NACL and security group configuration
 
-<figure><img src="../../../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (68) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (69) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### VPC Reserved IP Addresses
 
@@ -74,7 +74,7 @@ In each subnet, five IPs are reserved:
 
 _Note: Numbers are positional, not absolute_
 
-<figure><img src="../../../../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (70) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Availability Zone Assignment
 

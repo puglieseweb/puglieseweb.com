@@ -1,6 +1,6 @@
 # Cross-Account Infrastructure Deployment
 
-<figure><img src="../../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (65).png" alt=""><figcaption></figcaption></figure>
 
 ### Infrastructure as Code (IaC) Foundation
 
@@ -21,7 +21,7 @@
 
 ### CloudFormation StackSets
 
-<figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (60).png" alt=""><figcaption></figcaption></figure>
 
 #### Overview
 
@@ -46,7 +46,7 @@
 
 ### AWS Control Tower Integration
 
-<figure><img src="../../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -68,7 +68,7 @@
 
 ### AWS Service Catalog
 
-<figure><img src="../../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
 #### Purpose
 
@@ -111,7 +111,7 @@
 
 ### Implementation Example: Microservices Pipeline
 
-<figure><img src="../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
 
 #### Service Catalog Approach
 

@@ -4,7 +4,7 @@
 
 This lab takes an in-depth look at CloudFormation template anatomy. Each section of a CloudFormation template will be covered in detail, and, ultimately, a CloudFormation template will be constructed piece by piece. After completing this lab, the student will have a deeper understanding of constructing CloudFormation templates in both JSON and YAML.
 
-<figure><img src="../../../../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (136).png" alt=""><figcaption></figcaption></figure>
 
 ### Solution
 

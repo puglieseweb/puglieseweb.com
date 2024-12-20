@@ -2,7 +2,7 @@
 
 ### Overview of Deployment Types
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
 
 Modern software deployment strategies can be categorized into three primary approaches, each with its own advantages and trade-offs:
 
@@ -24,21 +24,21 @@ This approach maintains both old and new systems simultaneously. While it might 
 
 This strategy involves gradually updating instances within an auto-scaling group. The process typically follows these steps:
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
 1. Create a new launch configuration with an updated AMI
 2. Gradually terminate old EC2 instances
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (41).png" alt=""><figcaption></figcaption></figure>
 
 3. Allow auto-scaling to launch new instances with the updated configuration
 4. Continue until the entire fleet runs on the new version
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
 
 #### A/B Testing Deployment
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
 Utilizing Route 53, this method enables controlled traffic distribution between different versions:
 
@@ -50,7 +50,7 @@ Utilizing Route 53, this method enables controlled traffic distribution between 
 
 Named after the historical practice in mining, this approach involves:
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
 1. Deploying the new version in a limited production environment
 2. Monitoring for errors or issues over a set period
@@ -59,11 +59,11 @@ Named after the historical practice in mining, this approach involves:
 
 #### Blue/Green Deployment
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (46).png" alt=""><figcaption></figcaption></figure>
 
 A sophisticated strategy that maintains two identical environments:
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (45).png" alt=""><figcaption></figcaption></figure>
 
 
 

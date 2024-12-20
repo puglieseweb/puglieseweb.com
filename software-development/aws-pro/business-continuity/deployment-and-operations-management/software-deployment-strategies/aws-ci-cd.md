@@ -1,6 +1,6 @@
 # AWS CI/CD
 
-<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
 
 ### Understanding CI/CD
 
@@ -27,7 +27,7 @@ Continuous Integration and Continuous Deployment/Delivery (CI/CD) represents dif
 
 ### Core AWS CI/CD Services
 
-<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
 
 #### CodeCommit
 
@@ -65,7 +65,7 @@ Continuous Integration and Continuous Deployment/Delivery (CI/CD) represents dif
 
 #### Single-Account Pipeline
 
-<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (48).png" alt=""><figcaption></figcaption></figure>
 
 1. Code committed to CodeCommit repository
 2. Merge to main branch triggers pipeline
@@ -78,7 +78,7 @@ Continuous Integration and Continuous Deployment/Delivery (CI/CD) represents dif
 
 **Centralized Pipeline Approach**
 
-<figure><img src="../../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (49).png" alt=""><figcaption></figcaption></figure>
 
 1. Code committed to source account
 2. CodeBuild creates artifacts (e.g., CloudFormation templates)
@@ -88,7 +88,7 @@ Continuous Integration and Continuous Deployment/Delivery (CI/CD) represents dif
 
 **Distributed Pipeline Approach**
 
-<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
 1. DevOps account hosts CodeCommit
 2. Branch-specific events trigger EventBridge in respective accounts

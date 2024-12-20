@@ -4,7 +4,7 @@
 
 AWS offers two primary container services: Elastic Container Service (ECS) and Elastic Kubernetes Service (EKS). Both are managed, highly-available container platforms with distinct characteristics and use cases.
 
-<figure><img src="../../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
 ### Service Comparison
 
@@ -74,7 +74,7 @@ AWS offers two primary container services: Elastic Container Service (ECS) and E
 
 ### ECS Launch Types
 
-<figure><img src="../../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
 
 #### EC2 Launch Type
 

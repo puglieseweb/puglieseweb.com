@@ -4,7 +4,7 @@
 
 Elastic Beanstalk is a powerful orchestration service in AWS that simplifies application deployment. Despite being one of AWS's older services, it remains highly relevant and popular due to its ease of use and versatility.
 
-<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 ### Key Features
 
@@ -59,7 +59,7 @@ Manages critical infrastructure components:
 
 ### Deployment Strategies
 
-<figure><img src="../../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
 #### All-at-Once Deployment
 
@@ -100,7 +100,7 @@ Implementation:
 * Provides quick rollback through URL reversion
 * Ideal for production environments requiring zero downtime
 
-<figure><img src="../../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
 ### Considerations
 
