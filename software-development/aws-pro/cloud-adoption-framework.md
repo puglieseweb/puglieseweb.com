@@ -12,12 +12,12 @@
 
 #### Key Considerations
 
-* Enterprise architecture is not synonymous with TOGAF
-* TOGAF adoption alone doesn't guarantee proper EA practice
-* Often fills process and standards gaps in organizations
-* Subject to unreasonable expectations, similar to Agile methodology
-* Requires interpretation and adaptation to organizational needs
-* Not intended as a strict step-by-step cookbook
+* Enterprise architecture is not synonymous with TOGAF.
+* TOGAF adoption alone doesn't guarantee proper EA practice.
+* Often fills process and standards gaps in organizations.
+* Subject to unreasonable expectations, similar to Agile methodology.
+* Requires interpretation and adaptation to organizational needs.
+* Not intended as a strict step-by-step cookbook.
 
 #### Common Misconceptions
 
