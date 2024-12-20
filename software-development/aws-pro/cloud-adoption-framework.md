@@ -6,9 +6,9 @@
 
 #### Overview
 
-* Developed in 1995 as an approach for designing, planning, and implementing enterprise IT architectures
-* Widely adopted by Fortune 500 companies
-* Considered the de facto standard for Enterprise Architecture (EA) practice
+* Developed in 1995 as an approach for designing, planning, and implementing enterprise IT architectures.
+* Widely adopted by Fortune 500 companies.
+* Considered the de facto standard for Enterprise Architecture (EA) practice.
 
 #### Key Considerations
 
