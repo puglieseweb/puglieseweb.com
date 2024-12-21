@@ -20,7 +20,8 @@ If there is the need of accessing files randomly for S3 than use Intelligent-Tie
 * Object storage service for storing and retrieving any amount of data
 * Highly scalable, durable, and available
 * Objects are stored in buckets
-* **Max object size: 5GB**
+* **Max object size: 5TB**
+* **Max PUT object size: 5GB**
 * Unlimited storage capacity
 
 ### 2. S3 Storage Classes
