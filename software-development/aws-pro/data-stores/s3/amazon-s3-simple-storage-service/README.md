@@ -8,31 +8,20 @@
 * Single PUT operation limit: 5 GB.
 * Recommended to use multi-part uploads for files >100 MB.
 
-#### Consistency Model
+### Consistency Model
 
-S3 implements the following consistency patterns:
+**Read-after-write consistency**  model applies to all S3 operations including GET, PUT, DELETE, HEAD, and LIST operations across all S3 storage classes. The only exception would be in rare events of **simultaneous updates** to the same key from different clients, where S3 uses **"last writer wins"** semantics.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+**Single Key Updates**
 
-1. **New Object PUTs**
-   * Read-after-write consistency.
-   * Immediate availability for new objects.
-2. **HEAD/GET Before Object Exists**
-   * Eventually consistent.
-   * S3 remembers previous negative responses.
-   * Full replication across AZs required before reads.
-3. **Overwrite PUTs and DELETEs**
-   * Eventually consistent.
-   * Updates/deletes complete locally first.
-   * Changes replicate to other locations over time.
-4. **Single Key Updates**
-   * Atomic operations.
-   * Processed in timestamp order.
-   * Updates visible after full replication.
+* Atomic operations - only one update can succeed at a time.
+* Processed in timestamp order.
+* All changes are immediately visible to subsequent reads.
+* Concurrent updates to the same key are resolved based on the last-write-wins principle.
 
 ### Security Features
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Access Control Methods
 
@@ -64,7 +53,7 @@ Benefits:
 
 #### Storage Classes
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Multiple tiers available
 * Intelligent-Tiering:
@@ -85,7 +74,7 @@ Benefits:
 
 #### Analytics Capabilities
 
-<figure><img src="../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Data lake functionality:
   * Compatible with Athena.
@@ -99,7 +88,7 @@ Benefits:
 
 
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Native S3 encryption (AES-256).
 2. Customer-provided keys.
@@ -108,7 +97,7 @@ Benefits:
 
 #### Additional Features
 
-<figure><img src="../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * Transfer acceleration (via CloudFront).
 * Requester Pays option.

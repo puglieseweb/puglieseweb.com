@@ -49,8 +49,6 @@
 
 ### Consistency Models
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 #### ACID Model
 
 Primarily used in relational databases, implementing features like row locking and rollbacks.
@@ -80,8 +78,6 @@ Characteristics:
 * Examples of BASE implementation:
   * Amazon S3.
   * Amazon DynamoDB.
-
-###
 
 
 
