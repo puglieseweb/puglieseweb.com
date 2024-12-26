@@ -54,6 +54,8 @@
 * Measured in Aurora Capacity Units (ACUs)
 * 1 ACU ≈ 2GB memory + proportional CPU and networking
 * Scaling range: 0.5 to 128 ACUs
+* Storage automatically scales from 10 GiB to 128 TiB
+* Storage scaling is independent of ACU scaling
 * Stepwise scale-down approach similar to EC2 auto-scaling
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

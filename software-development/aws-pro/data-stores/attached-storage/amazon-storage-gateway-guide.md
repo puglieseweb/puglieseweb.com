@@ -65,7 +65,7 @@ Amazon Storage Gateway is a virtual machine solution that:
 
 #### Setup
 
-* Uses cached volume mode
+* Uses **cached volume mode**
 * Provides synchronized file experience
 * Suitable for offices with limited bandwidth
 
