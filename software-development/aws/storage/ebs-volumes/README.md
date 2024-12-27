@@ -29,18 +29,18 @@ EBS volumes provide durable, block-level storage that can be attached to Amazon 
 
 ## EBS Volume tyeps
 
-| Feature          | sc1                        | st1                         | GP2                           | GP3                         | io1                             | io2                                               |
-| ---------------- | -------------------------- | --------------------------- | ----------------------------- | --------------------------- | ------------------------------- | ------------------------------------------------- |
-| Type             | HDD                        | HDD                         | SSD                           | SSD                         | SSD                             | SSD                                               |
-| Use Case         | Infrequently accessed data | Big data, warehouses, ETL   | Boot volumes, general-purpose | Broad range of workloads    | I/O-intensive, databases        | I/O-intensive, ultra-low latency                  |
-| Throughput       | Up to 250 MB/s             | Up to 500 MB/s              | Up to 250 MiB/s               | Up to 1,000 MiB/s           | Up to 1,000 MiB/s               | Up to 1,000 MiB/s (4,000 MiB/s for Block Express) |
-| Max IOPS         | 250                        | 500                         | 16,000                        | 16,000                      | 64,000                          | 64,000 (256,000 for Block Express)                |
-| Baseline IOPS    | 12 per TB                  | 40 per TB                   | 3 IOPS/GiB (min 100)          | 3,000                       | Provisioned (up to 50 IOPS/GiB) | Provisioned (up to 500 IOPS/GiB)                  |
-| Burst Capability | Yes (up to 80 MB/s per TB) | Yes (up to 250 MB/s per TB) | Yes (up to 3,000 IOPS)        | No (consistent performance) | No                              | No                                                |
-| Volume Size      | 125 GiB - 16 TiB           | 125 GiB - 16 TiB            | 1 GiB - 16 TiB                | 1 GiB - 16 TiB              | 4 GiB - 16 TiB                  | 4 GiB - 16 TiB                                    |
-| Durability       | 99.8-99.9%                 | 99.8-99.9%                  | 99.8-99.9%                    | 99.8-99.9%                  | 99.8-99.9%                      | Up to 99.999%                                     |
-| Boot Volume      | No                         | No                          | Yes                           | Yes                         | Yes                             | Yes                                               |
-| Cost             | Lowest                     | Low                         | Moderate                      | Lower than GP2              | High                            | Same as io1                                       |
+| Feature          | sc1                        | st1                         | GP2                           | GP3                                                            | io1                             | io2                                               |
+| ---------------- | -------------------------- | --------------------------- | ----------------------------- | -------------------------------------------------------------- | ------------------------------- | ------------------------------------------------- |
+| Type             | HDD                        | HDD                         | SSD                           | SSD                                                            | SSD                             | SSD                                               |
+| Use Case         | Infrequently accessed data | Big data, warehouses, ETL   | Boot volumes, general-purpose | Broad range of workloads                                       | I/O-intensive, databases        | I/O-intensive, ultra-low latency                  |
+| Throughput       | Up to 250 MB/s             | Up to 500 MB/s              | Up to 250 MiB/s               | Up to 1,000 MiB/s                                              | Up to 1,000 MiB/s               | Up to 1,000 MiB/s (4,000 MiB/s for Block Express) |
+| Max IOPS         | 250                        | 500                         | 16,000                        | 16,000                                                         | 64,000                          | 64,000 (256,000 for Block Express)                |
+| Baseline IOPS    | 12 per TB                  | 40 per TB                   | 3 IOPS/GiB (min 100)          | 3,000 (Additional IOPS can be added in increments of 500 IOPS) | Provisioned (up to 50 IOPS/GiB) | Provisioned (up to 500 IOPS/GiB)                  |
+| Burst Capability | Yes (up to 80 MB/s per TB) | Yes (up to 250 MB/s per TB) | Yes (up to 3,000 IOPS)        | No (consistent performance)                                    | No                              | No                                                |
+| Volume Size      | 125 GiB - 16 TiB           | 125 GiB - 16 TiB            | 1 GiB - 16 TiB                | 1 GiB - 16 TiB                                                 | 4 GiB - 16 TiB                  | 4 GiB - 16 TiB                                    |
+| Durability       | 99.8-99.9%                 | 99.8-99.9%                  | 99.8-99.9%                    | 99.8-99.9%                                                     | 99.8-99.9%                      | Up to 99.999%                                     |
+| Boot Volume      | No                         | No                          | Yes                           | Yes                                                            | Yes                             | Yes                                               |
+| Cost             | Lowest                     | Low                         | Moderate                      | Lower than GP2                                                 | High                            | Same as io1                                       |
 
 ## AWS SSD Volume Types
 
