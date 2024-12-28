@@ -1,8 +1,27 @@
 # Aurora DB
 
+Aurora decouple compute from storage
+
+<figure><img src="../../../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
+
+Aurora Storage:
+
+* Storage layer is ALWAYS replicated across 3 AZs
+* This is automatic and happens regardless of how many DB instances you have
+* Data is replicated 6 ways (2 copies per AZ)
+
+Aurora DB Instances:
+
+* Can be deployed in 1, 2, or 3 AZs
+* Minimum recommended for high availability is 2 AZs
+  * 1 primary instance in one AZ
+  * At least 1 replica in another AZ
+* You can choose to deploy instances in 3 AZs for additional availability
+
 ### Core Characteristics
 
-* Fully managed RDS service supporting MySQL and PostgreSQL databases
+Fully managed RDS service supporting MySQL and PostgreSQL databases
+
 * Built-in multi-AZ availability by design
 * Automatic storage scaling managed by AWS
 * Easy multi-region replication capabilities
@@ -52,10 +71,10 @@
 
 * Automatic instance scaling for variable workloads
 * Measured in Aurora Capacity Units (ACUs)
-* 1 ACU ≈ 2GB memory + proportional CPU and networking
+* **1 ACU ≈ 2GB memory + proportional CPU and networking**
 * Scaling range: 0.5 to 128 ACUs
-* Storage automatically scales from 10 GiB to 128 TiB
-* Storage scaling is independent of ACU scaling
+* **Storage automatically scales from 10 GiB to 128 TiB**
+* **Storage scaling is independent of ACU scaling**
 * Stepwise scale-down approach similar to EC2 auto-scaling
 
 <figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
