@@ -2,7 +2,19 @@
 
 ### Overview
 
-AWS PrivateLink provides a secure way to connect VPCs to VPC endpoints without requiring VPC peering or public internet access. It leverages AWS's highly available and scalable network backbone to establish private connections to various services and endpoints within the same region.
+AWS PrivateLink provides a secure way to connect VPCs to VPC endpoints without requiring VPC peering or public internet access. PrivateLink is implemented using VPC Interface Endpoints. It leverages AWS's highly available and scalable network backbone to establish private connections to various services and endpoints **within the same region.**
+
+* PrivateLink connections are private by design and don't require public internet access
+* The ENIs should be placed in private subnets as the traffic flows through AWS private network
+* Traffic stays within the AWS network backbone even when connecting to services outside AWS
+* Private subnet placement enhances security by avoiding exposure to the public internet
+
+The typical setup is:
+
+1. Create private subnets in your VPC
+2. Place the PrivateLink ENIs in these private subnets
+3. Configure your route tables for the private subnets
+4. Use AWS Direct Connect or VPN for the connection to external networks/cloud platforms
 
 ### Key Features
 
