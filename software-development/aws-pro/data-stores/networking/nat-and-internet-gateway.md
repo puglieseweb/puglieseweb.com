@@ -18,28 +18,29 @@ Does not perform NAT for instances with private IPs only.
 
 ### Egress-Only Internet Gateway
 
-A specialized gateway designed specifically for IPv6 traffic with the following characteristics:
+A specialized gateway designed specifically for IPv6 traffic. **It replaces traditional NAT functionality for IPv6 traffic.** Egress-Only Internet Gateway has the following characteristics:&#x20;
 
 * Handles IPv6 addresses, which are globally unique and public by default
 * Enables outbound internet access for IPv6-addressed instances
 * Blocks inbound access to IPv6 instances
 * Maintains stateful connection tracking
 * Requires custom ::/0 route configuration
-* Replaces traditional NAT functionality for IPv6 traffic
 
 ### NAT Instance
+
+Translates traffic between private IP instances and a single public IP, and blocks inbound connections from the public internet.
 
 A legacy solution implemented as an EC2 instance with specific properties:
 
 * Deployed from a specialized AWS-provided AMI
-* Translates traffic between private IP instances and a single public IP
-* Blocks inbound connections from the public internet
 * Must be deployed in a public subnet with Internet Gateway route
 * Requires private instances to route through it (typically via 0.0.0.0/0)
 * Not supported for IPv6 traffic
 * Limited by instance type bandwidth
 
 ### NAT Gateway
+
+Translates traffic between private IP instances and a single public IP, and blocks inbound connections from the public internet.
 
 A fully-managed AWS service offering sophisticated NAT capabilities:
 

@@ -2,7 +2,7 @@
 
 ### VPC Routing Overview
 
-Virtual Private Clouds (VPCs) in AWS implement a sophisticated routing system that enables efficient network traffic management. The routing infrastructure is organized into three main contexts: VPC Context, Route 53 Context, and Elastic Load Balance Context.
+Virtual Private Clouds (VPCs) in AWS implement a sophisticated routing system that enables efficient network traffic management. The routing infrastructure is organized into three main contexts: **VPC Context, Route 53 Context, and Elastic Load Balance Context.**
 
 #### VPC Routing Tables
 
