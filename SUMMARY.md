@@ -57,6 +57,7 @@
     * [Cross-Account Route 53](software-development/aws-pro/networking/cross-account-route-53.md)
     * [CloudFront SSL/TLS and SNI Configuration](software-development/aws-pro/networking/cloudfront-ssl-tls-and-sni-configuration.md)
     * [ELB](software-development/aws-pro/networking/elb.md)
+    * [Lab: Creating a Multi-Region Network with VPC Peering Using SGs, IGW, and RTs](software-development/aws-pro/networking/lab-creating-a-multi-region-network-with-vpc-peering-using-sgs-igw-and-rts.md)
     * [LAB - Creating a CloudFront Distribution with Regional S3 Origins](software-development/aws-pro/networking/lab-creating-a-cloudfront-distribution-with-regional-s3-origins.md)
   * [Security](software-development/aws-pro/security/README.md)
     * [Cloud Security](software-development/aws-pro/security/cloud-security/README.md)
