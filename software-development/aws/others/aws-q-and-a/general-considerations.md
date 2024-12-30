@@ -416,3 +416,29 @@ Using multiple AWS accounts is a best practice for many organizations. Here are 
     * Separate accounts can be used for backup and recovery strategies across different regions.
 
 AWS provides tools like AWS Organizations and AWS Control Tower to help manage multi-account setups efficiently. These allow for centralized governance, security policies, and account management across your entire AWS organization
+
+
+
+
+
+
+
+**You notice that you cannot ping an EC2 instance that you recently started in a public subnet. What could be the problem?** _**Select one answer option below.**_&#x20;
+
+**1.The security group does not allow inbound ICMP traffic.**&#x20;
+
+**2.The NACL does not allow outbound TCP traffic.**&#x20;
+
+**3.The security group does not allow outbound UDP traffic.**&#x20;
+
+**4.The NACL does not allow inbound UDP traffic.**
+
+The correct answer is: **The security group does not allow inbound ICMP traffic.**
+
+Reason: Ping uses ICMP protocol. By default, AWS security groups block all inbound traffic unless explicitly allowed. To enable ping, you need to add an inbound rule allowing ICMP traffic in the security group associated with the EC2 instance.
+
+The other options are incorrect because:
+
+* NACLs affecting TCP/UDP traffic wouldn't impact ICMP ping
+* Security group outbound rules are permissive by default
+* Ping doesn't use UDP
