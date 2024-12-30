@@ -49,6 +49,7 @@
       * [VPC's DNS server](software-development/aws-pro/networking/routing/vpcs-dns-server.md)
       * [Transit VPC VS Transit Gateway](software-development/aws-pro/networking/routing/transit-vpc-vs-transit-gateway.md)
       * [Example Routing tables configuration](software-development/aws-pro/networking/routing/example-routing-tables-configuration.md)
+      * [Cross-regions failover](software-development/aws-pro/networking/routing/cross-regions-failover.md)
     * [Enhanced Networking](software-development/aws-pro/data-stores/networking/enhanced-networking.md)
     * [Hybrid and Cross-Account Networking](software-development/aws-pro/data-stores/networking/hybrid-and-cross-account-networking.md)
     * [PrivateLink](software-development/aws-pro/networking/privatelink/README.md)
