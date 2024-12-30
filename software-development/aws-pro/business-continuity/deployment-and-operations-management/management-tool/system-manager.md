@@ -81,7 +81,7 @@ The primary worker component is the SSM Agent, which:
 
 Example of Patch Manager Baseline for Windows:
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Systems Manager Documents (SSM Documents)
 
@@ -89,7 +89,7 @@ SSM Documents define Systems Manager actions using JSON or YAML formats. They su
 
 #### Document Types
 
-<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Command Documents
    * Used with Run Command and State Manager

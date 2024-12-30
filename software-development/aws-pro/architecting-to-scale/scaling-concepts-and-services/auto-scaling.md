@@ -67,7 +67,7 @@ AWS Predictive Scaling:
 
 #### Configuration Components
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Launch Configuration**
    * AMI specifications
