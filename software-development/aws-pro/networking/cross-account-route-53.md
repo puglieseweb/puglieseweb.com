@@ -2,13 +2,7 @@
 
 ### Overview
 
-This document provides a comprehensive guide to implementing cross-account Route 53 configurations for managing subdomains across different AWS accounts. The document covers the key concepts, implementation steps, and important considerations for exam preparation.
-
-### Prerequisites
-
-* Understanding of Route 53 basics
-* Familiarity with hosted zones
-* Access to multiple AWS accounts
+This document provides a comprehensive guide to implementing cross-account Route 53 configurations for managing subdomains across different AWS accounts.&#x20;
 
 ### Core Concepts
 

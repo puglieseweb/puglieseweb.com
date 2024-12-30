@@ -92,6 +92,46 @@ CloudFront offers various security policies to control SSL/TLS protocol support:
 
 1. Use SNI unless legacy browser support is crucial
 
+
+
+```mermaid
+sequenceDiagram
+    participant Client
+    participant DNS
+    participant ALB as Application Load Balancer
+    participant ACM as AWS Certificate Manager
+    participant Target1 as app1.example.com
+    participant Target2 as app2.example.com
+
+    Client->>DNS: DNS lookup for app1.example.com
+    DNS-->>Client: Return ALB IP address
+    
+    Note over Client,ALB: TLS Handshake Begins
+    
+    Client->>ALB: Client Hello with SNI extension<br/>(hostname: app1.example.com)
+    ALB->>ACM: Request certificate for app1.example.com
+    ACM-->>ALB: Return matching certificate
+    ALB-->>Client: Server Hello with certificate
+    
+    Note over Client,ALB: TLS Handshake Completes
+    
+    Client->>ALB: HTTPS Request
+    ALB->>Target1: Forward request to target group<br/>based on host header
+    Target1-->>ALB: Response
+    ALB-->>Client: Forward response
+
+    Note over Client,ALB: Different Domain Request
+    
+    Client->>ALB: Client Hello with SNI extension<br/>(hostname: app2.example.com)
+    ALB->>ACM: Request certificate for app2.example.com
+    ACM-->>ALB: Return different certificate
+    ALB-->>Client: Server Hello with certificate
+    Client->>ALB: HTTPS Request
+    ALB->>Target2: Forward to different target group
+    Target2-->>ALB: Response
+    ALB-->>Client: Forward response
+```
+
 <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Implement the most restrictive security policy that meets your requirements
