@@ -19,18 +19,23 @@ AWS offers three types of Elastic Load Balancers (ELB) for distributing inbound 
 * Operates at Layer 7 (Application Layer)
 * Handles HTTP and HTTPS traffic
 * Cannot assign static IP addresses
-* Requires using FQDN as endpoints (can be aliased via Route 53)
+* Requires using FQDN (Fully Qualified Domain Names) as endpoints (can be aliased via Route 53). Instead of using IP addresses directly, you must use complete domain names for your targets Example: `server1.us-east-1.compute.internal` rather than `10.0.1.23` &#x20;
 * Supports Server Name Indication (SNI)
 
 #### Network Load Balancer (NLB)
 
 * Operates at Layer 4 (Transport Layer)
 * Handles TCP, UDP, and TLS traffic
-* Supports static IP address assignment
+* **Supports static IP address assignment.** This is particularly useful when you need:&#x20;
+  * Allowlisting/Whitelisting: External clients or services that need to allowlist specific IPs
+  * DNS Records: Creating A records that point directly to IP addresses
+  * Legacy Systems: Working with systems that can only connect to specific IP addresses
 * Optimized for speed and throughput
 * Excellent for TCP/UDP workloads
+* You can select multiple subnets (typically across different Availability Zones for high availability)
+* Each selected subnet will get an NLB endpoint with its own IP address
 
-#### Routing Capabilities
+### Routing Capabilities
 
 <figure><img src="../../../.gitbook/assets/image (8) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -88,9 +93,10 @@ Important for web applications that maintain session state:
 * Ensures clients return to the same backend server
 * Critical for applications using session IDs
 * Supports features like shopping carts and session parameters
-*
 
-    <figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+
+<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Best Practices
 
