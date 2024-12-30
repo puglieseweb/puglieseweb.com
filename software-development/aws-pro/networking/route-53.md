@@ -4,6 +4,49 @@
 
 Route 53 is AWS's DNS web service, named after the DNS port 53. It offers various routing policies to direct traffic based on different criteria and use cases.
 
+
+
+```mermaid
+graph TB
+    subgraph "example.com Zone"
+        SOA["SOA Record<br/>Primary Info:
+        - example.com
+        - admin@example.com
+        - Serial Number
+        - Refresh Time
+        - Retry Time
+        - Expire Time
+        - Minimum TTL"]
+        
+        NS1["NS Record<br/>ns1.example.com"]
+        NS2["NS Record<br/>ns2.example.com"]
+        
+        Primary["Primary Name Server<br/>ns1.example.com"]
+        Secondary["Secondary Name Server<br/>ns2.example.com"]
+    end
+    
+    Client["DNS Client"]
+    Resolver["DNS Resolver"]
+    
+    Client -->|"1. Query for example.com"| Resolver
+    Resolver -->|"2. Query NS records"| NS1
+    NS1 -->|"3. Returns SOA & zone data"| Resolver
+    
+    Primary -->|"4. Zone Transfer<br/>(AXFR/IXFR)"| Secondary
+    
+    SOA -.->|"Defines"| Primary
+    NS1 -.->|"Points to"| Primary
+    NS2 -.->|"Points to"| Secondary
+    
+    classDef server fill:#f9f,stroke:#333,stroke-width:2px
+    classDef record fill:#bbf,stroke:#333,stroke-width:2px
+    classDef client fill:#bfb,stroke:#333,stroke-width:2px
+    
+    class Primary,Secondary server
+    class SOA,NS1,NS2 record
+    class Client,Resolver client
+```
+
 ### Routing Policy Types
 
 ## AWS Route 53 Routing Policies Decision Matrix
