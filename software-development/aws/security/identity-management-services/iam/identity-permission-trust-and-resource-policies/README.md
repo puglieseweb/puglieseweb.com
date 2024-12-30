@@ -86,6 +86,8 @@ This policy would be attached directly to an IAM user or group and allows them t
 
 ### Role Policies
 
+<figure><img src="../../../../../../.gitbook/assets/image (141).png" alt=""><figcaption></figcaption></figure>
+
 IAM role must have two types of policies:
 
 1. **Trust Policy** (only one):
