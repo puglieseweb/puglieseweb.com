@@ -13,6 +13,8 @@ VPCs are equipped with an implicit router and a main routing table by default. K
 * Route selection follows the principle of "most specific route wins" for any given destination address
 * CIDR (Classless Inter-Domain Routing) blocks, which can be pronounced as either "cedar" or "cider," are fundamental to the routing structure
 
+
+
 #### Border Gateway Protocol (BGP)
 
 BGP serves as the primary routing protocol for internet connectivity in AWS environments. Notable features include:
@@ -36,6 +38,20 @@ BGP serves as the primary routing protocol for internet connectivity in AWS envi
 
 ### Route Table Implementation
 
+
+
+A destination in a routing table specifies which network or host the packet needs to reach. It can be:
+
+* A specific IP address for a single host (like 192.168.1.100)
+* A network address with subnet mask (like 192.168.1.0/24)
+* A default route (0.0.0.0/0) which matches all destinations not explicitly listed
+
+The target (sometimes called "gateway" or "next hop") indicates where to send the packet next to reach that destination. It can be:
+
+* A gateway IP address (the next router to forward the packet to)
+* A network interface name (like eth0 or wlan0) for directly connected networks
+* The keyword "local" for the device's own IP addresses
+
 The routing tables in AWS contain several standard elements as demonstrated in the example configurations:
 
 #### Example Route Table Entries:
@@ -48,7 +64,12 @@ Destination         Target
 pl-xxxxxxx         vpce-xxxxxxx
 ```
 
-using the above routing table the below IP are resolved as follows:
+where:
+
+1. `pl-xxxxxxx` (Destination): This is a prefix list ID that represents a set of CIDR blocks for AWS services. For example, it could be the CIDR ranges for Amazon S3 or DynamoDB. The prefix list is a way AWS groups IP ranges for their services.
+2. `vpce-xxxxxxx` (Target): This is a VPC Endpoint ID. It represents an endpoint that allows private communication with AWS services without going through the public internet. The 'vpce' prefix specifically identifies this as a VPC Endpoint.
+
+Using the above routing table the below IP are resolved as follows:
 
 ```
 10.0.45.34         local
@@ -59,6 +80,10 @@ using the above routing table the below IP are resolved as follows:
 ```
 
 These entries illustrate the hierarchical nature of AWS routing, where specific routes take precedence over more general ones, ensuring precise traffic control and optimal path selection.
+
+
+
+
 
 ### Best Practices
 
