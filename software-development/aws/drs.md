@@ -1,5 +1,11 @@
 # DRs
 
+Relevant Links:&#x20;
+
+* [How an insurance company implements disaster recovery of 3-tier applications](https://aws.amazon.com/blogs/architecture/how-an-insurance-company-implements-disaster-recovery-of-3-tier-applications/)
+
+DRs Stragegies:
+
 1. Backup & Restore
    * Uses: AWS Backup, S3, AMIs, EBS snapshots
    * RPO: Hours (depends on backup frequency)
