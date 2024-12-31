@@ -75,6 +75,7 @@
         * [SCP (Service Control Policy) implementation types](software-development/aws-pro/security/cloud-security/controlling-access-in-aws-organizations/scp-service-control-policy-implementation-types.md)
     * [Network Controls and Security Groups](software-development/aws-pro/security/network-controls-and-security-groups/README.md)
       * [Network Controls and Security Groups Overview](software-development/aws-pro/security/network-controls-and-security-groups/network-controls-and-security-groups-overview.md)
+      * [Firewalls](software-development/aws-pro/security/network-controls-and-security-groups/firewalls.md)
       * [AWS Directory Services](software-development/aws-pro/security/network-controls-and-security-groups/aws-directory-services.md)
       * [AWS Identity and Access Management (IAM) and Security Services](software-development/aws-pro/security/network-controls-and-security-groups/aws-identity-and-access-management-iam-and-security-services.md)
       * [AWS Resource Access Manager (RAM): Cross-Account Resource Sharing](software-development/aws-pro/security/network-controls-and-security-groups/aws-resource-access-manager-ram-cross-account-resource-sharing.md)
