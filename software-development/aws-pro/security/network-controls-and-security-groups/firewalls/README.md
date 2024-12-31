@@ -30,7 +30,7 @@ In AWS, there are several types of firewalls available to secure your infrastruc
      * Shield Advanced (paid, enhanced DDoS protection with 24/7 support)
 6. AWS Firewall Manager:
    * Centrally manages firewall rules across multiple accounts
-   * Can manage Security Groups, WAF rules, and Network Firewall policies
+   * Can manage Security Groups, NACLs, and Network Firewall policies, WAF rules
    * Particularly useful for organizations using AWS Organizations
 
 Each of these firewall types serves different security needs and can be used in combination to create a layered security approach, often referred to as defense in depth.
