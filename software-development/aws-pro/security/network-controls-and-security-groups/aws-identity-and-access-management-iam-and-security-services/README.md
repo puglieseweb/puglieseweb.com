@@ -1,8 +1,8 @@
 # AWS Identity and Access Management (IAM) and Security Services
 
-<figure><img src="../../../../.gitbook/assets/image (20) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (20) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### IAM Core Components
+## IAM Core Components
 
 IAM provides secure control over AWS resource access through several key components:
 
@@ -20,26 +20,29 @@ Policies are written in JSON format and consist of:
 * **Resources**: Specific AWS resources the policy applies to
 * **Effect**: Whether to Allow or Deny the specified actions
 
-### Security Token Service (STS)
+## Security Token Service (STS)
 
-STS is a critical service for temporary credential management:
+**STS provides temporary security credentials for trusted users.**&#x20;
 
 #### Key Features
 
-* Provides temporary security credentials for trusted users
-* Supports federation with external identity providers
+* Supports federation with external Identity Providers
 * Enables cross-account access
 * Credentials are short-lived, reducing security risks
 
-<figure><img src="../../../../.gitbook/assets/image (22) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (22) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Common STS Operations
 
-* AssumeRole: For cross-account access
-* AssumeRoleWithWebIdentity: For federation with web identity providers
-* AssumeRoleWithSAML: For SAML-based federation
+* **AssumeRole**: For cross-account access
+* **AssumeRoleWithWebIdentity**: For federation with web identity providers
+* **AssumeRoleWithSAML**: For SAML-based federation
 
 ### Federation Flow
+
+
+
+<figure><img src="../../../../../.gitbook/assets/image (23) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Application initiates request to identity broker
 2. Broker authenticates against Active Directory
@@ -48,15 +51,13 @@ STS is a critical service for temporary credential management:
 5. Token is provided to application
 6. Application uses token to access AWS services
 
-<figure><img src="../../../../.gitbook/assets/image (23) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (24) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (24) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (25) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (25) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## Amazon Cognito
 
-### Amazon Cognito
-
-Designed specifically for mobile applications with built-in security features:
+Designed specifically f**or mobile applications with built-in security features:**
 
 #### Key Features
 
@@ -65,9 +66,9 @@ Designed specifically for mobile applications with built-in security features:
 * Secure access to AWS resources
 * Built-in security token handling
 
-### Token Vending Machine (TVM)
+## Token Vending Machine (TVM)
 
-<figure><img src="../../../../.gitbook/assets/image (26) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (26) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Anonymous Mode
 
@@ -81,7 +82,7 @@ Designed specifically for mobile applications with built-in security features:
 * Maintains user account information
 * Enhanced security features
 
-### AWS Secrets Manager
+## AWS Secrets Manager
 
 #### Core Functionality
 
