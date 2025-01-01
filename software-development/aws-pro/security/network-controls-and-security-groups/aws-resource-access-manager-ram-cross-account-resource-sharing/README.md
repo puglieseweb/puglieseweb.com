@@ -2,16 +2,16 @@
 
 ### Overview
 
-AWS Resource Access Manager (RAM) is a **centralized service that enables secure resource sharing across multiple AWS accounts.** This document outlines the key concepts, implementation process, and best practices for using RAM effectively within your AWS organization.
+AWS Resource Access Manager (RAM) is a **centralized service that enables secure resource sharing across multiple AWS accounts.**
 
-<figure><img src="../../../../.gitbook/assets/image (30) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (30) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Core Concepts
 
 #### Resource Sharing
 
 * Resources can be shared across individual accounts or organizational units
-* Shared resources appear as native resources in recipient accounts
+* **Shared resources appear as native resources in recipient accounts**
 * Original sharing account maintains resource ownership
 * **Organization must explicitly enable resource sharing functionality**
 
@@ -24,7 +24,7 @@ AWS Resource Access Manager (RAM) is a **centralized service that enables secure
 
 ### Implementation Process
 
-<figure><img src="../../../../.gitbook/assets/image (27) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (27) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 1. Resource Selection
 
@@ -59,7 +59,7 @@ AWS Resource Access Manager (RAM) is a **centralized service that enables secure
 
 ### Common Use Cases
 
-<figure><img src="../../../../.gitbook/assets/image (28) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (28) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Network Infrastructure Sharing
 
@@ -91,7 +91,7 @@ AWS Resource Access Manager (RAM) is a **centralized service that enables secure
 
 ### Technical Considerations
 
-<figure><img src="../../../../.gitbook/assets/image (29) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (29) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Regional Limitations
 
@@ -127,6 +127,4 @@ For effective implementation testing:
 * Validate resource access
 * Confirm regional limitations
 * Document sharing procedures
-* Clean up test resources after validation
-
-This documentation provides a foundation for implementing AWS Resource Access Manager effectively within your organization while maintaining security and operational efficiency.
+* Clean up test resources after validation.
