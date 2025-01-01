@@ -1,5 +1,18 @@
 # AWS Identity and Access Management (IAM) and Security Services
 
+Key security services are:
+
+* IAM: AWS resource access control
+* STS: Temporary AWS credentials
+* Cognito: End-user authentication for applications
+
+#### Best Practices
+
+* Use fine-grained IAM policies to control access
+* Implement automatic rotation where possible
+* Monitor access through AWS CloudTrail
+* Regular audits of stored secrets
+
 <figure><img src="../../../../../.gitbook/assets/image (20) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## IAM Core Components
@@ -22,7 +35,7 @@ Policies are written in JSON format and consist of:
 
 ## Security Token Service (STS)
 
-**STS provides temporary security credentials for trusted users.**&#x20;
+AWS STS (Security Token Service) provides providers short-term AWS access temporary credentials for IAM users or federated users.
 
 #### Key Features
 
@@ -30,13 +43,13 @@ Policies are written in JSON format and consist of:
 * Enables cross-account access
 * Credentials are short-lived, reducing security risks
 
-<figure><img src="../../../../../.gitbook/assets/image (22) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 #### Common STS Operations
 
 * **AssumeRole**: For cross-account access
 * **AssumeRoleWithWebIdentity**: For federation with web identity providers
 * **AssumeRoleWithSAML**: For SAML-based federation
+
+<figure><img src="../../../../../.gitbook/assets/image (22) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Federation Flow
 
@@ -57,16 +70,22 @@ Policies are written in JSON format and consist of:
 
 ## Amazon Cognito
 
-Designed specifically f**or mobile applications with built-in security features:**
-
-#### Key Features
+Use Amazon Cognito when you need user authentication and authorization for web/mobile applications with these requirements:
 
 * User authentication and authorization
-* Integration with social identity providers
-* Secure access to AWS resources
-* Built-in security token handling
+* User management (sign-up, sign-in, password reset)
+* Social identity federation (login with Google, Facebook, etc.)
+* Security features like MFA and adaptive authentication
+* Easy integration with other AWS services
+* Scalable user directories that sync with enterprise identity providers
+* Support for OAuth 2.0 and OpenID Connect
+* Built-in compliance with regulations like GDPR
+
+It's particularly suitable for serverless applications and when you want to avoid building custom authentication systems. However, consider alternatives if you need highly customized authentication flows or have strict enterprise identity management requirements.
 
 ## Token Vending Machine (TVM)
+
+Cognito effectively serves as a modern replacement for the traditional TVM pattern.
 
 <figure><img src="../../../../../.gitbook/assets/image (26) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -102,10 +121,3 @@ Designed specifically f**or mobile applications with built-in security features:
 * Eliminates need for hardcoded credentials
 * Integration with application code
 * Centralized secret management
-
-#### Best Practices
-
-* Use fine-grained IAM policies to control access
-* Implement automatic rotation where possible
-* Monitor access through AWS CloudTrail
-* Regular audits of stored secrets
