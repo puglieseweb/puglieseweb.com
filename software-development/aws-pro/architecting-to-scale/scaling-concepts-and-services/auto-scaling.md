@@ -2,13 +2,13 @@
 
 ### Types of Auto Scaling Services
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption></figcaption></figure>
+There are three types of auto scaling services:&#x20;
 
-* WS Auto Scaling = Holistic scaling view + predictive scaling feature
-* EC2 Auto Scaling = Focused specifically on EC2 instance scaling
-* Application Auto Scaling = API for scaling other AWS services
+1. AWS Auto Scaling: Holistic scaling view + predictive scaling feature
+2. EC2 Auto Scaling: Focused specifically on EC2 instance scaling
+3. Application Auto Scaling: API for scaling non-EC2 AWS services
 
-#### 1. Amazon EC2 Auto Scaling
+### Amazon EC2 Auto Scaling
 
 * Longest-established auto scaling service
 * Focused exclusively on EC2 instances
@@ -17,16 +17,25 @@
 
 <figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### 2. Application Auto Scaling
+### Application Auto Scaling
 
-* API-based service for non-EC2 resources
-* Manages scaling for services like:
-  * DynamoDB
-  * ECS
-  * EMR
-* Consolidates various service-specific scaling capabilities into a single API
+API-based service for non-EC2 resources. Manages scaling for services like:
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+* DynamoDB
+* ECS
+* EMR
+
+Application Auto Scaling Consolidates various service-specific scaling capabilities into a single API.
+
+There are three Application Auto Scaling types:
+
+| Scaling                  | What                                                                                       | When                                                                                                |
+| ------------------------ | ------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| Target Tracking Policy   | Initiates scaling events to try to track as closely as possible a given **target metric.** | "I want my ECS hosts to stay at or below 70% CPU utilization."                                      |
+| Step Scaling Policy      | Based on a metric, adjusts capacity given certain **defined thresholds.**                  | "I want to increase my EC2 Spot Fleet by 20% every time I add another 10,000 connections on my ELB" |
+| Scheduled Scaling Policy | Initiates scaling events **based on a predefined time, day or date.**                      | "Every Monday at 0800, I want to increase the Read Capacity Units of my DynamoDB Table to 20,000"   |
+
+
 
 #### 3. AWS Auto Scaling
 

@@ -1,5 +1,7 @@
 # Scaling in the Cloud
 
+In today's rapidly evolving cloud computing landscape, the ability to scale applications efficiently while maintaining system resilience has become paramount. Two architectural patterns have emerged as fundamental building blocks for achieving these goals: loosely coupled architecture and event-driven architecture (EDA).
+
 ### Loosely Coupled Architecture
 
 Loosely coupled architecture is a design pattern where components work independently with minimal knowledge of other components' internal workings. This approach offers several key advantages:
