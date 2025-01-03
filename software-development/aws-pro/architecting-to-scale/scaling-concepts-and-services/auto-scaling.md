@@ -1,14 +1,14 @@
 # Auto-Scaling
 
-### Types of Auto Scaling Services
+## Types of Auto Scaling Services
 
 There are three types of auto scaling services:&#x20;
 
-1. AWS Auto Scaling: Holistic scaling view + predictive scaling feature
-2. EC2 Auto Scaling: Focused specifically on EC2 instance scaling
-3. Application Auto Scaling: API for scaling non-EC2 AWS services
+1. AWS Auto Scaling Service: Holistic scaling view + predictive scaling feature
+2. EC2 Auto Scaling Service: Focused specifically on EC2 instance scaling
+3. Application Auto Scaling Service: API for scaling non-EC2 AWS services
 
-### AWS Auto Scaling
+## AWS Auto Scaling Service
 
 * Provides holistic view of all auto scaling activities
 * Manages scaling across different application layers
@@ -19,7 +19,7 @@ There are three types of auto scaling services:&#x20;
 
 
 
-### Application Auto Scaling
+## Application Auto Scaling
 
 API-based service for non-EC2 resources. Manages scaling for services like:
 
@@ -37,81 +37,62 @@ There are three Application Auto Scaling types:
 | Step Scaling Policy      | Based on a metric, adjusts capacity given certain **defined thresholds.**                  | "I want to increase my EC2 Spot Fleet by 20% every time I add another 10,000 connections on my ELB" |
 | Scheduled Scaling Policy | Initiates scaling events **based on a predefined time, day or date.**                      | "Every Monday at 0800, I want to increase the Read Capacity Units of my DynamoDB Table to 20,000"   |
 
-### EC2 Auto Scaling
+## EC2 Auto Scaling Service
 
-EC2 Auto Scaling:
+### Core Components
 
-* The overall service that handles automatic scaling of EC2 resources
-* Provides the core scaling functionality and features
-* Includes all scaling policies, metrics, and configurations
+1. EC2 Auto Scaling Service
+   * Primary service for EC2 resource scaling
+   * Manages core scaling functionality
+   * Handles policies, metrics, configurations
+2. EC2 Auto Scaling Groups (ASG)
+   * Logical grouping of EC2 instances
+   * Implements scaling mechanisms
+   * Manages instance monitoring
+   * Controls min/max instances
+   * Applies policies and health checks
 
-EC2 Auto Scaling Groups:
+### Scaling Types
 
-* A collection of EC2 instances treated as a logical grouping
-* The actual implementation mechanism for auto scaling
-* Defines which instances to monitor and scale
-* Contains settings like minimum/maximum instance counts
-* Where you apply scaling policies and health checks
+#### 1. Dynamic Scaling
 
-#### EC2 Auto Scaling
+Responds to real-time demand through three policy types:
 
-* Longest-established auto scaling service
-* Focused exclusively on EC2 instances
-* Provides horizontal scaling (scaling out)
-* Uses health checks and metrics to manage instance count
-
-There are three EC2 Auto Scaling types:
-
-| Scaling                | What                                                                             | When                                                               |
+| Scaling Policies       | What                                                                             | When                                                               |
 | ---------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | Target Tracking Policy | Scale based on a predefined or custom metric in relation to a target value       | "When CPU utilization gets to 70% on current instances, scale up." |
 | Simple Scaling Policy  | Waits until health check and cool down period expires before evaluating new need | "Let's add new instances slow and steady."                         |
 | Step Scaling Policy    | Responds to scaling needs with more sophistication and logic                     | "AGG! Add ALL the instances!"                                      |
 
+#### 2. Predictive Scaling
 
+* Leverages machine learning algorithms
+* Analyzes historical data to forecast scaling needs
+* Offers automatic scaling and advisory insights
+* Optional data collection feature
 
-#### EC2 Auto Scaling Groups in Detail
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### Scaling Options
+#### 3. Scheduled Scaling
 
-1. **Maintain**
-   * Keeps consistent number of instances running
-2. **Manual**
-   * User-specified instance counts
-   * Configurable maximum and minimum limits
-3. **Schedule-based**
-   * Time-triggered scaling
-   * Useful for predictable load patterns
-4. **Dynamic**
-   * Metric-based scaling
-   * Responds to real-time demand
+* Time-based pattern scaling
+* Useful for known traffic patterns
 
-#### Configuration Components
+### Configuration Elements
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-1. **Launch Configuration**
-   * AMI specifications
-   * VPC settings
-   * Load balancer integration
-   * Network configurations
-2. **Health Check Grace Period**
-   * Allows time for instance initialization
-   * Prevents premature health check failures
+#### **Launch Configuration**
 
-#### Scaling Policies
+* AMI specifications
+* VPC settings
+* Load balancer integration
+* Network configurations
 
-Within the Dynamic autoscaling group we have different Scaling policies:
+#### **Health Check Grace Period**
 
-1. **Target Tracking**
-   * Maintains specific metric targets
-   * Example: 70% CPU utilization
-2. **Simple Scaling**
-   * Basic instance addition/removal
-   * Includes cooldown period
-3. **Step Scaling**
-   * Advanced scaling logic
-   * More sophisticated control
+* Allows time for instance initialization
+* Prevents premature health check failures
 
 #### Cooldown Periods
 
@@ -125,19 +106,16 @@ Within the Dynamic autoscaling group we have different Scaling policies:
 
 <figure><img src="../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Scaling Based on Amazon SQS
+#### Scaling Based on Amazon SQS
 
 <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-AWS Predictive Scaling:
+### Operating Modes
 
-* Uses machine learning algorithms
-* Analyzes historical data
-* Predicts scaling needs
-* Options for:
-  * Automatic scaling
-  * Advisory insights
-* Optional data collection (can opt out)
+1. Maintain - Fixed instance count
+2. Manual - User-controlled scaling
+3. Schedule-based - Time-triggered scaling
+4. Dynamic - Metric-based scaling
 
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
 
