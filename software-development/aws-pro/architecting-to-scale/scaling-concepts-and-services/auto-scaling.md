@@ -52,17 +52,17 @@ There are three Application Auto Scaling types:
    * Controls min/max instances
    * Applies policies and health checks
 
-### Scaling Types
+### ASG Scaling Types
 
 #### 1. Dynamic Scaling
 
 Responds to real-time demand through three policy types:
 
-| Scaling Policies       | What                                                                             | When                                                               |
-| ---------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| Target Tracking Policy | Scale based on a predefined or custom metric in relation to a target value       | "When CPU utilization gets to 70% on current instances, scale up." |
-| Simple Scaling Policy  | Waits until health check and cool down period expires before evaluating new need | "Let's add new instances slow and steady."                         |
-| Step Scaling Policy    | Responds to scaling needs with more sophistication and logic                     | "AGG! Add ALL the instances!"                                      |
+| Scaling Policies               | What                                                                             | When                                                               |
+| ------------------------------ | -------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Target Tracking Scaling Policy | Scale based on a predefined or custom metric in relation to a target value       | "When CPU utilization gets to 70% on current instances, scale up." |
+| Simple Scaling Policy          | Waits until health check and cool down period expires before evaluating new need | "Let's add new instances slow and steady."                         |
+| Step Scaling Policy            | Responds to scaling needs with more sophistication and logic                     | "AGG! Add ALL the instances!"                                      |
 
 #### 2. Predictive Scaling
 
@@ -77,6 +77,13 @@ Responds to real-time demand through three policy types:
 
 * Time-based pattern scaling
 * Useful for known traffic patterns
+
+### ASG Operating Modes
+
+1. Maintain - Fixed instance count
+2. Manual - User-controlled scaling
+3. Schedule-based - Time-triggered scaling
+4. Dynamic - Metric-based scaling
 
 ### Configuration Elements
 
@@ -109,13 +116,6 @@ Responds to real-time demand through three policy types:
 #### Scaling Based on Amazon SQS
 
 <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-### Operating Modes
-
-1. Maintain - Fixed instance count
-2. Manual - User-controlled scaling
-3. Schedule-based - Time-triggered scaling
-4. Dynamic - Metric-based scaling
 
 
 
