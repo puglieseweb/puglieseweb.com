@@ -101,7 +101,6 @@
       * [AWS Snow Family](software-development/aws-pro/migrations/migration-application/aws-snow-family.md)
   * [Architecting to scale](software-development/aws-pro/architecting-to-scale/README.md)
     * [Scaling Concepts and Services](software-development/aws-pro/architecting-to-scale/scaling-concepts-and-services/README.md)
-      * [Scaling in the Cloud](software-development/aws-pro/architecting-to-scale/scaling-concepts-and-services/scaling-in-the-cloud.md)
       * [Auto-Scaling](software-development/aws-pro/architecting-to-scale/scaling-concepts-and-services/auto-scaling.md)
       * [Compute Optimizer](software-development/aws-pro/architecting-to-scale/scaling-concepts-and-services/compute-optimizer.md)
       * [Kinesis](software-development/aws-pro/architecting-to-scale/scaling-concepts-and-services/kinesis.md)

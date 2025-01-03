@@ -8,14 +8,16 @@ There are three types of auto scaling services:&#x20;
 2. EC2 Auto Scaling: Focused specifically on EC2 instance scaling
 3. Application Auto Scaling: API for scaling non-EC2 AWS services
 
-### Amazon EC2 Auto Scaling
+### AWS Auto Scaling
 
-* Longest-established auto scaling service
-* Focused exclusively on EC2 instances
-* Provides horizontal scaling (scaling out)
-* Uses health checks and metrics to manage instance count
+* Provides holistic view of all auto scaling activities
+* Manages scaling across different application layers
+* Accessed through dedicated console
+* Offers business-oriented scaling strategies
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+
 
 ### Application Auto Scaling
 
@@ -35,30 +37,40 @@ There are three Application Auto Scaling types:
 | Step Scaling Policy      | Based on a metric, adjusts capacity given certain **defined thresholds.**                  | "I want to increase my EC2 Spot Fleet by 20% every time I add another 10,000 connections on my ELB" |
 | Scheduled Scaling Policy | Initiates scaling events **based on a predefined time, day or date.**                      | "Every Monday at 0800, I want to increase the Read Capacity Units of my DynamoDB Table to 20,000"   |
 
+### EC2 Auto Scaling
+
+EC2 Auto Scaling:
+
+* The overall service that handles automatic scaling of EC2 resources
+* Provides the core scaling functionality and features
+* Includes all scaling policies, metrics, and configurations
+
+EC2 Auto Scaling Groups:
+
+* A collection of EC2 instances treated as a logical grouping
+* The actual implementation mechanism for auto scaling
+* Defines which instances to monitor and scale
+* Contains settings like minimum/maximum instance counts
+* Where you apply scaling policies and health checks
+
+#### EC2 Auto Scaling
+
+* Longest-established auto scaling service
+* Focused exclusively on EC2 instances
+* Provides horizontal scaling (scaling out)
+* Uses health checks and metrics to manage instance count
+
+There are three EC2 Auto Scaling types:
+
+| Scaling                | What                                                                             | When                                                               |
+| ---------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| Target Tracking Policy | Scale based on a predefined or custom metric in relation to a target value       | "When CPU utilization gets to 70% on current instances, scale up." |
+| Simple Scaling Policy  | Waits until health check and cool down period expires before evaluating new need | "Let's add new instances slow and steady."                         |
+| Step Scaling Policy    | Responds to scaling needs with more sophistication and logic                     | "AGG! Add ALL the instances!"                                      |
 
 
-#### 3. AWS Auto Scaling
 
-* Provides holistic view of all auto scaling activities
-* Manages scaling across different application layers
-* Accessed through dedicated console
-* Offers business-oriented scaling strategies
-
-<figure><img src="../../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-AWS Predictive Scaling:
-
-* Uses machine learning algorithms
-* Analyzes historical data
-* Predicts scaling needs
-* Options for:
-  * Automatic scaling
-  * Advisory insights
-* Optional data collection (can opt out)
-
-<figure><img src="../../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-### EC2 Auto Scaling Groups in Detail
+#### EC2 Auto Scaling Groups in Detail
 
 #### Scaling Options
 
@@ -117,5 +129,15 @@ Within the Dynamic autoscaling group we have different Scaling policies:
 
 <figure><img src="../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+AWS Predictive Scaling:
 
+* Uses machine learning algorithms
+* Analyzes historical data
+* Predicts scaling needs
+* Options for:
+  * Automatic scaling
+  * Advisory insights
+* Optional data collection (can opt out)
+
+<figure><img src="../../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
