@@ -1,7 +1,5 @@
 # Auto-Scaling
 
-## Types of Auto Scaling Services
-
 There are three types of auto scaling services:&#x20;
 
 1. AWS Auto Scaling Service: Holistic scaling view + predictive scaling feature
@@ -16,8 +14,6 @@ There are three types of auto scaling services:&#x20;
 * Offers business-oriented scaling strategies
 
 <figure><img src="../../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
 
 ## Application Auto Scaling
 
@@ -80,10 +76,28 @@ Responds to real-time demand through three policy types:
 
 ### ASG Operating Modes
 
-1. Maintain - Fixed instance count
-2. Manual - User-controlled scaling
-3. Schedule-based - Time-triggered scaling
-4. Dynamic - Metric-based scaling
+1. **Maintain Mode**
+   * Keeps a fixed instance count
+   * No scaling types involved
+   * Simply maintains desired capacity
+2. **Manual Mode**
+   * User-controlled scaling
+   * No automatic scaling types
+   * Changes made through manual intervention
+3. **Schedule-based Mode**
+   * Uses Scheduled Scaling
+   * Time-based pattern scaling
+   * Useful for known traffic patterns
+4. **Dynamic Mode**
+   * Uses both Dynamic and Predictive Scaling
+   * Dynamic Scaling Options:
+     * Target Tracking Policy
+     * Simple Scaling Policy
+     * Step Scaling Policy
+   * Predictive Scaling Features:
+     * ML-based forecasting
+     * Historical data analysis
+     * Optional data collection
 
 ### Configuration Elements
 
