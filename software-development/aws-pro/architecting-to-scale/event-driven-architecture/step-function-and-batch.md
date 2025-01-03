@@ -6,6 +6,8 @@
 
 AWS Step Functions is a managed workflow and orchestration platform designed for coordinating AWS components. It provides a scalable and highly available solution for managing complex workflows.
 
+**Best suited for human-enabled workflows like order fulfilment or procedural requests.**
+
 <figure><img src="../../../../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
