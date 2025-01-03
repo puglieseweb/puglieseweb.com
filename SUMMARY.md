@@ -108,7 +108,6 @@
       * [DynamoDB Scaling](software-development/aws-pro/architecting-to-scale/scaling-concepts-and-services/dynamodb-scaling.md)
       * [CloudFront Part Duex](software-development/aws-pro/architecting-to-scale/scaling-concepts-and-services/cloudfront-part-duex.md)
     * [Event-Driven Architecture](software-development/aws-pro/architecting-to-scale/event-driven-architecture/README.md)
-      * [Introduction to Event-Driven Architecture](software-development/aws-pro/architecting-to-scale/event-driven-architecture/introduction-to-event-driven-architecture.md)
       * [SNS and Fan-out Architecture](software-development/aws-pro/architecting-to-scale/event-driven-architecture/sns-and-fan-out-architecture.md)
       * [AWS Messaging Services: SQS and Amazon MQ](software-development/aws-pro/architecting-to-scale/event-driven-architecture/aws-messaging-services-sqs-and-amazon-mq.md)
       * [Lab: Scaling EC2 Using SQS](software-development/aws-pro/architecting-to-scale/event-driven-architecture/lab-scaling-ec2-using-sqs.md)
