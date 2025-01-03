@@ -104,7 +104,6 @@
       * [Auto-Scaling](software-development/aws-pro/architecting-to-scale/scaling-concepts-and-services/auto-scaling.md)
       * [Compute Optimizer](software-development/aws-pro/architecting-to-scale/scaling-concepts-and-services/compute-optimizer.md)
       * [Kinesis](software-development/aws-pro/architecting-to-scale/scaling-concepts-and-services/kinesis.md)
-      * [Dynamo DB Scaling](software-development/aws-pro/architecting-to-scale/scaling-concepts-and-services/dynamo-db-scaling.md)
       * [DynamoDB Scaling](software-development/aws-pro/architecting-to-scale/scaling-concepts-and-services/dynamodb-scaling.md)
       * [CloudFront Part Duex](software-development/aws-pro/architecting-to-scale/scaling-concepts-and-services/cloudfront-part-duex/README.md)
         * [CloudFront's Behavior](software-development/aws-pro/architecting-to-scale/scaling-concepts-and-services/cloudfront-part-duex/cloudfronts-behavior.md)

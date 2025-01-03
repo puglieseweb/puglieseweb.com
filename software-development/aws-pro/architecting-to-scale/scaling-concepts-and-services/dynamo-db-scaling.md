@@ -1,2 +1,0 @@
-# Dynamo DB Scaling
-
