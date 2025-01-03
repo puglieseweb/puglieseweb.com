@@ -10,12 +10,11 @@ Event-driven architecture (EDA) is an architectural pattern that enables the int
 
 ### Understanding Events
 
-An event represents:
+An event represents a significant occurrence or fact that has happened at a specific moment in time within a system. Specifically, it is:
 
-* A change in state
-* An update signaled by an event producer
-* Information that is routed, filtered, and pushed to event consumers
-* Data that event consumers use to update state and implement backend changes
+* **A record of something that has occurred in the past** - it is immutable and represents a fact that cannot be changed.
+* **A notification that captures what changed in the system,** including relevant details about what happened, when it happened, and any associated data.
+* A message that interested parties (event consumers) can use to **react to the change, make decisions, update their own state, trigger workflows, or maintain data consistency across distributed systems.**
 
 <figure><img src="../../../../.gitbook/assets/image (31) (1) (1).png" alt=""><figcaption></figcaption></figure>
 

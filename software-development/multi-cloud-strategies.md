@@ -1,5 +1,9 @@
 # Multi-cloud strategies
 
+Cloud providers marched share a April 2024:
+
+<figure><img src="../.gitbook/assets/image (143).png" alt=""><figcaption></figcaption></figure>
+
 Let me outline the key AWS services that enable multi-cloud strategies and explain how they work together.
 
 1. AWS Control Tower & AWS Organizations
