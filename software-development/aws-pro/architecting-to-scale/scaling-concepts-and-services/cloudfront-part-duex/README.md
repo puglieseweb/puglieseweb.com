@@ -8,8 +8,6 @@ CloudFront enhances content delivery performance through edge location caching, 
 
 
 
-<figure><img src="../../../../../.gitbook/assets/image (30) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 1. Dynamic Content
    * Leverages **HTTP cookies forwarded from origin sites**
    * Enables personalized content delivery
@@ -38,6 +36,8 @@ Example WordPress Configuration:
 * Route 53 → CloudFront Distribution
 * Static content → S3 bucket
 * Dynamic content → Load balancer with EC2 fleet
+
+<figure><img src="../../../../../.gitbook/assets/image (30) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Cache Management
 
