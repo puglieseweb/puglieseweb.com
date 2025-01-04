@@ -26,6 +26,24 @@ DynamoDB scaling operates across two primary dimensions:
 
 <figure><img src="../../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+DynamoDB capacity is measured in two units:
+
+1. Read Capacity Units (RCU)
+2. Write Capacity Units (WCU)
+
+Read Capacity Units (RCU):
+
+* 1 RCU = 1 strongly consistent read per second for items up to 4KB
+* 1 RCU = 2 eventually consistent reads per second for items up to 4KB
+* For items larger than 4KB, additional RCUs are needed (rounded up)
+
+Write Capacity Units (WCU):
+
+* 1 WCU = 1 write per second for items up to 1KB
+* For items larger than 1KB, additional WCUs are needed (rounded up)
+
+
+
 The total number of partitions is determined by the maximum of:
 
 1. Capacity-based calculation: (Total Read Capacity Units + Total Write Capacity Units) / 3000
@@ -58,9 +76,8 @@ Example:
 
 #### Avoiding Hot Partitions
 
-Poor Design Example:
+Poor Design Example is using date as partition key for sensor data:
 
-* Using date as partition key for sensor data
 * Problem: Concentrates writes on single partition for current date
 * Result: Underutilized capacity on other partitions
 
@@ -82,6 +99,26 @@ Optimized Design:
 
 #### Auto Scaling
 
+This diagram below illustrates an AWS architecture for DynamoDB auto-scaling notification workflow. Let me break down the numbered components and their interactions:
+
+1. A user or application initiates an interaction with the DynamoDB table (shown by arrow 1)
+2. There's a direct connection from the DynamoDB table to Amazon CloudWatch (shown by arrow 2)
+3. CloudWatch communicates with Amazon SNS (Simple Notification Service) (shown by arrow 3)
+4. CloudWatch triggers the Application Auto Scaling service (shown by arrow 4)
+5. The Application Auto Scaling service sends an UpdateTable command to the DynamoDB table (shown by arrow 5)
+6. The DynamoDB table is updated with new capacity settings (shown by arrow 6)
+
+The workflow demonstrates how AWS automatically handles scaling for DynamoDB:
+
+* CloudWatch monitors the DynamoDB table's metrics
+* When thresholds are reached, it triggers notifications through SNS
+* The Auto Scaling service adjusts the table's capacity accordingly
+* Changes are applied back to the DynamoDB table
+
+This is a common pattern for implementing automatic scaling of DynamoDB resources based on actual usage patterns, helping to maintain performance while optimizing costs.
+
+The warning symbol (⚠️) next to CloudWatch suggests that this component is responsible for monitoring and alerting on any issues or threshold breaches.
+
 <figure><img src="../../../../.gitbook/assets/image (28) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Configuration:
@@ -100,13 +137,14 @@ Optimized Design:
 
 #### On-Demand Scaling
 
+Best for unpredictable workloads or new applications with unclear requirements.
+
 * Alternative to traditional auto scaling
 * Advantages:
   * No advance capacity provisioning
   * Immediate scaling response
 * Disadvantages:
   * Higher cost premium
-  * Best for unpredictable workloads or new applications
 
 ### DynamoDB Accelerator (DAX)
 
