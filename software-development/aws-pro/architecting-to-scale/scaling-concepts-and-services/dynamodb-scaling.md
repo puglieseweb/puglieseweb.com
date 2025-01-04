@@ -13,18 +13,12 @@ DynamoDB scaling operates across two primary dimensions:
 
 #### Partition Fundamentals
 
-* Each partition is a 10GB physical storage unit
+* **Each partition is a 10GB** physical storage unit
 * Records are organized using two key types:
   * Partition Key (Hash Key): Primary identifier for record distribution
   * Sort Key (Range Key): Optional secondary key for record organization
 
 <figure><img src="../../../../.gitbook/assets/image (21) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
-
-#### Partition Calculation Formula
-
-<figure><img src="../../../../.gitbook/assets/image (22) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 DynamoDB capacity is measured in two units:
 
@@ -42,23 +36,44 @@ Write Capacity Units (WCU):
 * 1 WCU = 1 write per second for items up to 1KB
 * For items larger than 1KB, additional WCUs are needed (rounded up)
 
+## DynamoDB Partition Calculations
 
+| Calculation Type | Formula                                    |
+| ---------------- | ------------------------------------------ |
+| By Capacity      | (Total RCU / 3000) + (Total WCU / 1000)    |
+| By Size          | Total Size / 10 GB                         |
+| Total Partitions | Round Up for the MAX(By Capacity, By Size) |
 
-The total number of partitions is determined by the maximum of:
+Example calculation:
 
-1. Capacity-based calculation: (Total Read Capacity Units + Total Write Capacity Units) / 3000
-2. Size-based calculation: Total Size / 10GB
+*   Given 6000 RCU and 2000 WCU:
 
-Example:
+    ```
+    By Capacity = (6000/3000) + (2000/1000)
+                = 2 + 2
+                = 4 partitions
+    ```
+*   Given 45GB data:
 
-* Table Size: 10GB
-* Read Capacity: 2000 units
-* Write Capacity: 2000 units
-* Capacity Calculation:  2000/3000 + 2000 / 1000 = 2.66
-* Size Calculation: 10GB / 10GB = 1
-* Final Partition Count: 3 (rounded up from 2.66)
+    ```
+    By Size = 45GB/10GB
+            = 4.5
+    ```
+*   Final partition count:
 
-<figure><img src="../../../../.gitbook/assets/image (23) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    ```
+    Total = ceiling(MAX(4, 4.5))
+          = 5 partitionsDynamoDB capacity is measured in two units:
+    Read Capacity Units (RCU)
+    Write Capacity Units (WCU)
+    Read Capacity Units (RCU):
+    1 RCU = 1 strongly consistent read per second for items up to 4KB
+    1 RCU = 2 eventually consistent reads per second for items up to 4KB
+    For items larger than 4KB, additional RCUs are needed (rounded up)
+    Write Capacity Units (WCU):
+    1 WCU = 1 write per second for items up to 1KB
+    For items larger than 1KB, additional WCUs are needed (rounded up)
+    ```
 
 ### Data Distribution and Hot Partition Prevention
 
@@ -97,7 +112,34 @@ Optimized Design:
 
 ### Scaling Methods
 
+DynamoDB offers three scaling modes for managing table capacity:
+
+#### **1. Provisioned Mode (Default)**
+
+Provision Mode is best for predictable workloads.
+
+* You specify Read and Write Capacity Units (RCUs/WCUs)
+* More cost-effective when traffic patterns are consistent
+* Allows capacity reservations for cost optimization
+
+Can enable Auto Scaling to automatically adjust capacity
+
+#### **2. Auto Scaling (for Provisioned Mode)**
+
+* Automatically adjusts provisioned capacity
+* Set target utilization percentage
+* Define minimum and maximum capacity limits
+* Uses Amazon Application Auto Scaling
+* Works by:
+  * Monitoring CloudWatch metrics
+  * Triggering scaling actions when thresholds are reached
+  * Gradually adjusting capacity within defined bounds
+
+Note: You can switch between Provisioned and On-Demand modes once per 24 hours. Auto Scaling is a feature of Provisioned mode and can't be used with On-Demand mode.
+
 #### Auto Scaling
+
+<figure><img src="../../../../.gitbook/assets/image (28) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 This diagram below illustrates an AWS architecture for DynamoDB auto-scaling notification workflow. Let me break down the numbered components and their interactions:
 
@@ -119,8 +161,6 @@ This is a common pattern for implementing automatic scaling of DynamoDB resource
 
 The warning symbol (⚠️) next to CloudWatch suggests that this component is responsible for monitoring and alerting on any issues or threshold breaches.
 
-<figure><img src="../../../../.gitbook/assets/image (28) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 1. Configuration:
    * Set provisioned capacity limits
    * Define target utilization
@@ -135,9 +175,7 @@ The warning symbol (⚠️) next to CloudWatch suggests that this component is r
    * Supports global secondary indexes
    * Uses target tracking for utilization
 
-#### On-Demand Scaling
-
-Best for unpredictable workloads or new applications with unclear requirements.
+#### **3. On-Demand Mode**
 
 * Alternative to traditional auto scaling
 * Advantages:
@@ -145,6 +183,14 @@ Best for unpredictable workloads or new applications with unclear requirements.
   * Immediate scaling response
 * Disadvantages:
   * Higher cost premium
+* Automatically scales up/down based on actual traffic
+* No need to specify RCUs or WCUs
+* Pay-per-request pricing
+* Best for:
+  * Unpredictable workloads
+  * New applications with unknown patterns
+  * Applications with significant traffic variations
+* More expensive than well-optimized provisioned capacity
 
 ### DynamoDB Accelerator (DAX)
 
