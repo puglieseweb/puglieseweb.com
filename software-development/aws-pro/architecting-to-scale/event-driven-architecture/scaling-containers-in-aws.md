@@ -2,53 +2,51 @@
 
 Control and Complexity
 
-<figure><img src="../../../../.gitbook/assets/image (128).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../../../../.gitbook/assets/image (135).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (129).png" alt=""><figcaption></figcaption></figure>
 
-
-
-<figure><img src="../../../../.gitbook/assets/image (131).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
 
 ### Control and Complexity Spectrum
+
+<figure><img src="../../../../.gitbook/assets/image (128).png" alt=""><figcaption></figcaption></figure>
 
 AWS offers a range of container scaling solutions that balance control and operational complexity:
 
 #### High Control, High Complexity
 
-* EKS on container instances
+EKS on container instances:
+
 * Full Kubernetes platform access
 * Requires significant configuration
 * Maximum flexibility and control
 
 #### Moderate Control, Moderate Complexity
 
-* ECS on container instances
+ECS on container instances:
+
 * AWS-opinionated container management
 * Simplified AWS service integration
 * Balance of control and convenience
 
 #### Lower Control, Low Complexity
 
-* Fargate
+Fargate:
+
 * Managed container compute service
 * Automated infrastructure management
 * Reduced operational overhead
 
 #### Minimal Control, Minimal Complexity
 
-* App Runner
-* Highly automated HTTP application hosting
+App Runner:
+
+* **Highly automated HTTP application hosting**
 * Maximum simplicity
 * Limited use cases
 
 ### Service Comparisons
+
+<figure><img src="../../../../.gitbook/assets/image (129).png" alt=""><figcaption></figcaption></figure>
 
 #### EKS (Elastic Kubernetes Service)
 
@@ -84,6 +82,8 @@ AWS offers a range of container scaling solutions that balance control and opera
 * AWS Wavelength (5G edge compute) support
 
 ### Fargate Deep Dive
+
+<figure><img src="../../../../.gitbook/assets/image (131).png" alt=""><figcaption></figcaption></figure>
 
 #### Key Features
 
@@ -124,6 +124,8 @@ AWS offers a range of container scaling solutions that balance control and opera
 
 ### App Runner
 
+<figure><img src="../../../../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
+
 #### Key Features
 
 * Designed for HTTP applications
@@ -146,6 +148,8 @@ AWS offers a range of container scaling solutions that balance control and opera
 * Best for simple web applications
 
 ### AWS Batch
+
+<figure><img src="../../../../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
 
 #### Core Capabilities
 

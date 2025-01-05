@@ -31,15 +31,15 @@ Amazon SQS is a highly scalable, hosted messaging queue service that provides se
 
 #### Example Architecture
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-Consider an ERP system generating master data updates:
+Consider an ERP (Enterprise Resource Planning) system generating master data updates:
 
 1. ERP system generates messages
 2. Messages land in SQS queue
 3. EC2 worker instances process messages (transformation/augmentation)
 4. Processed data updates DynamoDB
-5. System can scale horizontally by adding more workers for burst processing
+5. **System can scale horizontally by adding more workers for burst processing**
+
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Message Processing Example
 
@@ -66,7 +66,7 @@ Amazon MQ is AWS's managed implementation of Apache ActiveMQ, offering a differe
   * WebSockets
   * MQTT (for IoT implementations)
 
-#### Use Case Comparison
+### Use Case Comparison
 
 When to choose each service:
 
