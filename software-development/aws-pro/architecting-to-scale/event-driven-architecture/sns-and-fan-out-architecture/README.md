@@ -4,11 +4,13 @@
 
 Amazon SNS is a simple yet powerful service that enables publish/subscribe (Pub/Sub) design patterns in cloud architecture. At its core, SNS facilitates message delivery from publishers to subscribers through topics.
 
+This architecture is particularly valuable **when you need multiple processes to react to the same event independently and concurrently**.
+
 #### Core Components
 
 **Topics**
 
-A topic serves as a communication channel for publishing notifications. Think of it as an outbox where messages are initially sent before being distributed to various endpoints.
+A topic serves as a communication channel for publishing notifications.&#x20;
 
 **Subscriptions**
 
@@ -27,7 +29,7 @@ One of the most powerful design patterns enabled by SNS is the fan-out architect
 
 #### Example: Image Upload Processing
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -48,4 +50,3 @@ The fan-out architecture pattern through SNS offers several advantages:
 * Provides flexibility in adding or removing processing steps
 * Improves system scalability and maintainability
 
-This architecture is particularly valuable when you need multiple processes to react to the same event independently and concurrently.

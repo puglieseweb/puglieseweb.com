@@ -43,17 +43,34 @@ Example WordPress Configuration:
 
 #### Cache Invalidation Methods
 
-1. Origin File Deletion
-   * Remove file from origin
-   * Wait for TTL (Time To Live) expiration
-   * TTL is configurable per distribution
-2. AWS Console Options
-   * Full content invalidation
-   * Path-specific invalidation
-3. Additional Invalidation Methods
-   * CloudFront API requests
-   * Third-party tools
-   * Programmatic invalidation
+When you need to remove content from CloudFront's edge caches before it expires, you have several options for cache invalidation:
+
+1. Version or Path Management
+   * Instead of invalidating objects, create a new path for updated content (recommended approach)
+   * Use object versioning in the URL (e.g., /images/product-v2.jpg)
+   * Most cost-effective and efficient method as it avoids invalidation fees
+2. Origin File Management
+   * Removing files from the origin alone doesn't invalidate the CloudFront cache
+   * Objects remain in edge caches until their TTL expires
+   * TTL values are defined in cache behaviors at the distribution level
+   * Can be configured using Cache-Control and Expires headers
+3. CloudFront Console Options
+   * Create invalidations for specific paths using wildcards (e.g., /images/\*)
+   * Perform full distribution invalidation (not recommended for production)
+   * Monitor invalidation status and history
+   * First 1,000 paths invalidated per month are free
+4. Programmatic Invalidation
+   * Use AWS SDK or AWS CLI to automate invalidations
+   * Integrate with deployment pipelines using CreateInvalidation API
+   * Monitor invalidation progress using GetInvalidation API
+   * Implement rate limiting to avoid API throttling
+
+Key Considerations:
+
+* Invalidations propagate to all edge locations, which can take several minutes
+* Each invalidation path counts toward your monthly quota
+* Using versioning or path-based updates is more efficient than invalidation
+* Wildcards (\*) count as one path but can match multiple objects
 
 ### DNS and Domain Configuration
 
