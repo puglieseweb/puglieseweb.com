@@ -1,5 +1,25 @@
 # Elastic Beanstalk and App Runner
 
+Elastic Beanstalk:
+
+* Has built-in environment management (Dev, Staging, Prod)
+* Allows cloning environments easily
+* Provides environment-specific configurations
+* Manages environment variables per environment
+* Enables easy rollback between environments
+* Includes environment URLs with unique DNS names
+
+App Runner:
+
+* Uses separate services instead of environments
+* Each service has its own configuration
+* Environment management must be handled manually
+* Requires manual service creation for each environment
+* Uses tags to differentiate environments
+* Each service gets its own URL
+
+
+
 AWS Elastic Beanstalk and App Runner can work together as part of a larger application architecture. Let me explain how:
 
 Integration Scenarios:
