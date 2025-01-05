@@ -1,7 +1,5 @@
 # AWS Database High Availability Options
 
-<figure><img src="../../../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../../../.gitbook/assets/image (49) (1).png" alt=""><figcaption></figcaption></figure>
 
 ###
@@ -9,6 +7,8 @@
 ### Operational Efficiency Spectrum
 
 
+
+<figure><img src="../../../.gitbook/assets/image (33) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### High Operational Efficiency (Less Control)
 
