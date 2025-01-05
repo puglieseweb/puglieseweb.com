@@ -1,7 +1,5 @@
 # EBS Volumes
 
-## AWS Storage Options for High Availability: A Comprehensive Guide
-
 ### Amazon EBS (Elastic Block Store)
 
 #### Key Characteristics
@@ -16,9 +14,11 @@
 
 <figure><img src="../../../.gitbook/assets/image (27) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
-
 **RAID 0 (Striping)**
+
+In a RAID 0 configuration, the data is sharded (striped) across multiple volumes. This means that consecutive blocks of data are written alternately to different drives/volumes in the array.
+
+
 
 * No redundancy
 * Data distributed across multiple drives
@@ -30,6 +30,8 @@
   * When performance is priority over redundancy
 
 **RAID 1 (Mirroring)**
+
+In RAID 1 (mirroring), the data is not sharded but rather fully duplicated across volumes. Each write operation is performed on all volumes in the array, creating exact copies.
 
 * Full redundancy with duplicate copies
 * Characteristics:
@@ -56,6 +58,10 @@
 * Not recommended for same reasons as RAID 5
 
 #### EBS Performance Examples
+
+
+
+<figure><img src="../../../.gitbook/assets/image (28) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Single Volume Configuration**
    * 1 TB volume
