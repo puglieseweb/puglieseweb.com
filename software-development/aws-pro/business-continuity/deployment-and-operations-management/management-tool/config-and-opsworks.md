@@ -70,7 +70,7 @@ graph TD
 1. Stacks
    * Collections of resources supporting services or applications
    * Can be cloned within the same region
-   * Region-specific deployment and management
+   * **Region-specific deployment and managemen**t
 2. Layers
    * Represent components of delivery hierarchy
    * Examples include:
