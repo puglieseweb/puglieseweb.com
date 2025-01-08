@@ -33,11 +33,11 @@ AWS PrivateLink can connect to multiple types of endpoints:
 * AWS Marketplace services and solutions
 * Custom endpoint services within your AWS environment
 
-<figure><img src="../../../../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
 
 ### Common Use Cases
 
-<figure><img src="../../../../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
 
 #### AWS Marketplace Solutions
 
