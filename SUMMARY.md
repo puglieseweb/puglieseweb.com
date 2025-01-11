@@ -109,6 +109,8 @@
     * [Lab: Troubleshooting VPC Networking](software-development/aws-pro/networking/lab-troubleshooting-vpc-networking.md)
   * [Security](software-development/aws-pro/security/README.md)
     * [Cloud Security](software-development/aws-pro/security/cloud-security/README.md)
+      * [IAM](software-development/aws-pro/security/cloud-security/iam/README.md)
+        * [SCIM](software-development/aws-pro/security/cloud-security/iam/scim.md)
       * [Core Concepts of AWS Cloud Security](software-development/aws-pro/security/cloud-security/core-concepts-of-aws-cloud-security/README.md)
         * [OAuth VS OpenID Connect](software-development/aws-pro/security/cloud-security/core-concepts-of-aws-cloud-security/oauth-vs-openid-connect.md)
       * [Understanding User Access Security in AWS Organizations](software-development/aws-pro/security/cloud-security/understanding-user-access-security-in-aws-organizations.md)
