@@ -28,7 +28,7 @@
     * [CICD for Lambda](software-development/aws-pro/implementation-guides/cicd-for-lambda.md)
     * [AWS IAM Identity Center Integration with Active Directory](software-development/aws-pro/implementation-guides/aws-iam-identity-center-integration-with-active-directory.md)
     * [AWS Transit Gateway Multi-Account Implementation Guide](software-development/aws-pro/implementation-guides/aws-transit-gateway-multi-account-implementation-guide/README.md)
-      * [Better Option](software-development/aws-pro/implementation-guides/aws-transit-gateway-multi-account-implementation-guide/better-option.md)
+      * [AWS Multi-Account Network Architecture with Infrastructure Account](software-development/aws-pro/implementation-guides/aws-transit-gateway-multi-account-implementation-guide/aws-multi-account-network-architecture-with-infrastructure-account.md)
   * [Links](software-development/aws-pro/links.md)
   * [Cloud Adoption Framework](software-development/aws-pro/cloud-adoption-framework.md)
   * [Data Stores](software-development/aws-pro/data-stores/README.md)
