@@ -10,6 +10,7 @@
   * [Vaultless Tokenization](software-development/cloud-data-security-principles/vaultless-tokenization.md)
 * [Multi-cloud strategies](software-development/multi-cloud-strategies.md)
 * [AWS Pro](software-development/aws-pro/README.md)
+  * [My notes](software-development/aws-pro/my-notes.md)
   * [Implementation Guides](software-development/aws-pro/implementation-guides/README.md)
     * [Understanding Cross-Account IAM Roles in AWS](software-development/aws-pro/implementation-guides/understanding-cross-account-iam-roles-in-aws.md)
     * [HA TCP with Redundant DNS](software-development/aws-pro/implementation-guides/ha-tcp-with-redundant-dns.md)
