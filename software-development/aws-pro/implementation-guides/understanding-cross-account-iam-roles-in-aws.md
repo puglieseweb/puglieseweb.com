@@ -11,7 +11,7 @@ A cross-account IAM role is a mechanism in AWS that enables you to grant access 
 The trust policy is a JSON document attached to the role that defines which entities (AWS accounts, services, or users) can assume the role. For example:
 
 ```json
-jsonCopy{
+{
     "Version": "2012-10-17",
     "Statement": [{
         "Effect": "Allow",
@@ -29,7 +29,7 @@ jsonCopy{
 The permission policy defines what actions the role can perform on which resources. This policy determines the actual permissions granted to users who successfully assume the role:
 
 ```json
-jsonCopy{
+{
     "Version": "2012-10-17",
     "Statement": [{
         "Effect": "Allow",
@@ -89,7 +89,7 @@ jsonCopy{
 Here's how to set up a cross-account role using AWS CLI:
 
 ```bash
-bashCopy# Create the role in the trusting account
+# Create the role in the trusting account
 aws iam create-role \
     --role-name CrossAccountRole \
     --assume-role-policy-document file://trust-policy.json
