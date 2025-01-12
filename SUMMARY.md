@@ -11,6 +11,7 @@
 * [Multi-cloud strategies](software-development/multi-cloud-strategies.md)
 * [AWS Pro](software-development/aws-pro/README.md)
   * [Implementation Guides](software-development/aws-pro/implementation-guides/README.md)
+    * [Understanding Cross-Account IAM Roles in AWS](software-development/aws-pro/implementation-guides/understanding-cross-account-iam-roles-in-aws.md)
     * [HA TCP with Redundant DNS](software-development/aws-pro/implementation-guides/ha-tcp-with-redundant-dns.md)
     * [Understanding 429 (Too Many Requests) & Throttling Pattern](software-development/aws-pro/implementation-guides/understanding-429-too-many-requests-and-throttling-pattern.md)
     * [EC2 Auto Scaling Log Collection Solutions Comparison](software-development/aws-pro/implementation-guides/ec2-auto-scaling-log-collection-solutions-comparison.md)
