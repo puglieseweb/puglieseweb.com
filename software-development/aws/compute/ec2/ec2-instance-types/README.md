@@ -2,25 +2,49 @@
 
 EC2 offers a wide variety of instance types optimized for different use cases. Each instance type is grouped into an instance family and provides different combinations of CPU, memory, storage, and networking capacity.
 
-#### Instance Families:
+#### Instance Families
 
-1. General Purpose (T, M, A)
-   * Balanced compute, memory, and networking resources
-   * Use cases: Web servers, small databases
-2. Compute Optimized (C)
-   * High-performance processors
-   * Use cases: Batch processing, scientific modeling, gaming servers
-3. Memory Optimized (R, X, Z)
-   * Fast performance for workloads that process large datasets in memory
-   * Use cases: High-performance databases, distributed memory caches
-4. Storage Optimized (I, D, H)
-   * High, sequential read/write access to large datasets on local storage
-   * Use cases: Data warehousing, distributed file systems
-5. Accelerated Computing (P, G, F)
-   * Hardware accelerators or co-processors
-   * Use cases: Machine learning, graphics processing, video encoding
+1. General Purpose (T and M series)
+   * T instances (T3, T3a, T2) are burstable performance instances
+   * Uses CPU credits for burst capacity
+   * M instances (M6i, M5, M4) provide balanced compute, memory, and networking
+   * Best for web servers, development environments, and small databases
+2. Compute Optimized (C series)
+   * C6i, C5, C4 instances
+   * High performance processors
+   * Ideal for batch processing, media transcoding, high-performance web servers
+   * Best price-to-compute performance in EC2
+3. Memory Optimized (R, X, z series)
+   * R6i, R5, R4 instances: Standard memory optimized
+   * X2, X1e, X1: For high-memory workloads
+   * z1d: High compute capacity and memory
+   * Perfect for in-memory databases, real-time big data analytics, large SAP workloads
+4. Storage Optimized (I, D, H series)
+   * I3, I3en: NVMe SSD-backed instance storage
+   * D2: HDD-backed storage
+   * H1: High disk throughput
+   * Ideal for data warehousing, log processing, distributed file systems
+5. Accelerated Computing (P, G, F series)
+   * P4, P3: GPU compute instances for machine learning
+   * G4: Graphics-optimized for gaming and application streaming
+   * F1: Field Programmable Gate Arrays (FPGAs)
 
-#### Comparison Table of Common EC2 Instance Types:
+#### Key Instance Type Features
+
+1. Enhanced Networking
+   * Uses SR-IOV for better performance
+   * Available on most current generation instances
+   * Lower latency, higher packet per second (PPS)
+2. Placement Groups
+   * Cluster: Low-latency, high-throughput
+   * Spread: Distinct hardware for high availability
+   * Partition: Multiple instances spread across partitions
+3. Instance Store vs EBS
+   * Instance store: Ephemeral, high I/O
+   * EBS: Persistent storage, multiple volume types
+   * Some instances are EBS-only
+
+#### Comparison Table of Common EC2 Instance Types
 
 | Instance Type | vCPU | Memory (GiB) | Storage          | Network Performance | Use Case                                         |
 | ------------- | ---- | ------------ | ---------------- | ------------------- | ------------------------------------------------ |
@@ -34,7 +58,7 @@ EC2 offers a wide variety of instance types optimized for different use cases. E
 ```
 ```
 
-#### Key Points to Remember:
+#### Key Points
 
 1. Instance type naming convention: \[Instance Family]\[Generation]\[Additional Capabilities].\[Size] For example, in "m5.large":
    * 'm' is the instance family (General Purpose)
@@ -50,5 +74,3 @@ EC2 offers a wide variety of instance types optimized for different use cases. E
    * The specific requirements of your application (CPU, memory, storage, network)
    * The workload patterns (steady-state, variable, or burst)
    * Cost optimization (different instance types have different pricing)
-
-Remember, AWS frequently introduces new instance types and retires older ones, so always refer to the official AWS documentation for the most up-to-date information.
