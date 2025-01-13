@@ -14,24 +14,24 @@ T Instance Credit System:
 
 * Each T instance size has a baseline CPU performance level
 * For example:
-  * t3.micro: 10% baseline CPU utilization
-  * t3.small: 20% baseline CPU utilization
-  * t3.medium: 20% baseline CPU utilization
+  * t3.micro: 10% baseline CPU performance, earns 12 CPU credits per hour
+  * t3.small: 20% baseline CPU performance, earns 24 CPU credits per hour
+  * t3.medium: 20% baseline CPU performance, earns 24 CPU credits per hour
 * Operating at or below baseline allows credit accumulation
 * Operating above baseline consumes credits
 
 3. Credit Earning Rate Examples:
 
-* t3.micro: 6 credits per hour
-* t3.small: 12 credits per hour
+* t3.micro: 12 credits per hour
+* t3.small: 24 credits per hour
 * t3.medium: 24 credits per hour
-* One CPU credit equals one vCPU running at 100% utilization for one minute
+* One **CPU credit equals one vCPU running at 100% utilization for one minute**
 
 4. Burst Behavior
 
 * When workload requires more CPU than baseline:
   * Instance spends accrued credits to burst
-  * Can burst up to 100% CPU utilization if enough credits available
+  * **Can burst up to 100% CPU utilization if enough credits available**
   * Performance gradually returns to baseline when credits are depleted
 * No performance degradation during burst-to-baseline transition
 
