@@ -97,10 +97,3 @@ Best Practices:
 * Monitor credit usage patterns
 * Set up CloudWatch alarms for credit balance
 * Consider switching to M instances if consistently using all credits
-
-This credit mechanism is crucial for the SAP-C02 exam, as you may need to:
-
-* Determine appropriate instance sizes based on workload patterns
-* Understand cost implications of different modes
-* Troubleshoot performance issues related to credit exhaustion
-* Design solutions using T instances effectively
