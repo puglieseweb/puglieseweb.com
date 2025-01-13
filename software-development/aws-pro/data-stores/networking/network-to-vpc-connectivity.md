@@ -24,6 +24,8 @@ A simple AWS-managed IPsec VPN connection over existing internet connections.
 
 <figure><img src="../../../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
 
+To automate route addition for VPN connectivity in a VPC, you enable **propagation** for the route table associated  with the VPG. Propagation means allowing the VPG to automatically add necessary routes to the designated route table, avoiding manual configurations.
+
 <figure><img src="../../../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
 
 ### Direct Connect
