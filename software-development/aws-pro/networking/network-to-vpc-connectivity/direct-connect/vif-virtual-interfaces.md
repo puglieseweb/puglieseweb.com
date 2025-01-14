@@ -1,5 +1,13 @@
 # VIF (Virtual Interfaces)
 
+```
+ Private VIF ────→ VPC
+
+Private VIF 1 ┐
+              ├─→ DX Gateway ────→ VPC
+Private VIF 2 ┘
+```
+
 Different types of Virtual Interfaces (VIFs):
 
 * Private Virtual Interface (Private VIF):
@@ -30,11 +38,3 @@ Different types of Virtual Interfaces (VIFs):
      * OR a Direct Connect Gateway&#x20;
    * It cannot be associated with both simultaneously
    * Cannot "move" or "reassign" an existing VIF - it must be deleted and recreated
-
-```
- Private VIF ────→ VPC
-
-Private VIF 1 ┐
-              ├─→ DX Gateway ────→ VPC
-Private VIF 2 ┘
-```

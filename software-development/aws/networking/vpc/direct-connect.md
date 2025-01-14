@@ -42,8 +42,6 @@ graph LR
     class INT internet;
 ```
 
-## Direct Connect
-
 AWS Direct Connect is a dedicated network connection service that creates a private, high-bandwidth link between your on-premises infrastructure and AWS. Think of it as a private highway between your data center and Amazon's cloud, bypassing the public internet.
 
 * The connection if private.
@@ -64,7 +62,7 @@ Key benefits include:
 
 * Consistent, predictable network performance
 * Lower latency compared to internet-based connections
-* Higher bandwidth options (1Gbps to 100Gbps)
+* Higher bandwidth options (1Gbps, 10Gbps, 100Gbps, 400Gbps)
 
 2. Security
 
