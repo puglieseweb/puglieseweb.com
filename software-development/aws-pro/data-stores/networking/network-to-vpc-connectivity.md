@@ -4,7 +4,13 @@
 
 A simple AWS-managed IPsec VPN connection over existing internet connections.
 
-<figure><img src="../../../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+| Category | Description                                                                                                                         |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| What     | AWS managed IPsec VPN connection over your existing internet                                                                        |
+| When     | Quick and usually simple way to establish a secure tunneled connection to a VPC; Redundant link for Direct Connect or other VPC VPN |
+| Pros     | Supports static routes or BGP peering and routing                                                                                   |
+| Cons     | Dependent on your Internet connection                                                                                               |
+| How      | See next slide                                                                                                                      |
 
 #### Key Characteristics
 
@@ -32,29 +38,33 @@ To automate route addition for VPN connectivity in a VPC, you enable **propagati
 
 Dedicated private network connection to AWS backbone network.
 
-<figure><img src="../../../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+| Category | Description                                                                                                                                                             |
+| -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| What     | Dedicated network connection over private lines straight into AWS backbone                                                                                              |
+| When     | Require a "big pipe" into AWS; lots of resources and services being provided on AWS to your corporate users                                                             |
+| Pros     | More predictable network performance; potential bandwidth cost reduction; up to 400 Gbps provisioned connections; Supports BGP peering and routing                      |
+| Cons     | May require additional telecom and hosting provider relationships and/or new network circuits                                                                           |
+| How      | Work with your existing Data Networking Provider; Create Virtual Interfaces (VIF) to connect to VPCs (private VIF) or other AWS service like S3 or Glacier (public VIF) |
 
-<figure><img src="../../../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
+See&#x20;
 
-#### Key Characteristics
-
-* Speeds up to 10 Gbps
-* Predictable performance
-* Requires telecom provider relationships
-* Longer setup time
-* Single connection (not inherently redundant)
-
-#### Components
-
-* Private Virtual Interface (VIF) - connects to VPCs
-* Public Virtual Interface (VIF) - connects to public AWS services
-* Recommended secondary connection (VPN or second Direct Connect)
+{% content-ref url="../../../aws/networking/vpc/direct-connect.md" %}
+[direct-connect.md](../../../aws/networking/vpc/direct-connect.md)
+{% endcontent-ref %}
 
 ### Direct Connect + VPN
 
 IPsec VPN running over Direct Connect private lines.
 
-<figure><img src="../../../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+
+
+| Category | Description                                                 |
+| -------- | ----------------------------------------------------------- |
+| What     | IPsec VPN connection over private lines                     |
+| When     | Want added security of encrypted tunnel over Direct Connect |
+| Pros     | More secure (in theory) than Direct Connect alone           |
+| Cons     | More complexity introduced by VPN layer                     |
+| How      | Work with your existing Data Networking Provider            |
 
 <figure><img src="../../../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
 
@@ -74,7 +84,13 @@ IPsec VPN running over Direct Connect private lines.
 
 DIY MPLS-like network using public internet and IPsec VPN.
 
-<figure><img src="../../../../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
+| Category | Description                                                                                                                          |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------ |
+| What     | Connect locations in a Hub and Spoke manner using AWS's Virtual Private Gateway                                                      |
+| When     | Link remote offices for backup or primary WAN access to AWS resources and each other                                                 |
+| Pros     | Reuses existing Internet connection; Supports BGP routes to direct traffic (for example, use MPLS first then CloudHub VPN as backup) |
+| Cons     | Dependent on Internet connection; No inherent redundancy                                                                             |
+| How      | Assign multiple Customer Gateways to a Virtual Private Gateway, each with their own BGP ASN and unique IP ranges                     |
 
 <figure><img src="../../../../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
 

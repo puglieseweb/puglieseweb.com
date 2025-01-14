@@ -4,7 +4,7 @@
 
 The goal of this hands-on lab is to fix the connectivity issue in the AWS environment so we can update the `yum` package installer (from the command line) on the provided EC2 instance (named "web server"). Here, we'll go step-by-step through the scenario and offer detailed instructions on how to solve the connectivity issue.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Solution
 
