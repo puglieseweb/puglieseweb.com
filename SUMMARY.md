@@ -93,6 +93,7 @@
       * [Direct Connect](software-development/aws/networking/vpc/direct-connect.md)
         * [VIF (Virtual Interfaces)](software-development/aws-pro/networking/network-to-vpc-connectivity/direct-connect/vif-virtual-interfaces.md)
         * [VIF VS ENI](software-development/aws-pro/networking/network-to-vpc-connectivity/direct-connect/vif-vs-eni.md)
+        * [Customer Routers VS Customer Gateways](software-development/aws-pro/networking/network-to-vpc-connectivity/direct-connect/customer-routers-vs-customer-gateways.md)
     * [VPC-to-VPC](software-development/aws-pro/data-stores/networking/vpc-to-vpc.md)
     * [NAT & Internet Gateway](software-development/aws-pro/data-stores/networking/nat-and-internet-gateway.md)
     * [Routing](software-development/aws-pro/networking/routing/README.md)
