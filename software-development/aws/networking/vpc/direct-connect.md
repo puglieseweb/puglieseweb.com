@@ -52,8 +52,6 @@ There are two types of Direct Connect Connection:
 * **Dedicated Connection**: A Physical Ethernet connection associated with a dedicated connection through the AWS Direct Connect console, the CLI, or the API.
 * **Hosted Connection**: A physical Ethernet connection that an AWS Direct Connect Partner provision on behalf of a customer.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (25) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 
 
 ```mermaid
@@ -65,8 +63,24 @@ graph TB
     end
 
     subgraph "AWS Direct Connect Location"
-        DX1[Direct Connect 1<br/>1 Gbps]
-        DX2[Direct Connect 2<br/>1 Gbps]
+        subgraph "Customer Cage"
+            CageR1[Customer<br/>DX Router 1]
+            CageR2[Customer<br/>DX Router 2]
+            CR --"Primary Connection"--> CageR1
+            CR --"Secondary Connection"--> CageR2
+        end
+
+        subgraph "AWS Cage"
+            DX1[Direct Connect 1<br/>1 Gbps]
+            DX2[Direct Connect 2<br/>1 Gbps]
+            DXR1[AWS DX Router 1]
+            DXR2[AWS DX Router 2]
+            
+            CageR1 --> DXR1
+            CageR2 --> DXR2
+            DXR1 --> DX1
+            DXR2 --> DX2
+        end
         
         subgraph "Private Virtual Interfaces"
             VIF1[Private VIF 1<br/>VLAN 100]
@@ -74,6 +88,9 @@ graph TB
         end
         
         DXGW[Direct Connect Gateway<br/>ASN 64512]
+
+        DX1 --> VIF1
+        DX2 --> VIF2
     end
     
     subgraph "Region: us-east-1"
@@ -86,10 +103,6 @@ graph TB
         VGW2[Virtual Private Gateway]
     end
 
-    CR --"Primary Connection"--> DX1
-    CR --"Secondary Connection"--> DX2
-    DX1 --> VIF1
-    DX2 --> VIF2
     VIF1 & VIF2 --"BGP Session"--> DXGW
     DXGW --> VGW1 & VGW2
     VGW1 --> VPC1
@@ -98,9 +111,10 @@ graph TB
     classDef aws fill:#FF9900,stroke:#232F3E,stroke-width:2px,color:white;
     classDef corporate fill:#00A4EF,stroke:#232F3E,stroke-width:2px,color:white;
     classDef network fill:#1EC754,stroke:#232F3E,stroke-width:2px,color:white;
+    classDef cage fill:#E6E6E6,stroke:#666666,stroke-width:1px,color:black;
     
-    class VPC1,VPC2,DXGW,DX1,DX2,VGW1,VGW2,VIF1,VIF2 aws;
-    class DC,CR corporate;
+    class VPC1,VPC2,DXGW,DX1,DX2,VGW1,VGW2,VIF1,VIF2,DXR1,DXR2 aws;
+    class DC,CR,CageR1,CageR2 corporate;
 ```
 
 Key benefits include:
