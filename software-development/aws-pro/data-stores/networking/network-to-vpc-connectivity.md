@@ -84,13 +84,13 @@ IPsec VPN running over Direct Connect private lines.
 
 DIY MPLS-like network using public internet and IPsec VPN.
 
-| Category | Description                                                                                                                          |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| What     | Connect locations in a Hub and Spoke manner using AWS's Virtual Private Gateway                                                      |
-| When     | Link remote offices for backup or primary WAN access to AWS resources and each other                                                 |
-| Pros     | Reuses existing Internet connection; Supports BGP routes to direct traffic (for example, use MPLS first then CloudHub VPN as backup) |
-| Cons     | Dependent on Internet connection; No inherent redundancy                                                                             |
-| How      | Assign multiple Customer Gateways to a Virtual Private Gateway, each with their own BGP ASN and unique IP ranges                     |
+| Category | Description                                                                                                                              |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| What     | Connect locations in a Hub and Spoke manner using AWS's Virtual Private Gateway                                                          |
+| When     | Link remote offices for backup or primary WAN access to AWS resources and each other                                                     |
+| Pros     | Reuses existing Internet connection; Supports BGP routes to direct traffic (for example, **use MPLS first then CloudHub VPN as backup**) |
+| Cons     | Dependent on Internet connection; No inherent redundancy                                                                                 |
+| How      | Assign multiple Customer Gateways to a Virtual Private Gateway, each with their own BGP ASN and unique IP ranges                         |
 
 <figure><img src="../../../../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
 
