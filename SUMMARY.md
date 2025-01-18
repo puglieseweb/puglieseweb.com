@@ -11,6 +11,7 @@
 * [Multi-cloud strategies](software-development/multi-cloud-strategies.md)
 * [AWS Pro](software-development/aws-pro/README.md)
   * [My notes](software-development/aws-pro/my-notes/README.md)
+    * [Data Migration Strategy](software-development/aws-pro/my-notes/data-migration-strategy.md)
     * [OpsWorks VS CloudFormation](software-development/aws-pro/my-notes/opsworks-vs-cloudformation.md)
   * [Implementation Guides](software-development/aws-pro/implementation-guides/README.md)
     * [AWS Lambda Scaling and Concurrency Optimization Guide](software-development/aws-pro/implementation-guides/aws-lambda-scaling-and-concurrency-optimization-guide.md)
