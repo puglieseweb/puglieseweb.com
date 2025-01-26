@@ -18,6 +18,14 @@ graph TD
 
 AWS Security Token Service (STS) is a web service that enables you to request temporary, limited-privilege credentials for AWS Identity and Access Management (IAM) users or for users that you authenticate (federated users).
 
+STS integrates with pther AWS Services:&#x20;
+
+1. IAM: Works closely with IAM for role definitions and permissions.&#x20;
+2. Cognito: Can use STS for providing temporary credentials to mobile or web app users.&#x20;
+3. AWS Organizations: Can be used in conjunction with STS for cross-account access.
+
+
+
 1. Key Features:&#x20;
    1. Temporary Credentials: STS issues short-term security credentials that are valid for a specified duration.&#x20;
    2. Limited Privileges: These credentials can have restricted permissions compared to the original IAM user.
@@ -39,10 +47,4 @@ AWS Security Token Service (STS) is a web service that enables you to request te
    1. Use STS instead of creating IAM users with long-term credentials.&#x20;
    2. Implement the principle of least privilege when defining permissions for roles.&#x20;
    3. Set appropriate expiration periods for temporary credentials.
-6. Integration with Other AWS Services:&#x20;
-   1. IAM: Works closely with IAM for role definitions and permissions.&#x20;
-   2. Cognito: Can use STS for providing temporary credentials to mobile or web app users.&#x20;
-   3. AWS Organizations: Can be used in conjunction with STS for cross-account access.
-
-
 
