@@ -11,6 +11,8 @@
 * [Multi-cloud strategies](software-development/multi-cloud-strategies.md)
 * [DMS](software-development/dms/README.md)
   * [Oracle to PostgreSQL Time-Window Data Reload Implementation Guide](software-development/dms/oracle-to-postgresql-time-window-data-reload-implementation-guide.md)
+  * [Join tables separate PostgreSQL databases](software-development/dms/join-tables-separate-postgresql-databases.md)
+  * [Multi-Stage Migration Implementation Plan](software-development/dms/multi-stage-migration-implementation-plan.md)
   * [Step-by-Step CDC Recovery Guide: Oracle to PostgreSQL Migration](software-development/dms/step-by-step-cdc-recovery-guide-oracle-to-postgresql-migration.md)
 * [AWS Pro](software-development/aws-pro/README.md)
   * [My notes](software-development/aws-pro/my-notes/README.md)
