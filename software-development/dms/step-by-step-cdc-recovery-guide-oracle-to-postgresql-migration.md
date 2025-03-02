@@ -1,5 +1,61 @@
 # Step-by-Step CDC Recovery Guide: Oracle to PostgreSQL Migration
 
+When dealing with AWS DMS CDC failures, you have options for restoring CDC from specific points in time, but there are important constraints:
+
+#### Recovery Point Options for CDC
+
+1. **Using CdcStartPosition**
+   * You can modify a replication task to start from a specific transaction log position
+   * For Oracle, this is an SCN (System Change Number)
+   * For PostgreSQL, it's an LSN (Log Sequence Number)
+   * For MySQL, it's a binary log position
+2.  **Using CdcStartTime**
+
+    * Instead of a specific log position, you can set a timestamp
+    * DMS will attempt to find the corresponding position in the transaction logs
+    * Example (AWS CLI):
+
+    ```
+    Copyaws dms modify-replication-task \
+      --replication-task-arn <task-arn> \
+      --cdc-start-time "2025-01-15T12:00:00Z"
+    ```
+
+#### Critical Limitations
+
+1. **Transaction Log Retention**
+   * You can only go back as far as your source database retains transaction logs
+   * For Oracle: redo logs and archived logs
+   * For PostgreSQL: WAL segments
+   * For MySQL: binary logs
+2. **Log Availability**
+   * If logs have been purged or are unavailable, you cannot restart CDC from that point
+   * Many database systems automatically purge older logs
+3. **Database-Specific Constraints**
+   * Oracle: Requires ARCHIVELOG mode and appropriate retention
+   * PostgreSQL: Requires logical replication slots to be maintained
+   * MySQL: Binary log expiration policy limits recovery points
+
+#### Best Practices for CDC Recovery
+
+1. **Configure adequate log retention**
+   * Extend transaction log retention periods on source databases
+   * For Oracle, ensure ARCHIVELOG mode is enabled with adequate retention
+   * For PostgreSQL, monitor and maintain logical replication slots
+   * For MySQL, set `binlog_expire_logs_seconds` appropriately
+2. **Create recovery checkpoints**
+   * Periodically capture and store the current log position
+   * Consider creating DMS task bookmarks for critical points
+   * Document SCN/LSN positions after major data loads or changes
+3. **Implement monitoring for log retention**
+   * Monitor source database log space and retention
+   * Set up alerts for log purging events
+   * Track CDC lag metrics in CloudWatch
+
+If logs for your desired recovery point have been purged, your only option would be to perform a new full load and restart CDC from that point. This is why preventive measures like extended log retention are crucial for CDC recovery strategies.
+
+## Step-by-step Gide
+
 This guide explains how to set up, maintain, and recover CDC (Change Data Capture) during an Oracle to PostgreSQL migration using AWS DMS.
 
 ### Part 1: Prerequisites and Configuration
