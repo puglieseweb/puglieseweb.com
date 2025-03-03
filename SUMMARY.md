@@ -10,6 +10,7 @@
   * [Vaultless Tokenization](software-development/cloud-data-security-principles/vaultless-tokenization.md)
 * [Multi-cloud strategies](software-development/multi-cloud-strategies.md)
 * [DMS](software-development/dms/README.md)
+  * [How CDC Checkpoints Work](software-development/dms/how-cdc-checkpoints-work.md)
   * [Oracle to PostgreSQL Time-Window Data Reload Implementation Guide](software-development/dms/oracle-to-postgresql-time-window-data-reload-implementation-guide.md)
   * [Join tables separate PostgreSQL databases](software-development/dms/join-tables-separate-postgresql-databases.md)
   * [Multi-Stage Migration Implementation Plan](software-development/dms/multi-stage-migration-implementation-plan.md)
