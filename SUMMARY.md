@@ -15,6 +15,7 @@
   * [Join tables separate PostgreSQL databases](software-development/dms/join-tables-separate-postgresql-databases.md)
   * [Multi-Stage Migration Implementation Plan](software-development/dms/multi-stage-migration-implementation-plan.md)
   * [Notes](software-development/dms/notes.md)
+  * [Oracle Golden Gate to PostgreSQL Migration](software-development/dms/oracle-golden-gate-to-postgresql-migration.md)
   * [Step-by-Step CDC Recovery Guide: Oracle to PostgreSQL Migration](software-development/dms/step-by-step-cdc-recovery-guide-oracle-to-postgresql-migration.md)
 * [AWS Pro](software-development/aws-pro/README.md)
   * [My notes](software-development/aws-pro/my-notes/README.md)
