@@ -89,3 +89,39 @@ Here are the key differences:
     * Security Groups: Can be modified and changes take effect immediately
     * NACLs: Changes may take longer to propagate and affect traffic
 
+
+
+
+
+## NOTEs
+
+**Route table cannot directly reference an IP address in a different VPC** using standard routing. However, there are ways to route traffic between VPCs:
+
+### Direct IP Routing Limitations:
+
+* Route tables can only directly route to resources within the same VPC
+* You cannot simply add a route like `10.1.0.0/16` → `10.2.0.5` where the target IP is in another VPC
+
+### Ways to Route Between VPCs:
+
+**1. VPC Peering:**
+
+* Create a VPC peering connection between VPCs
+* Route table entry: `10.1.0.0/16` → `pcx-12345` (peering connection ID)
+* Traffic flows through the peering connection to reach the other VPC
+
+**2. Transit Gateway:**
+
+* Attach both VPCs to a Transit Gateway
+* Route table entry: `10.1.0.0/16` → `tgw-attach-12345` (Transit Gateway attachment)
+
+**3. VPN Connection:**
+
+* Set up Site-to-Site VPN between VPCs
+* Route table entry: `10.1.0.0/16` → `vgw-12345` (Virtual Private Gateway)
+
+**4. NAT Gateway/Instance:**
+
+* For outbound internet traffic that might reach another VPC via public internet
+* Not typically used for direct VPC-to-VPC communication
+
