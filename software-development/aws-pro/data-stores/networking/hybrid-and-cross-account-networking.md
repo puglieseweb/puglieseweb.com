@@ -57,6 +57,32 @@
 * VPN Connection - secure tunnel between CGW and VGW
 * Transit Gateway (optional) - for connecting to multiple VPCs
 
+## Transit VPC&#x20;
+
+Transit VPC is a network architecture pattern that creates a centralized hub for connecting multiple VPCs and on-premises locations across different AWS regions and geographic areas.
+
+**How Transit VPC Works:** A Transit VPC acts as a central routing hub, typically deployed with third-party virtual appliances (like Cisco CSR, Juniper vSRX, or other router/firewall solutions) that handle the routing and connectivity between:
+
+* Multiple VPCs across different AWS regions
+* On-premises data centers and branch offices
+* Other cloud providers or external networks
+
+**Key Characteristics:**
+
+* **Hub-and-spoke topology**: All traffic flows through the central Transit VPC rather than requiring direct connections between every location
+* **Cross-region connectivity**: Can connect VPCs in different AWS regions globally
+* **Flexible routing**: Allows complex routing policies and traffic inspection
+* **Third-party integration**: Often uses commercial network virtual appliances for advanced features
+
+**Use Cases:**
+
+* Organizations with VPCs spread across multiple AWS regions
+* Companies needing to connect hybrid environments (AWS + on-premises + other clouds)
+* Scenarios requiring advanced routing, traffic inspection, or network policies
+* Global enterprises wanting centralized network management
+
+**Important Note:** While Transit VPC was a popular pattern in the past, AWS now recommends **AWS Transit Gateway** for most use cases, as it provides similar functionality with less complexity and is fully AWS-managed. Transit VPC is still relevant when you need specific third-party networking features or have complex routing requirements that Transit Gateway doesn't support.&#x20;
+
 ## High Availability Configurations
 
 ### Direct Connect + VPN Backup
