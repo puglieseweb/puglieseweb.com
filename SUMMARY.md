@@ -111,6 +111,7 @@
       * [Transit VPC VS Transit Gateway](software-development/aws-pro/networking/routing/transit-vpc-vs-transit-gateway.md)
       * [Example Routing tables configuration](software-development/aws-pro/networking/routing/example-routing-tables-configuration.md)
       * [Cross-regions failover](software-development/aws-pro/networking/routing/cross-regions-failover.md)
+      * [Loopback](software-development/aws-pro/networking/routing/loopback.md)
     * [Enhanced Networking](software-development/aws-pro/data-stores/networking/enhanced-networking.md)
     * [Hybrid and Cross-Account Networking](software-development/aws-pro/data-stores/networking/hybrid-and-cross-account-networking.md)
     * [AWS Global Accelerator](software-development/aws-pro/networking/aws-global-accelerator.md)
