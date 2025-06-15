@@ -98,3 +98,42 @@ _Note: Numbers are positional, not absolute_
   * Load balancing across datacenters
   * Enhanced security through randomization
   * Example: us-west-2a may differ between accounts
+
+
+
+## **Chain of Trust vs Certificate Authentication**&#x20;
+
+### **Certificate Authentication Process**
+
+**Complete process includes:**
+
+```
+1. Chain of Trust Validation    ← Verify signing hierarchy
+2. Certificate Expiration Check ← Is it still valid?
+3. Revocation Status Check      ← Has it been revoked?
+4. Hostname Verification        ← Does it match the domain?
+5. Cryptographic Verification   ← Valid signatures?
+6. Key Usage Validation         ← Proper certificate purpose?
+```
+
+### **Chain of Trust Validation (Step 1)**
+
+**Specific process:**
+
+```
+Website Certificate
+    ↓ (signed by)
+Intermediate CA Certificate
+    ↓ (signed by)
+Root CA Certificate
+    ↓ (trusted by)
+Browser/OS Trust Store
+```
+
+**Validation steps:**
+
+1. Check website cert was signed by intermediate CA
+2. Check intermediate CA cert was signed by root CA
+3. Verify root CA is in trusted store
+4. Validate all signatures in the chain
+
