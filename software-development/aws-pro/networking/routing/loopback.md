@@ -2,6 +2,26 @@
 
 The **loopback CIDR** is **127.0.0.0/8**.
 
+
+
+### **Loopback is Host-Specific, Not Network-Specific**
+
+**Key Point**: Loopback addresses operate at the **host level**, not the network level. Every device has its own local loopback interface.
+
+### **How Loopback Works in Different Networks**
+
+**Small Network (e.g., 192.168.1.0/24):**
+
+```
+Router: 192.168.1.1 (also has 127.0.0.1 loopback)PC1: 192.168.1.10 (also has 127.0.0.1 loopback)  PC2: 192.168.1.11 (also has 127.0.0.1 loopback)
+```
+
+**Large Network (e.g., 10.0.0.0/16):**
+
+```
+Server: 10.0.1.100 (also has 127.0.0.1 loopback)Workstation: 10.0.2.50 (also has 127.0.0.1 loopback)
+```
+
 ### **Loopback Network Details**
 
 **CIDR Range**: 127.0.0.0/8\
