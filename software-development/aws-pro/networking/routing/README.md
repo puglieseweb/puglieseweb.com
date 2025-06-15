@@ -68,6 +68,7 @@ where:
 
 1. `pl-xxxxxxx` (Destination): This is a prefix list ID that represents a set of CIDR blocks for AWS services. For example, it could be the CIDR ranges for Amazon S3 or DynamoDB. The prefix list is a way AWS groups IP ranges for their services.
 2. `vpce-xxxxxxx` (Target): This is a VPC Endpoint ID. It represents an endpoint that allows private communication with AWS services without going through the public internet. The 'vpce' prefix specifically identifies this as a VPC Endpoint.
+3. `vpg-xxxxxxx` (Target): A Virtual Private Gateway (VPG) is an AWS component that serves as the VPN concentrator on the AWS side of a Site-to-Site VPN connection
 
 Using the above routing table the below IP are resolved as follows:
 
