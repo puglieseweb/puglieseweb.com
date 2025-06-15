@@ -75,6 +75,7 @@
   * [Networking](software-development/aws-pro/data-stores/networking/README.md)
     * [Concept](software-development/aws-pro/data-stores/networking/concept.md)
     * [Basics](software-development/aws/networking/README.md)
+      * [VPG](software-development/aws-pro/networking/networking/vpg.md)
       * [VPC](software-development/aws/networking/vpc/README.md)
         * [VPC endpoints](software-development/aws-pro/networking/privatelink/vpc-endpoints.md)
           * [Interface Endpoint VS Elastic Network Interface (ENI)](software-development/aws-pro/networking/networking/vpc/vpc-endpoints/interface-endpoint-vs-elastic-network-interface-eni.md)
