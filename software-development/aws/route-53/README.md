@@ -32,6 +32,37 @@ A **domain registrar** (GoDaddy, AWS, etc.) can assing a domain name under one o
 
 These domains are registered with InterNIC, a service of ICANN, which enforces uniqueness of domain names across the internet. All domain name are stored in the central WHOIS database.
 
+### NS record
+
+Name Server (NS) records are used by top-level domain (**TLD**) servers (e.g., .com, or .io)   to direct traffic to the content **DNS server** that contains the **authoritative DNS records**.
+
+#### **SOA Record is Part of Authoritative DNS**
+
+**Think of it this way:**
+
+```
+Authoritative DNS Records = {    
+    SOA record           ← Zone authority info    
+    NS records           ← Name servers    
+    A records            ← IPv4 addresses    
+    AAAA records         ← IPv6 addresses    
+    CNAME records        ← Aliases    
+    MX records           ← Mail servers    
+    TXT records          ← Text data    
+    ... and more
+}
+```
+
+#### Example&#x20;
+
+if I type "puglieseweb.com" the browser goes to the ".com" record and looks up the "puglieseweb" record. The browser will be given an NS record (e.g. ns.awsdns.com). ns.awsdns.com is where the SOA is stored.
+
+&#x20;ns.awsdns.com's A record is an IP Adrress&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (34) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+## DNS Records
+
 ### SOA record
 
 A start of authority (SOA) record includes administrative information about the zone, as defined by the domain name system (DNS):
@@ -43,23 +74,7 @@ A start of authority (SOA) record includes administrative information about the 
 
 <figure><img src="../../../.gitbook/assets/image (19) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-### NS record
-
-Name Server (NS) records are used by top-level domain servers to direct traffic to the content DNS server that contains the authoritative DNS records.
-
-
-
-Example&#x20;
-
-if I type "puglieseweb.com" the brower goes to the ".com" record and looks up the "puglieseweb" record. The browser will be given an NS record (e.g. ns.awsdns.com). ns.awsdns.com is where the SOA is stored.
-
-&#x20;ns.awsdns.com's A record is an IP Adrress&#x20;
-
-<figure><img src="../../../.gitbook/assets/image (34) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
-
-## DNS Records
+###
 
 ### A Record
 
