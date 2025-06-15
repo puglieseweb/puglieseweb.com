@@ -26,6 +26,18 @@ _Mnemonic: "Please Do Not Throw Sausage Pizza Away"_
 
 <figure><img src="../../../../.gitbook/assets/image (66) (1).png" alt=""><figcaption></figcaption></figure>
 
+**TLS runs ON TOP OF TCP:**
+
+```
+Application Data
+    ↓
+TLS Encryption (Layer 6)
+    ↓
+TCP Segments (Layer 4)
+    ↓
+IP Packets (Layer 3)
+```
+
 ### AWS Responsibility Demarcation
 
 * AWS responsibility: Generally Layers 1-2
