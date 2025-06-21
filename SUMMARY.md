@@ -81,6 +81,7 @@
           * [Interface Endpoint VS Elastic Network Interface (ENI)](software-development/aws-pro/networking/networking/vpc/vpc-endpoints/interface-endpoint-vs-elastic-network-interface-eni.md)
         * [PrivateLink](software-development/aws-pro/networking/privatelink/README.md)
           * [PrivateLink SAAS Use case](software-development/aws/networking/vpc/privatelink.md)
+          * [Private link VS VPC Gateway Endpoint to connect to S3?](software-development/aws-pro/networking/networking/vpc/privatelink/private-link-vs-vpc-gateway-endpoint-to-connect-to-s3.md)
         * [Transit Gateway](software-development/aws/networking/vpc/transit-gateway.md)
         * [5G Networks](software-development/aws/networking/vpc/5g-networks.md)
         * [VPN CloudHub](software-development/aws/networking/vpc/vpn-cloudhub.md)
