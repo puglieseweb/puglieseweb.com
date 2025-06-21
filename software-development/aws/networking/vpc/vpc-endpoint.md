@@ -6,7 +6,7 @@ A VPC endpoint enables to privately connect VPC to  supported AWS services and V
 
 
 
-**Traffic between a VPC and other services do not leave the Amzaon Network**. Instances in the VPC do not require public IP addresses to communicate with resources in the service.
+**Traffic between a VPC and other services do not leave the Amazon Network**. Instances in the VPC do not require public IP addresses to communicate with resources in the service.
 
 As opposite to a NAT Gateway that has a limit on the bandwidth. For example if we have got and EC2 instance ghat is connecting to an S3 service we want to use a VPN endpoint and not a NAT Gateway.
 
