@@ -35,6 +35,12 @@ AWS PrivateLink can connect to multiple types of endpoints:
 
 <figure><img src="../../../../.gitbook/assets/image (116).png" alt=""><figcaption></figcaption></figure>
 
+### Example 2
+
+<figure><img src="../../../../.gitbook/assets/image (144).png" alt=""><figcaption></figcaption></figure>
+
+[Source diagarm](https://aws.amazon.com/blogs/networking-and-content-delivery/how-to-use-aws-privatelink-to-secure-and-scale-web-filtering-using-explicit-proxy/).
+
 ### Common Use Cases
 
 <figure><img src="../../../../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
