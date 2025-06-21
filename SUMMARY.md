@@ -89,6 +89,7 @@
         * [VPC peering](software-development/aws/networking/vpc/vpc-peering.md)
         * [VPC Endpoint](software-development/aws/networking/vpc/vpc-endpoint.md)
         * [Route Table (and Routers)](software-development/aws/networking/vpc/route-table-and-routers.md)
+        * [Control traffic flow in VPC](software-development/aws-pro/networking/networking/vpc/control-traffic-flow-in-vpc.md)
         * [Network Access Control List (NACL)](software-development/aws/networking/vpc/network-access-control-list-nacl.md)
         * [Network Security Group](software-development/aws/networking/vpc/network-security-group.md)
         * [NAT Gateway](software-development/aws/networking/vpc/nat-gateway/README.md)
