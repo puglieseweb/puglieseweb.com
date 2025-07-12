@@ -148,6 +148,15 @@ Key Differences and When to Use Each:
 
 Note that Enhanced Networking is automatically enabled on most modern EC2 instance types, while ENI and EFA require specific configuration and are used for specialized use cases.
 
+
+
+| Feature           | ENI                | Enhanced Networking          | EFA              |
+| ----------------- | ------------------ | ---------------------------- | ---------------- |
+| **Protocol**      | TCP/IP, UDP/IP     | TCP/IP, UDP/IP               | SRD + libfabric  |
+| **Kernel bypass** | No                 | No                           | Yes              |
+| **Use case**      | General networking | Optimized general networking | HPC/ML workloads |
+| **MPI support**   | No                 | No                           | Yes              |
+
 | Feature                  | Elastic Network Interface (ENI)                     | Elastic Fabric Adapter (EFA)                      | Enhanced Networking                                    |
 | ------------------------ | --------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------------ |
 | Primary Purpose          | Network connectivity for EC2 instances              | High Performance Computing (HPC) and ML workloads | Improved network performance                           |
