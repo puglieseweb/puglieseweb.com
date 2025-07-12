@@ -29,7 +29,7 @@ One of the most powerful design patterns enabled by SNS is the fan-out architect
 
 #### Example: Image Upload Processing
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 

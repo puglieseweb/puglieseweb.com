@@ -39,7 +39,7 @@ Consider an ERP (Enterprise Resource Planning) system generating master data upd
 4. Processed data updates DynamoDB
 5. **System can scale horizontally by adding more workers for burst processing**
 
-<figure><img src="../../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Message Processing Example
 

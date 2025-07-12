@@ -21,7 +21,7 @@ The Load Balanncer can operated at:
   * the Load Balancer performs simple TCP packets forwarding between the client and the backend servers.
   * It does not inspect the content of the TCP stream beyond the first packets - Low overhead
 
-![](<../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png>)
 
 * Layer 7 (Application Layer):
   * can make smarter routing decision based on the HTTP header
