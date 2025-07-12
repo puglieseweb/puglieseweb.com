@@ -8,6 +8,12 @@ AWS Global Accelerator is a networking service that improves the availability an
 
 ### Key Features
 
+**AWS Global Accelerator can provide up to 20 static anycast IP addresses** per accelerator.
+
+Here are the key details:
+
+* Each Global Accelerator gives you **2 static anycast IP addresses by default**
+
 #### Static IP Addresses
 
 * Provides static public IP addresses for application endpoints
