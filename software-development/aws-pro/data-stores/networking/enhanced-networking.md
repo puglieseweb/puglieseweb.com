@@ -6,6 +6,22 @@
 
 Enhanced Networking is a specialized networking feature designed primarily for High Performance Computing (HPC) workloads in AWS. This capability provides superior networking performance through Single Root I/O Virtualization (SR-IOV) technology.
 
+#### SR-IOV (Single Root I/O Virtualization)
+
+SR-IOV (Single Root I/O Virtualization) is a hardware-level virtualization technology that allows a single network interface cards (NICs) to present itself as multiple virtual devices to different virtual machines or containers.&#x20;
+
+**Core Concept:** SR-IOV enables a physical network card, storage controller, or other PCIe device to be divided into multiple virtual functions (VFs) that can be directly assigned to different VMs, bypassing the hypervisor for I/O operations.
+
+**AWS's Physical Infrastructure:** AWS runs on physical servers with SR-IOV-capable network interface cards (NICs). These are typically high-performance Ethernet adapters from vendors like Intel, Mellanox, or custom AWS silicon like the Nitro cards.
+
+**How SR-IOV Works in AWS:**
+
+* AWS's hypervisor (Nitro) uses SR-IOV to create virtual functions (VFs) on the physical NICs
+* Each EC2 instance gets direct access to a VF, bypassing the hypervisor for network I/O
+* This provides near-native network performance to your EC2 instances
+
+
+
 #### Key Features
 
 * Uses SR-IOV to deliver higher performance compared to traditional virtualized network interfaces
