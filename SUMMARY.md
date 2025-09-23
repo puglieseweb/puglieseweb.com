@@ -17,6 +17,8 @@
   * [Notes](software-development/dms/notes.md)
   * [Oracle Golden Gate to PostgreSQL Migration](software-development/dms/oracle-golden-gate-to-postgresql-migration.md)
   * [Step-by-Step CDC Recovery Guide: Oracle to PostgreSQL Migration](software-development/dms/step-by-step-cdc-recovery-guide-oracle-to-postgresql-migration.md)
+* [AI](software-development/ai/README.md)
+  * [MCP](software-development/ai/mcp.md)
 * [AWS Pro](software-development/aws-pro/README.md)
   * [My notes](software-development/aws-pro/my-notes/README.md)
     * [Data Migration Strategy](software-development/aws-pro/my-notes/data-migration-strategy.md)

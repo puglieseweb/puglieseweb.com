@@ -2,7 +2,7 @@
 
 ## AWS CloudTrail Overview
 
-AWS CloudTrail serves as a comprehensive logging and monitoring service for AWS accounts, functioning like a CCTV system for all AWS API activity. It records and stores detailed logs of all API calls made to your AWS account in Amazon S3 buckets.
+AWS CloudTrail serves as a comprehensive logging and monitoring service for AWS accounts, functioning like a CCTV system for **user activities and AWS API usage.** It records and stores detailed logs of all API calls made to your AWS account in Amazon S3 buckets.
 
 ### Key Capabilities
 
