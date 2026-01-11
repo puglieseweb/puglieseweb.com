@@ -557,3 +557,15 @@
 * [Job roles](working-for-an-enterprise/job-roles/README.md)
   * [SME role](working-for-an-enterprise/job-roles/sme-role.md)
 * [Common issues](working-for-an-enterprise/untitled.md)
+* [Finance](working-for-an-enterprise/finance/README.md)
+  * [Page 1](working-for-an-enterprise/finance/page-1.md)
+
+## Finance
+
+* [Finance](finance/finance/README.md)
+  * [Key Definitions](finance/finance/key-definitions.md)
+  * [Investment Platforms](finance/finance/investment-platforms/README.md)
+    * [Trading 212](finance/finance/investment-platforms/trading-212.md)
+    * [Hargreaves Lansdown](finance/finance/investment-platforms/hargreaves-lansdown.md)
+    * [ETF Market](finance/finance/investment-platforms/etf-market/README.md)
+      * [Battery Technology ETFs](finance/finance/investment-platforms/etf-market/battery-technology-etfs.md)
