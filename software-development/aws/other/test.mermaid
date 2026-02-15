@@ -1,0 +1,47 @@
+graph TB
+%% Cognito with STS - Top
+    subgraph "Flow 2: Cognito with STS"
+        A2[User] --> B2[Cognito User Pool]
+        B2 --> C2[Identity Pool]
+        C2 --> D2[STS]
+        D2 --> E2[Temporary AWS Credentials]
+        E2 --> F2[IAM Role/Policy]
+        F2 --> G2[AWS Resources]
+
+    %% Add explanation for Identity Pool
+        C2 -.- C2note[Identity Pool maps users<br>to IAM Roles based on rules]
+    end
+%% [MermaidChart: b8d315b1-06b9-4fe2-b668-08a6ea1d0f17]
+%% Cognito without STS - Bottom
+subgraph "Flow 1: Cognito without STS"
+A1[User] --> B1[Cognito User Pool]
+B1 --> C1[JWT Token]
+C1 --> D1[IAM Role/Policy]
+D1 --> E1[AWS Resources]
+
+%% Add explanation for User Pool
+B1 -.- B1note[User Pool Groups can<br>be mapped to IAM Roles]
+end
+
+%% Styling
+style A1 fill:#f9f,stroke:#333,stroke-width:2px
+style A2 fill:#f9f,stroke:#333,stroke-width:2px
+style B1 fill:#bbf,stroke:#333,stroke-width:2px
+style B2 fill:#bbf,stroke:#333,stroke-width:2px
+style C1 fill:#dfd,stroke:#333,stroke-width:2px
+style C2 fill:#dfd,stroke:#333,stroke-width:2px
+style D1 fill:#ffa,stroke:#333,stroke-width:2px
+style D2 fill:#bbb,stroke:#333,stroke-width:2px
+style E1 fill:#fdd,stroke:#333,stroke-width:2px
+style E2 fill:#dfd,stroke:#333,stroke-width:2px
+style F2 fill:#ffa,stroke:#333,stroke-width:2px
+style G2 fill:#fdd,stroke:#333,stroke-width:2px
+style Space fill:none,stroke:none
+style Space2 fill:none,stroke:none
+
+%% Hide spacing nodes
+classDef spacing fill:none,stroke:none;
+%% [MermaidChart: b8d315b1-06b9-4fe2-b668-08a6ea1d0f17]
+%% [MermaidChart: b8d315b1-06b9-4fe2-b668-08a6ea1d0f17]
+%% [MermaidChart: b8d315b1-06b9-4fe2-b668-08a6ea1d0f17]
+class Space,Space2 spacing;
