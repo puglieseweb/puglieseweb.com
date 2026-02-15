@@ -1,4 +1,18 @@
 graph TB
+
+subgraph "Legend"
+    L1[" "]
+    L2[" "]
+    L3[" "]
+    L4[" "]
+    L1 -->|Synchronous Operation| L2
+    L2 -.->|Asynchronous Operation| L3
+    L3 ==>|Workflow Initiation| L4
+end
+
+classDef legendClass fill:none,stroke:none;
+
+class L1,L2,L3,L4 legendClass;
     subgraph "Product Service"
         API[ProductAPI]
         PPS[ProductPricingService]
@@ -42,15 +56,4 @@ graph TB
     classDef awsService fill:#FF9900,stroke:#232F3E,stroke-width:2px,stroke-dasharray: 5 5;
     class SNS1,SNS2,SF,EB,DD awsService;
 
-    subgraph "Legend"
-        L1[" "]
-        L2[" "]
-        L3[" "]
-        L4[" "]
-        L1 -->|Synchronous Operation| L2
-        L2 -.->|Asynchronous Operation| L3
-        L3 ==>|Workflow Initiation| L4
-    end
 
-    classDef legendClass fill:none,stroke:none;
-    class L1,L2,L3,L4 legendClass;
