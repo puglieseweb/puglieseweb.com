@@ -19,33 +19,6 @@ The two components of Cognito are:&#x20;
 
 User pools and Itentity pools can be used either separatly or together.&#x20;
 
-```mmd
-sequenceDiagram
-    autonumber
-    actor User
-    participant App as Client Application
-    participant Cognito as AWS Cognito
-    participant API as Protected API
-
-    User->>App: Open app
-    App->>Cognito: Initialize
-    Cognito-->>App: Return configuration
-
-    User->>App: Enter credentials
-    App->>Cognito: Authenticate (username/password)
-    Cognito-->>App: Return tokens (ID, Access, Refresh)
-
-    App->>App: Store tokens
-
-    User->>App: Request protected resource
-    App->>API: API request with Access token
-    API->>API: Validate token
-    API-->>App: Return protected resource
-
-    App-->>User: Display protected resource
-```
-
-{% code fullWidth="true" %}
 ```mermaid
 sequenceDiagram
     autonumber
@@ -71,4 +44,3 @@ sequenceDiagram
 
     App-->>User: Display protected resource
 ```
-{% endcode %}
