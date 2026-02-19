@@ -19,6 +19,7 @@ The two components of Cognito are:&#x20;
 
 User pools and Itentity pools can be used either separatly or together.&#x20;
 
+{% code fullWidth="true" %}
 ```mermaid
 sequenceDiagram
     autonumber
@@ -44,3 +45,4 @@ sequenceDiagram
 
     App-->>User: Display protected resource
 ```
+{% endcode %}
